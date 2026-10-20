@@ -17,23 +17,40 @@ const possibleDbPaths = [
   path.resolve(process.cwd(), 'movies_master.db')
 ];
 
-const dbPath = possibleDbPaths.find(p => fs.existsSync(p)) || possibleDbPaths[0];
-console.log(`[CineMatch API] Loading database from: ${dbPath}`);
+let dbPath = possibleDbPaths.find(p => fs.existsSync(p)) || possibleDbPaths[0];
+console.log(`[CineMatch API] Discovered database candidate: ${dbPath}`);
 
 const isVercel = Boolean(process.env.VERCEL);
-const db = new Database(dbPath, { 
+let activeDbPath = dbPath;
+
+// In Vercel serverless environment, copy database to writable /tmp for unrestricted SQLite execution
+if (isVercel) {
+  const tmpPath = path.resolve('/tmp', 'movies.db');
+  try {
+    if (!fs.existsSync(tmpPath) && fs.existsSync(dbPath)) {
+      console.log(`[CineMatch API] Copying database to writable /tmp: ${tmpPath}`);
+      fs.copyFileSync(dbPath, tmpPath);
+    }
+    if (fs.existsSync(tmpPath)) {
+      activeDbPath = tmpPath;
+    }
+  } catch (e) {
+    console.log('[CineMatch API] /tmp storage copy notice:', e.message);
+  }
+}
+
+console.log(`[CineMatch API] Connecting to active database: ${activeDbPath} (exists: ${fs.existsSync(activeDbPath)})`);
+
+const db = new Database(activeDbPath, { 
   fileMustExist: true, 
-  readonly: isVercel 
+  readonly: true 
 });
 
-// Optimize SQLite memory & WAL reads in Node
-if (!isVercel) {
-  try {
-    db.pragma('journal_mode = WAL');
-    db.pragma('synchronous = NORMAL');
-  } catch (e) {
-    console.log('[CineMatch API] Pragma note:', e.message);
-  }
+// Optimize SQLite reads
+try {
+  db.pragma('synchronous = NORMAL');
+} catch (e) {
+  console.log('[CineMatch API] Pragma note:', e.message);
 }
 
 const app = express();
@@ -189,9 +206,14 @@ app.get('/', (req, res) => {
 app.get('/api/health', (req, res) => {
   try {
     const row = db.prepare('SELECT COUNT(*) as count FROM movies').get();
-    res.json({ status: 'healthy', total_movies: row.count, database: path.basename(dbPath) });
+    res.json({ status: 'healthy', total_movies: row.count, database: path.basename(activeDbPath) });
   } catch (err) {
-    res.status(500).json({ status: 'error', error: err.message });
+    res.status(500).json({ 
+      status: 'error', 
+      error: err.message, 
+      activeDbPath: activeDbPath, 
+      exists: fs.existsSync(activeDbPath) 
+    });
   }
 });
 
