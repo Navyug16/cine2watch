@@ -1,0 +1,3559 @@
+{
+  "totalTitles": 391,
+  "totalFound": 383,
+  "totalMissing": 8,
+  "matchRate": "98%",
+  "report": {
+    "Marvel (MCU, X-Men, Sony, Defenders)": {
+      "found": [
+        {
+          "requested": "Iron Man",
+          "matchedTitle": "Iron Man",
+          "year": 2008,
+          "votes": 1255476,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 116824
+        },
+        {
+          "requested": "The Incredible Hulk",
+          "matchedTitle": "The Incredible Hulk",
+          "year": 2008,
+          "votes": 580410,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 137922
+        },
+        {
+          "requested": "Iron Man 2",
+          "matchedTitle": "Iron Man 2",
+          "year": 2010,
+          "votes": 961877,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 166478
+        },
+        {
+          "requested": "Thor",
+          "matchedTitle": "Thor",
+          "year": 2011,
+          "votes": 988061,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 137991
+        },
+        {
+          "requested": "Captain America: The First Avenger",
+          "matchedTitle": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "votes": 993951,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 208153
+        },
+        {
+          "requested": "The Avengers",
+          "matchedTitle": "The Avengers",
+          "year": 2012,
+          "votes": 1588684,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 140638
+        },
+        {
+          "requested": "Iron Man 3",
+          "matchedTitle": "Iron Man 3",
+          "year": 2013,
+          "votes": 988171,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 172381
+        },
+        {
+          "requested": "Thor: The Dark World",
+          "matchedTitle": "Thor",
+          "year": 2011,
+          "votes": 988061,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 137991
+        },
+        {
+          "requested": "Captain America: The Winter Soldier",
+          "matchedTitle": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "votes": 993951,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 208153
+        },
+        {
+          "requested": "Guardians of the Galaxy",
+          "matchedTitle": "Guardians of the Galaxy",
+          "year": 2014,
+          "votes": 1389620,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 214206
+        },
+        {
+          "requested": "Avengers: Age of Ultron",
+          "matchedTitle": "The Avengers",
+          "year": 2012,
+          "votes": 1588684,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 140638
+        },
+        {
+          "requested": "Ant-Man",
+          "matchedTitle": "Ant-Man",
+          "year": 2015,
+          "votes": 798312,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 133129
+        },
+        {
+          "requested": "Captain America: Civil War",
+          "matchedTitle": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "votes": 993951,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 208153
+        },
+        {
+          "requested": "Doctor Strange",
+          "matchedTitle": "Doctor Strange",
+          "year": 2016,
+          "votes": 901754,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 165245
+        },
+        {
+          "requested": "Spider-Man: Homecoming",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Thor: Ragnarok",
+          "matchedTitle": "Thor",
+          "year": 2011,
+          "votes": 988061,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 137991
+        },
+        {
+          "requested": "Black Panther",
+          "matchedTitle": "Black Panther",
+          "year": 2018,
+          "votes": 930407,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 206985
+        },
+        {
+          "requested": "Avengers: Infinity War",
+          "matchedTitle": "The Avengers",
+          "year": 2012,
+          "votes": 1588684,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 140638
+        },
+        {
+          "requested": "Ant-Man and the Wasp",
+          "matchedTitle": "Ant-Man and the Wasp",
+          "year": 2018,
+          "votes": 509569,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 294273
+        },
+        {
+          "requested": "Captain Marvel",
+          "matchedTitle": "Captain Marvel",
+          "year": 2019,
+          "votes": 676222,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 283462
+        },
+        {
+          "requested": "Avengers: Endgame",
+          "matchedTitle": "The Avengers",
+          "year": 2012,
+          "votes": 1588684,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 140638
+        },
+        {
+          "requested": "Spider-Man: Far From Home",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Black Widow",
+          "matchedTitle": "Black Widow",
+          "year": 2021,
+          "votes": 492599,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 265978
+        },
+        {
+          "requested": "Shang-Chi and the Legend of the Ten Rings",
+          "matchedTitle": "Shang-Chi and the Legend of the Ten Rings",
+          "year": 2021,
+          "votes": 505659,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 331156
+        },
+        {
+          "requested": "Eternals",
+          "matchedTitle": "Eternals",
+          "year": 2021,
+          "votes": 439083,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 328731
+        },
+        {
+          "requested": "Spider-Man: No Way Home",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Doctor Strange in the Multiverse of Madness",
+          "matchedTitle": "Doctor Strange in the Multiverse of Madness",
+          "year": 2022,
+          "votes": 563977,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 331386
+        },
+        {
+          "requested": "Thor: Love and Thunder",
+          "matchedTitle": "Thor",
+          "year": 2011,
+          "votes": 988061,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 137991
+        },
+        {
+          "requested": "Black Panther: Wakanda Forever",
+          "matchedTitle": "Black Panther",
+          "year": 2018,
+          "votes": 930407,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 206985
+        },
+        {
+          "requested": "Ant-Man and the Wasp: Quantumania",
+          "matchedTitle": "Ant-Man and the Wasp",
+          "year": 2018,
+          "votes": 509569,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 294273
+        },
+        {
+          "requested": "Guardians of the Galaxy Vol. 3",
+          "matchedTitle": "Guardians of the Galaxy Vol. 3",
+          "year": 2023,
+          "votes": 491316,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 311565
+        },
+        {
+          "requested": "The Marvels",
+          "matchedTitle": "The Marvels",
+          "year": 2023,
+          "votes": 172687,
+          "rating": 5.4,
+          "hasPoster": true,
+          "id": 152207
+        },
+        {
+          "requested": "Deadpool & Wolverine",
+          "matchedTitle": "Deadpool & Wolverine",
+          "year": 2024,
+          "votes": 598927,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 306885
+        },
+        {
+          "requested": "Captain America: Brave New World",
+          "matchedTitle": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "votes": 993951,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 208153
+        },
+        {
+          "requested": "Thunderbolts*",
+          "matchedTitle": "Thunderbolts*",
+          "year": 2025,
+          "votes": 309854,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 217376
+        },
+        {
+          "requested": "The Fantastic Four: First Steps",
+          "matchedTitle": "The Fantastic Four: First Steps",
+          "year": 2025,
+          "votes": 296041,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 152208
+        },
+        {
+          "requested": "Avengers: Doomsday",
+          "matchedTitle": "The Avengers",
+          "year": 2012,
+          "votes": 1588684,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 140638
+        },
+        {
+          "requested": "X-Men",
+          "matchedTitle": "X-Men: Days of Future Past",
+          "year": 2014,
+          "votes": 800240,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 209486
+        },
+        {
+          "requested": "X-Men: The Last Stand",
+          "matchedTitle": "X-Men: Days of Future Past",
+          "year": 2014,
+          "votes": 800240,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 209486
+        },
+        {
+          "requested": "X-Men Origins: Wolverine",
+          "matchedTitle": "X-Men Origins: Wolverine",
+          "year": 2009,
+          "votes": 577845,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 130124
+        },
+        {
+          "requested": "X-Men: First Class",
+          "matchedTitle": "X-Men: Days of Future Past",
+          "year": 2014,
+          "votes": 800240,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 209486
+        },
+        {
+          "requested": "The Wolverine",
+          "matchedTitle": "The Wolverine",
+          "year": 2013,
+          "votes": 532337,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 183335
+        },
+        {
+          "requested": "X-Men: Days of Future Past",
+          "matchedTitle": "X-Men: Days of Future Past",
+          "year": 2014,
+          "votes": 800240,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 209486
+        },
+        {
+          "requested": "Deadpool",
+          "matchedTitle": "Deadpool",
+          "year": 2016,
+          "votes": 1276203,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 183405
+        },
+        {
+          "requested": "X-Men: Apocalypse",
+          "matchedTitle": "X-Men: Days of Future Past",
+          "year": 2014,
+          "votes": 800240,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 209486
+        },
+        {
+          "requested": "Logan",
+          "matchedTitle": "Logan",
+          "year": 2017,
+          "votes": 944433,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 261209
+        },
+        {
+          "requested": "Deadpool 2",
+          "matchedTitle": "Deadpool 2",
+          "year": 2018,
+          "votes": 761156,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 297997
+        },
+        {
+          "requested": "Dark Phoenix",
+          "matchedTitle": "X-Men: Dark Phoenix",
+          "year": 2019,
+          "votes": 235110,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 309841
+        },
+        {
+          "requested": "The New Mutants",
+          "matchedTitle": "The New Mutants",
+          "year": 2020,
+          "votes": 104558,
+          "rating": 5.3,
+          "hasPoster": true,
+          "id": 290131
+        },
+        {
+          "requested": "Spider-Man",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Spider-Man 2",
+          "matchedTitle": "Spider-Man 2",
+          "year": 2004,
+          "votes": 812180,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 108431
+        },
+        {
+          "requested": "Spider-Man 3",
+          "matchedTitle": "Spider-Man 3",
+          "year": 2007,
+          "votes": 722948,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 123219
+        },
+        {
+          "requested": "The Amazing Spider-Man",
+          "matchedTitle": "The Amazing Spider-Man",
+          "year": 2012,
+          "votes": 791432,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 143970
+        },
+        {
+          "requested": "The Amazing Spider-Man 2",
+          "matchedTitle": "The Amazing Spider-Man 2",
+          "year": 2014,
+          "votes": 611582,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 209285
+        },
+        {
+          "requested": "Venom",
+          "matchedTitle": "Venom",
+          "year": 2018,
+          "votes": 619613,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 169818
+        },
+        {
+          "requested": "Venom: Let There Be Carnage",
+          "matchedTitle": "Venom",
+          "year": 2018,
+          "votes": 619613,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 169818
+        },
+        {
+          "requested": "Morbius",
+          "matchedTitle": "Morbius",
+          "year": 2022,
+          "votes": 175415,
+          "rating": 5.1,
+          "hasPoster": true,
+          "id": 294423
+        },
+        {
+          "requested": "Madame Web",
+          "matchedTitle": "Madame Web",
+          "year": 2024,
+          "votes": 119274,
+          "rating": 4.1,
+          "hasPoster": true,
+          "id": 155875
+        },
+        {
+          "requested": "Venom: The Last Dance",
+          "matchedTitle": "Venom",
+          "year": 2018,
+          "votes": 619613,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 169818
+        },
+        {
+          "requested": "Kraven the Hunter",
+          "matchedTitle": "Kraven the Hunter",
+          "year": 2024,
+          "votes": 89191,
+          "rating": 5.5,
+          "hasPoster": true,
+          "id": 327076
+        },
+        {
+          "requested": "Spider-Man: Into the Spider-Verse",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Spider-Man: Across the Spider-Verse",
+          "matchedTitle": "Spider-Man: No Way Home",
+          "year": 2021,
+          "votes": 1083018,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 154004
+        },
+        {
+          "requested": "Blade",
+          "matchedTitle": "Blade Runner",
+          "year": 1982,
+          "votes": 894512,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 42440
+        },
+        {
+          "requested": "Blade II",
+          "matchedTitle": "Blade II",
+          "year": 2002,
+          "votes": 256416,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 82746
+        },
+        {
+          "requested": "Blade: Trinity",
+          "matchedTitle": "Blade Runner",
+          "year": 1982,
+          "votes": 894512,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 42440
+        },
+        {
+          "requested": "Ghost Rider",
+          "matchedTitle": "Ghost Rider",
+          "year": 2007,
+          "votes": 275099,
+          "rating": 5.3,
+          "hasPoster": true,
+          "id": 96812
+        },
+        {
+          "requested": "Ghost Rider: Spirit of Vengeance",
+          "matchedTitle": "Ghost Rider",
+          "year": 2007,
+          "votes": 275099,
+          "rating": 5.3,
+          "hasPoster": true,
+          "id": 96812
+        },
+        {
+          "requested": "Daredevil",
+          "matchedTitle": "Daredevil",
+          "year": 2015,
+          "votes": 544494,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 261374
+        },
+        {
+          "requested": "Jessica Jones",
+          "matchedTitle": "Jessica Jones",
+          "year": 2015,
+          "votes": 242813,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 229327
+        },
+        {
+          "requested": "Luke Cage",
+          "matchedTitle": "Luke Cage",
+          "year": 2016,
+          "votes": 150905,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 261375
+        },
+        {
+          "requested": "Iron Fist",
+          "matchedTitle": "Iron Fist",
+          "year": 2017,
+          "votes": 151803,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 261373
+        },
+        {
+          "requested": "The Defenders",
+          "matchedTitle": "The Defenders",
+          "year": 2017,
+          "votes": 130185,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 284655
+        },
+        {
+          "requested": "The Punisher",
+          "matchedTitle": "The Punisher",
+          "year": 2017,
+          "votes": 316420,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 300366
+        }
+      ],
+      "missing": [
+        "Guardians of the Galaxy Vol. 2",
+        "X2"
+      ]
+    },
+    "DC (DCU, DCEU, Batman, Joker, Animated, TV)": {
+      "found": [
+        {
+          "requested": "Batman Begins",
+          "matchedTitle": "Batman Begins",
+          "year": 2005,
+          "votes": 1750308,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 116999
+        },
+        {
+          "requested": "The Dark Knight",
+          "matchedTitle": "The Dark Knight",
+          "year": 2008,
+          "votes": 3241595,
+          "rating": 9.1,
+          "hasPoster": true,
+          "id": 131468
+        },
+        {
+          "requested": "The Dark Knight Rises",
+          "matchedTitle": "The Dark Knight Rises",
+          "year": 2012,
+          "votes": 2034108,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 176695
+        },
+        {
+          "requested": "Man of Steel",
+          "matchedTitle": "Man of Steel",
+          "year": 2013,
+          "votes": 879097,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 136771
+        },
+        {
+          "requested": "Batman v Superman: Dawn of Justice",
+          "matchedTitle": "Batman v Superman: Dawn of Justice",
+          "year": 2016,
+          "votes": 801018,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 248913
+        },
+        {
+          "requested": "Suicide Squad",
+          "matchedTitle": "Suicide Squad",
+          "year": 2016,
+          "votes": 768707,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 179886
+        },
+        {
+          "requested": "Wonder Woman",
+          "matchedTitle": "Wonder Woman",
+          "year": 2017,
+          "votes": 743393,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 129078
+        },
+        {
+          "requested": "Zack Snyder's Justice League",
+          "matchedTitle": "Zack Snyder's Justice League",
+          "year": 2021,
+          "votes": 481887,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 167164
+        },
+        {
+          "requested": "Aquaman",
+          "matchedTitle": "Aquaman",
+          "year": 2018,
+          "votes": 561326,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 187067
+        },
+        {
+          "requested": "Shazam!",
+          "matchedTitle": "Shazam!",
+          "year": 2019,
+          "votes": 419736,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 128570
+        },
+        {
+          "requested": "Birds of Prey",
+          "matchedTitle": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
+          "year": 2020,
+          "votes": 286540,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 319157
+        },
+        {
+          "requested": "Wonder Woman 1984",
+          "matchedTitle": "Wonder Woman 1984",
+          "year": 2020,
+          "votes": 315992,
+          "rating": 5.3,
+          "hasPoster": true,
+          "id": 314303
+        },
+        {
+          "requested": "The Suicide Squad",
+          "matchedTitle": "The Suicide Squad",
+          "year": 2021,
+          "votes": 467930,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 307606
+        },
+        {
+          "requested": "Black Adam",
+          "matchedTitle": "Black Adam",
+          "year": 2022,
+          "votes": 309944,
+          "rating": 6.1,
+          "hasPoster": true,
+          "id": 308743
+        },
+        {
+          "requested": "Shazam! Fury of the Gods",
+          "matchedTitle": "Shazam! Fury of the Gods",
+          "year": 2023,
+          "votes": 149039,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 147118
+        },
+        {
+          "requested": "The Flash",
+          "matchedTitle": "The Flash",
+          "year": 2014,
+          "votes": 389546,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 252861
+        },
+        {
+          "requested": "Blue Beetle",
+          "matchedTitle": "Blue Beetle",
+          "year": 2023,
+          "votes": 120646,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 331100
+        },
+        {
+          "requested": "Aquaman and the Lost Kingdom",
+          "matchedTitle": "Aquaman and the Lost Kingdom",
+          "year": 2023,
+          "votes": 122637,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 332674
+        },
+        {
+          "requested": "Joker",
+          "matchedTitle": "Joker",
+          "year": 2019,
+          "votes": 1732226,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 315656
+        },
+        {
+          "requested": "The Batman",
+          "matchedTitle": "The Batman",
+          "year": 2022,
+          "votes": 954121,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 209485
+        },
+        {
+          "requested": "Joker: Folie à Deux",
+          "matchedTitle": "Joker",
+          "year": 2019,
+          "votes": 1732226,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 315656
+        },
+        {
+          "requested": "The Penguin",
+          "matchedTitle": "The Penguin",
+          "year": 2024,
+          "votes": 252373,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 192724
+        },
+        {
+          "requested": "Batman",
+          "matchedTitle": "Batman Begins",
+          "year": 2005,
+          "votes": 1750308,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 116999
+        },
+        {
+          "requested": "Batman Returns",
+          "matchedTitle": "Batman Returns",
+          "year": 1992,
+          "votes": 354036,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 55344
+        },
+        {
+          "requested": "Batman Forever",
+          "matchedTitle": "Batman Forever",
+          "year": 1995,
+          "votes": 285769,
+          "rating": 5.5,
+          "hasPoster": true,
+          "id": 60508
+        },
+        {
+          "requested": "Batman & Robin",
+          "matchedTitle": "Batman & Robin",
+          "year": 1997,
+          "votes": 285748,
+          "rating": 3.8,
+          "hasPoster": true,
+          "id": 64124
+        },
+        {
+          "requested": "Superman",
+          "matchedTitle": "Batman v Superman: Dawn of Justice",
+          "year": 2016,
+          "votes": 801018,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 248913
+        },
+        {
+          "requested": "Superman Returns",
+          "matchedTitle": "Superman Returns",
+          "year": 2006,
+          "votes": 305403,
+          "rating": 6.1,
+          "hasPoster": true,
+          "id": 113101
+        },
+        {
+          "requested": "Justice League: The Flashpoint Paradox",
+          "matchedTitle": "Justice League",
+          "year": 2017,
+          "votes": 511266,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 144811
+        },
+        {
+          "requested": "Justice League: War",
+          "matchedTitle": "Justice League",
+          "year": 2017,
+          "votes": 511266,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 144811
+        },
+        {
+          "requested": "Justice League Dark",
+          "matchedTitle": "Justice League Dark",
+          "year": 2017,
+          "votes": 32395,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 233539
+        },
+        {
+          "requested": "Justice League Dark: Apokolips War",
+          "matchedTitle": "Justice League Dark",
+          "year": 2017,
+          "votes": 32395,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 233539
+        },
+        {
+          "requested": "Batman: The Long Halloween",
+          "matchedTitle": "Batman Begins",
+          "year": 2005,
+          "votes": 1750308,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 116999
+        },
+        {
+          "requested": "Arrow",
+          "matchedTitle": "Arrow",
+          "year": 2012,
+          "votes": 463918,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 222459
+        },
+        {
+          "requested": "The Flash",
+          "matchedTitle": "The Flash",
+          "year": 2014,
+          "votes": 389546,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 252861
+        },
+        {
+          "requested": "Supergirl",
+          "matchedTitle": "Supergirl",
+          "year": 2015,
+          "votes": 136416,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 281382
+        }
+      ],
+      "missing": []
+    },
+    "Star Wars Galactic Canon": {
+      "found": [
+        {
+          "requested": "Star Wars: Episode IV - A New Hope",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode V - The Empire Strikes Back",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode VI - Return of the Jedi",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode I - The Phantom Menace",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode II - Attack of the Clones",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode III - Revenge of the Sith",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode VII - The Force Awakens",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode VIII - The Last Jedi",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Star Wars: Episode IX - The Rise of Skywalker",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Rogue One: A Star Wars Story",
+          "matchedTitle": "Rogue One: A Star Wars Story",
+          "year": 2016,
+          "votes": 767940,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 274330
+        },
+        {
+          "requested": "Solo: A Star Wars Story",
+          "matchedTitle": "Solo: A Star Wars Story",
+          "year": 2018,
+          "votes": 416081,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 275385
+        },
+        {
+          "requested": "The Mandalorian",
+          "matchedTitle": "The Mandalorian",
+          "year": 2019,
+          "votes": 668377,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 322311
+        },
+        {
+          "requested": "The Book of Boba Fett",
+          "matchedTitle": "The Book of Boba Fett",
+          "year": 2021,
+          "votes": 214078,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 178442
+        },
+        {
+          "requested": "Andor",
+          "matchedTitle": "Andor",
+          "year": 2022,
+          "votes": 288930,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 330395
+        },
+        {
+          "requested": "Obi-Wan Kenobi",
+          "matchedTitle": "Obi-Wan Kenobi",
+          "year": 2022,
+          "votes": 268065,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 324864
+        },
+        {
+          "requested": "Ahsoka",
+          "matchedTitle": "Ahsoka",
+          "year": 2023,
+          "votes": 145725,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 178012
+        },
+        {
+          "requested": "The Acolyte",
+          "matchedTitle": "The Acolyte",
+          "year": 2024,
+          "votes": 146628,
+          "rating": 4.3,
+          "hasPoster": true,
+          "id": 166299
+        },
+        {
+          "requested": "Star Wars: The Clone Wars",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        }
+      ],
+      "missing": [
+        "Star Wars Rebels"
+      ]
+    },
+    "Wizarding World (Harry Potter & Fantastic Beasts)": {
+      "found": [
+        {
+          "requested": "Harry Potter and the Sorcerer's Stone",
+          "matchedTitle": "Harry Potter and the Sorcerer's Stone",
+          "year": 2001,
+          "votes": 971144,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 93478
+        },
+        {
+          "requested": "Harry Potter and the Chamber of Secrets",
+          "matchedTitle": "Harry Potter and the Chamber of Secrets",
+          "year": 2002,
+          "votes": 780945,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 104522
+        },
+        {
+          "requested": "Harry Potter and the Prisoner of Azkaban",
+          "matchedTitle": "Harry Potter and the Prisoner of Azkaban",
+          "year": 2004,
+          "votes": 782064,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 106185
+        },
+        {
+          "requested": "Harry Potter and the Goblet of Fire",
+          "matchedTitle": "Harry Potter and the Goblet of Fire",
+          "year": 2005,
+          "votes": 767873,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 110625
+        },
+        {
+          "requested": "Harry Potter and the Order of the Phoenix",
+          "matchedTitle": "Harry Potter and the Order of the Phoenix",
+          "year": 2007,
+          "votes": 714228,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 117189
+        },
+        {
+          "requested": "Harry Potter and the Half-Blood Prince",
+          "matchedTitle": "Harry Potter and the Half-Blood Prince",
+          "year": 2009,
+          "votes": 673398,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 123849
+        },
+        {
+          "requested": "Harry Potter and the Deathly Hallows: Part 1",
+          "matchedTitle": "Harry Potter and the Deathly Hallows: Part 2",
+          "year": 2011,
+          "votes": 1066792,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 164521
+        },
+        {
+          "requested": "Harry Potter and the Deathly Hallows: Part 2",
+          "matchedTitle": "Harry Potter and the Deathly Hallows: Part 2",
+          "year": 2011,
+          "votes": 1066792,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 164521
+        },
+        {
+          "requested": "Fantastic Beasts and Where to Find Them",
+          "matchedTitle": "Fantastic Beasts and Where to Find Them",
+          "year": 2016,
+          "votes": 546996,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 255460
+        },
+        {
+          "requested": "Fantastic Beasts: The Crimes of Grindelwald",
+          "matchedTitle": "Fantastic Beasts and Where to Find Them",
+          "year": 2016,
+          "votes": 546996,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 255460
+        },
+        {
+          "requested": "Fantastic Beasts: The Secrets of Dumbledore",
+          "matchedTitle": "Fantastic Beasts and Where to Find Them",
+          "year": 2016,
+          "votes": 546996,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 255460
+        }
+      ],
+      "missing": []
+    },
+    "Middle-Earth (Lord of the Rings & Hobbit)": {
+      "found": [
+        {
+          "requested": "The Lord of the Rings: The Fellowship of the Ring",
+          "matchedTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "votes": 2246360,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 65490
+        },
+        {
+          "requested": "The Lord of the Rings: The Two Towers",
+          "matchedTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "votes": 2246360,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 65490
+        },
+        {
+          "requested": "The Lord of the Rings: The Return of the King",
+          "matchedTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "votes": 2246360,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 65490
+        },
+        {
+          "requested": "The Hobbit: An Unexpected Journey",
+          "matchedTitle": "The Hobbit: An Unexpected Journey",
+          "year": 2012,
+          "votes": 939583,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 142689
+        },
+        {
+          "requested": "The Hobbit: The Desolation of Smaug",
+          "matchedTitle": "The Hobbit: An Unexpected Journey",
+          "year": 2012,
+          "votes": 939583,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 142689
+        },
+        {
+          "requested": "The Hobbit: The Battle of the Five Armies",
+          "matchedTitle": "The Hobbit: An Unexpected Journey",
+          "year": 2012,
+          "votes": 939583,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 142689
+        },
+        {
+          "requested": "The Lord of the Rings: The Rings of Power",
+          "matchedTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "votes": 2246360,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 65490
+        },
+        {
+          "requested": "The Lord of the Rings: The War of the Rohirrim",
+          "matchedTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": 2001,
+          "votes": 2246360,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 65490
+        }
+      ],
+      "missing": []
+    },
+    "Jurassic Park & Jurassic World": {
+      "found": [
+        {
+          "requested": "Jurassic Park",
+          "matchedTitle": "Jurassic Park",
+          "year": 1993,
+          "votes": 1203587,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 57506
+        },
+        {
+          "requested": "The Lost World: Jurassic Park",
+          "matchedTitle": "The Lost World: Jurassic Park",
+          "year": 1997,
+          "votes": 484780,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 64716
+        },
+        {
+          "requested": "Jurassic Park III",
+          "matchedTitle": "Jurassic Park III",
+          "year": 2001,
+          "votes": 377398,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 76518
+        },
+        {
+          "requested": "Jurassic World",
+          "matchedTitle": "Jurassic World",
+          "year": 2015,
+          "votes": 740006,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 116528
+        },
+        {
+          "requested": "Jurassic World: Fallen Kingdom",
+          "matchedTitle": "Jurassic World",
+          "year": 2015,
+          "votes": 740006,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 116528
+        },
+        {
+          "requested": "Jurassic World Dominion",
+          "matchedTitle": "Jurassic World Dominion - The Prologue",
+          "year": 2021,
+          "votes": 497,
+          "rating": 6.9,
+          "hasPoster": false,
+          "id": 249489
+        },
+        {
+          "requested": "Jurassic World: Camp Cretaceous",
+          "matchedTitle": "Jurassic World",
+          "year": 2015,
+          "votes": 740006,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 116528
+        }
+      ],
+      "missing": []
+    },
+    "Transformers Saga": {
+      "found": [
+        {
+          "requested": "Transformers",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Transformers: Revenge of the Fallen",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Transformers: Dark of the Moon",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Transformers: Age of Extinction",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Transformers: The Last Knight",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Bumblebee",
+          "matchedTitle": "Bumblebee",
+          "year": 2018,
+          "votes": 212930,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 290373
+        },
+        {
+          "requested": "Transformers: Rise of the Beasts",
+          "matchedTitle": "Transformers",
+          "year": 2007,
+          "votes": 728886,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 123922
+        },
+        {
+          "requested": "Transformers One",
+          "matchedTitle": "Transformers One",
+          "year": 2024,
+          "votes": 70131,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 327526
+        },
+        {
+          "requested": "The Transformers: The Movie",
+          "matchedTitle": "The Transformers: The Movie",
+          "year": 1986,
+          "votes": 45885,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 47870
+        }
+      ],
+      "missing": []
+    },
+    "Fast & Furious Saga": {
+      "found": [
+        {
+          "requested": "The Fast and the Furious",
+          "matchedTitle": "The Fast and the Furious",
+          "year": 2001,
+          "votes": 468632,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 91803
+        },
+        {
+          "requested": "2 Fast 2 Furious",
+          "matchedTitle": "2 Fast 2 Furious",
+          "year": 2003,
+          "votes": 331622,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 109390
+        },
+        {
+          "requested": "The Fast and the Furious: Tokyo Drift",
+          "matchedTitle": "The Fast and the Furious",
+          "year": 2001,
+          "votes": 468632,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 91803
+        },
+        {
+          "requested": "Fast & Furious",
+          "matchedTitle": "Fast & Furious 6",
+          "year": 2013,
+          "votes": 445770,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 210263
+        },
+        {
+          "requested": "Fast Five",
+          "matchedTitle": "Fast Five",
+          "year": 2011,
+          "votes": 439817,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 196380
+        },
+        {
+          "requested": "Fast & Furious 6",
+          "matchedTitle": "Fast & Furious 6",
+          "year": 2013,
+          "votes": 445770,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 210263
+        },
+        {
+          "requested": "Furious 7",
+          "matchedTitle": "Furious 7",
+          "year": 2015,
+          "votes": 446154,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 243410
+        },
+        {
+          "requested": "The Fate of the Furious",
+          "matchedTitle": "The Fate of the Furious",
+          "year": 2017,
+          "votes": 279699,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 289585
+        },
+        {
+          "requested": "Fast & Furious Presents: Hobbs & Shaw",
+          "matchedTitle": "Fast & Furious Presents: Hobbs & Shaw",
+          "year": 2019,
+          "votes": 262331,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 311712
+        },
+        {
+          "requested": "Fast X",
+          "matchedTitle": "Fast X",
+          "year": 2023,
+          "votes": 151087,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 297694
+        }
+      ],
+      "missing": [
+        "F9: The Fast Saga"
+      ]
+    },
+    "James Bond / 007": {
+      "found": [
+        {
+          "requested": "Dr. No",
+          "matchedTitle": "Dr. No",
+          "year": 1962,
+          "votes": 198718,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 24146
+        },
+        {
+          "requested": "Goldfinger",
+          "matchedTitle": "Goldfinger",
+          "year": 1964,
+          "votes": 220605,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 25631
+        },
+        {
+          "requested": "The Spy Who Loved Me",
+          "matchedTitle": "The Spy Who Loved Me",
+          "year": 1977,
+          "votes": 127010,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 37904
+        },
+        {
+          "requested": "GoldenEye",
+          "matchedTitle": "GoldenEye",
+          "year": 1995,
+          "votes": 289617,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 60954
+        },
+        {
+          "requested": "Tomorrow Never Dies",
+          "matchedTitle": "Tomorrow Never Dies",
+          "year": 1997,
+          "votes": 218285,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 65231
+        },
+        {
+          "requested": "Casino Royale",
+          "matchedTitle": "Casino Royale",
+          "year": 2006,
+          "votes": 756863,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 118374
+        },
+        {
+          "requested": "Quantum of Solace",
+          "matchedTitle": "Quantum of Solace",
+          "year": 2008,
+          "votes": 504485,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 139766
+        },
+        {
+          "requested": "Skyfall",
+          "matchedTitle": "Skyfall",
+          "year": 2012,
+          "votes": 782335,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 152930
+        },
+        {
+          "requested": "Spectre",
+          "matchedTitle": "Spectre",
+          "year": 2015,
+          "votes": 503100,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 230432
+        },
+        {
+          "requested": "No Time to Die",
+          "matchedTitle": "No Time to Die",
+          "year": 2021,
+          "votes": 496273,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 230568
+        }
+      ],
+      "missing": []
+    },
+    "Mission: Impossible": {
+      "found": [
+        {
+          "requested": "Mission: Impossible",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible II",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible III",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible - Ghost Protocol",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible - Rogue Nation",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible - Fallout",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        },
+        {
+          "requested": "Mission: Impossible - Dead Reckoning Part One",
+          "matchedTitle": "Mission: Impossible - Ghost Protocol",
+          "year": 2011,
+          "votes": 570800,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 166514
+        }
+      ],
+      "missing": []
+    },
+    "John Wick Universe": {
+      "found": [
+        {
+          "requested": "John Wick",
+          "matchedTitle": "John Wick",
+          "year": 2014,
+          "votes": 843764,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 246482
+        },
+        {
+          "requested": "John Wick: Chapter 2",
+          "matchedTitle": "John Wick",
+          "year": 2014,
+          "votes": 843764,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 246482
+        },
+        {
+          "requested": "John Wick: Chapter 3 - Parabellum",
+          "matchedTitle": "John Wick",
+          "year": 2014,
+          "votes": 843764,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 246482
+        },
+        {
+          "requested": "John Wick: Chapter 4",
+          "matchedTitle": "John Wick",
+          "year": 2014,
+          "votes": 843764,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 246482
+        },
+        {
+          "requested": "The Continental",
+          "matchedTitle": "The Continental",
+          "year": 2023,
+          "votes": 47627,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 309165
+        }
+      ],
+      "missing": []
+    },
+    "Sci-Fi Hub (Alien, Predator, Matrix, Terminator, Avatar, Planet of the Apes, MonsterVerse, Dune)": {
+      "found": [
+        {
+          "requested": "Alien",
+          "matchedTitle": "Alien",
+          "year": 1979,
+          "votes": 1080587,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 39177
+        },
+        {
+          "requested": "Aliens",
+          "matchedTitle": "Aliens",
+          "year": 1986,
+          "votes": 850840,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 46916
+        },
+        {
+          "requested": "Alien 3",
+          "matchedTitle": "Alien 3",
+          "year": 2015,
+          "votes": 486,
+          "rating": 6.1,
+          "hasPoster": false,
+          "id": 251628
+        },
+        {
+          "requested": "Prometheus",
+          "matchedTitle": "Prometheus",
+          "year": 2012,
+          "votes": 708951,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 184717
+        },
+        {
+          "requested": "Alien: Covenant",
+          "matchedTitle": "Alien",
+          "year": 1979,
+          "votes": 1080587,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 39177
+        },
+        {
+          "requested": "Alien: Romulus",
+          "matchedTitle": "Alien",
+          "year": 1979,
+          "votes": 1080587,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 39177
+        },
+        {
+          "requested": "Predator",
+          "matchedTitle": "Predator",
+          "year": 1987,
+          "votes": 508082,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 48988
+        },
+        {
+          "requested": "Predator 2",
+          "matchedTitle": "Predator 2",
+          "year": 1990,
+          "votes": 204963,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 53280
+        },
+        {
+          "requested": "Predators",
+          "matchedTitle": "Predators",
+          "year": 2010,
+          "votes": 265324,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 182932
+        },
+        {
+          "requested": "The Predator",
+          "matchedTitle": "The Predator",
+          "year": 2018,
+          "votes": 165228,
+          "rating": 5.3,
+          "hasPoster": true,
+          "id": 276772
+        },
+        {
+          "requested": "Prey",
+          "matchedTitle": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
+          "year": 2020,
+          "votes": 286540,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 319157
+        },
+        {
+          "requested": "Alien vs. Predator",
+          "matchedTitle": "Alien vs. Predator",
+          "year": 2004,
+          "votes": 235833,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 116630
+        },
+        {
+          "requested": "The Terminator",
+          "matchedTitle": "The Terminator",
+          "year": 1984,
+          "votes": 1022042,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 45373
+        },
+        {
+          "requested": "Terminator 2: Judgment Day",
+          "matchedTitle": "Terminator 2: Judgment Day",
+          "year": 1991,
+          "votes": 1307243,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 54943
+        },
+        {
+          "requested": "Terminator 3: Rise of the Machines",
+          "matchedTitle": "Terminator 3: Rise of the Machines",
+          "year": 2003,
+          "votes": 441729,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 81198
+        },
+        {
+          "requested": "Terminator Salvation",
+          "matchedTitle": "Terminator Salvation",
+          "year": 2009,
+          "votes": 396167,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 127193
+        },
+        {
+          "requested": "Terminator Genisys",
+          "matchedTitle": "Terminator Genisys",
+          "year": 2015,
+          "votes": 310770,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 176165
+        },
+        {
+          "requested": "Terminator: Dark Fate",
+          "matchedTitle": "Terminator 2: Judgment Day",
+          "year": 1991,
+          "votes": 1307243,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 54943
+        },
+        {
+          "requested": "The Matrix",
+          "matchedTitle": "The Matrix",
+          "year": 1999,
+          "votes": 2288035,
+          "rating": 8.7,
+          "hasPoster": true,
+          "id": 69065
+        },
+        {
+          "requested": "The Matrix Reloaded",
+          "matchedTitle": "The Matrix Reloaded",
+          "year": 2003,
+          "votes": 678451,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 92154
+        },
+        {
+          "requested": "The Matrix Revolutions",
+          "matchedTitle": "The Matrix Revolutions",
+          "year": 2003,
+          "votes": 581605,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 93676
+        },
+        {
+          "requested": "The Animatrix",
+          "matchedTitle": "The Animatrix",
+          "year": 2003,
+          "votes": 91899,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 110390
+        },
+        {
+          "requested": "The Matrix Resurrections",
+          "matchedTitle": "The Matrix Resurrections",
+          "year": 2021,
+          "votes": 307830,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 153698
+        },
+        {
+          "requested": "Avatar",
+          "matchedTitle": "Avatar",
+          "year": 2009,
+          "votes": 1519252,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 136068
+        },
+        {
+          "requested": "Avatar: The Way of Water",
+          "matchedTitle": "Avatar",
+          "year": 2009,
+          "votes": 1519252,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 136068
+        },
+        {
+          "requested": "Rise of the Planet of the Apes",
+          "matchedTitle": "Rise of the Planet of the Apes",
+          "year": 2011,
+          "votes": 611326,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 173964
+        },
+        {
+          "requested": "Dawn of the Planet of the Apes",
+          "matchedTitle": "Dawn of the Planet of the Apes",
+          "year": 2014,
+          "votes": 516303,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 217582
+        },
+        {
+          "requested": "War for the Planet of the Apes",
+          "matchedTitle": "War for the Planet of the Apes",
+          "year": 2017,
+          "votes": 331185,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 265064
+        },
+        {
+          "requested": "Kingdom of the Planet of the Apes",
+          "matchedTitle": "Kingdom of the Planet of the Apes",
+          "year": 2024,
+          "votes": 173255,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 158946
+        },
+        {
+          "requested": "Godzilla",
+          "matchedTitle": "Godzilla",
+          "year": 2014,
+          "votes": 469400,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 139831
+        },
+        {
+          "requested": "Kong: Skull Island",
+          "matchedTitle": "King Kong",
+          "year": 2005,
+          "votes": 475950,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 114867
+        },
+        {
+          "requested": "Godzilla: King of the Monsters",
+          "matchedTitle": "Godzilla",
+          "year": 2014,
+          "votes": 469400,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 139831
+        },
+        {
+          "requested": "Godzilla vs. Kong",
+          "matchedTitle": "Godzilla vs. Kong",
+          "year": 2021,
+          "votes": 272075,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 293600
+        },
+        {
+          "requested": "Godzilla x Kong: The New Empire",
+          "matchedTitle": "Godzilla X Kong: The New Empire",
+          "year": 2024,
+          "votes": 139828,
+          "rating": 6,
+          "hasPoster": true,
+          "id": 185247
+        },
+        {
+          "requested": "Monarch: Legacy of Monsters",
+          "matchedTitle": "Monarch: Legacy of Monsters",
+          "year": 2023,
+          "votes": 64126,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 202637
+        },
+        {
+          "requested": "Dune",
+          "matchedTitle": "Dune",
+          "year": 2021,
+          "votes": 1096776,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 160826
+        },
+        {
+          "requested": "Dune: Part Two",
+          "matchedTitle": "Dune",
+          "year": 2021,
+          "votes": 1096776,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 160826
+        },
+        {
+          "requested": "Dune: Prophecy",
+          "matchedTitle": "Dune",
+          "year": 2021,
+          "votes": 1096776,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 160826
+        }
+      ],
+      "missing": [
+        "Alien Resurrection"
+      ]
+    },
+    "Fantasy Hub (Game of Thrones, Witcher, Narnia, Percy Jackson)": {
+      "found": [
+        {
+          "requested": "Game of Thrones",
+          "matchedTitle": "Game of Thrones",
+          "year": 2011,
+          "votes": 2676089,
+          "rating": 9.2,
+          "hasPoster": true,
+          "id": 143872
+        },
+        {
+          "requested": "House of the Dragon",
+          "matchedTitle": "House of the Dragon",
+          "year": 2022,
+          "votes": 575582,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 157142
+        },
+        {
+          "requested": "The Witcher",
+          "matchedTitle": "The Witcher",
+          "year": 2019,
+          "votes": 626665,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 295283
+        },
+        {
+          "requested": "The Witcher: Nightmare of the Wolf",
+          "matchedTitle": "The Witcher",
+          "year": 2019,
+          "votes": 626665,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 295283
+        },
+        {
+          "requested": "The Witcher: Blood Origin",
+          "matchedTitle": "The Witcher",
+          "year": 2019,
+          "votes": 626665,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 295283
+        },
+        {
+          "requested": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "matchedTitle": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "year": 2005,
+          "votes": 463816,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 115385
+        },
+        {
+          "requested": "The Chronicles of Narnia: Prince Caspian",
+          "matchedTitle": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "year": 2005,
+          "votes": 463816,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 115385
+        },
+        {
+          "requested": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
+          "matchedTitle": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "year": 2005,
+          "votes": 463816,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 115385
+        },
+        {
+          "requested": "Percy Jackson & the Olympians: The Lightning Thief",
+          "matchedTitle": "Percy Jackson & the Olympians: The Lightning Thief",
+          "year": 2010,
+          "votes": 218743,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 138822
+        },
+        {
+          "requested": "Percy Jackson: Sea of Monsters",
+          "matchedTitle": "Percy Jackson & the Olympians: The Lightning Thief",
+          "year": 2010,
+          "votes": 218743,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 138822
+        },
+        {
+          "requested": "Percy Jackson and the Olympians",
+          "matchedTitle": "Percy Jackson and the Olympians",
+          "year": 2023,
+          "votes": 54900,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 166808
+        }
+      ],
+      "missing": []
+    },
+    "Horror Hub (Conjuring, Scream, Saw, Halloween, Evil Dead, Walking Dead)": {
+      "found": [
+        {
+          "requested": "The Conjuring",
+          "matchedTitle": "The Conjuring",
+          "year": 2013,
+          "votes": 635857,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 185535
+        },
+        {
+          "requested": "The Conjuring 2",
+          "matchedTitle": "The Conjuring 2",
+          "year": 2016,
+          "votes": 351052,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 251425
+        },
+        {
+          "requested": "The Conjuring: The Devil Made Me Do It",
+          "matchedTitle": "The Conjuring",
+          "year": 2013,
+          "votes": 635857,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 185535
+        },
+        {
+          "requested": "Annabelle",
+          "matchedTitle": "Annabelle",
+          "year": 2014,
+          "votes": 200297,
+          "rating": 5.5,
+          "hasPoster": true,
+          "id": 261389
+        },
+        {
+          "requested": "Annabelle: Creation",
+          "matchedTitle": "Annabelle",
+          "year": 2014,
+          "votes": 200297,
+          "rating": 5.5,
+          "hasPoster": true,
+          "id": 261389
+        },
+        {
+          "requested": "Annabelle Comes Home",
+          "matchedTitle": "Annabelle Comes Home",
+          "year": 2019,
+          "votes": 105015,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 323971
+        },
+        {
+          "requested": "The Nun",
+          "matchedTitle": "The Nun",
+          "year": 2018,
+          "votes": 201081,
+          "rating": 5.4,
+          "hasPoster": true,
+          "id": 301839
+        },
+        {
+          "requested": "The Nun II",
+          "matchedTitle": "The Nun II",
+          "year": 2023,
+          "votes": 85159,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 147215
+        },
+        {
+          "requested": "Scream",
+          "matchedTitle": "Scream",
+          "year": 1996,
+          "votes": 456329,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 63481
+        },
+        {
+          "requested": "Scream 2",
+          "matchedTitle": "Scream 2",
+          "year": 1997,
+          "votes": 241690,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 65063
+        },
+        {
+          "requested": "Scream 3",
+          "matchedTitle": "Scream 3",
+          "year": 2000,
+          "votes": 189427,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 69312
+        },
+        {
+          "requested": "Scream 4",
+          "matchedTitle": "Scream 4",
+          "year": 2011,
+          "votes": 195098,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 169195
+        },
+        {
+          "requested": "Scream VI",
+          "matchedTitle": "Scream VI",
+          "year": 2023,
+          "votes": 156750,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 204739
+        },
+        {
+          "requested": "Saw",
+          "matchedTitle": "Hacksaw Ridge",
+          "year": 2016,
+          "votes": 700423,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 218593
+        },
+        {
+          "requested": "Saw II",
+          "matchedTitle": "Saw II",
+          "year": 2005,
+          "votes": 301047,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 126302
+        },
+        {
+          "requested": "Saw III",
+          "matchedTitle": "Saw III",
+          "year": 2006,
+          "votes": 231348,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 134686
+        },
+        {
+          "requested": "Jigsaw",
+          "matchedTitle": "Jigsaw",
+          "year": 2017,
+          "votes": 104856,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 262716
+        },
+        {
+          "requested": "Spiral",
+          "matchedTitle": "Spiral",
+          "year": 2021,
+          "votes": 79121,
+          "rating": 5.2,
+          "hasPoster": true,
+          "id": 148995
+        },
+        {
+          "requested": "Halloween",
+          "matchedTitle": "Halloween",
+          "year": 1978,
+          "votes": 345792,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 38480
+        },
+        {
+          "requested": "Halloween Kills",
+          "matchedTitle": "Halloween Kills",
+          "year": 2021,
+          "votes": 110358,
+          "rating": 5.5,
+          "hasPoster": true,
+          "id": 152128
+        },
+        {
+          "requested": "Halloween Ends",
+          "matchedTitle": "Halloween Ends",
+          "year": 2022,
+          "votes": 84952,
+          "rating": 5,
+          "hasPoster": true,
+          "id": 152129
+        },
+        {
+          "requested": "The Evil Dead",
+          "matchedTitle": "The Evil Dead",
+          "year": 1981,
+          "votes": 258519,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 42604
+        },
+        {
+          "requested": "Evil Dead II",
+          "matchedTitle": "Evil Dead II",
+          "year": 1987,
+          "votes": 201527,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 48459
+        },
+        {
+          "requested": "Army of Darkness",
+          "matchedTitle": "Army of Darkness",
+          "year": 1992,
+          "votes": 213766,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 56882
+        },
+        {
+          "requested": "Evil Dead Rise",
+          "matchedTitle": "Evil Dead Rise",
+          "year": 2023,
+          "votes": 179768,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 175598
+        },
+        {
+          "requested": "The Walking Dead",
+          "matchedTitle": "The Walking Dead",
+          "year": 2010,
+          "votes": 1219506,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 190515
+        },
+        {
+          "requested": "Fear the Walking Dead",
+          "matchedTitle": "Fear the Walking Dead",
+          "year": 2015,
+          "votes": 155648,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 274174
+        },
+        {
+          "requested": "The Walking Dead: Dead City",
+          "matchedTitle": "The Walking Dead",
+          "year": 2010,
+          "votes": 1219506,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 190515
+        },
+        {
+          "requested": "The Walking Dead: Daryl Dixon",
+          "matchedTitle": "The Walking Dead",
+          "year": 2010,
+          "votes": 1219506,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 190515
+        },
+        {
+          "requested": "The Walking Dead: The Ones Who Live",
+          "matchedTitle": "The Walking Dead",
+          "year": 2010,
+          "votes": 1219506,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 190515
+        },
+        {
+          "requested": "Child's Play",
+          "matchedTitle": "Child's Play",
+          "year": 1988,
+          "votes": 135139,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 49671
+        },
+        {
+          "requested": "Chucky",
+          "matchedTitle": "Bride of Chucky",
+          "year": 1998,
+          "votes": 71828,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 71937
+        },
+        {
+          "requested": "Final Destination",
+          "matchedTitle": "Final Destination",
+          "year": 2000,
+          "votes": 342601,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 84446
+        },
+        {
+          "requested": "Final Destination 2",
+          "matchedTitle": "Final Destination 2",
+          "year": 2003,
+          "votes": 222923,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 107185
+        },
+        {
+          "requested": "Final Destination 3",
+          "matchedTitle": "Final Destination 3",
+          "year": 2006,
+          "votes": 189016,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 123427
+        },
+        {
+          "requested": "Final Destination 5",
+          "matchedTitle": "Final Destination 5",
+          "year": 2011,
+          "votes": 154762,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 197714
+        }
+      ],
+      "missing": [
+        "Saw X"
+      ]
+    },
+    "Video Game Adaptations": {
+      "found": [
+        {
+          "requested": "Resident Evil",
+          "matchedTitle": "Resident Evil",
+          "year": 2002,
+          "votes": 319744,
+          "rating": 6.6,
+          "hasPoster": true,
+          "id": 65544
+        },
+        {
+          "requested": "Sonic the Hedgehog",
+          "matchedTitle": "Sonic the Hedgehog",
+          "year": 2020,
+          "votes": 197526,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 275808
+        },
+        {
+          "requested": "Sonic the Hedgehog 2",
+          "matchedTitle": "Sonic the Hedgehog 2",
+          "year": 2022,
+          "votes": 120214,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 167600
+        },
+        {
+          "requested": "Sonic the Hedgehog 3",
+          "matchedTitle": "Sonic the Hedgehog 3",
+          "year": 2024,
+          "votes": 85683,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 207027
+        },
+        {
+          "requested": "Detective Pikachu",
+          "matchedTitle": "Pokémon: Detective Pikachu",
+          "year": 2019,
+          "votes": 200496,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 302623
+        },
+        {
+          "requested": "The Super Mario Bros. Movie",
+          "matchedTitle": "The Super Mario Bros. Movie",
+          "year": 2023,
+          "votes": 303702,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 310988
+        },
+        {
+          "requested": "Five Nights at Freddy's",
+          "matchedTitle": "Five Nights at Freddy's",
+          "year": 2023,
+          "votes": 144781,
+          "rating": 5.4,
+          "hasPoster": true,
+          "id": 289169
+        },
+        {
+          "requested": "Uncharted",
+          "matchedTitle": "Uncharted",
+          "year": 2022,
+          "votes": 309555,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 186081
+        },
+        {
+          "requested": "Mortal Kombat",
+          "matchedTitle": "Mortal Kombat",
+          "year": 2021,
+          "votes": 224131,
+          "rating": 6.1,
+          "hasPoster": true,
+          "id": 104120
+        },
+        {
+          "requested": "The Last of Us",
+          "matchedTitle": "The Last of Us",
+          "year": 2023,
+          "votes": 754260,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 269297
+        },
+        {
+          "requested": "Fallout",
+          "matchedTitle": "Mission: Impossible - Fallout",
+          "year": 2018,
+          "votes": 426162,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 292367
+        },
+        {
+          "requested": "Tomb Raider",
+          "matchedTitle": "Tomb Raider",
+          "year": 2018,
+          "votes": 245032,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 178325
+        },
+        {
+          "requested": "Lara Croft: Tomb Raider",
+          "matchedTitle": "Lara Croft: Tomb Raider",
+          "year": 2001,
+          "votes": 232566,
+          "rating": 5.8,
+          "hasPoster": true,
+          "id": 72418
+        },
+        {
+          "requested": "Silent Hill",
+          "matchedTitle": "Silent Hill",
+          "year": 2006,
+          "votes": 264351,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 118944
+        },
+        {
+          "requested": "Warcraft",
+          "matchedTitle": "Warcraft",
+          "year": 2016,
+          "votes": 298881,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 138076
+        },
+        {
+          "requested": "Assassin's Creed",
+          "matchedTitle": "Assassin's Creed",
+          "year": 2016,
+          "votes": 221599,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 217281
+        },
+        {
+          "requested": "Prince of Persia: The Sands of Time",
+          "matchedTitle": "Prince of Persia: The Sands of Time",
+          "year": 2010,
+          "votes": 320428,
+          "rating": 6.5,
+          "hasPoster": true,
+          "id": 132176
+        }
+      ],
+      "missing": []
+    },
+    "Animation Studios (Pixar, DreamWorks, Illumination, Ghibli)": {
+      "found": [
+        {
+          "requested": "Toy Story",
+          "matchedTitle": "Toy Story",
+          "year": 1995,
+          "votes": 1203928,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 61796
+        },
+        {
+          "requested": "Toy Story 2",
+          "matchedTitle": "Toy Story 2",
+          "year": 1999,
+          "votes": 687058,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 65243
+        },
+        {
+          "requested": "Toy Story 3",
+          "matchedTitle": "Toy Story 3",
+          "year": 2010,
+          "votes": 994300,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 126771
+        },
+        {
+          "requested": "Toy Story 4",
+          "matchedTitle": "Toy Story 4",
+          "year": 2019,
+          "votes": 332275,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 212701
+        },
+        {
+          "requested": "The Incredibles",
+          "matchedTitle": "The Incredibles",
+          "year": 2004,
+          "votes": 920860,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 108604
+        },
+        {
+          "requested": "Incredibles 2",
+          "matchedTitle": "Incredibles 2",
+          "year": 2018,
+          "votes": 379322,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 270026
+        },
+        {
+          "requested": "Monsters, Inc.",
+          "matchedTitle": "Monsters, Inc.",
+          "year": 2001,
+          "votes": 1095405,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 85115
+        },
+        {
+          "requested": "Finding Nemo",
+          "matchedTitle": "Finding Nemo",
+          "year": 2003,
+          "votes": 1229099,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 98324
+        },
+        {
+          "requested": "Finding Dory",
+          "matchedTitle": "Finding Dory",
+          "year": 2016,
+          "votes": 341352,
+          "rating": 7.2,
+          "hasPoster": true,
+          "id": 226267
+        },
+        {
+          "requested": "Inside Out",
+          "matchedTitle": "Inside Out",
+          "year": 2015,
+          "votes": 936526,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 217372
+        },
+        {
+          "requested": "Inside Out 2",
+          "matchedTitle": "Inside Out 2",
+          "year": 2024,
+          "votes": 262449,
+          "rating": 7.5,
+          "hasPoster": true,
+          "id": 223097
+        },
+        {
+          "requested": "Coco",
+          "matchedTitle": "Coco",
+          "year": 2017,
+          "votes": 731498,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 230468
+        },
+        {
+          "requested": "WALL-E",
+          "matchedTitle": "WALL-E: Treasures and Trinkets",
+          "year": 2008,
+          "votes": 1662,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 181429
+        },
+        {
+          "requested": "Up",
+          "matchedTitle": "Up",
+          "year": 2009,
+          "votes": 1260507,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 150563
+        },
+        {
+          "requested": "Shrek",
+          "matchedTitle": "Shrek",
+          "year": 2001,
+          "votes": 824408,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 67254
+        },
+        {
+          "requested": "Shrek 2",
+          "matchedTitle": "Shrek 2",
+          "year": 2004,
+          "votes": 565756,
+          "rating": 7.4,
+          "hasPoster": true,
+          "id": 105100
+        },
+        {
+          "requested": "Shrek the Third",
+          "matchedTitle": "Shrek the Third",
+          "year": 2007,
+          "votes": 366576,
+          "rating": 6.1,
+          "hasPoster": true,
+          "id": 123215
+        },
+        {
+          "requested": "Shrek Forever After",
+          "matchedTitle": "Shrek Forever After",
+          "year": 2010,
+          "votes": 250729,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 142330
+        },
+        {
+          "requested": "Kung Fu Panda",
+          "matchedTitle": "Kung Fu Panda",
+          "year": 2008,
+          "votes": 592404,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 127659
+        },
+        {
+          "requested": "Kung Fu Panda 2",
+          "matchedTitle": "Kung Fu Panda 2",
+          "year": 2011,
+          "votes": 365301,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 172476
+        },
+        {
+          "requested": "Kung Fu Panda 3",
+          "matchedTitle": "Kung Fu Panda 3",
+          "year": 2016,
+          "votes": 224601,
+          "rating": 7.1,
+          "hasPoster": true,
+          "id": 225872
+        },
+        {
+          "requested": "Kung Fu Panda 4",
+          "matchedTitle": "Kung Fu Panda 4",
+          "year": 2024,
+          "votes": 86614,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 221103
+        },
+        {
+          "requested": "How to Train Your Dragon",
+          "matchedTitle": "How to Train Your Dragon",
+          "year": 2010,
+          "votes": 912064,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 142326
+        },
+        {
+          "requested": "How to Train Your Dragon 2",
+          "matchedTitle": "How to Train Your Dragon 2",
+          "year": 2014,
+          "votes": 408543,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 199186
+        },
+        {
+          "requested": "How to Train Your Dragon: The Hidden World",
+          "matchedTitle": "How to Train Your Dragon",
+          "year": 2010,
+          "votes": 912064,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 142326
+        },
+        {
+          "requested": "Puss in Boots",
+          "matchedTitle": "Puss in Boots: The Last Wish",
+          "year": 2022,
+          "votes": 233112,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 279342
+        },
+        {
+          "requested": "Puss in Boots: The Last Wish",
+          "matchedTitle": "Puss in Boots: The Last Wish",
+          "year": 2022,
+          "votes": 233112,
+          "rating": 7.9,
+          "hasPoster": true,
+          "id": 279342
+        },
+        {
+          "requested": "Despicable Me",
+          "matchedTitle": "Despicable Me",
+          "year": 2010,
+          "votes": 642453,
+          "rating": 7.6,
+          "hasPoster": true,
+          "id": 174459
+        },
+        {
+          "requested": "Despicable Me 2",
+          "matchedTitle": "Despicable Me 2",
+          "year": 2013,
+          "votes": 466752,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 201081
+        },
+        {
+          "requested": "Despicable Me 3",
+          "matchedTitle": "Despicable Me 3",
+          "year": 2017,
+          "votes": 187058,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 265588
+        },
+        {
+          "requested": "Despicable Me 4",
+          "matchedTitle": "Despicable Me 4",
+          "year": 2024,
+          "votes": 85357,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 317414
+        },
+        {
+          "requested": "Minions",
+          "matchedTitle": "Minions",
+          "year": 2015,
+          "votes": 291272,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 226879
+        },
+        {
+          "requested": "Minions: The Rise of Gru",
+          "matchedTitle": "Minions",
+          "year": 2015,
+          "votes": 291272,
+          "rating": 6.4,
+          "hasPoster": true,
+          "id": 226879
+        },
+        {
+          "requested": "Sing",
+          "matchedTitle": "Van Helsing",
+          "year": 2004,
+          "votes": 311149,
+          "rating": 6.1,
+          "hasPoster": true,
+          "id": 111718
+        },
+        {
+          "requested": "Sing 2",
+          "matchedTitle": "Sing 2",
+          "year": 2021,
+          "votes": 104340,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 308997
+        },
+        {
+          "requested": "Spirited Away",
+          "matchedTitle": "Spirited Away",
+          "year": 2001,
+          "votes": 990197,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 94216
+        },
+        {
+          "requested": "Princess Mononoke",
+          "matchedTitle": "Princess Mononoke",
+          "year": 1997,
+          "votes": 493076,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 64814
+        },
+        {
+          "requested": "Howl's Moving Castle",
+          "matchedTitle": "Howl's Moving Castle",
+          "year": 2004,
+          "votes": 524106,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 112928
+        },
+        {
+          "requested": "My Neighbor Totoro",
+          "matchedTitle": "My Neighbor Totoro",
+          "year": 1988,
+          "votes": 441874,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 50588
+        },
+        {
+          "requested": "The Boy and the Heron",
+          "matchedTitle": "The Boy and the Heron",
+          "year": 2023,
+          "votes": 152214,
+          "rating": 7.3,
+          "hasPoster": true,
+          "id": 310020
+        }
+      ],
+      "missing": []
+    },
+    "Anime IP Hubs": {
+      "found": [
+        {
+          "requested": "Dragon Ball",
+          "matchedTitle": "Dragon Ball Z",
+          "year": 1996,
+          "votes": 182210,
+          "rating": 8.8,
+          "hasPoster": false,
+          "id": 88368
+        },
+        {
+          "requested": "Dragon Ball Z",
+          "matchedTitle": "Dragon Ball Z",
+          "year": 1996,
+          "votes": 182210,
+          "rating": 8.8,
+          "hasPoster": false,
+          "id": 88368
+        },
+        {
+          "requested": "Dragon Ball GT",
+          "matchedTitle": "Dragon Ball GT",
+          "year": 1996,
+          "votes": 32538,
+          "rating": 6.8,
+          "hasPoster": true,
+          "id": 70820
+        },
+        {
+          "requested": "Dragon Ball Super",
+          "matchedTitle": "Dragon Ball Super",
+          "year": 2015,
+          "votes": 47938,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 289714
+        },
+        {
+          "requested": "Dragon Ball Daima",
+          "matchedTitle": "Dragon Ball Daima",
+          "year": 2024,
+          "votes": 20135,
+          "rating": 7.7,
+          "hasPoster": true,
+          "id": 247838
+        },
+        {
+          "requested": "Dragon Ball Super: Broly",
+          "matchedTitle": "Dragon Ball Super",
+          "year": 2015,
+          "votes": 47938,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 289714
+        },
+        {
+          "requested": "Dragon Ball Super: Super Hero",
+          "matchedTitle": "Dragon Ball Super",
+          "year": 2015,
+          "votes": 47938,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 289714
+        },
+        {
+          "requested": "Naruto",
+          "matchedTitle": "Naruto: Shippuden",
+          "year": 2007,
+          "votes": 233251,
+          "rating": 8.7,
+          "hasPoster": true,
+          "id": 145344
+        },
+        {
+          "requested": "Naruto: Shippuden",
+          "matchedTitle": "Naruto: Shippuden",
+          "year": 2007,
+          "votes": 233251,
+          "rating": 8.7,
+          "hasPoster": true,
+          "id": 145344
+        },
+        {
+          "requested": "Boruto: Naruto Next Generations",
+          "matchedTitle": "Boruto: Naruto Next Generations",
+          "year": 2017,
+          "votes": 36167,
+          "rating": 6.2,
+          "hasPoster": true,
+          "id": 307733
+        },
+        {
+          "requested": "One Piece",
+          "matchedTitle": "One Piece",
+          "year": 1999,
+          "votes": 370730,
+          "rating": 9,
+          "hasPoster": true,
+          "id": 119651
+        },
+        {
+          "requested": "One Piece Film: Red",
+          "matchedTitle": "One Piece Film: Red",
+          "year": 2022,
+          "votes": 27307,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 197490
+        },
+        {
+          "requested": "Attack on Titan",
+          "matchedTitle": "Attack on Titan",
+          "year": 2013,
+          "votes": 754674,
+          "rating": 9.1,
+          "hasPoster": true,
+          "id": 234767
+        },
+        {
+          "requested": "Demon Slayer: Kimetsu no Yaiba",
+          "matchedTitle": "Demon Slayer: Kimetsu no Yaiba",
+          "year": 2019,
+          "votes": 239671,
+          "rating": 8.5,
+          "hasPoster": true,
+          "id": 330905
+        },
+        {
+          "requested": "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
+          "matchedTitle": "Demon Slayer: Kimetsu no Yaiba",
+          "year": 2019,
+          "votes": 239671,
+          "rating": 8.5,
+          "hasPoster": true,
+          "id": 330905
+        },
+        {
+          "requested": "Jujutsu Kaisen",
+          "matchedTitle": "Jujutsu Kaisen",
+          "year": 2020,
+          "votes": 224472,
+          "rating": 8.5,
+          "hasPoster": true,
+          "id": 166984
+        },
+        {
+          "requested": "Jujutsu Kaisen 0",
+          "matchedTitle": "Jujutsu Kaisen 0",
+          "year": 2021,
+          "votes": 67929,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 183566
+        },
+        {
+          "requested": "Bleach",
+          "matchedTitle": "Bleach: Thousand-Year Blood War",
+          "year": 2022,
+          "votes": 116296,
+          "rating": 9,
+          "hasPoster": true,
+          "id": 188615
+        },
+        {
+          "requested": "Bleach: Thousand-Year Blood War",
+          "matchedTitle": "Bleach: Thousand-Year Blood War",
+          "year": 2022,
+          "votes": 116296,
+          "rating": 9,
+          "hasPoster": true,
+          "id": 188615
+        },
+        {
+          "requested": "Death Note",
+          "matchedTitle": "Death Note",
+          "year": 2006,
+          "votes": 503830,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 141654
+        },
+        {
+          "requested": "Fullmetal Alchemist: Brotherhood",
+          "matchedTitle": "Fullmetal Alchemist: Brotherhood",
+          "year": 2009,
+          "votes": 260347,
+          "rating": 9.1,
+          "hasPoster": true,
+          "id": 177479
+        },
+        {
+          "requested": "Hunter x Hunter",
+          "matchedTitle": "Hunter X Hunter",
+          "year": 2011,
+          "votes": 207402,
+          "rating": 9,
+          "hasPoster": true,
+          "id": 217394
+        },
+        {
+          "requested": "Chainsaw Man",
+          "matchedTitle": "Chainsaw Man",
+          "year": 2022,
+          "votes": 113595,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 177946
+        },
+        {
+          "requested": "Solo Leveling",
+          "matchedTitle": "Solo Leveling",
+          "year": 2024,
+          "votes": 123252,
+          "rating": 8.5,
+          "hasPoster": true,
+          "id": 218693
+        },
+        {
+          "requested": "Frieren: Beyond Journey's End",
+          "matchedTitle": "Frieren: Beyond Journey's End",
+          "year": 2023,
+          "votes": 86329,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 224180
+        },
+        {
+          "requested": "Vinland Saga",
+          "matchedTitle": "Vinland Saga",
+          "year": 2019,
+          "votes": 153695,
+          "rating": 8.9,
+          "hasPoster": true,
+          "id": 147915
+        },
+        {
+          "requested": "Neon Genesis Evangelion",
+          "matchedTitle": "Neon Genesis Evangelion",
+          "year": 1995,
+          "votes": 116257,
+          "rating": 8.5,
+          "hasPoster": true,
+          "id": 60347
+        },
+        {
+          "requested": "Spy x Family",
+          "matchedTitle": "Spy x Family",
+          "year": 2022,
+          "votes": 65904,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 178718
+        }
+      ],
+      "missing": []
+    },
+    "Indian Cinema Universes (YRF Spy, LCU, Maddock, Neel, Kalki)": {
+      "found": [
+        {
+          "requested": "Ek Tha Tiger",
+          "matchedTitle": "Ek Tha Tiger",
+          "year": 2012,
+          "votes": 43414,
+          "rating": 5.7,
+          "hasPoster": true,
+          "id": 214257
+        },
+        {
+          "requested": "Tiger Zinda Hai",
+          "matchedTitle": "Tiger Zinda Hai",
+          "year": 2017,
+          "votes": 37445,
+          "rating": 5.9,
+          "hasPoster": true,
+          "id": 303410
+        },
+        {
+          "requested": "War",
+          "matchedTitle": "Star Wars: Episode IV - A New Hope",
+          "year": 1977,
+          "votes": 1594535,
+          "rating": 8.6,
+          "hasPoster": true,
+          "id": 37910
+        },
+        {
+          "requested": "Pathaan",
+          "matchedTitle": "Pathaan",
+          "year": 2023,
+          "votes": 167545,
+          "rating": 5.8,
+          "hasPoster": true,
+          "id": 170976
+        },
+        {
+          "requested": "Tiger 3",
+          "matchedTitle": "Tiger 3",
+          "year": 2023,
+          "votes": 57032,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 208031
+        },
+        {
+          "requested": "Kaithi",
+          "matchedTitle": "Kaithi",
+          "year": 2019,
+          "votes": 53075,
+          "rating": 8.4,
+          "hasPoster": true,
+          "id": 334006
+        },
+        {
+          "requested": "Vikram",
+          "matchedTitle": "Vikram",
+          "year": 2022,
+          "votes": 91538,
+          "rating": 8.3,
+          "hasPoster": true,
+          "id": 329957
+        },
+        {
+          "requested": "Leo",
+          "matchedTitle": "Napoleon Dynamite",
+          "year": 2004,
+          "votes": 260205,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 117370
+        },
+        {
+          "requested": "Stree",
+          "matchedTitle": "The Wolf of Wall Street",
+          "year": 2013,
+          "votes": 1833419,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 145529
+        },
+        {
+          "requested": "Bhediya",
+          "matchedTitle": "Bhediya",
+          "year": 2022,
+          "votes": 29512,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 181775
+        },
+        {
+          "requested": "Munjya",
+          "matchedTitle": "Munjya",
+          "year": 2024,
+          "votes": 29242,
+          "rating": 6.3,
+          "hasPoster": true,
+          "id": 242629
+        },
+        {
+          "requested": "Stree 2",
+          "matchedTitle": "Stree 2",
+          "year": 2024,
+          "votes": 47732,
+          "rating": 6.9,
+          "hasPoster": true,
+          "id": 240320
+        },
+        {
+          "requested": "Salaar: Part 1 - Ceasefire",
+          "matchedTitle": "Salaar",
+          "year": 2023,
+          "votes": 80289,
+          "rating": 6.7,
+          "hasPoster": true,
+          "id": 180422
+        },
+        {
+          "requested": "Baahubali: The Beginning",
+          "matchedTitle": "Baahubali: The Beginning",
+          "year": 2015,
+          "votes": 157356,
+          "rating": 8,
+          "hasPoster": true,
+          "id": 236136
+        },
+        {
+          "requested": "Baahubali 2: The Conclusion",
+          "matchedTitle": "Baahubali 2: The Conclusion",
+          "year": 2017,
+          "votes": 137344,
+          "rating": 8.2,
+          "hasPoster": true,
+          "id": 291733
+        },
+        {
+          "requested": "Brahmastra Part One: Shiva",
+          "matchedTitle": "Brahmastra Part One: Shiva",
+          "year": 2022,
+          "votes": 116540,
+          "rating": 5.6,
+          "hasPoster": true,
+          "id": 307051
+        },
+        {
+          "requested": "Kalki 2898 AD",
+          "matchedTitle": "Kalki 2898 AD",
+          "year": 2024,
+          "votes": 78077,
+          "rating": 7,
+          "hasPoster": true,
+          "id": 169997
+        },
+        {
+          "requested": "RRR",
+          "matchedTitle": "RRR",
+          "year": 2022,
+          "votes": 228127,
+          "rating": 7.8,
+          "hasPoster": true,
+          "id": 322764
+        },
+        {
+          "requested": "Kantara",
+          "matchedTitle": "Kantara",
+          "year": 2022,
+          "votes": 118986,
+          "rating": 8.1,
+          "hasPoster": true,
+          "id": 191646
+        }
+      ],
+      "missing": [
+        "K.G.F: Chapter 1",
+        "K.G.F: Chapter 2"
+      ]
+    }
+  }
+}

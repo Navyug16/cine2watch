@@ -1,0 +1,1194 @@
+// Definitive Star Wars Galaxy Data Catalog for cine2watch
+// All 19 Sub-Universes, Canonical Timelines, and Watch Orders
+
+export const STAR_WARS_SUB_UNIVERSES = [
+  "All Star Wars",
+  "01. Skywalker Saga",
+  "02. High Republic",
+  "03. Fall of the Jedi",
+  "04. Reign of the Empire",
+  "05. Age of Rebellion",
+  "06. Rogue One / Andor",
+  "07. New Republic",
+  "08. Rise of the First Order",
+  "09. Clone Wars Universe",
+  "10. Rebels Universe",
+  "11. Mandalorian Universe",
+  "12. Ahsoka / Thrawn Story",
+  "13. Maul / Criminal Underworld",
+  "14. Animated Star Wars",
+  "15. LEGO Star Wars",
+  "16. Star Wars Vintage / Legends",
+  "17. Star Wars Anthology Films",
+  "18. Star Wars Specials / Shorts",
+  "19. Star Wars Documentary / Behind the Scenes"
+];
+
+export const STAR_WARS_TIMELINE = [
+  {
+    "id": "sw-young-jedi",
+    "title": "Star Wars: Young Jedi Adventures",
+    "year": 2023,
+    "media_type": "series",
+    "chrono_order": 1,
+    "release_order": 2023.05,
+    "phase": "The High Republic • Jedi Initiates",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/81W08b5f3m7Y6k8a1q0.jpg",
+    "runtime": "2 Seasons / 42 Episodes",
+    "desc": "Jedi younglings Kai Brightstar, Lys Solay, and Nubs study the ways of the Force and explore the galaxy under Master Yoda.",
+    "sub_universe": "02. High Republic",
+    "sub_universes": [
+      "02. High Republic",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-acolyte",
+    "title": "The Acolyte",
+    "year": 2024,
+    "media_type": "series",
+    "chrono_order": 2,
+    "release_order": 2024.06,
+    "phase": "The High Republic • Twilight of the Golden Age",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/1aB4o7E2f0e0c0d1e2f3g4h5i6j.jpg",
+    "runtime": "8 Episodes",
+    "desc": "An investigation into a shocking crime spree pits a respected Jedi Master against a dangerous warrior from his past as dark forces emerge.",
+    "sub_universe": "02. High Republic",
+    "sub_universes": [
+      "02. High Republic"
+    ]
+  },
+  {
+    "id": "sw-ep1",
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "year": 1999,
+    "media_type": "movie",
+    "chrono_order": 3,
+    "release_order": 1999.05,
+    "phase": "Fall of the Jedi • Prequel Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/6bCplVkhowOj6Kpgh0t079Ej4OX.jpg",
+    "runtime": "136 min",
+    "desc": "Jedi Master Qui-Gon Jinn and apprentice Obi-Wan Kenobi rescue Queen Amidala and discover young Anakin Skywalker on Tatooine as Darth Maul emerges.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "03. Fall of the Jedi",
+      "13. Maul / Criminal Underworld"
+    ]
+  },
+  {
+    "id": "sw-ep2",
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "year": 2002,
+    "media_type": "movie",
+    "chrono_order": 4,
+    "release_order": 2002.05,
+    "phase": "Fall of the Jedi • Prequel Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/oZNPzxqok5ObAnOzxl9M8BhuMG5.jpg",
+    "runtime": "142 min",
+    "desc": "Ten years after the Naboo crisis, Obi-Wan investigates a bounty hunter while Anakin guards Padmé amid Count Dooku's growing Separatist rebellion.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "03. Fall of the Jedi"
+    ]
+  },
+  {
+    "id": "sw-tcw-movie",
+    "title": "Star Wars: The Clone Wars (Movie)",
+    "year": 2008,
+    "media_type": "movie",
+    "chrono_order": 5,
+    "release_order": 2008.08,
+    "phase": "The Clone Wars • Theatrical Genesis",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg",
+    "runtime": "98 min",
+    "desc": "Anakin Skywalker and his newly appointed young Padawan Ahsoka Tano are dispatched to rescue Jabba the Hutt's kidnapped son.",
+    "sub_universe": "03. Fall of the Jedi",
+    "sub_universes": [
+      "03. Fall of the Jedi",
+      "09. Clone Wars Universe",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-tcw-series",
+    "title": "Star Wars: The Clone Wars (Series)",
+    "year": 2008,
+    "media_type": "series",
+    "chrono_order": 6,
+    "release_order": 2008.1,
+    "phase": "The Clone Wars • The Definitive Galactic War",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg",
+    "runtime": "7 Seasons / 133 Episodes",
+    "desc": "Dave Filoni's monumental animated epic chronicling the brutal conflict between the Republic and Separatists, Captain Rex, Mandalore, and Ahsoka's trial.",
+    "sub_universe": "03. Fall of the Jedi",
+    "sub_universes": [
+      "03. Fall of the Jedi",
+      "09. Clone Wars Universe",
+      "12. Ahsoka / Thrawn Story",
+      "13. Maul / Criminal Underworld",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-tales-jedi",
+    "title": "Star Wars: Tales of the Jedi",
+    "year": 2022,
+    "media_type": "series",
+    "chrono_order": 7,
+    "release_order": 2022.1,
+    "phase": "Fall of the Jedi • Dual Destinies",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/uV7093k6q9X3Z8W7v2v7x0k.jpg",
+    "runtime": "6 Episodes",
+    "desc": "Six animated parables contrasting the tragic fall of Count Dooku alongside Ahsoka Tano's Jedi training and survival after Order 66.",
+    "sub_universe": "03. Fall of the Jedi",
+    "sub_universes": [
+      "03. Fall of the Jedi",
+      "09. Clone Wars Universe",
+      "13. Maul / Criminal Underworld",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-ep3",
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "year": 2005,
+    "media_type": "movie",
+    "chrono_order": 8,
+    "release_order": 2005.05,
+    "phase": "Fall of the Jedi • Prequel Climax",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/xfSAoYWiQEgNZUmBk8wJ0bA0wov.jpg",
+    "runtime": "140 min",
+    "desc": "Seduced by Chancellor Palpatine's dark promises to save Padmé, Anakin betrays the Jedi Order and transforms into Darth Vader under Order 66.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "03. Fall of the Jedi"
+    ]
+  },
+  {
+    "id": "sw-tales-empire",
+    "title": "Star Wars: Tales of the Empire",
+    "year": 2024,
+    "media_type": "series",
+    "chrono_order": 9,
+    "release_order": 2024.05,
+    "phase": "Reign of the Empire • Inquisitorius",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/uV7093k6q9X3Z8W7v2v7x0k.jpg",
+    "runtime": "6 Episodes",
+    "desc": "Explores the harsh choices of two warriors across different eras: Morgan Elsbeth navigating the Imperial navy and former Jedi Barriss Offee joining the Inquisitors.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-bad-batch",
+    "title": "Star Wars: The Bad Batch",
+    "year": 2021,
+    "media_type": "series",
+    "chrono_order": 10,
+    "release_order": 2021.05,
+    "phase": "Reign of the Empire • Clone Force 99",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/5qht10Z2B0N4h0v8f9024c1.jpg",
+    "runtime": "3 Seasons / 47 Episodes",
+    "desc": "Clone Force 99, an elite squad of genetically mutated clone troopers, navigate the immediate aftermath of Order 66 while protecting young clone Omega.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire",
+      "09. Clone Wars Universe",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-tales-underworld",
+    "title": "Star Wars: Tales of the Underworld",
+    "year": 2025,
+    "media_type": "series",
+    "chrono_order": 11,
+    "release_order": 2025.05,
+    "phase": "Reign of the Empire • Criminal Syndicates",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/uV7093k6q9X3Z8W7v2v7x0k.jpg",
+    "runtime": "6 Episodes",
+    "desc": "Short animated parables diving into the shadowy underworld of Coruscant, Crimson Dawn, bounty hunters, and syndicate kingpins.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire",
+      "09. Clone Wars Universe",
+      "13. Maul / Criminal Underworld",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-maul-shadow",
+    "title": "Star Wars: Maul – Shadow Lord",
+    "year": 2026,
+    "media_type": "series",
+    "chrono_order": 12,
+    "release_order": 2026.04,
+    "phase": "Reign of the Empire • Crimson Dawn Syndicate",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/6bCplVkhowOj6Kpgh0t079Ej4OX.jpg",
+    "runtime": "8 Episodes",
+    "desc": "Chronicles Maul's ruthless ascension to the throne of Crimson Dawn, consolidating the Five Syndicates while avoiding the Emperor and Vader.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire",
+      "13. Maul / Criminal Underworld",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-solo",
+    "title": "Solo: A Star Wars Story",
+    "year": 2018,
+    "media_type": "movie",
+    "chrono_order": 13,
+    "release_order": 2018.05,
+    "phase": "Reign of the Empire • The Kessel Run",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/4o0hG18F0tP8J2Mv39Mv3P1r6f1.jpg",
+    "runtime": "135 min",
+    "desc": "A young Han Solo meets Chewbacca and Lando Calrissian, pulling off the daring coaxium heist on Kessel and crossing Crimson Dawn.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire",
+      "13. Maul / Criminal Underworld",
+      "17. Star Wars Anthology Films"
+    ]
+  },
+  {
+    "id": "sw-kenobi",
+    "title": "Obi-Wan Kenobi",
+    "year": 2022,
+    "media_type": "series",
+    "chrono_order": 14,
+    "release_order": 2022.05,
+    "phase": "Reign of the Empire • Tatooine Exile",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/qJXZjAjFiPn7GhMlupNDapxQxMN.jpg",
+    "runtime": "6 Episodes",
+    "desc": "Ewan McGregor returns as Obi-Wan Kenobi emerges from desert exile on Tatooine to rescue a young Princess Leia from Imperial Inquisitors.",
+    "sub_universe": "04. Reign of the Empire",
+    "sub_universes": [
+      "04. Reign of the Empire"
+    ]
+  },
+  {
+    "id": "sw-andor",
+    "title": "Andor",
+    "year": 2022,
+    "media_type": "series",
+    "chrono_order": 15,
+    "release_order": 2022.09,
+    "phase": "Age of Rebellion • Espionage & Revolution",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/59SVNwL2Oumv24pY7x69UmBtQ8V.jpg",
+    "runtime": "2 Seasons / 24 Episodes",
+    "desc": "Tony Gilroy's critically acclaimed espionage thriller following Cassian Andor's transformation from cynical thief into a passionate rebel martyr.",
+    "sub_universe": "05. Age of Rebellion",
+    "sub_universes": [
+      "05. Age of Rebellion",
+      "06. Rogue One / Andor"
+    ]
+  },
+  {
+    "id": "sw-rebels",
+    "title": "Star Wars Rebels",
+    "year": 2014,
+    "media_type": "series",
+    "chrono_order": 16,
+    "release_order": 2014.1,
+    "phase": "Age of Rebellion • The Ghost Crew",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/91i5s79m0n14o8721c0029b.jpg",
+    "runtime": "4 Seasons / 75 Episodes",
+    "desc": "Ezra Bridger, Kanan Jarrus, Hera Syndulla, and the crew of the Ghost strike against Imperial tyranny, clashing with Grand Admiral Thrawn.",
+    "sub_universe": "05. Age of Rebellion",
+    "sub_universes": [
+      "05. Age of Rebellion",
+      "10. Rebels Universe",
+      "12. Ahsoka / Thrawn Story",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-rogue-one",
+    "title": "Rogue One: A Star Wars Story",
+    "year": 2016,
+    "media_type": "movie",
+    "chrono_order": 17,
+    "release_order": 2016.12,
+    "phase": "Age of Rebellion • The Scarif Heist",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/i0yw1mFbB79tmiHilscdmOx9Odo.jpg",
+    "runtime": "133 min",
+    "desc": "Jyn Erso and Cassian Andor lead a heroic band of resistance fighters on a desperate mission to steal the Death Star plans on Scarif.",
+    "sub_universe": "05. Age of Rebellion",
+    "sub_universes": [
+      "05. Age of Rebellion",
+      "06. Rogue One / Andor",
+      "10. Rebels Universe",
+      "17. Star Wars Anthology Films"
+    ]
+  },
+  {
+    "id": "sw-ep4",
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "media_type": "movie",
+    "chrono_order": 18,
+    "release_order": 1977.05,
+    "phase": "Age of Rebellion • Original Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    "runtime": "121 min",
+    "desc": "George Lucas's immortal space opera: Luke Skywalker leaves Tatooine, joins Han Solo and Chewbacca, and destroys the Galactic Empire's Death Star.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "05. Age of Rebellion"
+    ]
+  },
+  {
+    "id": "sw-ep5",
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "year": 1980,
+    "media_type": "movie",
+    "chrono_order": 19,
+    "release_order": 1980.05,
+    "phase": "Age of Rebellion • Original Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+    "runtime": "124 min",
+    "desc": "The Empire assaults Hoth. While Han and Leia flee to Cloud City, Luke trains with Master Yoda on Dagobah and faces Darth Vader's shocking revelation.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "05. Age of Rebellion"
+    ]
+  },
+  {
+    "id": "sw-ep6",
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "year": 1983,
+    "media_type": "movie",
+    "chrono_order": 20,
+    "release_order": 1983.05,
+    "phase": "Age of Rebellion • Original Trilogy Climax",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/mDCBQSuPhA8k24iHqO6L30dG804.jpg",
+    "runtime": "131 min",
+    "desc": "The Rebels mount a desperate assault on the second Death Star on Endor, while Luke Skywalker faces the Emperor to redeem his father Anakin.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "05. Age of Rebellion"
+    ]
+  },
+  {
+    "id": "sw-mando-s1",
+    "title": "The Mandalorian — Season 1",
+    "year": 2019,
+    "media_type": "series",
+    "chrono_order": 21,
+    "release_order": 2019.11,
+    "phase": "The New Republic • The Bounty Hunter & The Child",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "8 Episodes",
+    "desc": "A lone Mandalorian bounty hunter in the outer reaches of the galaxy protects an alien infant of mysterious origins from Imperial remnants.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe",
+      "12. Ahsoka / Thrawn Story"
+    ]
+  },
+  {
+    "id": "sw-mando-s2",
+    "title": "The Mandalorian — Season 2",
+    "year": 2020,
+    "media_type": "series",
+    "chrono_order": 22,
+    "release_order": 2020.1,
+    "phase": "The New Republic • Quest for the Jedi",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "8 Episodes",
+    "desc": "Din Djarin searches for Grogu's people, crossing paths with Bo-Katan Kryze, Boba Fett, and Ahsoka Tano before Luke Skywalker's legendary rescue.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe",
+      "12. Ahsoka / Thrawn Story"
+    ]
+  },
+  {
+    "id": "sw-boba-fett",
+    "title": "The Book of Boba Fett",
+    "year": 2021,
+    "media_type": "series",
+    "chrono_order": 23,
+    "release_order": 2021.12,
+    "phase": "The New Republic • Daimyo of Mos Espa",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/gNbdjDi1HamTCZaSNxk2R2yI9Z2.jpg",
+    "runtime": "7 Episodes",
+    "desc": "Legendary bounty hunter Boba Fett and master assassin Fennec Shand claim Jabba the Hutt's territory on Tatooine, reuniting with Din and Grogu.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe"
+    ]
+  },
+  {
+    "id": "sw-mando-s3",
+    "title": "The Mandalorian — Season 3",
+    "year": 2023,
+    "media_type": "series",
+    "chrono_order": 24,
+    "release_order": 2023.03,
+    "phase": "The New Republic • Reclamation of Mandalore",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "8 Episodes",
+    "desc": "Din Djarin seeks redemption in the living waters beneath Mandalore, uniting dispersed Mandalorian clans with Bo-Katan against Moff Gideon.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe",
+      "12. Ahsoka / Thrawn Story"
+    ]
+  },
+  {
+    "id": "sw-ahsoka",
+    "title": "Ahsoka",
+    "year": 2023,
+    "media_type": "series",
+    "chrono_order": 25,
+    "release_order": 2023.08,
+    "phase": "The New Republic • The Peridea Pathway",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/laCJxobHoPVaLQTvxc14Y29N3A7.jpg",
+    "runtime": "8 Episodes",
+    "desc": "Former Jedi Knight Ahsoka Tano investigates an emerging threat to the vulnerable New Republic alongside Sabine Wren, seeking Grand Admiral Thrawn.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "10. Rebels Universe",
+      "11. Mandalorian Universe",
+      "12. Ahsoka / Thrawn Story"
+    ]
+  },
+  {
+    "id": "sw-skeleton-crew",
+    "title": "Skeleton Crew",
+    "year": 2024,
+    "media_type": "series",
+    "chrono_order": 26,
+    "release_order": 2024.12,
+    "phase": "The New Republic • Coming-of-Age Cosmic Adventure",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/1aB4o7E2f0e0c0d1e2f3g4h5i6j.jpg",
+    "runtime": "8 Episodes",
+    "desc": "Four children make a mysterious discovery on their home planet, get lost in a dangerous galaxy, and encounter a Force user played by Jude Law.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe"
+    ]
+  },
+  {
+    "id": "sw-mando-grogu-movie",
+    "title": "The Mandalorian and Grogu",
+    "year": 2026,
+    "media_type": "movie",
+    "chrono_order": 27,
+    "release_order": 2026.05,
+    "phase": "The New Republic • Theatrical Feature",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "Feature Film",
+    "desc": "Jon Favreau directs the theatrical cinematic debut of Din Djarin and apprentice Grogu working covertly for the New Republic rangers.",
+    "sub_universe": "07. New Republic",
+    "sub_universes": [
+      "07. New Republic",
+      "11. Mandalorian Universe"
+    ]
+  },
+  {
+    "id": "sw-resistance",
+    "title": "Star Wars Resistance",
+    "year": 2018,
+    "media_type": "series",
+    "chrono_order": 28,
+    "release_order": 2018.1,
+    "phase": "Rise of the First Order • The Colossus Station",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/oZNPzxqok5ObAnOzxl9M8BhuMG5.jpg",
+    "runtime": "2 Seasons / 40 Episodes",
+    "desc": "Kazuda Xiono is recruited by Poe Dameron to spy on the growing First Order on the ocean refueling platform Colossus.",
+    "sub_universe": "08. Rise of the First Order",
+    "sub_universes": [
+      "08. Rise of the First Order",
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-ep7",
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "year": 2015,
+    "media_type": "movie",
+    "chrono_order": 29,
+    "release_order": 2015.12,
+    "phase": "Rise of the First Order • Sequel Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdw3cLLGkeOioTRUs6MKIumx.jpg",
+    "runtime": "138 min",
+    "desc": "Three decades after Endor, scavenger Rey and stormtrooper Finn find BB-8 with the map to Luke Skywalker, hunted by Kylo Ren.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "08. Rise of the First Order"
+    ]
+  },
+  {
+    "id": "sw-ep8",
+    "title": "Star Wars: Episode VIII - The Last Jedi",
+    "year": 2017,
+    "media_type": "movie",
+    "chrono_order": 30,
+    "release_order": 2017.12,
+    "phase": "Rise of the First Order • Sequel Trilogy",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmY9nrh6STW4q.jpg",
+    "runtime": "152 min",
+    "desc": "Rey seeks Jedi training from an embittered Luke Skywalker on Ahch-To while General Leia leads the Resistance in a desperate retreat.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "08. Rise of the First Order"
+    ]
+  },
+  {
+    "id": "sw-ep9",
+    "title": "Star Wars: Episode IX - The Rise of Skywalker",
+    "year": 2019,
+    "media_type": "movie",
+    "chrono_order": 31,
+    "release_order": 2019.12,
+    "phase": "Rise of the First Order • Saga Climax",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "142 min",
+    "desc": "Emperor Palpatine returns from Exegol. Rey and the Resistance stage a final stand against the Final Order fleet to end the Sith forever.",
+    "sub_universe": "01. Skywalker Saga",
+    "sub_universes": [
+      "01. Skywalker Saga",
+      "08. Rise of the First Order"
+    ]
+  },
+  {
+    "id": "sw-visions-1",
+    "title": "Star Wars: Visions — Volume 1",
+    "year": 2021,
+    "media_type": "series",
+    "chrono_order": 32,
+    "release_order": 2021.09,
+    "phase": "Visions Anime Showcase",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/81W08b5f3m7Y6k8a1q0.jpg",
+    "runtime": "9 Shorts",
+    "desc": "Seven world-renowned Japanese anime studios bring their boldest artistic perspectives to the Star Wars mythology.",
+    "sub_universe": "14. Animated Star Wars",
+    "sub_universes": [
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-visions-2",
+    "title": "Star Wars: Visions — Volume 2",
+    "year": 2023,
+    "media_type": "series",
+    "chrono_order": 33,
+    "release_order": 2023.05,
+    "phase": "Visions Global Showcase",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/81W08b5f3m7Y6k8a1q0.jpg",
+    "runtime": "9 Shorts",
+    "desc": "Animation studios across Japan, France, South Africa, Ireland, Spain, and Chile celebrate diverse cultures through the Force.",
+    "sub_universe": "14. Animated Star Wars",
+    "sub_universes": [
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "sw-visions-ninth-jedi",
+    "title": "Star Wars: Visions Presents: The Ninth Jedi",
+    "year": 2026,
+    "media_type": "series",
+    "chrono_order": 34,
+    "release_order": 2026.09,
+    "phase": "Visions Spinoff Series",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/81W08b5f3m7Y6k8a1q0.jpg",
+    "runtime": "Series",
+    "desc": "Production I.G. expands their universally acclaimed Visions short into a full serialized anime following Kara and the reforged Jedi.",
+    "sub_universe": "14. Animated Star Wars",
+    "sub_universes": [
+      "14. Animated Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-padawan-menace",
+    "title": "LEGO Star Wars: The Padawan Menace",
+    "year": 2011,
+    "media_type": "movie",
+    "chrono_order": 35,
+    "release_order": 2011.07,
+    "phase": "LEGO Star Wars Special",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "22 min",
+    "desc": "Master Yoda leads a Jedi Academy field trip that turns into an unexpected battle against the Sith.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-empire-strikes-out",
+    "title": "LEGO Star Wars: The Empire Strikes Out",
+    "year": 2012,
+    "media_type": "movie",
+    "chrono_order": 36,
+    "release_order": 2012.09,
+    "phase": "LEGO Star Wars Special",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "22 min",
+    "desc": "Luke Skywalker is celebrated for destroying the Death Star while Darth Vader deals with sibling rivalry from Darth Maul.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-yoda-chronicles",
+    "title": "LEGO Star Wars: The Yoda Chronicles",
+    "year": 2013,
+    "media_type": "series",
+    "chrono_order": 37,
+    "release_order": 2013.05,
+    "phase": "LEGO Star Wars Miniseries",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "7 Episodes",
+    "desc": "Yoda leads Padawans to protect a series of enhanced clones known as the Jek-14 experiments from Count Dooku.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-droid-tales",
+    "title": "LEGO Star Wars: Droid Tales",
+    "year": 2015,
+    "media_type": "series",
+    "chrono_order": 38,
+    "release_order": 2015.07,
+    "phase": "LEGO Star Wars Miniseries",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "5 Episodes",
+    "desc": "Following the victory on Endor, C-3PO and R2-D2 recount the entire history of the galaxy while tracking a droid kidnapper.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-freemaker",
+    "title": "LEGO Star Wars: The Freemaker Adventures",
+    "year": 2016,
+    "media_type": "series",
+    "chrono_order": 39,
+    "release_order": 2016.06,
+    "phase": "LEGO Star Wars Series",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "2 Seasons / 26 Episodes",
+    "desc": "The Freemakers, a family of scavengers who build starships from debris, discover the ancient Kyber Saber.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-all-stars",
+    "title": "LEGO Star Wars: All-Stars",
+    "year": 2018,
+    "media_type": "series",
+    "chrono_order": 40,
+    "release_order": 2018.1,
+    "phase": "LEGO Star Wars Shorts",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "5 Episodes",
+    "desc": "Features LEGO versions of beloved Star Wars heroes and villains spanning from the prequel era to the sequel trilogy.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-holiday-special",
+    "title": "LEGO Star Wars Holiday Special",
+    "year": 2020,
+    "media_type": "movie",
+    "chrono_order": 41,
+    "release_order": 2020.11,
+    "phase": "LEGO Star Wars Seasonal Special",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "45 min",
+    "desc": "Rey travels through a temporal crystal on Life Day, visiting memorable moments and cross-era duels across the saga.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-terrifying-tales",
+    "title": "LEGO Star Wars Terrifying Tales",
+    "year": 2021,
+    "media_type": "movie",
+    "chrono_order": 42,
+    "release_order": 2021.1,
+    "phase": "LEGO Star Wars Halloween Special",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "45 min",
+    "desc": "Poe Dameron and BB-8 land on Mustafar and enter Darth Vader's castle, listening to spooky tales told by Vaneé.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-summer-vacation",
+    "title": "LEGO Star Wars Summer Vacation",
+    "year": 2022,
+    "media_type": "movie",
+    "chrono_order": 43,
+    "release_order": 2022.08,
+    "phase": "LEGO Star Wars Summer Special",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "48 min",
+    "desc": "Finn organizes a much-needed vacation for his friends aboard the Halcyon luxury starcruiser before they part ways.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-rebuild-galaxy",
+    "title": "LEGO Star Wars: Rebuild the Galaxy",
+    "year": 2024,
+    "media_type": "series",
+    "chrono_order": 44,
+    "release_order": 2024.09,
+    "phase": "LEGO Star Wars Multiverse Mashup",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "4 Episodes",
+    "desc": "A nerf-herder unearths an ancient artifact that scrambles the entire galaxy into an upside-down reality where good guys are bad.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-rebuild-pieces",
+    "title": "LEGO Star Wars: Rebuild the Galaxy — Pieces of the Past",
+    "year": 2025,
+    "media_type": "series",
+    "chrono_order": 45,
+    "release_order": 2025.09,
+    "phase": "LEGO Star Wars Multiverse Sequel",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOsbwTQnJ87NfP13gK0kS9.jpg",
+    "runtime": "4 Episodes",
+    "desc": "Sig Greebling and friends continue their hilarious journey across fragmented Star Wars timelines to restore the cosmic building blocks.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "lego-sw-mando-special",
+    "title": "LEGO Star Wars: The Mandalorian",
+    "year": 2026,
+    "media_type": "movie",
+    "chrono_order": 46,
+    "release_order": 2026.08,
+    "phase": "LEGO Mandalorian Brick Adventure",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "Special",
+    "desc": "Din Djarin and baby Grogu embark on a lighthearted block-building adventure dealing with Jawa mechanics and stormtrooper blunders.",
+    "sub_universe": "15. LEGO Star Wars",
+    "sub_universes": [
+      "15. LEGO Star Wars"
+    ]
+  },
+  {
+    "id": "sw-faithful-wookiee",
+    "title": "The Story of the Faithful Wookiee (1978)",
+    "year": 1978,
+    "media_type": "movie",
+    "chrono_order": 47,
+    "release_order": 1978.11,
+    "phase": "Vintage Holiday Special Animation",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/gNbdjDi1HamTCZaSNxk2R2yI9Z2.jpg",
+    "runtime": "11 min",
+    "desc": "The historic first on-screen appearance of bounty hunter Boba Fett, animated by Nelvana for the Star Wars Holiday Special.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-caravan-courage",
+    "title": "Caravan of Courage: An Ewok Adventure (1984)",
+    "year": 1984,
+    "media_type": "movie",
+    "chrono_order": 48,
+    "release_order": 1984.11,
+    "phase": "Vintage Live-Action TV Movie",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/mDCBQSuPhA8k24iHqO6L30dG804.jpg",
+    "runtime": "96 min",
+    "desc": "The Towani family crash lands on the forest moon of Endor, where young Cindel and Mace ally with Ewoks to rescue their parents.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-battle-for-endor",
+    "title": "Ewoks: The Battle for Endor (1985)",
+    "year": 1985,
+    "media_type": "movie",
+    "chrono_order": 49,
+    "release_order": 1985.11,
+    "phase": "Vintage Live-Action TV Movie",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/mDCBQSuPhA8k24iHqO6L30dG804.jpg",
+    "runtime": "94 min",
+    "desc": "Cindel and Wicket join forces with a hermit named Noa to battle Marauders who have stolen a power crystal.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-droids",
+    "title": "Droids (1985–1986)",
+    "year": 1985,
+    "media_type": "series",
+    "chrono_order": 50,
+    "release_order": 1985.09,
+    "phase": "Nelvana Classic Vintage Series",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    "runtime": "13 Episodes",
+    "desc": "R2-D2 and C-3PO navigate adventures with various masters across the galaxy fifteen years before meeting Luke Skywalker.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-ewoks-series",
+    "title": "Ewoks (1985–1986)",
+    "year": 1985,
+    "media_type": "series",
+    "chrono_order": 51,
+    "release_order": 1985.09,
+    "phase": "Nelvana Classic Vintage Series",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/mDCBQSuPhA8k24iHqO6L30dG804.jpg",
+    "runtime": "2 Seasons / 26 Episodes",
+    "desc": "Follows Wicket W. Warrick and the Ewok tribe on the forest moon of Endor before the arrival of the Galactic Empire.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-2d-clone-wars",
+    "title": "Star Wars: The Clone Wars — 2D Micro-Series (2003–2005)",
+    "year": 2003,
+    "media_type": "series",
+    "chrono_order": 52,
+    "release_order": 2003.11,
+    "phase": "Genndy Tartakovsky Vintage Masterpiece",
+    "is_essential": true,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg",
+    "runtime": "25 Micro-Episodes / 2 Seasons",
+    "desc": "Genndy Tartakovsky's Emmy-winning kinetic masterwork introducing General Grievous and Mace Windu's legendary one-man army display.",
+    "sub_universe": "16. Star Wars Vintage / Legends",
+    "sub_universes": [
+      "16. Star Wars Vintage / Legends"
+    ]
+  },
+  {
+    "id": "sw-rebels-shorts",
+    "title": "Star Wars Rebels Shorts (2014)",
+    "year": 2014,
+    "media_type": "series",
+    "chrono_order": 53,
+    "release_order": 2014.08,
+    "phase": "Rebels Introductory Shorts",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/91i5s79m0n14o8721c0029b.jpg",
+    "runtime": "4 Shorts",
+    "desc": "Four character spotlight shorts introducing Ghost crew members Chopper, Zeb, Sabine, and Kanan before the premiere of Star Wars Rebels.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-forces-destiny",
+    "title": "Star Wars: Forces of Destiny (2017–2018)",
+    "year": 2017,
+    "media_type": "series",
+    "chrono_order": 54,
+    "release_order": 2017.07,
+    "phase": "Heroines Micro-Series",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdw3cLLGkeOioTRUs6MKIumx.jpg",
+    "runtime": "32 Micro-Episodes",
+    "desc": "Celebrates the heroism of iconic characters including Rey, Jyn Erso, Princess Leia, Sabine Wren, Padmé Amidala, and Ahsoka Tano.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-blips",
+    "title": "Star Wars Blips (2017–2019)",
+    "year": 2017,
+    "media_type": "series",
+    "chrono_order": 55,
+    "release_order": 2017.09,
+    "phase": "Droids Comic Shorts",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdw3cLLGkeOioTRUs6MKIumx.jpg",
+    "runtime": "8 YouTube Shorts",
+    "desc": "Lighthearted comedic animated shorts starring BB-8, R2-D2, Chewbacca, and the porgs causing mischief on the Millennium Falcon.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-resistance-shorts",
+    "title": "Star Wars Resistance Shorts (2018)",
+    "year": 2018,
+    "media_type": "series",
+    "chrono_order": 56,
+    "release_order": 2018.12,
+    "phase": "Resistance Vignettes",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/oZNPzxqok5ObAnOzxl9M8BhuMG5.jpg",
+    "runtime": "12 Shorts",
+    "desc": "Bite-sized animated shorts showcasing the ace pilots and mechanics of the Colossus platform.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-zen-grogu",
+    "title": "Zen: Grogu and Dust Bunnies (2022)",
+    "year": 2022,
+    "media_type": "movie",
+    "chrono_order": 57,
+    "release_order": 2022.11,
+    "phase": "Studio Ghibli Hand-Drawn Short",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "3 min",
+    "desc": "Hand-drawn animated short created by legendary anime house Studio Ghibli pairing baby Grogu with soot sprites.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-young-jedi-shorts",
+    "title": "Young Jedi Adventures Shorts (2023–)",
+    "year": 2023,
+    "media_type": "series",
+    "chrono_order": 58,
+    "release_order": 2023.03,
+    "phase": "High Republic Shorts",
+    "is_essential": false,
+    "is_animation": true,
+    "poster_url": "https://image.tmdb.org/t/p/w500/81W08b5f3m7Y6k8a1q0.jpg",
+    "runtime": "Shorts",
+    "desc": "Introduction to Kai, Lys, and Nubs as they learn teamwork, discipline, and the fundamentals of the Force.",
+    "sub_universe": "18. Star Wars Specials / Shorts",
+    "sub_universes": [
+      "18. Star Wars Specials / Shorts"
+    ]
+  },
+  {
+    "id": "sw-doc-mando",
+    "title": "Disney Gallery: The Mandalorian (2020–2021)",
+    "year": 2020,
+    "media_type": "series",
+    "chrono_order": 59,
+    "release_order": 2020.05,
+    "phase": "Behind the Scenes Docuseries",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1R07Y9WUr.jpg",
+    "runtime": "2 Seasons / 9 Episodes",
+    "desc": "Jon Favreau and directors examine the revolutionary StageCraft virtual production technology, practical puppets, and storytelling.",
+    "sub_universe": "19. Star Wars Documentary / Behind the Scenes",
+    "sub_universes": [
+      "19. Star Wars Documentary / Behind the Scenes"
+    ]
+  },
+  {
+    "id": "sw-doc-boba-fett",
+    "title": "Disney Gallery: The Book of Boba Fett (2022)",
+    "year": 2022,
+    "media_type": "movie",
+    "chrono_order": 60,
+    "release_order": 2022.05,
+    "phase": "Behind the Scenes Special",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/gNbdjDi1HamTCZaSNxk2R2yI9Z2.jpg",
+    "runtime": "63 min",
+    "desc": "Explores the filmmaking, costume design, and creature effects bringing Boba Fett and Cad Bane to life.",
+    "sub_universe": "19. Star Wars Documentary / Behind the Scenes",
+    "sub_universes": [
+      "19. Star Wars Documentary / Behind the Scenes"
+    ]
+  },
+  {
+    "id": "sw-doc-light-magic",
+    "title": "Light & Magic (2022–)",
+    "year": 2022,
+    "media_type": "series",
+    "chrono_order": 61,
+    "release_order": 2022.07,
+    "phase": "ILM Definitive History",
+    "is_essential": true,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    "runtime": "6 Episodes",
+    "desc": "Lawrence Kasdan directs this definitive six-part docuseries charting the history and visionary artists of Industrial Light & Magic.",
+    "sub_universe": "19. Star Wars Documentary / Behind the Scenes",
+    "sub_universes": [
+      "19. Star Wars Documentary / Behind the Scenes"
+    ]
+  },
+  {
+    "id": "sw-doc-kenobi-return",
+    "title": "Obi-Wan Kenobi: A Jedi's Return (2022)",
+    "year": 2022,
+    "media_type": "movie",
+    "chrono_order": 62,
+    "release_order": 2022.09,
+    "phase": "Behind the Scenes Special",
+    "is_essential": false,
+    "is_animation": false,
+    "poster_url": "https://image.tmdb.org/t/p/w500/qJXZjAjFiPn7GhMlupNDapxQxMN.jpg",
+    "runtime": "60 min",
+    "desc": "Ewan McGregor, Hayden Christensen, and director Deborah Chow reflect on reuniting as Obi-Wan Kenobi and Darth Vader.",
+    "sub_universe": "19. Star Wars Documentary / Behind the Scenes",
+    "sub_universes": [
+      "19. Star Wars Documentary / Behind the Scenes"
+    ]
+  }
+];

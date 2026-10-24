@@ -19,10 +19,11 @@ build/
 .env.production.local
 
 # Large Raw Datasets (Do NOT commit to GitHub / Vercel)
-data/
+/data/
 *.tsv
 *.tsv.gz
 *.csv
+!backend/data/franchises.js
 
 # Local large master database (920MB - Exceeds GitHub 100MB limit)
 movies_master.db
