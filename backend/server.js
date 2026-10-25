@@ -24,24 +24,10 @@ const GENRE_MAP = {
   'Science Fiction': 'Sci-Fi'
 };
 
-// 1. Health & Status
-app.get('/', (req, res) => {
-  res.json({
-    engine: 'cine2watch Studio Production API',
-    status: 'online',
-    datasource: 'Supabase PostgreSQL (330K+ global cinema & series)',
-    endpoints: {
-      recommend: '/api/recommend?industry=hollywood&genres=Action,Sci-Fi&media_type=movie',
-      random_suggestion: '/api/random-suggestion?mood=all&industry=all',
-      similar: '/api/similar?title=Inception&genres=Sci-Fi,Action',
-      search: '/api/search?q=Movies like Interstellar',
-      franchises: '/api/franchises',
-      health: '/api/health'
-    }
-  });
-});
+const apiRouter = express.Router();
 
-app.get('/api/health', (req, res) => {
+// 1. Health & Status
+apiRouter.get('/health', (req, res) => {
   res.json({
     status: 'healthy',
     version: '2.0.0-production',
@@ -51,7 +37,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // 2. Main Recommendation Funnel
-app.get('/api/recommend', async (req, res) => {
+apiRouter.get('/recommend', async (req, res) => {
   try {
     const { 
       industry = 'all', 
@@ -110,7 +96,7 @@ app.get('/api/recommend', async (req, res) => {
 });
 
 // 3. Dynamic Random Double Feature (Guaranteed Non-Repeating & Industry-Aware)
-app.get('/api/random-suggestion', async (req, res) => {
+apiRouter.get('/random-suggestion', async (req, res) => {
   try {
     const mood = (req.query.mood || 'all').toLowerCase();
     const industry = (req.query.industry || 'all').toLowerCase();
@@ -132,7 +118,7 @@ app.get('/api/random-suggestion', async (req, res) => {
 });
 
 // 4. "More Like This" Similar Titles
-app.get('/api/similar', async (req, res) => {
+apiRouter.get('/similar', async (req, res) => {
   try {
     const { id, title, genres, director, original_language } = req.query;
 
@@ -161,7 +147,7 @@ app.get('/api/similar', async (req, res) => {
 });
 
 // 5. Universal Search Engine ("Movies like X" & Direct Search)
-app.get('/api/search', async (req, res) => {
+apiRouter.get('/search', async (req, res) => {
   try {
     const query = req.query.q || '';
     if (!query.trim()) {
@@ -177,7 +163,7 @@ app.get('/api/search', async (req, res) => {
 });
 
 // 6. Cinematic Franchises & Universes Hub
-app.get('/api/franchises', (req, res) => {
+apiRouter.get('/franchises', (req, res) => {
   res.json({
     success: true,
     count: FRANCHISES.length,
@@ -186,9 +172,31 @@ app.get('/api/franchises', (req, res) => {
   });
 });
 
+// Mount apiRouter on both /api and / so all Vercel rewrite patterns match seamlessly
+app.use('/api', apiRouter);
+app.use('/', apiRouter);
+
+// Root Engine Status
+app.get('/', (req, res) => {
+  res.json({
+    engine: 'cine2watch Studio Production API',
+    status: 'online',
+    datasource: 'Supabase PostgreSQL (330K+ global cinema & series)',
+    endpoints: {
+      recommend: '/api/recommend?industry=hollywood&genres=Action,Sci-Fi&media_type=movie',
+      random_suggestion: '/api/random-suggestion?mood=all&industry=all',
+      similar: '/api/similar?title=Inception&genres=Sci-Fi,Action',
+      search: '/api/search?q=Movies like Interstellar',
+      franchises: '/api/franchises',
+      health: '/api/health'
+    }
+  });
+});
+
 const PORT = process.env.PORT || 5000;
 
-if (process.env.NODE_ENV !== 'production' || process.env.RENDER || !process.env.VERCEL) {
+// Only bind to port if NOT in a Vercel Serverless Function environment
+if (!process.env.VERCEL) {
   app.listen(PORT, '0.0.0.0', () => {
     console.log(`[CineMatch Studio v2] Production Server listening on http://localhost:${PORT}`);
   });
