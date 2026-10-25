@@ -14,21 +14,15 @@ import { JOHN_WICK_SUB_UNIVERSES, JOHN_WICK_TIMELINE } from './john_wick_data.js
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Read current franchises to retain all remaining franchises
-import { FRANCHISES, FRANCHISE_HUBS } from '../data/franchises.js';
+import { STANDALONE_SCIFI_FRANCHISES } from './scifi_standalone_data.js';
+import { ADDITIONAL_SCIFI_FRANCHISES } from './add_more_scifi.js';
+import { ANIME_MASTER_FRANCHISE } from './anime_master_data.js';
+import { OSCAR_WINNERS_FRANCHISE } from './oscar_winners_data.js';
 
-const otherFranchises = FRANCHISES.filter(f => 
-  f.id !== 'marvel' && 
-  f.id !== 'dc-universe' && 
-  f.id !== 'dc' && 
-  f.id !== 'star-wars' &&
-  f.id !== 'wizarding-world' &&
-  f.id !== 'middle-earth' &&
-  f.id !== 'fast-and-furious' &&
-  f.id !== 'transformers' &&
-  f.id !== 'mission-impossible' &&
-  f.id !== 'john-wick'
-);
+const allStandaloneFranchises = [
+  ...STANDALONE_SCIFI_FRANCHISES,
+  ...ADDITIONAL_SCIFI_FRANCHISES
+];
 
 const updatedMarvelFranchise = {
   id: 'marvel',
@@ -224,20 +218,42 @@ const updatedJohnWickFranchise = {
 };
 
 const finalFranchises = [
+  OSCAR_WINNERS_FRANCHISE,
   updatedMarvelFranchise, 
   updatedDcFranchise, 
   updatedStarWarsFranchise,
+  ANIME_MASTER_FRANCHISE,
   updatedWizardingWorldFranchise,
   updatedMiddleEarthFranchise,
   updatedFastFuriousFranchise,
   updatedTransformersFranchise,
   updatedMissionImpossibleFranchise,
   updatedJohnWickFranchise,
-  ...otherFranchises
+  ...allStandaloneFranchises
+];
+
+const FRANCHISE_HUBS = [
+  { id: 'all', name: 'All Universes', icon: '🌐' },
+  { id: 'oscar-winners', name: 'Oscar Winning', icon: '🏆' },
+  { id: 'marvel', name: 'Marvel', icon: '🦸' },
+  { id: 'dc-universe', name: 'DC Multiverse', icon: '🦇' },
+  { id: 'star-wars', name: 'Star Wars', icon: '⭐' },
+  { id: 'anime-universe', name: 'Anime Universe', icon: '🇯🇵' },
+  { id: 'wizarding-world', name: 'Wizarding World', icon: '🧙' },
+  { id: 'middle-earth', name: 'Middle-Earth', icon: '🧝' },
+  { id: 'fast-and-furious', name: 'Fast & Furious', icon: '🏎️' },
+  { id: 'transformers', name: 'Transformers', icon: '⚡' },
+  { id: 'mission-impossible', name: 'Mission: Impossible', icon: '💥' },
+  { id: 'john-wick', name: 'John Wick', icon: '🎯' },
+  ...allStandaloneFranchises.map(f => ({
+    id: f.id,
+    name: f.name.replace(/ (Saga|Universe)$/, ''),
+    icon: f.icon
+  }))
 ];
 
 const outputFileContent = `// Master Cinematic Universes, Franchise Hubs & Canon Watch Orders
-// Generated for cine2watch v2 Production Platform with Marvel (15), DC (23), Star Wars (19), Wizarding World (6), Middle-Earth (6), Fast & Furious (4), Transformers (5), Mission: Impossible (4), and John Wick (3)
+// Generated for cine2watch v2 Production Platform with 31 Master Sagas & Anime Universe
 
 export const FRANCHISE_HUBS = ${JSON.stringify(FRANCHISE_HUBS, null, 2)};
 
@@ -247,6 +263,7 @@ export const FRANCHISES = ${JSON.stringify(finalFranchises, null, 2)};
 fs.writeFileSync(path.join(__dirname, '../data/franchises.js'), outputFileContent, 'utf8');
 console.log('Successfully compiled complete master franchises!');
 console.log('Total franchises:', finalFranchises.length);
+console.log('Total franchise hubs:', FRANCHISE_HUBS.length);
 console.log('Marvel total chapters:', MARVEL_TIMELINE.length);
 console.log('DC total chapters:', DC_TIMELINE.length);
 console.log('Star Wars total chapters:', STAR_WARS_TIMELINE.length);
@@ -256,4 +273,8 @@ console.log('Fast & Furious total chapters:', FAST_FURIOUS_TIMELINE.length);
 console.log('Transformers total chapters:', TRANSFORMERS_TIMELINE.length);
 console.log('Mission: Impossible total chapters:', MISSION_IMPOSSIBLE_TIMELINE.length);
 console.log('John Wick total chapters:', JOHN_WICK_TIMELINE.length);
+console.log('Standalone Sci-Fi franchises:', allStandaloneFranchises.length);
+allStandaloneFranchises.forEach(f => {
+  console.log(`- ${f.name} (${f.id}): ${f.timeline.length} chapters`);
+});
 

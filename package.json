@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently -n \"API,VITE\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
     "start": "concurrently -n \"API,VITE\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
-    "server": "npm --prefix backend run start",
+    "server": "npm --prefix backend run dev",
     "client": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend install && npm --prefix frontend run build",
     "lint": "npm --prefix frontend run lint",

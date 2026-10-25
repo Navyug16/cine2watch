@@ -163,13 +163,23 @@ apiRouter.get('/search', async (req, res) => {
 });
 
 // 6. Cinematic Franchises & Universes Hub
-apiRouter.get('/franchises', (req, res) => {
-  res.json({
-    success: true,
-    count: FRANCHISES.length,
-    hubs: FRANCHISE_HUBS,
-    data: FRANCHISES
-  });
+apiRouter.get('/franchises', async (req, res) => {
+  try {
+    const fresh = await import(`./data/franchises.js?t=${Date.now()}`);
+    res.json({
+      success: true,
+      count: fresh.FRANCHISES.length,
+      hubs: fresh.FRANCHISE_HUBS,
+      data: fresh.FRANCHISES
+    });
+  } catch (err) {
+    res.json({
+      success: true,
+      count: FRANCHISES.length,
+      hubs: FRANCHISE_HUBS,
+      data: FRANCHISES
+    });
+  }
 });
 
 // Mount apiRouter on both /api and / so all Vercel rewrite patterns match seamlessly
