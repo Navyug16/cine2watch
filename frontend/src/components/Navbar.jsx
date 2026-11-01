@@ -1,12 +1,17 @@
 import React from 'react';
-import { Search, Layers, PlaySquare } from 'lucide-react';
+import { Search, PlaySquare } from 'lucide-react';
 
-export default function Navbar({ onOpenSearch, onOpenFranchises, onReset }) {
+export default function Navbar({ 
+  activePage = 'home',
+  onNavigate,
+  onOpenSearch, 
+  onReset 
+}) {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-xl bg-[#08090d]/85 border-b border-white/[0.06] transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         
-        {/* Brand Logo: cine2watch */}
+        {/* Brand Logo */}
         <div 
           onClick={onReset} 
           className="flex items-center space-x-2.5 cursor-pointer group shrink-0"
@@ -27,7 +32,7 @@ export default function Navbar({ onOpenSearch, onOpenFranchises, onReset }) {
         </div>
 
         {/* Center: Universal Command / Search Trigger */}
-        <div className="flex-1 max-w-md mx-auto hidden md:block">
+        <div className="flex-1 max-w-lg mx-auto">
           <button
             onClick={onOpenSearch}
             className="w-full flex items-center justify-between px-3.5 py-2 rounded-xl bg-[#12131a] hover:bg-[#181a24] border border-white/[0.08] hover:border-[#c5a059]/40 text-slate-400 hover:text-slate-200 text-xs transition-all duration-200 cursor-pointer shadow-inner group"
@@ -44,29 +49,8 @@ export default function Navbar({ onOpenSearch, onOpenFranchises, onReset }) {
           </button>
         </div>
 
-        {/* Right Action Controls: Franchises & Mobile Search (Quick Shuffle removed from header as requested) */}
-        <div className="flex items-center space-x-2 sm:space-x-3 shrink-0">
-          
-          {/* Mobile Search Icon */}
-          <button
-            onClick={onOpenSearch}
-            className="md:hidden p-2.5 rounded-xl bg-[#12131a] border border-white/[0.08] text-slate-300 hover:text-white cursor-pointer"
-            title="Search catalog"
-          >
-            <Search className="w-4 h-4 text-[#c5a059]" />
-          </button>
-
-          {/* Cinematic Universes & Franchises Button */}
-          <button
-            onClick={onOpenFranchises}
-            className="px-3.5 py-2 rounded-xl bg-[#13141d] hover:bg-[#1c1e2b] border border-white/[0.08] hover:border-[#c5a059]/40 text-xs font-bold text-slate-200 flex items-center space-x-2 cursor-pointer transition-all duration-200 shadow-md group"
-            title="Franchises & Cinematic Universes"
-          >
-            <Layers className="w-4 h-4 text-[#c5a059] group-hover:rotate-12 transition-transform" />
-            <span className="hidden sm:inline">Franchises & Universes</span>
-            <span className="sm:hidden">Franchises</span>
-          </button>
-        </div>
+        {/* Right Spacer to preserve balanced center alignment */}
+        <div className="hidden sm:block w-[140px] shrink-0" />
 
       </div>
     </header>

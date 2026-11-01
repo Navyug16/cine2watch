@@ -186,22 +186,32 @@ apiRouter.get('/franchises', async (req, res) => {
 app.use('/api', apiRouter);
 app.use('/', apiRouter);
 
-// Root Engine Status
-app.get('/', (req, res) => {
-  res.json({
-    engine: 'cine2watch Studio Production API',
-    status: 'online',
-    datasource: 'Supabase PostgreSQL (330K+ global cinema & series)',
-    endpoints: {
-      recommend: '/api/recommend?industry=hollywood&genres=Action,Sci-Fi&media_type=movie',
-      random_suggestion: '/api/random-suggestion?mood=all&industry=all',
-      similar: '/api/similar?title=Inception&genres=Sci-Fi,Action',
-      search: '/api/search?q=Movies like Interstellar',
-      franchises: '/api/franchises',
-      health: '/api/health'
-    }
+// Serve frontend build if dist folder exists for production SPA routing
+const distPath = path.resolve('frontend/dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(distPath, 'index.html'));
   });
-});
+} else {
+  // Root Engine Status fallback if no static build
+  app.get('/', (req, res) => {
+    res.json({
+      engine: 'cine2watch Studio Production API',
+      status: 'online',
+      datasource: 'Supabase PostgreSQL (330K+ global cinema & series)',
+      endpoints: {
+        recommend: '/api/recommend?industry=hollywood&genres=Action,Sci-Fi&media_type=movie',
+        random_suggestion: '/api/random-suggestion?mood=all&industry=all',
+        similar: '/api/similar?title=Inception&genres=Sci-Fi,Action',
+        search: '/api/search?q=Movies like Interstellar',
+        franchises: '/api/franchises',
+        health: '/api/health'
+      }
+    });
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 

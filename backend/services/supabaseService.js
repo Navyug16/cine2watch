@@ -109,10 +109,15 @@ export async function getRecommendations({
     }
   }
 
-  // Exclude seen IDs
+  // Exclude seen IDs (sanitized to safe alphanumeric/dash tokens only)
   if (exclude_ids && exclude_ids.length > 0) {
-    const cleanExclude = exclude_ids.map(id => String(id)).slice(0, 50);
-    query = query.not('id', 'in', `(${cleanExclude.join(',')})`);
+    const cleanExclude = exclude_ids
+      .map(id => String(id).replace(/[^a-zA-Z0-9_-]/g, ''))
+      .filter(Boolean)
+      .slice(0, 50);
+    if (cleanExclude.length > 0) {
+      query = query.not('id', 'in', `(${cleanExclude.join(',')})`);
+    }
   }
 
   // Fetch candidate pool without forcing compound index walk (fast sub-second fetch)
@@ -484,13 +489,17 @@ export async function searchMovies({ query }) {
   }
 
   // Mode B: Direct Search via title / original_title
+  // Sanitize PostgREST syntax control characters
+  const sanitized = clean.replace(/[{}\[\](),]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!sanitized) return { mode: 'empty', results: [] };
+
   // Normalize & vs and
-  const altClean = clean.includes('&') ? clean.replace(/&/g, 'and') : clean.replace(/\band\b/gi, '&');
+  const altClean = sanitized.includes('&') ? sanitized.replace(/&/g, 'and') : sanitized.replace(/\band\b/gi, '&');
 
   const { data: titleData, error: titleErr } = await supabase
     .from('movies')
     .select('id, imdb_id, title, original_title, media_type, year, original_language, genres, rating, votes, runtime_minutes, director, cast_members, poster_path, overview')
-    .or(`title.ilike.%${clean}%,original_title.ilike.%${clean}%,title.ilike.%${altClean}%`)
+    .or(`title.ilike.%${sanitized}%,original_title.ilike.%${sanitized}%,title.ilike.%${altClean}%`)
     .limit(40);
 
   if (titleErr) {
