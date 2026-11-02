@@ -1,5 +1,5 @@
 // Master Cinematic Universes, Franchise Hubs & Canon Watch Orders
-// Generated for cine2watch v2 Production Platform with 31 Master Sagas & Anime Universe
+// Generated for cine2watch v2 Production Platform with 34 Master Sagas & Anime Universe
 
 export const FRANCHISE_HUBS = [
   {
@@ -177,7 +177,7 @@ export const FRANCHISES = [
     "icon": "🏆",
     "theme_color": "#D4AF37",
     "tagline": "The pinnacle of filmmaking excellence: Every Best Picture winner, multi-Oscar record holder, and historic masterpiece from 1927 to present.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "banner_poster": "/posters/oscar_winners.webp",
     "why_watch": "Nearly a century of cinematic triumph honoring groundbreaking directing, immortal performances, technical milestones, and the greatest stories ever told.",
     "sub_universes": [
       "All Oscar Winners",
@@ -8016,7 +8016,7 @@ export const FRANCHISES = [
     "icon": "🦸",
     "theme_color": "#E62429",
     "tagline": "The definitive Marvel catalog: 15 distinct universes, eras, and timelines meticulously arranged with canonical watch orders.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "banner_poster": "/posters/marvel.webp",
     "why_watch": "The largest cinematic and televisual storytelling tapestry in pop-culture history, spanning 170+ interconnected films, prestige series, and animation.",
     "sub_universes": [
       "All Marvel",
@@ -10467,7 +10467,7 @@ export const FRANCHISES = [
     "icon": "🦇",
     "theme_color": "#0078F0",
     "tagline": "The complete DC Multiverse: James Gunn's DCU, the Snyderverse DCEU, classic Gotham sagas, DCAU/DCAMU animation, and Vertigo dark legends.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+    "banner_poster": "/posters/dc_multiverse.webp",
     "why_watch": "Spanning more than 80 years of heroic legacy, gods, monsters, vigilantes, and alternate timelines across 130+ iconic productions.",
     "sub_universes": [
       "All DC",
@@ -12895,7 +12895,7 @@ export const FRANCHISES = [
     "icon": "⭐",
     "theme_color": "#FFE81F",
     "tagline": "A long time ago in a galaxy far, far away... Explore the High Republic, Fall of the Jedi, Age of Rebellion, New Republic, and First Order.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    "banner_poster": "/posters/star_wars.webp",
     "why_watch": "The quintessential space-opera mythology spanning Jedi, Sith, bounty hunters, starfighter dogfights, and revolutionary galactic struggles.",
     "sub_universes": [
       "All Star Wars",
@@ -14147,7 +14147,7 @@ export const FRANCHISES = [
     "icon": "🇯🇵",
     "theme_color": "#FF4655",
     "tagline": "The definitive Japanese animation pantheon: The Big Three, dark fantasy titans, psychological masterpieces, and Hayao Miyazaki's legendary filmography.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
+    "banner_poster": "/posters/anime.webp",
     "why_watch": "Spanning six decades of visionary Japanese artistry, groundbreaking animation, profound philosophical depths, and unforgettable emotional storytelling.",
     "sub_universes": [
       "All Anime",
@@ -15385,7 +15385,7 @@ export const FRANCHISES = [
     "icon": "🧙",
     "theme_color": "#D3A625",
     "tagline": "The official Wizarding World catalog: J.K. Rowling's 8-film Harry Potter saga, Fantastic Beasts prequels, and Hogwarts lore.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    "banner_poster": "/posters/harry_potter.webp",
     "why_watch": "The most beloved fantasy franchise of modern literature and cinema, taking viewers into the spells, houses, mysteries, and battles of Hogwarts.",
     "sub_universes": [
       "All Wizarding World",
@@ -15688,7 +15688,7 @@ export const FRANCHISES = [
     "icon": "🧝",
     "theme_color": "#C5A059",
     "tagline": "J.R.R. Tolkien's legendary legendarium: Peter Jackson's Oscar-winning trilogies, The Rings of Power, and anime lore.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+    "banner_poster": "/posters/middle_earth.webp",
     "why_watch": "The crowning achievement of high fantasy cinema, recipient of 17 Academy Awards with unparalleled worldbuilding and score.",
     "sub_universes": [
       "All Middle-Earth",
@@ -15979,7 +15979,7 @@ export const FRANCHISES = [
     "icon": "🏎️",
     "theme_color": "#FF2A00",
     "tagline": "Quarter-mile at a time: Street races, impossible vault heists, supersonic supercars, and the unbreakable code of family.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
+    "banner_poster": "/posters/fast_and_furious.webp",
     "why_watch": "The ultimate modern adrenaline franchise that evolved from gritty midnight Los Angeles street racing into billion-dollar globetrotting super-spy action.",
     "sub_universes": [
       "All Fast & Furious",
@@ -16296,7 +16296,7 @@ export const FRANCHISES = [
     "icon": "🤖",
     "theme_color": "#0055FF",
     "tagline": "More than meets the eye: Autobots, Decepticons, Maximals, and the battle for the Allspark across millions of years.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/4N4sipl8T72tNE4earcctQa2Kw2.jpg",
+    "banner_poster": "/posters/transformers.webp",
     "why_watch": "The quintessential giant-robot spectacle combining high-octane vehicular action, extraterrestrial mythology, and Optimus Prime's legendary leadership.",
     "sub_universes": [
       "All Transformers",
@@ -16524,7 +16524,7 @@ export const FRANCHISES = [
     "icon": "💥",
     "theme_color": "#E50914",
     "tagline": "Your mission, should you choose to accept it: Tom Cruise's peerless death-defying stunts, IMF global espionage, and mask reveals.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+    "banner_poster": "/posters/mission_impossible.webp",
     "why_watch": "The pinnacle of practical cinematic action and espionage thrills, famous for Tom Cruise performing real halo jumps, biplane stunts, and Burj Khalifa climbs.",
     "sub_universes": [
       "All Mission: Impossible",
@@ -16758,7 +16758,7 @@ export const FRANCHISES = [
     "icon": "🎯",
     "theme_color": "#F59E0B",
     "tagline": "Yeah, I'm thinking I'm back: Gun-fu mastery, the High Table underworld, gold coins, and legendary oaths of the Continental.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    "banner_poster": "/posters/john_wick.webp",
     "why_watch": "The gold standard of 21st-century martial arts and stunt cinema, reinventing Hollywood action with Keanu Reeves, Chad Stahelski, and breathtaking worldbuilding.",
     "sub_universes": [
       "All John Wick",
@@ -16918,7 +16918,7 @@ export const FRANCHISES = [
     "icon": "🪐",
     "theme_color": "#D4AF37",
     "tagline": "Fear is the mind-killer: Frank Herbert's legendary desert empire of Paul Atreides, Arrakis, and the holy spice Melange.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
+    "banner_poster": "/posters/dune.webp",
     "why_watch": "Denis Villeneuve's cinematic sci-fi triumph combined with Frank Herbert's monumental space feudalism political epic.",
     "sub_universes": [
       "All Dune",
@@ -17067,7 +17067,7 @@ export const FRANCHISES = [
     "icon": "🌊",
     "theme_color": "#00B4D8",
     "tagline": "I see you: James Cameron's revolutionary sci-fi odyssey into the bioluminescent moons and sacred oceans of Pandora.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "banner_poster": "/posters/avatar.webp",
     "why_watch": "The highest-grossing cinematic universe in world history, redefining 3D visual effects, ecological storytelling, and alien anthropology.",
     "sub_universes": [
       "All Avatar",
@@ -17165,7 +17165,7 @@ export const FRANCHISES = [
     "icon": "🕶️",
     "theme_color": "#00FF66",
     "tagline": "Wake up, Neo: The red pill, green code rain, bullet time, and humanity's war against machine slavery.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+    "banner_poster": "/posters/the_matrix.webp",
     "why_watch": "The Wachowskis' philosophical action masterwork that permanently revolutionized cinematic fight choreography, digital VFX, and cyberpunk storytelling.",
     "sub_universes": [
       "All The Matrix",
@@ -17280,7 +17280,7 @@ export const FRANCHISES = [
     "icon": "👽",
     "theme_color": "#39FF14",
     "tagline": "In space no one can hear you scream: The perfect organism, extraterrestrial trophy hunters, and corporate bio-weapon greed.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+    "banner_poster": "/posters/alien.webp",
     "why_watch": "The twin pillars of sci-fi horror and visceral action cinema created by Ridley Scott, James Cameron, and John McTiernan.",
     "sub_universes": [
       "All Alien & Predator",
@@ -17553,7 +17553,7 @@ export const FRANCHISES = [
     "icon": "🤖",
     "theme_color": "#FF2A00",
     "tagline": "The future is not set: Cyberdyne Systems, T-800 infiltration units, liquid metal assassins, and the resistance of John Connor.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
+    "banner_poster": "/posters/terminator.webp",
     "why_watch": "James Cameron's seminal sci-fi action benchmark that defined cybernetic horror and created Arnold Schwarzenegger's most immortal role.",
     "sub_universes": [
       "All Terminator",
@@ -17719,7 +17719,7 @@ export const FRANCHISES = [
     "icon": "🦖",
     "theme_color": "#00E5FF",
     "tagline": "King of the Monsters: Nuclear awakenings, the Hollow Earth ecosystem, and colossal clashes between Godzilla and Kong.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/2W0Yw0qrgVMgdsSCZRKtfvaAh0i.jpg",
+    "banner_poster": "/posters/monsterverse.webp",
     "why_watch": "The grandest kaiju mythology on Earth, spanning Toho's 1954 atomic allegory to Legendary's billion-dollar MonsterVerse titan wars.",
     "sub_universes": [
       "All Godzilla",
@@ -17919,7 +17919,7 @@ export const FRANCHISES = [
     "icon": "🦧",
     "theme_color": "#4B5320",
     "tagline": "Apes together strong: Evolution, the collapse of human civilization, and the rise of the simian empire.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/2r9iKnlSYEk4daQadsXfcjHfIjQ.jpg",
+    "banner_poster": "/posters/planet_of_the_apes.webp",
     "why_watch": "One of cinema's greatest philosophical science fiction franchises, elevated to all-time brilliance by Andy Serkis's performance-capture Caesar trilogy.",
     "sub_universes": [
       "All Planet of the Apes",
@@ -18124,7 +18124,7 @@ export const FRANCHISES = [
     "icon": "🏜️",
     "theme_color": "#FF6F00",
     "tagline": "What a lovely day: George Miller's relentless post-apocalyptic dieselpunk kinetic poetry of fire, blood, and guzzoline.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+    "banner_poster": "/posters/mad_max.webp",
     "why_watch": "The undisputed gold standard of practical vehicle stunts, high-octane physical filmmaking, and visual storytelling.",
     "sub_universes": [
       "All Mad Max",
@@ -18238,7 +18238,7 @@ export const FRANCHISES = [
     "icon": "⚡",
     "theme_color": "#FFD700",
     "tagline": "Great Scott! 88 miles per hour, 1.21 gigawatts of plutonium power, and the ultimate time-travel adventure.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg",
+    "banner_poster": "/posters/back_to_the_future.webp",
     "why_watch": "Robert Zemeckis and Bob Gale's timeless, screenplay-perfect sci-fi comedy adventure starring Michael J. Fox and Christopher Lloyd.",
     "sub_universes": [
       "All Back to the Future",
@@ -18335,7 +18335,7 @@ export const FRANCHISES = [
     "icon": "🕶️",
     "theme_color": "#FFFFFF",
     "tagline": "Protecting the earth from the scum of the universe: Black suits, rayguns, neuralyzers, and secret alien immigration.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/uLOmScFGIFTFqXYsYelLQyeQi70.jpg",
+    "banner_poster": "/posters/men_in_black.webp",
     "why_watch": "Barry Sonnenfeld's electric sci-fi buddy-comedy matching Will Smith's charismatic swagger with Tommy Lee Jones's stone-faced delivery.",
     "sub_universes": [
       "All Men in Black",
@@ -18449,7 +18449,7 @@ export const FRANCHISES = [
     "icon": "🌆",
     "theme_color": "#FF0055",
     "tagline": "All those moments will be lost in time, like tears in rain: Cyberpunk Los Angeles, rogue replicants, and questions of humanity.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+    "banner_poster": "/posters/blade_runner.webp",
     "why_watch": "Ridley Scott and Denis Villeneuve's monumental visual masterpieces that defined the aesthetics and philosophical depth of cyberpunk cinema.",
     "sub_universes": [
       "All Blade Runner",
@@ -18546,7 +18546,7 @@ export const FRANCHISES = [
     "icon": "🖖",
     "theme_color": "#0084FF",
     "tagline": "To boldly go where no one has gone before: The United Federation of Planets, USS Enterprise, Klingons, Romulans, and the Borg.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/lV5OpzAss1z06YNagOVap1I35mH.jpg",
+    "banner_poster": "/posters/star_trek.webp",
     "why_watch": "The grandest utopian vision in science fiction history, pioneering television storytelling, philosophical diplomacy, and iconic film epics across 6 decades.",
     "sub_universes": [
       "All Star Trek",
@@ -19013,7 +19013,7 @@ export const FRANCHISES = [
     "icon": "🤖",
     "theme_color": "#94A3B8",
     "tagline": "Part man. Part machine. All cop: Paul Verhoeven's satirical dystopian masterpiece of corporate greed, cybernetics, and justice.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/hHtOgGb3NihlyRATHlKPaFApbrd.jpg",
+    "banner_poster": "/posters/robocop.webp",
     "why_watch": "Brilliant dark satire on privatized police forces, mass media, and corporate authoritarianism combined with legendary ultraviolent 80s action.",
     "sub_universes": [
       "All RoboCop",
@@ -19122,7 +19122,7 @@ export const FRANCHISES = [
     "icon": "⚡",
     "theme_color": "#00E5FF",
     "tagline": "Enter the Grid: A digital cyberspace of disc battles, Recognizers, ISOs, and revolutions between Programs and Users.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/xcO8Uun0mfmE3N9CaiCy0tvjpiu.jpg",
+    "banner_poster": "/posters/tron.webp",
     "why_watch": "Groundbreaking visual effects milestone, Daft Punk's iconic electronic orchestral score, and thrilling futuristic cyberspace worldbuilding.",
     "sub_universes": [
       "All Tron",
@@ -19219,7 +19219,7 @@ export const FRANCHISES = [
     "icon": "🦾",
     "theme_color": "#3B82F6",
     "tagline": "To fight monsters, we created monsters of our own: Colossal Jaegers, interdimensional Kaiju, and pilots locked in neural Drift.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/8wo4eN8dWKaKlxhSvBz19uvj8gA.jpg",
+    "banner_poster": "/posters/pacific_rim.webp",
     "why_watch": "Guillermo del Toro's spectacular love letter to mecha anime and giant kaiju cinema with staggering scale and tactile robotic weight.",
     "sub_universes": [
       "All Pacific Rim",
@@ -19294,7 +19294,7 @@ export const FRANCHISES = [
     "icon": "🌀",
     "theme_color": "#EAB308",
     "tagline": "Step through the gate: An ancient alien portal connecting Earth to millions of worlds across the Milky Way and Pegasus galaxies.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/4T6Po0XnZlevmhfPh3ZfEs5butR.jpg",
+    "banner_poster": "/posters/stargate.webp",
     "why_watch": "One of the most beloved long-running military sci-fi franchises ever created, seamlessly weaving Egyptian mythology, space exploration, and witty camaraderie.",
     "sub_universes": [
       "All Stargate",
@@ -19421,7 +19421,7 @@ export const FRANCHISES = [
     "icon": "🚀",
     "theme_color": "#EF4444",
     "tagline": "So say we all: When the Cylons wipe out the Twelve Colonies of Kobol, the last military battlestar leads a civilian fleet toward Earth.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/96ETJEnHoVuptkCNMtxcEZ5iWzN.jpg",
+    "banner_poster": "/posters/battlestar_galactica.webp",
     "why_watch": "Widely celebrated as one of the greatest television dramas in history, featuring gripping political tension, paranoia, and moral dilemmas.",
     "sub_universes": [
       "All Battlestar",
@@ -19530,7 +19530,7 @@ export const FRANCHISES = [
     "icon": "🪐",
     "theme_color": "#06B6D4",
     "tagline": "Remember the Cant: In a colonized solar system on the brink of war, an ancient alien protomolecule alters humanity's destiny.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/5vQlVWkIMPhZ88OWchJsgwGEK9.jpg",
+    "banner_poster": "/posters/the_expanse.webp",
     "why_watch": "Celebrated as the most scientifically grounded and thrilling hard sci-fi space opera of the 21st century, combining noir mystery with geopolitics.",
     "sub_universes": [
       "All The Expanse",
@@ -19570,7 +19570,7 @@ export const FRANCHISES = [
     "icon": "🕶️",
     "theme_color": "#F97316",
     "tagline": "You keep what you kill: Richard B. Riddick, the galaxy's most lethal Furyan convict with eyeshine vision, fighting Necromongers and beasts.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/bVO1r90diKfFLzvZ5D3qK6Z558O.jpg",
+    "banner_poster": "/posters/chronicles_of_riddick.webp",
     "why_watch": "Vin Diesel's gritty cult sci-fi action franchise packed with planetary survival, darkness monsters, and grand space opera necromancy.",
     "sub_universes": [
       "All Riddick",
@@ -19662,7 +19662,7 @@ export const FRANCHISES = [
     "icon": "🤫",
     "theme_color": "#10B981",
     "tagline": "If they hear you, they hunt you: Blind extraterrestrial predators with hypersensitive hearing invade Earth, forcing silence for survival.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/8qjFWIAzPlQiYbl5xWNLw6x3wmz.jpg",
+    "banner_poster": "/posters/a_quiet_place.webp",
     "why_watch": "John Krasinski's masterful sensory horror-thrillers with nail-biting tension, brilliant sound design, and emotional family storytelling.",
     "sub_universes": [
       "All A Quiet Place",
@@ -19742,7 +19742,7 @@ export const FRANCHISES = [
     "icon": "🛸",
     "theme_color": "#38BDF8",
     "tagline": "Today we celebrate our Independence Day! Roland Emmerich's quintessential 90s alien invasion blockbuster event.",
-    "banner_poster": "https://image.tmdb.org/t/p/w500/5GguTVJozMgjIaNNKFejSG2pEdH.jpg",
+    "banner_poster": "/posters/independence_day.webp",
     "why_watch": "Will Smith, Jeff Goldblum, Bill Pullman's legendary presidential speech, and ground-shaking city-destroying mothership visual spectacle.",
     "sub_universes": [
       "All Independence Day",
@@ -19793,368 +19793,368 @@ export const FRANCHISES = [
     ]
   },
   {
-  "id": "christopher-nolan",
-  "name": "Christopher Nolan Collection",
-  "badge": "12 MASTERPIECES • MIND-BENDING CINEMA & ACADEMY AWARD TRIUMPHS",
-  "icon": "⏳",
-  "theme_color": "#D4AF37",
-  "tagline": "The auteur cinema of Christopher Nolan: practical effects, non-linear timelines, soundscapes, and cinematic grandeur.",
-  "banner_poster": "https://image.tmdb.org/t/p/w1280/rAiYTnrZYRomVmC7KyKOXAqR7Qn.jpg",
-  "why_watch": "From indie neo-noir to gargantuan IMAX blockbusters, Christopher Nolan has reshaped modern blockbuster cinema through intellectual storytelling and unprecedented practical spectacle.",
-  "sub_universes": [
-    "All Masterpieces",
-    "01. The Dark Knight Trilogy",
-    "02. Mind-Bending Sci-Fi",
-    "03. Historical Epics & Noir"
-  ],
-  "watch_modes": [
-    {
-      "id": "chrono",
-      "label": "⏳ Theatrical Release Timeline",
-      "desc": "Experience Christopher Nolan's evolutionary cinematic journey from Following (1998) to Oppenheimer (2023)"
-    },
-    {
-      "id": "release",
-      "label": "⭐ Highest IMDb Rating",
-      "desc": "Ranked by critical acclaim (The Dark Knight, Inception, Interstellar, The Prestige, Memento)"
-    }
-  ],
-  "timeline": [
-    {
-      "id": "nolan-1998",
-      "title": "Following",
-      "year": 1998,
-      "media_type": "movie",
-      "chrono_order": 1,
-      "release_order": 12,
-      "phase": "London Neo-Noir • Debut Feature",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
-      "runtime": "70 min",
-      "desc": "A young writer who follows strangers for material meets a thief who takes him under his wing.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    },
-    {
-      "id": "nolan-2000",
-      "title": "Memento",
-      "year": 2000,
-      "media_type": "movie",
-      "chrono_order": 2,
-      "release_order": 5,
-      "phase": "Reverse-Chronology Mystery",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
-      "runtime": "113 min",
-      "desc": "A man with short-term memory loss attempts to track down his wife's murderer using Polaroid photos and tattoos.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    },
-    {
-      "id": "nolan-2002",
-      "title": "Insomnia",
-      "year": 2002,
-      "media_type": "movie",
-      "chrono_order": 3,
-      "release_order": 11,
-      "phase": "Midnight Sun Psychological Thriller",
-      "is_essential": false,
-      "poster_url": "https://image.tmdb.org/t/p/w500/riVXh3EimGO0y5dgQxEWPRy5Itg.jpg",
-      "runtime": "118 min",
-      "desc": "Two Los Angeles homicide detectives are dispatched to a northern town where the sun doesn't set to investigate the methodical murder of a local teen.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    },
-    {
-      "id": "nolan-2005",
-      "title": "Batman Begins",
-      "year": 2005,
-      "media_type": "movie",
-      "chrono_order": 4,
-      "release_order": 7,
-      "phase": "The Dark Knight Trilogy • Part 1",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
-      "runtime": "140 min",
-      "desc": "After witnessing his parents' death, Bruce Wayne travels the world to seek the means to fight injustice and turn fear against those who prey on the fearful.",
-      "sub_universe": "01. The Dark Knight Trilogy",
-      "sub_universes": [
-        "All Masterpieces",
-        "01. The Dark Knight Trilogy"
-      ]
-    },
-    {
-      "id": "nolan-2006",
-      "title": "The Prestige",
-      "year": 2006,
-      "media_type": "movie",
-      "chrono_order": 5,
-      "release_order": 4,
-      "phase": "Victorian Illusionist Rivalry",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
-      "runtime": "130 min",
-      "desc": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    },
-    {
-      "id": "nolan-2008",
-      "title": "The Dark Knight",
-      "year": 2008,
-      "media_type": "movie",
-      "chrono_order": 6,
-      "release_order": 1,
-      "phase": "The Dark Knight Trilogy • Part 2",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-      "runtime": "152 min",
-      "desc": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-      "sub_universe": "01. The Dark Knight Trilogy",
-      "sub_universes": [
-        "All Masterpieces",
-        "01. The Dark Knight Trilogy"
-      ]
-    },
-    {
-      "id": "nolan-2010",
-      "title": "Inception",
-      "year": 2010,
-      "media_type": "movie",
-      "chrono_order": 7,
-      "release_order": 2,
-      "phase": "Dream Architecture & Subconscious Heist",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
-      "runtime": "148 min",
-      "desc": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-      "sub_universe": "02. Mind-Bending Sci-Fi",
-      "sub_universes": [
-        "All Masterpieces",
-        "02. Mind-Bending Sci-Fi"
-      ]
-    },
-    {
-      "id": "nolan-2012",
-      "title": "The Dark Knight Rises",
-      "year": 2012,
-      "media_type": "movie",
-      "chrono_order": 8,
-      "release_order": 6,
-      "phase": "The Dark Knight Trilogy • Part 3",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
-      "runtime": "164 min",
-      "desc": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the mysterious Selina Kyle in order to save Gotham City from the brutal guerrilla terrorist Bane.",
-      "sub_universe": "01. The Dark Knight Trilogy",
-      "sub_universes": [
-        "All Masterpieces",
-        "01. The Dark Knight Trilogy"
-      ]
-    },
-    {
-      "id": "nolan-2014",
-      "title": "Interstellar",
-      "year": 2014,
-      "media_type": "movie",
-      "chrono_order": 9,
-      "release_order": 3,
-      "phase": "Relativistic Space-Time Odyssey",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
-      "runtime": "169 min",
-      "desc": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft along with a team of researchers to find a new planet for humans.",
-      "sub_universe": "02. Mind-Bending Sci-Fi",
-      "sub_universes": [
-        "All Masterpieces",
-        "02. Mind-Bending Sci-Fi"
-      ]
-    },
-    {
-      "id": "nolan-2017",
-      "title": "Dunkirk",
-      "year": 2017,
-      "media_type": "movie",
-      "chrono_order": 10,
-      "release_order": 9,
-      "phase": "Triptych WWII Survival (Land, Sea, Air)",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
-      "runtime": "106 min",
-      "desc": "Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    },
-    {
-      "id": "nolan-2020",
-      "title": "Tenet",
-      "year": 2020,
-      "media_type": "movie",
-      "chrono_order": 11,
-      "release_order": 10,
-      "phase": "Entropy Inversion & Temporal Warfare",
-      "is_essential": false,
-      "poster_url": "https://image.tmdb.org/t/p/w500/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg",
-      "runtime": "150 min",
-      "desc": "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
-      "sub_universe": "02. Mind-Bending Sci-Fi",
-      "sub_universes": [
-        "All Masterpieces",
-        "02. Mind-Bending Sci-Fi"
-      ]
-    },
-    {
-      "id": "nolan-2023",
-      "title": "Oppenheimer",
-      "year": 2023,
-      "media_type": "movie",
-      "chrono_order": 12,
-      "release_order": 8,
-      "phase": "7 Academy Awards • Manhattan Project Biopic",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-      "runtime": "180 min",
-      "desc": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
-      "sub_universe": "03. Historical Epics & Noir",
-      "sub_universes": [
-        "All Masterpieces",
-        "03. Historical Epics & Noir"
-      ]
-    }
-  ]
-},
+    "id": "christopher-nolan",
+    "name": "Christopher Nolan Collection",
+    "badge": "12 MASTERPIECES • MIND-BENDING CINEMA & ACADEMY AWARD TRIUMPHS",
+    "icon": "⏳",
+    "theme_color": "#D4AF37",
+    "tagline": "The auteur cinema of Christopher Nolan: practical effects, non-linear timelines, soundscapes, and cinematic grandeur.",
+    "banner_poster": "/posters/christopher_nolan.webp",
+    "why_watch": "From indie neo-noir to gargantuan IMAX blockbusters, Christopher Nolan has reshaped modern blockbuster cinema through intellectual storytelling and unprecedented practical spectacle.",
+    "sub_universes": [
+      "All Masterpieces",
+      "01. The Dark Knight Trilogy",
+      "02. Mind-Bending Sci-Fi",
+      "03. Historical Epics & Noir"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Theatrical Release Timeline",
+        "desc": "Experience Christopher Nolan's evolutionary cinematic journey from Following (1998) to Oppenheimer (2023)"
+      },
+      {
+        "id": "release",
+        "label": "⭐ Highest IMDb Rating",
+        "desc": "Ranked by critical acclaim (The Dark Knight, Inception, Interstellar, The Prestige, Memento)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "nolan-1998",
+        "title": "Following",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 12,
+        "phase": "London Neo-Noir • Debut Feature",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+        "runtime": "70 min",
+        "desc": "A young writer who follows strangers for material meets a thief who takes him under his wing.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      },
+      {
+        "id": "nolan-2000",
+        "title": "Memento",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 5,
+        "phase": "Reverse-Chronology Mystery",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
+        "runtime": "113 min",
+        "desc": "A man with short-term memory loss attempts to track down his wife's murderer using Polaroid photos and tattoos.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      },
+      {
+        "id": "nolan-2002",
+        "title": "Insomnia",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 11,
+        "phase": "Midnight Sun Psychological Thriller",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/riVXh3EimGO0y5dgQxEWPRy5Itg.jpg",
+        "runtime": "118 min",
+        "desc": "Two Los Angeles homicide detectives are dispatched to a northern town where the sun doesn't set to investigate the methodical murder of a local teen.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      },
+      {
+        "id": "nolan-2005",
+        "title": "Batman Begins",
+        "year": 2005,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 7,
+        "phase": "The Dark Knight Trilogy • Part 1",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+        "runtime": "140 min",
+        "desc": "After witnessing his parents' death, Bruce Wayne travels the world to seek the means to fight injustice and turn fear against those who prey on the fearful.",
+        "sub_universe": "01. The Dark Knight Trilogy",
+        "sub_universes": [
+          "All Masterpieces",
+          "01. The Dark Knight Trilogy"
+        ]
+      },
+      {
+        "id": "nolan-2006",
+        "title": "The Prestige",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 4,
+        "phase": "Victorian Illusionist Rivalry",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
+        "runtime": "130 min",
+        "desc": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      },
+      {
+        "id": "nolan-2008",
+        "title": "The Dark Knight",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 1,
+        "phase": "The Dark Knight Trilogy • Part 2",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "runtime": "152 min",
+        "desc": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "sub_universe": "01. The Dark Knight Trilogy",
+        "sub_universes": [
+          "All Masterpieces",
+          "01. The Dark Knight Trilogy"
+        ]
+      },
+      {
+        "id": "nolan-2010",
+        "title": "Inception",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 2,
+        "phase": "Dream Architecture & Subconscious Heist",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "runtime": "148 min",
+        "desc": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+        "sub_universe": "02. Mind-Bending Sci-Fi",
+        "sub_universes": [
+          "All Masterpieces",
+          "02. Mind-Bending Sci-Fi"
+        ]
+      },
+      {
+        "id": "nolan-2012",
+        "title": "The Dark Knight Rises",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 6,
+        "phase": "The Dark Knight Trilogy • Part 3",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+        "runtime": "164 min",
+        "desc": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the mysterious Selina Kyle in order to save Gotham City from the brutal guerrilla terrorist Bane.",
+        "sub_universe": "01. The Dark Knight Trilogy",
+        "sub_universes": [
+          "All Masterpieces",
+          "01. The Dark Knight Trilogy"
+        ]
+      },
+      {
+        "id": "nolan-2014",
+        "title": "Interstellar",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 3,
+        "phase": "Relativistic Space-Time Odyssey",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "runtime": "169 min",
+        "desc": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft along with a team of researchers to find a new planet for humans.",
+        "sub_universe": "02. Mind-Bending Sci-Fi",
+        "sub_universes": [
+          "All Masterpieces",
+          "02. Mind-Bending Sci-Fi"
+        ]
+      },
+      {
+        "id": "nolan-2017",
+        "title": "Dunkirk",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 9,
+        "phase": "Triptych WWII Survival (Land, Sea, Air)",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
+        "runtime": "106 min",
+        "desc": "Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      },
+      {
+        "id": "nolan-2020",
+        "title": "Tenet",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 10,
+        "phase": "Entropy Inversion & Temporal Warfare",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg",
+        "runtime": "150 min",
+        "desc": "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+        "sub_universe": "02. Mind-Bending Sci-Fi",
+        "sub_universes": [
+          "All Masterpieces",
+          "02. Mind-Bending Sci-Fi"
+        ]
+      },
+      {
+        "id": "nolan-2023",
+        "title": "Oppenheimer",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 8,
+        "phase": "7 Academy Awards • Manhattan Project Biopic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "runtime": "180 min",
+        "desc": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
+        "sub_universe": "03. Historical Epics & Noir",
+        "sub_universes": [
+          "All Masterpieces",
+          "03. Historical Epics & Noir"
+        ]
+      }
+    ]
+  },
   {
-  "id": "pirates-of-the-caribbean",
-  "name": "Pirates of the Caribbean Saga",
-  "badge": "5 VOYAGES • CAPTAIN JACK SPARROW & THE CURSED SPANISH MAIN",
-  "icon": "🏴‍☠️",
-  "theme_color": "#C5A059",
-  "tagline": "The legendary swashbuckling saga of Captain Jack Sparrow, the Black Pearl, and mythical oceanic curses.",
-  "banner_poster": "https://image.tmdb.org/t/p/w1280/8tH9B62i1xN30uM8gK1c4G6q8YV.jpg",
-  "why_watch": "Gore Verbinski and Johnny Depp created one of modern cinema's most entertaining and visually ambitious adventure franchises, featuring Hans Zimmer's iconic symphonies.",
-  "sub_universes": [
-    "All Voyages",
-    "01. The Original Gore Verbinski Trilogy",
-    "02. Standalone Quests & Expanding Lore"
-  ],
-  "watch_modes": [
-    {
-      "id": "chrono",
-      "label": "⏳ High-Seas Chronological Voyage",
-      "desc": "The Curse of the Black Pearl (2003) → Dead Men Tell No Tales (2017)"
-    },
-    {
-      "id": "release",
-      "label": "⭐ Highest IMDb Rating",
-      "desc": "Ranked by critical acclaim (Curse of the Black Pearl, Dead Man's Chest, At World's End)"
-    }
-  ],
-  "timeline": [
-    {
-      "id": "potc-2003",
-      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
-      "year": 2003,
-      "media_type": "movie",
-      "chrono_order": 1,
-      "release_order": 1,
-      "phase": "The Aztec Gold Curse & The Black Pearl",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
-      "runtime": "143 min",
-      "desc": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
-      "sub_universe": "01. The Original Gore Verbinski Trilogy",
-      "sub_universes": [
-        "All Voyages",
-        "01. The Original Gore Verbinski Trilogy"
-      ]
-    },
-    {
-      "id": "potc-2006",
-      "title": "Pirates of the Caribbean: Dead Man's Chest",
-      "year": 2006,
-      "media_type": "movie",
-      "chrono_order": 2,
-      "release_order": 2,
-      "phase": "Davy Jones' Locker & The Flying Dutchman",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
-      "runtime": "151 min",
-      "desc": "Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones' service, as other friends and foes seek the heart for their own agenda.",
-      "sub_universe": "01. The Original Gore Verbinski Trilogy",
-      "sub_universes": [
-        "All Voyages",
-        "01. The Original Gore Verbinski Trilogy"
-      ]
-    },
-    {
-      "id": "potc-2007",
-      "title": "Pirates of the Caribbean: At World's End",
-      "year": 2007,
-      "media_type": "movie",
-      "chrono_order": 3,
-      "release_order": 3,
-      "phase": "The Brethren Court & The Maerlstrom War",
-      "is_essential": true,
-      "poster_url": "https://image.tmdb.org/t/p/w500/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg",
-      "runtime": "169 min",
-      "desc": "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
-      "sub_universe": "01. The Original Gore Verbinski Trilogy",
-      "sub_universes": [
-        "All Voyages",
-        "01. The Original Gore Verbinski Trilogy"
-      ]
-    },
-    {
-      "id": "potc-2011",
-      "title": "Pirates of the Caribbean: On Stranger Tides",
-      "year": 2011,
-      "media_type": "movie",
-      "chrono_order": 4,
-      "release_order": 4,
-      "phase": "The Fountain of Youth & Blackbeard's Queen Anne's Revenge",
-      "is_essential": false,
-      "poster_url": "https://image.tmdb.org/t/p/w500/keGfSvCmYj7CvdRx36OdVrAEibE.jpg",
-      "runtime": "136 min",
-      "desc": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
-      "sub_universe": "02. Standalone Quests & Expanding Lore",
-      "sub_universes": [
-        "All Voyages",
-        "02. Standalone Quests & Expanding Lore"
-      ]
-    },
-    {
-      "id": "potc-2017",
-      "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
-      "year": 2017,
-      "media_type": "movie",
-      "chrono_order": 5,
-      "release_order": 5,
-      "phase": "Capitan Salazar & The Trident of Poseidon",
-      "is_essential": false,
-      "poster_url": "https://image.tmdb.org/t/p/w500/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg",
-      "runtime": "129 min",
-      "desc": "Captain Jack Sparrow is pursued by old rival Armando Salazar, who escaped the Devil's Triangle determined to kill every pirate at sea.",
-      "sub_universe": "02. Standalone Quests & Expanding Lore",
-      "sub_universes": [
-        "All Voyages",
-        "02. Standalone Quests & Expanding Lore"
-      ]
-    }
-  ]
-}
+    "id": "pirates-of-the-caribbean",
+    "name": "Pirates of the Caribbean Saga",
+    "badge": "5 VOYAGES • CAPTAIN JACK SPARROW & THE CURSED SPANISH MAIN",
+    "icon": "🏴‍☠️",
+    "theme_color": "#C5A059",
+    "tagline": "The legendary swashbuckling saga of Captain Jack Sparrow, the Black Pearl, and mythical oceanic curses.",
+    "banner_poster": "/posters/pirates_of_the_caribbean.webp",
+    "why_watch": "Gore Verbinski and Johnny Depp created one of modern cinema's most entertaining and visually ambitious adventure franchises, featuring Hans Zimmer's iconic symphonies.",
+    "sub_universes": [
+      "All Voyages",
+      "01. The Original Gore Verbinski Trilogy",
+      "02. Standalone Quests & Expanding Lore"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ High-Seas Chronological Voyage",
+        "desc": "The Curse of the Black Pearl (2003) → Dead Men Tell No Tales (2017)"
+      },
+      {
+        "id": "release",
+        "label": "⭐ Highest IMDb Rating",
+        "desc": "Ranked by critical acclaim (Curse of the Black Pearl, Dead Man's Chest, At World's End)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "potc-2003",
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "The Aztec Gold Curse & The Black Pearl",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
+        "runtime": "143 min",
+        "desc": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+        "sub_universe": "01. The Original Gore Verbinski Trilogy",
+        "sub_universes": [
+          "All Voyages",
+          "01. The Original Gore Verbinski Trilogy"
+        ]
+      },
+      {
+        "id": "potc-2006",
+        "title": "Pirates of the Caribbean: Dead Man's Chest",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Davy Jones' Locker & The Flying Dutchman",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
+        "runtime": "151 min",
+        "desc": "Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones' service, as other friends and foes seek the heart for their own agenda.",
+        "sub_universe": "01. The Original Gore Verbinski Trilogy",
+        "sub_universes": [
+          "All Voyages",
+          "01. The Original Gore Verbinski Trilogy"
+        ]
+      },
+      {
+        "id": "potc-2007",
+        "title": "Pirates of the Caribbean: At World's End",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "The Brethren Court & The Maerlstrom War",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg",
+        "runtime": "169 min",
+        "desc": "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
+        "sub_universe": "01. The Original Gore Verbinski Trilogy",
+        "sub_universes": [
+          "All Voyages",
+          "01. The Original Gore Verbinski Trilogy"
+        ]
+      },
+      {
+        "id": "potc-2011",
+        "title": "Pirates of the Caribbean: On Stranger Tides",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "The Fountain of Youth & Blackbeard's Queen Anne's Revenge",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/keGfSvCmYj7CvdRx36OdVrAEibE.jpg",
+        "runtime": "136 min",
+        "desc": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
+        "sub_universe": "02. Standalone Quests & Expanding Lore",
+        "sub_universes": [
+          "All Voyages",
+          "02. Standalone Quests & Expanding Lore"
+        ]
+      },
+      {
+        "id": "potc-2017",
+        "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Capitan Salazar & The Trident of Poseidon",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg",
+        "runtime": "129 min",
+        "desc": "Captain Jack Sparrow is pursued by old rival Armando Salazar, who escaped the Devil's Triangle determined to kill every pirate at sea.",
+        "sub_universe": "02. Standalone Quests & Expanding Lore",
+        "sub_universes": [
+          "All Voyages",
+          "02. Standalone Quests & Expanding Lore"
+        ]
+      }
+    ]
+  }
 ];

@@ -16,8 +16,8 @@ export default function Navbar({
           onClick={onReset} 
           className="flex items-center space-x-2.5 cursor-pointer group shrink-0"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#c5a059] to-[#8d6c2a] flex items-center justify-center shadow-[0_0_20px_rgba(197,160,89,0.3)] transition-transform duration-300 group-hover:scale-105">
-            <PlaySquare className="w-5 h-5 text-black fill-black" />
+          <div className="w-9 h-9 rounded-xl overflow-hidden bg-gradient-to-br from-[#c5a059]/20 to-[#8d6c2a]/20 border border-[#c5a059]/40 flex items-center justify-center shadow-[0_0_20px_rgba(197,160,89,0.25)] transition-transform duration-300 group-hover:scale-105">
+            <img src="/CINE2WATCH.svg" alt="cine2watch" className="w-7 h-7 object-contain" />
           </div>
           <div>
             <div className="flex items-center space-x-1.5">

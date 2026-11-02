@@ -33,10 +33,10 @@ export default function Sidebar({
         <div className="flex flex-col items-center space-y-6">
           <button
             onClick={() => onNavigate('home')}
-            className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#c5a059] to-[#8d6c2a] flex items-center justify-center shadow-[0_0_15px_rgba(197,160,89,0.3)] hover:scale-105 transition-all duration-200 cursor-pointer group"
+            className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-[#c5a059]/20 to-[#8d6c2a]/20 border border-[#c5a059]/40 flex items-center justify-center shadow-[0_0_15px_rgba(197,160,89,0.25)] hover:scale-105 transition-all duration-200 cursor-pointer group p-1"
             title="cine2watch Home"
           >
-            <PlaySquare className="w-5 h-5 text-black fill-black" />
+            <img src="/CINE2WATCH.svg" alt="cine2watch" className="w-7 h-7 object-contain" />
           </button>
 
           {/* Navigation Icon Group (Only Icon Form) */}
