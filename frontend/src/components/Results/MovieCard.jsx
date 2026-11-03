@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Star, Play, Sparkles, Film, Share2, Layers, ExternalLink, Clock } from 'lucide-react';
+import CinemaPoster from '../Common/CinemaPoster';
 
 export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }) {
   const [copied, setCopied] = useState(false);
@@ -22,19 +23,14 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
       <div>
         {/* Cinematic Poster Container */}
         <div className="relative aspect-[2/3] w-full overflow-hidden bg-[#0a0b10]">
-          {item.poster_url ? (
-            <img
-              src={item.poster_url}
-              alt={item.title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-            />
-          ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center bg-[#141520]">
-              <Film className="w-12 h-12 text-slate-600 mb-2" />
-              <span className="text-xs text-slate-400 font-semibold">{item.title}</span>
-            </div>
-          )}
+          <CinemaPoster
+            src={item.poster_url}
+            alt={item.title}
+            title={item.title}
+            year={item.year}
+            badge={isTopPick ? 'TOP PICK' : `#${index + 1}`}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
 
           {/* Vignette Gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#111219] via-transparent to-transparent opacity-95" />

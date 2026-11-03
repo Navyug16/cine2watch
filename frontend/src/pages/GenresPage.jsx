@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 
 import genreData from '../data/genreTopTitles.json';
+import CinemaPoster from '../components/Common/CinemaPoster';
 
 // Genre Display Configuration with Icons & Thematic Colors
 const GENRE_METADATA = [
@@ -258,19 +259,14 @@ export default function GenresPage({
                       {/* Poster Container */}
                       <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden bg-[#12131c] border border-white/[0.08] group-hover:border-[#c5a059] shadow-md group-hover:shadow-[0_12px_30px_rgba(0,0,0,0.8)] transition-all duration-300 group-hover:-translate-y-1">
                         
-                        {movie.poster_url ? (
-                          <img
-                            src={movie.poster_url}
-                            alt={movie.title}
-                            loading="lazy"
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                        ) : (
-                          <div className="w-full h-full flex flex-col items-center justify-center p-3 text-center bg-gradient-to-br from-[#181a26] to-[#0c0d14]">
-                            <Film className="w-8 h-8 text-[#c5a059]/40 mb-2" />
-                            <span className="text-xs font-bold text-white line-clamp-2">{movie.title}</span>
-                          </div>
-                        )}
+                        <CinemaPoster
+                          src={movie.poster_url}
+                          alt={movie.title}
+                          title={movie.title}
+                          year={movie.year}
+                          badge={isSeries ? 'SERIES' : 'FILM'}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
 
                         {/* Top Badges */}
                         <div className="absolute top-2 left-2 right-2 flex items-center justify-between pointer-events-none">
@@ -365,13 +361,14 @@ export default function GenresPage({
             <div className="flex flex-col sm:flex-row">
               {/* Poster Left */}
               <div className="sm:w-1/3 aspect-[2/3] sm:aspect-auto bg-black relative shrink-0">
-                {selectedMovie.poster_url && (
-                  <img
-                    src={selectedMovie.poster_url}
-                    alt={selectedMovie.title}
-                    className="w-full h-full object-cover"
-                  />
-                )}
+                <CinemaPoster
+                  src={selectedMovie.poster_url}
+                  alt={selectedMovie.title}
+                  title={selectedMovie.title}
+                  year={selectedMovie.year}
+                  badge={selectedMovie.media_type === 'tvSeries' ? 'SERIES' : 'FILM'}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Info Right */}

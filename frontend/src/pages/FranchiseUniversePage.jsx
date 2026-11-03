@@ -19,6 +19,7 @@ import {
 
 import { EXPLORE_HUBS } from '../data/exploreHubsData';
 import { FRANCHISES } from '../data/franchisesData';
+import CinemaPoster from '../components/Common/CinemaPoster';
 
 export default function FranchiseUniversePage({
   sagaId,
@@ -349,20 +350,14 @@ export default function FranchiseUniversePage({
               >
                 {/* Poster Container */}
                 <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden bg-[#12131c] border border-white/[0.08] group-hover:border-[#c5a059] shadow-md group-hover:shadow-[0_12px_30px_rgba(0,0,0,0.8)] transition-all duration-300 group-hover:-translate-y-1">
-                  
-                  {item.poster_url ? (
-                    <img
-                      src={item.poster_url}
-                      alt={item.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-3 text-center bg-[#151622]">
-                      <Film className="w-8 h-8 text-[#c5a059]/40 mb-2" />
-                      <span className="text-xs font-bold text-white line-clamp-2">{item.title}</span>
-                    </div>
-                  )}
+                  <CinemaPoster
+                    src={item.poster_url}
+                    alt={item.title}
+                    title={item.title}
+                    year={item.year}
+                    badge={isSeries ? 'SERIES' : 'FILM'}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
 
                   {/* Top Badges */}
                   <div className="absolute top-2 left-2 right-2 flex items-center justify-between pointer-events-none">
@@ -457,13 +452,14 @@ export default function FranchiseUniversePage({
 
             <div className="flex flex-col sm:flex-row">
               <div className="sm:w-1/3 aspect-[2/3] sm:aspect-auto bg-black relative shrink-0">
-                {selectedMovie.poster_url && (
-                  <img
-                    src={selectedMovie.poster_url}
-                    alt={selectedMovie.title}
-                    className="w-full h-full object-cover"
-                  />
-                )}
+                <CinemaPoster
+                  src={selectedMovie.poster_url}
+                  alt={selectedMovie.title}
+                  title={selectedMovie.title}
+                  year={selectedMovie.year}
+                  badge={selectedMovie.media_type === 'series' ? 'SERIES' : 'FILM'}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-4">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Sparkles, Star, Film, Play, ExternalLink, Loader2 } from 'lucide-react';
+import CinemaPoster from '../Common/CinemaPoster';
 
 export default function SimilarDrawer({ isOpen, referenceItem, onClose, onWatchTrailer }) {
   const [similarItems, setSimilarItems] = useState([]);
@@ -68,11 +69,13 @@ export default function SimilarDrawer({ isOpen, referenceItem, onClose, onWatchT
         {/* Reference Item Preview Banner */}
         <div className="p-4 bg-[#141522] border-b border-white/[0.06] flex items-center space-x-3">
           <div className="w-12 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-black/40 border border-white/[0.08]">
-            {referenceItem.poster_url ? (
-              <img src={referenceItem.poster_url} alt="" className="w-full h-full object-cover" />
-            ) : (
-              <Film className="w-5 h-5 text-slate-600 m-auto mt-4" />
-            )}
+            <CinemaPoster
+              src={referenceItem.poster_url}
+              alt={referenceItem.title}
+              title={referenceItem.title}
+              year={referenceItem.year}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="min-w-0 flex-1 space-y-0.5">
             <div className="flex items-center space-x-2">
@@ -111,11 +114,13 @@ export default function SimilarDrawer({ isOpen, referenceItem, onClose, onWatchT
                   <div className="flex items-center space-x-3 min-w-0 flex-1">
                     {/* Poster */}
                     <div className="w-12 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-slate-900 border border-white/[0.08]">
-                      {item.poster_url ? (
-                        <img src={item.poster_url} alt="" className="w-full h-full object-cover" loading="lazy" />
-                      ) : (
-                        <Film className="w-4 h-4 text-slate-600 m-auto mt-4" />
-                      )}
+                      <CinemaPoster
+                        src={item.poster_url}
+                        alt={item.title}
+                        title={item.title}
+                        year={item.year}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
                     {/* Metadata */}
