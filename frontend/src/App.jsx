@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import confetti from 'canvas-confetti';
 import { Dices } from 'lucide-react';
 
@@ -9,6 +9,8 @@ import SearchModal from './components/Search/SearchModal';
 import ShuffleModal from './components/Modals/ShuffleModal';
 import SimilarDrawer from './components/Results/SimilarDrawer';
 import TrailerModal from './components/Modals/TrailerModal';
+import WatchlistDrawer from './components/Modals/WatchlistDrawer';
+import MovieDetailModal from './components/Modals/MovieDetailModal';
 
 // Dedicated Pages
 import HomePage from './pages/HomePage';
@@ -16,10 +18,16 @@ import ExplorePage from './pages/ExplorePage';
 import FranchiseUniversePage from './pages/FranchiseUniversePage';
 import GenresPage from './pages/GenresPage';
 
+const CURRENT_YEAR = Math.max(2026, new Date().getFullYear());
+
+const getItemKey = (item) => {
+  if (!item) return '';
+  return String(item.id || `${item.title || 'untitled'}-${item.year || ''}`);
+};
+
 export default function App() {
   // Parse structural URL without '#' (e.g. '/', '/explore', '/explore/marvel', '/genres')
   const parseCurrentUrl = () => {
-    // If there is any legacy '#' in url, clean it up immediately
     if (window.location.hash) {
       const legacyPath = window.location.hash.replace('#', '').replace(/^\//, '');
       const newPath = legacyPath ? '/' + legacyPath : '/';
@@ -55,14 +63,16 @@ export default function App() {
   const [mediaType, setMediaType] = useState(null);
   const [selectedEra, setSelectedEra] = useState(null);
   const [customStart, setCustomStart] = useState(2010);
-  const [customEnd, setCustomEnd] = useState(2026);
+  const [customEnd, setCustomEnd] = useState(CURRENT_YEAR);
   const [selectedGenres, setSelectedGenres] = useState([]);
 
   // Modals & Drawers State
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isShuffleOpen, setIsShuffleOpen] = useState(false);
+  const [isWatchlistOpen, setIsWatchlistOpen] = useState(false);
   const [activeTrailerItem, setActiveTrailerItem] = useState(null);
   const [similarReferenceItem, setSimilarReferenceItem] = useState(null);
+  const [detailModalItem, setDetailModalItem] = useState(null);
 
   // Recommendations Data State
   const [loading, setLoading] = useState(false);
@@ -76,6 +86,68 @@ export default function App() {
     }
   });
 
+  // Zero-Tracking Local Shortlist / Watchlist
+  const [watchlist, setWatchlist] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('cine2watch_watchlist') || '[]');
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('cine2watch_watchlist', JSON.stringify(watchlist.slice(0, 60)));
+    } catch (e) {
+      console.warn('Watchlist storage error:', e);
+    }
+  }, [watchlist]);
+
+  const isInWatchlist = useCallback(
+    (item) => {
+      const key = getItemKey(item);
+      return Boolean(key && watchlist.some((w) => getItemKey(w) === key));
+    },
+    [watchlist]
+  );
+
+  const toggleWatchlist = useCallback((item) => {
+    const key = getItemKey(item);
+    if (!key) return;
+    setWatchlist((prev) => {
+      const exists = prev.some((w) => getItemKey(w) === key);
+      if (exists) {
+        return prev.filter((w) => getItemKey(w) !== key);
+      }
+      return [
+        {
+          id: key,
+          title: item.title,
+          year: item.year,
+          media_type: item.media_type,
+          rating: item.rating,
+          genres: item.genres,
+          poster_url: item.poster_url,
+          overview: item.overview || item.desc,
+          director: item.director,
+          original_language: item.original_language,
+          watch_url: item.watch_url,
+          yt_search_url: item.yt_search_url
+        },
+        ...prev
+      ];
+    });
+  }, []);
+
+  const removeWatchlistItem = useCallback((item) => {
+    const key = getItemKey(item);
+    setWatchlist((prev) => prev.filter((w) => getItemKey(w) !== key));
+  }, []);
+
+  const clearWatchlist = useCallback(() => {
+    setWatchlist([]);
+  }, []);
+
   // Sync browser Back/Forward (popstate) with structural URLs
   useEffect(() => {
     const handlePopState = () => {
@@ -87,7 +159,7 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // Structural URL Navigation (e.g. '/', '/explore', '/explore/marvel', '/genres')
+  // Structural URL Navigation
   const handleNavigate = (pageName, extraParam = null) => {
     setActivePage(pageName);
     setSelectedExploreSagaId(extraParam || null);
@@ -116,8 +188,10 @@ export default function App() {
       } else if (e.key === 'Escape') {
         setIsSearchOpen(false);
         setIsShuffleOpen(false);
+        setIsWatchlistOpen(false);
         setActiveTrailerItem(null);
         setSimilarReferenceItem(null);
+        setDetailModalItem(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -165,14 +239,13 @@ export default function App() {
       setResults(data);
 
       if (data.found && data.data && data.data.length > 0) {
-        const newIds = data.data.map(item => String(item.id));
-        setHistoryExcludeIds(prev => [...new Set([...prev, ...newIds])]);
+        const newIds = data.data.map((item) => String(item.id));
+        setHistoryExcludeIds((prev) => [...new Set([...prev, ...newIds])]);
 
-        // Celebration Confetti
         confetti({
-          particleCount: 50,
-          spread: 55,
-          origin: { y: 0.6 },
+          particleCount: 28,
+          spread: 50,
+          origin: { y: 0.65 },
           colors: ['#c5a059', '#e6c887', '#ffffff']
         });
       }
@@ -202,21 +275,15 @@ export default function App() {
     fetchRecommendations(selectedGenres, false);
   };
 
-  // Genre page selection jumps directly into recommendations on Home
-  const handleSelectGenrePair = (pair) => {
-    setSelectedGenres(pair);
-    handleNavigate('home');
-    fetchRecommendations(pair, false);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#08090d] text-slate-100 selection:bg-[#c5a059] selection:text-black relative md:pl-16 pb-16 md:pb-0">
+    <div className="min-h-screen flex flex-col justify-between bg-[#08090d] text-slate-100 selection:bg-[#c5a059] selection:text-black relative pb-16 lg:pb-0">
       
-      {/* Left Icon-Only Navigation Dock */}
+      {/* Mobile/Tablet Bottom Navigation Dock */}
       <Sidebar
         activePage={activePage}
         onNavigate={handleNavigate}
-        onOpenSearch={() => setIsSearchOpen(true)}
+        onOpenWatchlist={() => setIsWatchlistOpen(true)}
+        watchlistCount={watchlist.length}
       />
 
       {/* Top Luxury Navbar */}
@@ -225,6 +292,8 @@ export default function App() {
         onNavigate={handleNavigate}
         onReset={handleReset}
         onOpenSearch={() => setIsSearchOpen(true)}
+        onOpenWatchlist={() => setIsWatchlistOpen(true)}
+        watchlistCount={watchlist.length}
       />
 
       {/* Main Page Content Body */}
@@ -254,24 +323,26 @@ export default function App() {
             onReset={handleReset}
             onFetchRecommendations={fetchRecommendations}
             onClearHistory={clearHistoryAndRefetch}
-            onOpenShuffle={() => setIsShuffleOpen(true)}
             onWatchTrailer={(item) => setActiveTrailerItem(item)}
             onOpenSimilar={(item) => setSimilarReferenceItem(item)}
-            onNavigateToExplore={(sagaId) => handleNavigate('explore', sagaId)}
+            onOpenDetails={(item) => setDetailModalItem(item)}
+            isInWatchlist={isInWatchlist}
+            onToggleWatchlist={toggleWatchlist}
           />
         )}
 
-        {/* PAGE 2: EXPLORE (Android TV Hub) */}
+        {/* PAGE 2: EXPLORE (Universes Hub) */}
         {activePage === 'explore' && !selectedExploreSagaId && (
           <ExplorePage
             onSelectFranchise={(sagaId) => handleNavigate('explore', sagaId)}
             onWatchTrailer={(item) => setActiveTrailerItem(item)}
             onOpenSimilar={(item) => setSimilarReferenceItem(item)}
-            onNavigateToHome={() => handleNavigate('home')}
+            isInWatchlist={isInWatchlist}
+            onToggleWatchlist={toggleWatchlist}
           />
         )}
 
-        {/* PAGE 2B: EXPLORE INSIDE UNIVERSE (e.g. /explore/marvel, /explore/christopher-nolan) */}
+        {/* PAGE 2B: EXPLORE INSIDE UNIVERSE */}
         {activePage === 'explore' && Boolean(selectedExploreSagaId) && (
           <FranchiseUniversePage
             key={selectedExploreSagaId}
@@ -279,22 +350,25 @@ export default function App() {
             onBack={() => handleNavigate('explore')}
             onWatchTrailer={(item) => setActiveTrailerItem(item)}
             onOpenSimilar={(item) => setSimilarReferenceItem(item)}
+            isInWatchlist={isInWatchlist}
+            onToggleWatchlist={toggleWatchlist}
           />
         )}
 
-        {/* PAGE 3: GENRES (Direct Top 15 by Genre in Android TV Shelf UI) */}
+        {/* PAGE 3: GENRES */}
         {activePage === 'genres' && (
           <GenresPage
             onWatchTrailer={(item) => setActiveTrailerItem(item)}
             onOpenSimilar={(item) => setSimilarReferenceItem(item)}
-            onNavigateToHome={() => handleNavigate('home')}
+            isInWatchlist={isInWatchlist}
+            onToggleWatchlist={toggleWatchlist}
           />
         )}
 
       </main>
 
-      {/* Floating Rolling Dice Action Button (Bottom-Right, accessible from any page) */}
-      <div className="fixed bottom-20 md:bottom-6 right-6 z-40">
+      {/* Floating Rolling Dice Action Button */}
+      <div className="fixed bottom-20 lg:bottom-6 right-5 sm:right-6 z-40">
         <button
           onClick={() => setIsShuffleOpen(true)}
           className="dice-roll-btn group relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#121319]/95 hover:bg-[#1a1b24] border border-[#c5a059]/50 hover:border-[#c5a059] text-[#c5a059] shadow-[0_8px_30px_rgba(0,0,0,0.8)] flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer backdrop-blur-xl"
@@ -310,6 +384,9 @@ export default function App() {
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
         onWatchTrailer={(item) => setActiveTrailerItem(item)}
+        onOpenSimilar={(item) => setSimilarReferenceItem(item)}
+        isInWatchlist={isInWatchlist}
+        onToggleWatchlist={toggleWatchlist}
       />
 
       {/* Dynamic Random Double Feature (Shuffle Modal) */}
@@ -318,6 +395,9 @@ export default function App() {
         currentIndustry={industry}
         onClose={() => setIsShuffleOpen(false)}
         onWatchTrailer={(item) => setActiveTrailerItem(item)}
+        onOpenSimilar={(item) => setSimilarReferenceItem(item)}
+        isInWatchlist={isInWatchlist}
+        onToggleWatchlist={toggleWatchlist}
       />
 
       {/* Similar Titles Drawer */}
@@ -326,17 +406,48 @@ export default function App() {
         referenceItem={similarReferenceItem}
         onClose={() => setSimilarReferenceItem(null)}
         onWatchTrailer={(item) => setActiveTrailerItem(item)}
+        isInWatchlist={isInWatchlist}
+        onToggleWatchlist={toggleWatchlist}
       />
 
-      {/* In-App Trailer Player Modal */}
+      {/* Tonight's Shortlist / Watchlist Drawer */}
+      <WatchlistDrawer
+        isOpen={isWatchlistOpen}
+        onClose={() => setIsWatchlistOpen(false)}
+        items={watchlist}
+        onRemoveItem={removeWatchlistItem}
+        onClearAll={clearWatchlist}
+        onWatchTrailer={(item) => {
+          setIsWatchlistOpen(false);
+          setActiveTrailerItem(item);
+        }}
+        onOpenSimilar={(item) => {
+          setIsWatchlistOpen(false);
+          setSimilarReferenceItem(item);
+        }}
+      />
+
+      {/* Home Movie Detail Modal */}
+      <MovieDetailModal
+        item={detailModalItem}
+        onClose={() => setDetailModalItem(null)}
+        onWatchTrailer={(item) => setActiveTrailerItem(item)}
+        onOpenSimilar={(item) => setSimilarReferenceItem(item)}
+        isSaved={isInWatchlist(detailModalItem)}
+        onToggleSave={toggleWatchlist}
+      />
+
+      {/* Trailer Launcher Modal */}
       <TrailerModal
         activeItem={activeTrailerItem}
         onClose={() => setActiveTrailerItem(null)}
+        isInWatchlist={isInWatchlist}
+        onToggleWatchlist={toggleWatchlist}
       />
 
       {/* Minimalist World-Class Footer */}
       <footer className="border-t border-white/[0.04] px-6 py-4 text-center text-xs text-slate-500 bg-[#08090d]">
-        <p>© 2026 cine2watch • Supabase PostgreSQL Neural Filter (330,000+ Titles) • Zero Personal Tracking</p>
+        <p>© {CURRENT_YEAR} cine2watch • Supabase PostgreSQL Neural Filter (330,000+ Titles) • Zero Personal Tracking</p>
       </footer>
 
     </div>

@@ -1,13 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, Sparkles, Star, Film, Play, ExternalLink, ArrowRight, Loader2 } from 'lucide-react';
+import {
+  Search,
+  X,
+  Sparkles,
+  Star,
+  Play,
+  ExternalLink,
+  ArrowRight,
+  Loader2,
+  Bookmark
+} from 'lucide-react';
+import CinemaPoster from '../Common/CinemaPoster';
 
-export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTrailer }) {
+export default function SearchModal({
+  isOpen,
+  onClose,
+  onWatchTrailer,
+  onOpenSimilar,
+  isInWatchlist,
+  onToggleWatchlist
+}) {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [resultsData, setResultsData] = useState(null);
   const inputRef = useRef(null);
 
-  // Auto-focus input when opened
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
@@ -17,7 +34,6 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
     }
   }, [isOpen]);
 
-  // Debounced Search
   useEffect(() => {
     if (!query.trim()) {
       setResultsData(null);
@@ -55,8 +71,14 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
   ];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 modal-backdrop-luxury animate-in fade-in duration-200">
-      <div className="card-luxury max-w-2xl w-full rounded-3xl overflow-hidden border border-white/[0.1] shadow-2xl flex flex-col max-h-[80vh]">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 modal-backdrop-luxury animate-in fade-in duration-200"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="card-luxury max-w-2xl w-full rounded-3xl overflow-hidden border border-white/[0.12] shadow-2xl flex flex-col max-h-[80vh]"
+      >
         
         {/* Search Input Bar */}
         <div className="p-4 sm:p-5 border-b border-white/[0.08] flex items-center space-x-3 bg-[#10111a]">
@@ -71,16 +93,17 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
           />
           {loading && <Loader2 className="w-4 h-4 text-[#c5a059] animate-spin shrink-0" />}
           {query && (
-            <button 
+            <button
               onClick={() => setQuery('')}
-              className="p-1 rounded-full hover:bg-white/[0.08] text-slate-400 hover:text-white"
+              aria-label="Clear query"
+              className="p-1 rounded-full hover:bg-white/[0.08] text-slate-400 hover:text-white cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
           )}
           <button
             onClick={onClose}
-            className="px-2 py-1 rounded-lg bg-black/40 border border-white/[0.08] text-[10px] font-mono text-slate-400 hover:text-white"
+            className="px-2 py-1 rounded-lg bg-black/40 border border-white/[0.08] text-[10px] font-mono text-slate-400 hover:text-white cursor-pointer"
           >
             ESC
           </button>
@@ -105,8 +128,9 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
                 </button>
               ))}
             </div>
-            <div className="pt-4 border-t border-white/[0.04] text-[11px] text-slate-500">
-              💡 Tip: Prefix any title with <strong className="text-slate-300">"Movies like"</strong> or <strong className="text-slate-300">"Series like"</strong> to uncover similar thematic gems.
+            <div className="pt-4 border-t border-white/[0.04] text-[11px] text-slate-400">
+              Tip: Prefix any title with <strong className="text-slate-200">&quot;Movies like&quot;</strong> or{' '}
+              <strong className="text-slate-200">&quot;Series like&quot;</strong> to uncover similar thematic gems.
             </div>
           </div>
         )}
@@ -115,15 +139,16 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
         {resultsData && (
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
             
-            {/* Mode Banner: If "Movies like X" was triggered */}
             {resultsData.mode === 'similar_to' && resultsData.reference && (
               <div className="p-3 rounded-2xl bg-[#181a28] border border-[#c5a059]/30 flex items-center space-x-3 mb-3">
-                <div className="w-10 h-14 rounded-lg overflow-hidden shrink-0 bg-black/40 border border-white/[0.08]">
-                  {resultsData.reference.poster_url ? (
-                    <img src={resultsData.reference.poster_url} alt="" className="w-full h-full object-cover" />
-                  ) : (
-                    <Film className="w-5 h-5 text-slate-600 m-auto mt-4" />
-                  )}
+                <div className="w-10 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-black/40 border border-white/[0.08]">
+                  <CinemaPoster
+                    src={resultsData.reference.poster_url}
+                    alt={resultsData.reference.title}
+                    title={resultsData.reference.title}
+                    year={resultsData.reference.year}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center space-x-2">
@@ -138,85 +163,114 @@ export default function SearchModal({ isOpen, onClose, onSelectMovie, onWatchTra
                     {resultsData.reference.title} ({resultsData.reference.year})
                   </h4>
                   <p className="text-[11px] text-slate-400 truncate">
-                    Showing top films sharing themes with {resultsData.reference.title}
+                    Showing top titles sharing themes with {resultsData.reference.title}
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Results List */}
             {resultsData.results && resultsData.results.length > 0 ? (
               <div className="space-y-2">
-                {resultsData.results.map((item) => (
-                  <div
-                    key={item.id}
-                    className="p-3 rounded-2xl bg-[#12131d] hover:bg-[#181926] border border-white/[0.06] hover:border-[#c5a059]/30 transition-all flex items-center justify-between gap-3 group"
-                  >
-                    <div className="flex items-center space-x-3 min-w-0 flex-1">
-                      {/* Poster */}
-                      <div className="w-11 sm:w-12 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-slate-900 border border-white/[0.08]">
-                        {item.poster_url ? (
-                          <img src={item.poster_url} alt={item.title} className="w-full h-full object-cover" loading="lazy" />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center text-slate-600">
-                            <Film className="w-4 h-4" />
+                {resultsData.results.map((item) => {
+                  const saved = isInWatchlist?.(item);
+                  return (
+                    <div
+                      key={item.id}
+                      className="p-3 rounded-2xl bg-[#12131d] hover:bg-[#181926] border border-white/[0.06] hover:border-[#c5a059]/30 transition-all flex items-center justify-between gap-3 group"
+                    >
+                      <div className="flex items-center space-x-3 min-w-0 flex-1">
+                        <div className="w-11 sm:w-12 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-slate-900 border border-white/[0.08]">
+                          <CinemaPoster
+                            src={item.poster_url}
+                            alt={item.title}
+                            title={item.title}
+                            year={item.year}
+                            badge={item.media_type === 'tvSeries' ? 'SERIES' : 'FILM'}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+
+                        <div className="min-w-0 flex-1 space-y-0.5">
+                          <div className="flex items-center space-x-2 flex-wrap">
+                            <h4 className="font-bold text-sm text-white truncate group-hover:text-[#c5a059] transition-colors font-headline">
+                              {item.title}
+                            </h4>
+                            <span className="text-[11px] text-slate-400">({item.year})</span>
+                            <span className="text-[9px] font-mono font-bold uppercase px-1.5 py-0.2 rounded bg-white/[0.06] text-slate-300">
+                              {item.media_type === 'tvSeries' ? 'SERIES' : 'FILM'}
+                            </span>
                           </div>
+                          <div className="flex items-center space-x-2 text-[11px] text-slate-400">
+                            <div className="flex items-center space-x-1 text-[#c5a059]">
+                              <Star className="w-3 h-3 fill-current" />
+                              <span className="font-bold">{item.rating}</span>
+                            </div>
+                            <span>•</span>
+                            <span className="truncate">
+                              {item.genres?.join(', ') || item.original_language?.toUpperCase()}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center space-x-1.5 shrink-0">
+                        <button
+                          onClick={() => {
+                            onClose();
+                            onWatchTrailer(item);
+                          }}
+                          className="p-2 sm:px-3 sm:py-1.5 rounded-xl bg-[#1e202f] hover:bg-[#c5a059] text-slate-200 hover:text-black text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer"
+                          title="Watch Trailer"
+                        >
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <span className="hidden sm:inline">Trailer</span>
+                        </button>
+
+                        {onOpenSimilar && (
+                          <button
+                            onClick={() => {
+                              onClose();
+                              onOpenSimilar(item);
+                            }}
+                            className="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.12] text-[#c5a059] transition-colors cursor-pointer"
+                            title="More Like This"
+                          >
+                            <Sparkles className="w-3.5 h-3.5" />
+                          </button>
                         )}
-                      </div>
 
-                      {/* Info */}
-                      <div className="min-w-0 flex-1 space-y-0.5">
-                        <div className="flex items-center space-x-2 flex-wrap">
-                          <h4 className="font-bold text-sm text-white truncate group-hover:text-[#c5a059] transition-colors font-headline">
-                            {item.title}
-                          </h4>
-                          <span className="text-[11px] text-slate-400">({item.year})</span>
-                          <span className="text-[9px] font-mono font-bold uppercase px-1.5 py-0.2 rounded bg-white/[0.06] text-slate-300">
-                            {item.media_type === 'tvSeries' ? 'SERIES' : 'FILM'}
-                          </span>
-                        </div>
-                        <div className="flex items-center space-x-2 text-[11px] text-slate-400">
-                          <div className="flex items-center space-x-1 text-[#c5a059]">
-                            <Star className="w-3 h-3 fill-current" />
-                            <span className="font-bold">{item.rating}</span>
-                          </div>
-                          <span>•</span>
-                          <span className="truncate">{item.genres?.join(', ') || item.original_language?.toUpperCase()}</span>
-                        </div>
+                        {onToggleWatchlist && (
+                          <button
+                            onClick={() => onToggleWatchlist(item)}
+                            className={`p-2 rounded-xl transition-colors cursor-pointer ${
+                              saved
+                                ? 'bg-[#c5a059]/20 text-[#c5a059]'
+                                : 'bg-white/[0.05] hover:bg-white/[0.12] text-slate-400 hover:text-white'
+                            }`}
+                            title={saved ? 'Remove from Shortlist' : 'Save to Shortlist'}
+                          >
+                            <Bookmark className={`w-3.5 h-3.5 ${saved ? 'fill-[#c5a059]' : ''}`} />
+                          </button>
+                        )}
+
+                        <a
+                          href={item.watch_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white transition-colors"
+                          title="Where to watch"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
                       </div>
                     </div>
-
-                    {/* Actions */}
-                    <div className="flex items-center space-x-2 shrink-0">
-                      <button
-                        onClick={() => {
-                          onClose();
-                          onWatchTrailer(item);
-                        }}
-                        className="p-2 sm:px-3 sm:py-1.5 rounded-xl bg-[#1e202f] hover:bg-[#c5a059] text-slate-300 hover:text-black text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer"
-                        title="Watch Trailer"
-                      >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span className="hidden sm:inline">Trailer</span>
-                      </button>
-
-                      <a
-                        href={item.watch_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white transition-colors"
-                        title="Where to watch"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <div className="py-12 text-center space-y-2">
                 <span className="text-2xl">🔍</span>
-                <p className="text-sm font-semibold text-white">No titles found for "{query}"</p>
+                <p className="text-sm font-semibold text-white">No titles found for &quot;{query}&quot;</p>
                 <p className="text-xs text-slate-400">Try searching a different title, director name, or genre vibe.</p>
               </div>
             )}

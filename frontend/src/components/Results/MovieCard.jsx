@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
-import { Star, Play, Sparkles, Film, Share2, Layers, ExternalLink, Clock } from 'lucide-react';
+import { Star, Play, Sparkles, Share2, ExternalLink, Clock, Bookmark } from 'lucide-react';
 import CinemaPoster from '../Common/CinemaPoster';
 
-export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }) {
+export default function MovieCard({
+  item,
+  index,
+  onWatchTrailer,
+  onOpenSimilar,
+  onOpenDetails,
+  isSaved = false,
+  onToggleSave
+}) {
   const [copied, setCopied] = useState(false);
   const isTopPick = index === 0;
 
-  const handleCopy = () => {
+  const handleCopy = (e) => {
+    e.stopPropagation();
     navigator.clipboard.writeText(`${item.title} (${item.year}) - Discovered on cine2watch`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -21,8 +30,11 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
       }`}
     >
       <div>
-        {/* Cinematic Poster Container */}
-        <div className="relative aspect-[2/3] w-full overflow-hidden bg-[#0a0b10]">
+        {/* Clickable Cinematic Poster Container */}
+        <div
+          onClick={() => onOpenDetails?.(item)}
+          className="relative aspect-[2/3] w-full overflow-hidden bg-[#0a0b10] cursor-pointer"
+        >
           <CinemaPoster
             src={item.poster_url}
             alt={item.title}
@@ -33,10 +45,10 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
           />
 
           {/* Vignette Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111219] via-transparent to-transparent opacity-95" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111219] via-black/20 to-transparent opacity-95" />
 
-          {/* Top Badges */}
-          <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+          {/* Top Badges + Quick Save */}
+          <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
             {isTopPick ? (
               <span className="bg-[#c5a059] text-black text-[10px] font-mono font-black px-2.5 py-0.5 rounded-md shadow-md flex items-center space-x-1">
                 <Sparkles className="w-3 h-3 fill-black" />
@@ -48,11 +60,31 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
               </span>
             )}
 
-            {/* IMDb Rating Badge */}
-            <div className="bg-[#090a0d]/85 backdrop-blur-md border border-white/[0.1] px-2 py-0.5 rounded-lg flex items-center space-x-1 text-xs">
-              <Star className="w-3.5 h-3.5 fill-[#c5a059] text-[#c5a059]" />
-              <span className="font-bold text-white">{item.rating}</span>
-              <span className="text-[10px] text-slate-400">({item.votes})</span>
+            <div className="flex items-center space-x-1.5">
+              {/* IMDb Rating Badge */}
+              <div className="bg-[#090a0d]/85 backdrop-blur-md border border-white/[0.1] px-2 py-0.5 rounded-lg flex items-center space-x-1 text-xs">
+                <Star className="w-3.5 h-3.5 fill-[#c5a059] text-[#c5a059]" />
+                <span className="font-bold text-white">{item.rating}</span>
+                <span className="text-[10px] text-slate-400">({item.votes})</span>
+              </div>
+
+              {onToggleSave && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggleSave(item);
+                  }}
+                  aria-label={isSaved ? 'Remove from shortlist' : 'Save to shortlist'}
+                  title={isSaved ? 'Saved in Shortlist' : 'Save to Shortlist'}
+                  className={`p-1.5 rounded-lg backdrop-blur-md border transition-colors cursor-pointer ${
+                    isSaved
+                      ? 'bg-[#c5a059] border-[#c5a059] text-black shadow-md'
+                      : 'bg-[#090a0d]/85 border-white/[0.12] text-slate-300 hover:text-[#c5a059] hover:border-[#c5a059]/45'
+                  }`}
+                >
+                  <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-black' : ''}`} />
+                </button>
+              )}
             </div>
           </div>
 
@@ -61,7 +93,7 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
             <h3 className="text-lg sm:text-xl font-bold font-headline text-white line-clamp-1 group-hover:text-[#c5a059] transition-colors">
               {item.title}
             </h3>
-            
+
             <div className="flex items-center space-x-2 text-[11px] text-slate-300 flex-wrap">
               <span>{item.year}</span>
               <span>•</span>
@@ -69,22 +101,25 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
               {item.runtime_minutes && (
                 <>
                   <span>•</span>
-                  <span className="flex items-center space-x-0.5 text-slate-400">
-                    <Clock className="w-3 h-3 inline" />
+                  <span className="flex items-center space-x-0.5 text-slate-300">
+                    <Clock className="w-3 h-3 inline text-slate-400" />
                     <span>{item.runtime_minutes}m</span>
                   </span>
                 </>
               )}
             </div>
 
-            <div className="text-[10px] font-mono text-slate-400 line-clamp-1">
+            <div className="text-[11px] font-mono text-slate-400 line-clamp-1">
               {Array.isArray(item.genres) ? item.genres.join(' • ') : item.genres}
             </div>
           </div>
         </div>
 
-        {/* Synopsis */}
-        <div className="p-4 sm:p-5">
+        {/* Clickable Synopsis */}
+        <div
+          onClick={() => onOpenDetails?.(item)}
+          className="p-4 sm:p-5 cursor-pointer"
+        >
           <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
             {item.overview}
           </p>
@@ -92,7 +127,7 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
       </div>
 
       {/* Action Footer */}
-      <div className="p-4 sm:p-5 pt-0 space-y-2">
+      <div className="p-4 sm:p-5 pt-0 space-y-2.5">
         <div className="grid grid-cols-2 gap-2">
           {/* Watch Trailer */}
           <button
@@ -103,18 +138,18 @@ export default function MovieCard({ item, index, onWatchTrailer, onOpenSimilar }
             <span>Trailer</span>
           </button>
 
-          {/* Similar Button (Feature #6) */}
+          {/* Similar Button */}
           <button
             onClick={() => onOpenSimilar(item)}
             className="py-2.5 rounded-xl bg-[#1c1d2b] hover:bg-[#25273a] border border-white/[0.08] hover:border-[#c5a059]/40 text-xs font-semibold text-slate-200 flex items-center justify-center space-x-1.5 cursor-pointer transition-colors"
-            title="Explore similar movies"
+            title="Explore similar titles"
           >
             <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
             <span>Similar</span>
           </button>
         </div>
 
-        {/* Bottom Utility Row: JustWatch + Share */}
+        {/* Bottom Utility Row: Where to Stream + Details + Share */}
         <div className="flex items-center justify-between pt-1 text-[11px]">
           <a
             href={item.watch_url}

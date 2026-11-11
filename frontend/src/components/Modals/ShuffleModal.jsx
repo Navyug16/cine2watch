@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { X, Dices, Sparkles, Star, Film, Play, RefreshCw, Compass } from 'lucide-react';
+import { X, Dices, Sparkles, Star, Play, Compass, Bookmark, Check } from 'lucide-react';
 import { INDUSTRIES } from '../../data/constants';
+import CinemaPoster from '../Common/CinemaPoster';
 
-export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentIndustry }) {
+export default function ShuffleModal({
+  isOpen,
+  onClose,
+  onWatchTrailer,
+  onOpenSimilar,
+  currentIndustry,
+  isInWatchlist,
+  onToggleWatchlist
+}) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Buffer for seen titles to guarantee zero repeats
   const [seenHistory, setSeenHistory] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('cine2watch_shuffle_seen') || '[]');
@@ -16,7 +24,7 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
     }
   });
 
-  const activeIndObj = INDUSTRIES.find(i => i.id === currentIndustry);
+  const activeIndObj = INDUSTRIES.find((i) => i.id === currentIndustry);
   const industryLabel = activeIndObj ? activeIndObj.name : 'Worldwide Cinema';
 
   const fetchShuffle = async () => {
@@ -38,13 +46,12 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
       const json = await res.json();
       setData(json);
 
-      // Record seen IDs
       const newIds = [];
       if (json.movie?.id) newIds.push(String(json.movie.id));
       if (json.series?.id) newIds.push(String(json.series.id));
 
       if (newIds.length > 0) {
-        setSeenHistory(prev => {
+        setSeenHistory((prev) => {
           const updated = [...new Set([...prev, ...newIds])];
           localStorage.setItem('cine2watch_shuffle_seen', JSON.stringify(updated.slice(-100)));
           return updated;
@@ -67,13 +74,19 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 modal-backdrop-luxury animate-in fade-in duration-200">
-      <div className="card-luxury max-w-4xl w-full rounded-3xl overflow-hidden border border-white/[0.1] shadow-2xl flex flex-col max-h-[92vh]">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 modal-backdrop-luxury animate-in fade-in duration-200"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="card-luxury max-w-4xl w-full rounded-3xl overflow-hidden border border-white/[0.12] shadow-2xl flex flex-col max-h-[92vh]"
+      >
         
-        {/* Header: Shows Selected Industry Origin with Zero Mood Clutter */}
+        {/* Header */}
         <div className="p-4 sm:p-6 border-b border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#10111a]">
           <div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 flex-wrap gap-y-1">
               <span className="text-[10px] font-mono tracking-widest text-[#c5a059] uppercase font-bold flex items-center space-x-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>DYNAMIC DOUBLE FEATURE</span>
@@ -86,7 +99,7 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
             </div>
 
             <h3 className="text-lg sm:text-xl font-bold font-headline text-white mt-1">
-              Tonight's High-Synergy Pair
+              Tonight&apos;s High-Synergy Pair
             </h3>
             <p className="text-xs text-slate-400">
               Guaranteed unique on every spin. 1 Film + 1 Prestige Series curated from {industryLabel}.
@@ -100,11 +113,12 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
               className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl btn-gold text-xs font-bold flex items-center justify-center space-x-2 cursor-pointer shadow-lg hover:shadow-[#c5a059]/20 transition-all hover:scale-102"
             >
               <Dices className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-              <span>{loading ? 'Rolling...' : '🎲 Spin Another Pair'}</span>
+              <span>{loading ? 'Rolling...' : 'Spin Another Pair'}</span>
             </button>
 
             <button
               onClick={onClose}
+              aria-label="Close double feature"
               className="p-2.5 rounded-full bg-[#161722] hover:bg-[#202230] text-slate-400 hover:text-white border border-white/[0.08] cursor-pointer"
             >
               <X className="w-4 h-4" />
@@ -140,7 +154,6 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
 
           {!loading && data && (
             <>
-              {/* Snack & Drink Synergy Pill */}
               {data.snack && (
                 <div className="p-3.5 rounded-2xl bg-[#141522] border border-white/[0.06] flex items-center justify-between flex-wrap gap-2 text-xs">
                   <div className="flex items-center space-x-2.5">
@@ -160,22 +173,24 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
                 </div>
               )}
 
-              {/* Dual Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
                 
                 {/* 1. MOVIE CARD */}
                 {data.movie && (
                   <div className="bg-[#141520] rounded-2xl border border-white/[0.08] overflow-hidden p-4 sm:p-5 flex flex-col sm:flex-row gap-4 group hover:border-[#c5a059]/40 transition-all shadow-xl">
                     <div className="relative w-28 sm:w-32 aspect-[2/3] shrink-0 mx-auto sm:mx-0 rounded-xl overflow-hidden bg-[#0d0e14] border border-white/[0.1] shadow-2xl">
-                      {data.movie.poster_url ? (
-                        <img src={data.movie.poster_url} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                      ) : (
-                        <Film className="w-8 h-8 text-slate-600 m-auto mt-12" />
-                      )}
+                      <CinemaPoster
+                        src={data.movie.poster_url}
+                        alt={data.movie.title}
+                        title={data.movie.title}
+                        year={data.movie.year}
+                        badge="FILM"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                     </div>
 
-                    <div className="flex-1 flex flex-col justify-between space-y-2">
-                      <div className="space-y-1">
+                    <div className="flex-1 flex flex-col justify-between space-y-3 min-w-0">
+                      <div className="space-y-1.5">
                         <div className="flex items-center justify-between">
                           <span className="text-[9px] font-mono uppercase font-bold bg-[#c5a059] text-black px-2 py-0.5 rounded">
                             FEATURE FILM
@@ -192,10 +207,18 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
 
                         <div className="flex items-center space-x-2 text-[11px] text-slate-400">
                           <span>{data.movie.year}</span>
+                          {data.movie.original_language && (
+                            <>
+                              <span>•</span>
+                              <span className="uppercase text-[#c5a059] font-mono">{data.movie.original_language}</span>
+                            </>
+                          )}
                           <span>•</span>
-                          <span className="uppercase text-[#c5a059] font-mono">{data.movie.original_language}</span>
-                          <span>•</span>
-                          <span className="truncate">{Array.isArray(data.movie.genres) ? data.movie.genres.slice(0, 2).join(', ') : data.movie.genres}</span>
+                          <span className="truncate">
+                            {Array.isArray(data.movie.genres)
+                              ? data.movie.genres.slice(0, 2).join(', ')
+                              : data.movie.genres}
+                          </span>
                         </div>
 
                         <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
@@ -203,16 +226,49 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
                         </p>
                       </div>
 
-                      <button
-                        onClick={() => {
-                          onClose();
-                          onWatchTrailer(data.movie);
-                        }}
-                        className="w-full py-2.5 rounded-xl btn-gold text-xs font-bold flex items-center justify-center space-x-1.5 cursor-pointer shadow-md"
-                      >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span>Watch Film Trailer</span>
-                      </button>
+                      <div className="flex items-center space-x-1.5">
+                        <button
+                          onClick={() => {
+                            onClose();
+                            onWatchTrailer(data.movie);
+                          }}
+                          className="flex-1 py-2.5 px-3 rounded-xl btn-gold text-xs font-bold flex items-center justify-center space-x-1.5 cursor-pointer shadow-md"
+                        >
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <span>Trailer</span>
+                        </button>
+
+                        {onOpenSimilar && (
+                          <button
+                            onClick={() => {
+                              onClose();
+                              onOpenSimilar(data.movie);
+                            }}
+                            className="p-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-[#c5a059] cursor-pointer transition-colors"
+                            title="Similar Titles"
+                          >
+                            <Sparkles className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+
+                        {onToggleWatchlist && (
+                          <button
+                            onClick={() => onToggleWatchlist(data.movie)}
+                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${
+                              isInWatchlist?.(data.movie)
+                                ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
+                                : 'bg-white/[0.06] hover:bg-white/[0.12] border-white/[0.08] text-slate-300'
+                            }`}
+                            title={isInWatchlist?.(data.movie) ? 'Saved in Shortlist' : 'Save to Shortlist'}
+                          >
+                            {isInWatchlist?.(data.movie) ? (
+                              <Check className="w-3.5 h-3.5" />
+                            ) : (
+                              <Bookmark className="w-3.5 h-3.5" />
+                            )}
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -221,15 +277,18 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
                 {data.series && (
                   <div className="bg-[#141520] rounded-2xl border border-white/[0.08] overflow-hidden p-4 sm:p-5 flex flex-col sm:flex-row gap-4 group hover:border-[#c5a059]/40 transition-all shadow-xl">
                     <div className="relative w-28 sm:w-32 aspect-[2/3] shrink-0 mx-auto sm:mx-0 rounded-xl overflow-hidden bg-[#0d0e14] border border-white/[0.1] shadow-2xl">
-                      {data.series.poster_url ? (
-                        <img src={data.series.poster_url} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                      ) : (
-                        <Film className="w-8 h-8 text-slate-600 m-auto mt-12" />
-                      )}
+                      <CinemaPoster
+                        src={data.series.poster_url}
+                        alt={data.series.title}
+                        title={data.series.title}
+                        year={data.series.year}
+                        badge="SERIES"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                     </div>
 
-                    <div className="flex-1 flex flex-col justify-between space-y-2">
-                      <div className="space-y-1">
+                    <div className="flex-1 flex flex-col justify-between space-y-3 min-w-0">
+                      <div className="space-y-1.5">
                         <div className="flex items-center justify-between">
                           <span className="text-[9px] font-mono uppercase font-bold bg-[#1e202f] text-[#c5a059] border border-[#c5a059]/40 px-2 py-0.5 rounded">
                             PRESTIGE SERIES
@@ -246,10 +305,18 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
 
                         <div className="flex items-center space-x-2 text-[11px] text-slate-400">
                           <span>{data.series.year}</span>
+                          {data.series.original_language && (
+                            <>
+                              <span>•</span>
+                              <span className="uppercase text-[#c5a059] font-mono">{data.series.original_language}</span>
+                            </>
+                          )}
                           <span>•</span>
-                          <span className="uppercase text-[#c5a059] font-mono">{data.series.original_language}</span>
-                          <span>•</span>
-                          <span className="truncate">{Array.isArray(data.series.genres) ? data.series.genres.slice(0, 2).join(', ') : data.series.genres}</span>
+                          <span className="truncate">
+                            {Array.isArray(data.series.genres)
+                              ? data.series.genres.slice(0, 2).join(', ')
+                              : data.series.genres}
+                          </span>
                         </div>
 
                         <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
@@ -257,16 +324,49 @@ export default function ShuffleModal({ isOpen, onClose, onWatchTrailer, currentI
                         </p>
                       </div>
 
-                      <button
-                        onClick={() => {
-                          onClose();
-                          onWatchTrailer(data.series);
-                        }}
-                        className="w-full py-2.5 rounded-xl bg-[#1e202e] hover:bg-[#c5a059] text-white hover:text-black border border-white/[0.08] text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-md"
-                      >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span>Watch Series Trailer</span>
-                      </button>
+                      <div className="flex items-center space-x-1.5">
+                        <button
+                          onClick={() => {
+                            onClose();
+                            onWatchTrailer(data.series);
+                          }}
+                          className="flex-1 py-2.5 px-3 rounded-xl bg-[#1e202e] hover:bg-[#c5a059] text-white hover:text-black border border-white/[0.08] text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-md"
+                        >
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <span>Trailer</span>
+                        </button>
+
+                        {onOpenSimilar && (
+                          <button
+                            onClick={() => {
+                              onClose();
+                              onOpenSimilar(data.series);
+                            }}
+                            className="p-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-[#c5a059] cursor-pointer transition-colors"
+                            title="Similar Titles"
+                          >
+                            <Sparkles className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+
+                        {onToggleWatchlist && (
+                          <button
+                            onClick={() => onToggleWatchlist(data.series)}
+                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${
+                              isInWatchlist?.(data.series)
+                                ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
+                                : 'bg-white/[0.06] hover:bg-white/[0.12] border-white/[0.08] text-slate-300'
+                            }`}
+                            title={isInWatchlist?.(data.series) ? 'Saved in Shortlist' : 'Save to Shortlist'}
+                          >
+                            {isInWatchlist?.(data.series) ? (
+                              <Check className="w-3.5 h-3.5" />
+                            ) : (
+                              <Bookmark className="w-3.5 h-3.5" />
+                            )}
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}

@@ -29,8 +29,8 @@ function MiniFanPoster({ url, title }) {
 
 export default function IndustryStep({ selectedIndustry, onSelect }) {
   return (
-    <div className="space-y-5 animate-in fade-in duration-300">
-      <div className="text-center space-y-1">
+    <div className="space-y-6 animate-in fade-in duration-300">
+      <div className="text-center space-y-1.5">
         <span className="text-[10px] font-mono tracking-widest text-[#c5a059] uppercase font-bold">
           STEP 1 OF 4 • CINEMATIC ORIGIN
         </span>
@@ -65,7 +65,7 @@ export default function IndustryStep({ selectedIndustry, onSelect }) {
                     <h3 className="font-bold text-sm text-white font-headline group-hover:text-[#c5a059] transition-colors leading-snug">
                       {ind.name}
                     </h3>
-                    <span className="text-[10px] text-slate-400 font-mono block line-clamp-1">
+                    <span className="text-[11px] text-slate-400 font-mono block line-clamp-1">
                       {ind.tag}
                     </span>
                   </div>
@@ -80,10 +80,10 @@ export default function IndustryStep({ selectedIndustry, onSelect }) {
               {/* 3-Poster Fan Display */}
               <div className="relative h-24 sm:h-28 w-full flex items-center justify-center overflow-hidden my-2.5 bg-[#090a0d]/70 rounded-xl border border-white/[0.04]">
                 {ind.posters && ind.posters.map((p, idx) => {
-                  const rotation = idx === 0 
-                    ? '-rotate-6 -translate-x-5.5' 
-                    : idx === 1 
-                    ? 'z-10 scale-105 shadow-2xl' 
+                  const rotation = idx === 0
+                    ? '-rotate-6 -translate-x-5.5'
+                    : idx === 1
+                    ? 'z-10 scale-105 shadow-2xl'
                     : 'rotate-6 translate-x-5.5';
                   return (
                     <div
@@ -97,7 +97,7 @@ export default function IndustryStep({ selectedIndustry, onSelect }) {
               </div>
 
               {/* Footer Subtitle */}
-              <div className="w-full pt-2 border-t border-white/[0.04] flex items-center justify-between text-[10px] text-slate-400">
+              <div className="w-full pt-2 border-t border-white/[0.04] flex items-center justify-between text-[11px] text-slate-400">
                 <span className="truncate pr-1">{ind.subtitle}</span>
                 <span className="text-[#c5a059] text-xs font-mono group-hover:translate-x-1 transition-transform shrink-0">→</span>
               </div>

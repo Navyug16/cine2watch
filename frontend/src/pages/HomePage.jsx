@@ -1,9 +1,15 @@
-import React from 'react';
-import { 
-  Sparkles, 
-  RotateCcw, 
-  RefreshCw, 
-  History
+import React, { useState, useMemo } from 'react';
+import {
+  Sparkles,
+  RotateCcw,
+  RefreshCw,
+  History,
+  Play,
+  Star,
+  Clock,
+  Bookmark,
+  ExternalLink,
+  Check
 } from 'lucide-react';
 
 import IndustryStep from '../components/Funnel/IndustryStep';
@@ -11,8 +17,11 @@ import FormatStep from '../components/Funnel/FormatStep';
 import EraStep from '../components/Funnel/EraStep';
 import DualGenreStep from '../components/Funnel/DualGenreStep';
 import MovieCard from '../components/Results/MovieCard';
+import CinemaPoster from '../components/Common/CinemaPoster';
 
 import { INDUSTRIES } from '../data/constants';
+
+const MAX_YEAR = Math.max(2026, new Date().getFullYear());
 
 export default function HomePage({
   currentStep,
@@ -37,59 +46,79 @@ export default function HomePage({
   onFetchRecommendations,
   onClearHistory,
   onWatchTrailer,
-  onOpenSimilar
+  onOpenSimilar,
+  onOpenDetails,
+  isInWatchlist,
+  onToggleWatchlist
 }) {
+  const [sortBy, setSortBy] = useState('match'); // 'match' | 'rating' | 'runtime' | 'newest'
 
   // Auto-advance handlers
   const handleSelectIndustry = (indId) => {
     setIndustry(indId);
-    setTimeout(() => setCurrentStep(2), 200);
+    setTimeout(() => setCurrentStep(2), 180);
   };
 
   const handleSelectFormat = (formatId) => {
     setMediaType(formatId);
-    setTimeout(() => setCurrentStep(3), 200);
+    setTimeout(() => setCurrentStep(3), 180);
   };
 
   const handleSelectEra = (start, end) => {
     setSelectedEra(`${start}-${end}`);
     setCustomStart(start);
     setCustomEnd(end);
-    setTimeout(() => setCurrentStep(4), 200);
+    setTimeout(() => setCurrentStep(4), 180);
   };
 
   const handleCustomEraSubmit = (start, end) => {
     setSelectedEra(`${start}-${end}`);
     setCustomStart(start);
     setCustomEnd(end);
-    setTimeout(() => setCurrentStep(4), 200);
+    setTimeout(() => setCurrentStep(4), 180);
   };
 
   const handleToggleGenre = (genreName) => {
     let updated;
     if (selectedGenres.includes(genreName)) {
-      updated = selectedGenres.filter(g => g !== genreName);
+      updated = selectedGenres.filter((g) => g !== genreName);
+    } else if (selectedGenres.length >= 2) {
+      updated = [selectedGenres[1], genreName];
     } else {
-      if (selectedGenres.length >= 2) {
-        updated = [selectedGenres[1], genreName];
-      } else {
-        updated = [...selectedGenres, genreName];
-      }
+      updated = [...selectedGenres, genreName];
     }
     setSelectedGenres(updated);
 
     if (updated.length === 2) {
+      setSortBy('match');
       setTimeout(() => {
         onFetchRecommendations(updated, false);
-      }, 350);
+      }, 320);
     }
   };
 
-  const currentIndObj = INDUSTRIES.find(i => i.id === industry);
+  const currentIndObj = INDUSTRIES.find((i) => i.id === industry);
+
+  // Client-side sorted view of returned batch
+  const sortedResults = useMemo(() => {
+    if (!results?.data) return [];
+    const list = [...results.data];
+    if (sortBy === 'rating') {
+      list.sort((a, b) => (Number(b.rating) || 0) - (Number(a.rating) || 0));
+    } else if (sortBy === 'runtime') {
+      list.sort((a, b) => (Number(a.runtime_minutes) || 999) - (Number(b.runtime_minutes) || 999));
+    } else if (sortBy === 'newest') {
+      list.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
+    }
+    return list;
+  }, [results, sortBy]);
+
+  const spotlightItem = sortedResults[0] || null;
+  const gridItems = sortedResults.slice(1);
 
   return (
-    <div className="w-full flex flex-col justify-center py-2 sm:py-4">
-      
+    <div className="w-full flex flex-col justify-center py-2 sm:py-4 space-y-5">
+
       {/* MAIN DECISION FUNNEL QUESTIONS & RESULTS */}
       <section className="w-full flex-1 flex flex-col justify-center">
         
@@ -127,7 +156,10 @@ export default function HomePage({
           <DualGenreStep
             selectedGenres={selectedGenres}
             onToggleGenre={handleToggleGenre}
-            onProceed={(g) => onFetchRecommendations(g, false)}
+            onProceed={(g) => {
+              setSortBy('match');
+              onFetchRecommendations(g, false);
+            }}
             onBack={() => setCurrentStep(3)}
             loading={loading}
           />
@@ -163,58 +195,104 @@ export default function HomePage({
 
                   <button
                     onClick={onReset}
-                    className="p-2 rounded-xl bg-[#161722] hover:bg-[#1f202e] border border-white/[0.08] text-slate-300 cursor-pointer"
+                    className="p-2.5 rounded-xl bg-[#161722] hover:bg-[#1f202e] border border-white/[0.08] text-slate-300 hover:text-white cursor-pointer transition-colors"
                     title="Start fresh"
+                    aria-label="Start fresh"
                   >
                     <RotateCcw className="w-4 h-4" />
                   </button>
                 </div>
               </div>
 
-              {/* Active Taste Chips */}
-              <div className="flex items-center flex-wrap gap-2 text-xs">
-                <span className="text-[10px] font-mono text-slate-400 uppercase mr-1">Active Formula:</span>
-                
-                <button
-                  onClick={() => setCurrentStep(1)}
-                  className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
-                >
-                  <span>Region: {currentIndObj?.name || 'Worldwide'} ✎</span>
-                </button>
+              {/* Active Taste Chips + Client Sort Controls */}
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+                <div className="flex items-center flex-wrap gap-2 text-xs">
+                  <span className="text-[10px] font-mono text-slate-400 uppercase mr-1">Active Formula:</span>
 
-                <button
-                  onClick={() => setCurrentStep(2)}
-                  className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
-                >
-                  <span>Format: {mediaType === 'tvSeries' ? 'Prestige Series' : 'Feature Film'} ✎</span>
-                </button>
+                  <button
+                    onClick={() => setCurrentStep(1)}
+                    className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>Region: {currentIndObj?.name || 'Worldwide'} ✎</span>
+                  </button>
 
-                <button
-                  onClick={() => setCurrentStep(3)}
-                  className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
-                >
-                  <span>Era: {customStart}–{customEnd} ✎</span>
-                </button>
+                  <button
+                    onClick={() => setCurrentStep(2)}
+                    className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>Format: {mediaType === 'tvSeries' ? 'Prestige Series' : 'Feature Film'} ✎</span>
+                  </button>
 
-                <button
-                  onClick={() => setCurrentStep(4)}
-                  className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
-                >
-                  <span>Genres: {selectedGenres.join(' + ')} ✎</span>
-                </button>
+                  <button
+                    onClick={() => setCurrentStep(3)}
+                    className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>Era: {customStart}–{customEnd} ✎</span>
+                  </button>
+
+                  <button
+                    onClick={() => setCurrentStep(4)}
+                    className="px-3 py-1 rounded-full bg-[#181924] hover:bg-[#202230] border border-white/[0.08] text-[#c5a059] flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>Genres: {selectedGenres.join(' + ')} ✎</span>
+                  </button>
+                </div>
+
+                {/* Quick Sort Pills */}
+                {!loading && sortedResults.length > 1 && (
+                  <div className="flex items-center space-x-1 p-1 rounded-xl bg-black/50 border border-white/[0.06] shrink-0 self-start lg:self-auto">
+                    {[
+                      { id: 'match', label: 'Best Match' },
+                      { id: 'rating', label: 'Top Rated' },
+                      { id: 'runtime', label: 'Shortest' },
+                      { id: 'newest', label: 'Newest' }
+                    ].map((opt) => (
+                      <button
+                        key={opt.id}
+                        onClick={() => setSortBy(opt.id)}
+                        className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer ${
+                          sortBy === opt.id
+                            ? 'bg-[#c5a059] text-black font-bold'
+                            : 'text-slate-400 hover:text-white'
+                        }`}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
 
-            {/* Loading Skeleton */}
+            {/* Shimmer Loading Skeletons */}
             {loading && (
-              <div className="card-luxury rounded-3xl p-16 text-center space-y-4">
-                <div className="w-12 h-12 rounded-full border-2 border-[#c5a059] border-t-transparent animate-spin mx-auto" />
-                <h3 className="text-lg font-bold font-headline text-white">
-                  Searching 330,000 Titles Across Supabase...
-                </h3>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
-                  Filtering high-vote cinematic gems, language vectors, and ratings.
-                </p>
+              <div className="space-y-5">
+                <div className="rounded-3xl p-5 sm:p-6 bg-[#11121a] border border-white/[0.06] flex flex-col md:flex-row gap-6">
+                  <div className="w-full md:w-52 aspect-[2/3] rounded-2xl skeleton-luxury shrink-0" />
+                  <div className="flex-1 space-y-4 py-2">
+                    <div className="h-4 w-36 rounded-lg skeleton-luxury" />
+                    <div className="h-8 w-2/3 rounded-xl skeleton-luxury" />
+                    <div className="h-4 w-48 rounded-lg skeleton-luxury" />
+                    <div className="space-y-2 pt-2">
+                      <div className="h-3.5 w-full rounded skeleton-luxury" />
+                      <div className="h-3.5 w-5/6 rounded skeleton-luxury" />
+                      <div className="h-3.5 w-4/6 rounded skeleton-luxury" />
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {[0, 1, 2, 3, 4, 5].map((n) => (
+                    <div key={n} className="rounded-3xl overflow-hidden bg-[#11121a] border border-white/[0.06] p-4 space-y-4">
+                      <div className="aspect-[2/3] w-full rounded-2xl skeleton-luxury" />
+                      <div className="h-4 w-3/4 rounded skeleton-luxury" />
+                      <div className="h-3 w-full rounded skeleton-luxury" />
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="h-9 rounded-xl skeleton-luxury" />
+                        <div className="h-9 rounded-xl skeleton-luxury" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -231,18 +309,160 @@ export default function HomePage({
               </div>
             )}
 
-            {/* Results Grid */}
-            {!loading && results?.found && results?.data && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {results.data.map((item, index) => (
-                  <MovieCard
-                    key={item.id}
-                    item={item}
-                    index={index}
-                    onWatchTrailer={(it) => onWatchTrailer(it)}
-                    onOpenSimilar={(it) => onOpenSimilar(it)}
-                  />
-                ))}
+            {/* Spotlight #1 Hero + Runners-Up Grid */}
+            {!loading && results?.found && sortedResults.length > 0 && (
+              <div className="space-y-6">
+                
+                {/* #1 Curator Spotlight Wide Hero Card */}
+                {spotlightItem && (
+                  <div className="ambient-glow-curator rounded-3xl bg-gradient-to-br from-[#171925] via-[#12131c] to-[#0b0c12] border border-[#c5a059]/60 overflow-hidden shadow-[0_18px_50px_rgba(0,0,0,0.75)]">
+                    <div className="flex flex-col md:flex-row">
+                      {/* Spotlight Poster */}
+                      <div
+                        onClick={() => onOpenDetails?.(spotlightItem)}
+                        className="md:w-60 lg:w-64 aspect-[2/3] md:aspect-auto relative bg-[#090a0d] shrink-0 cursor-pointer group overflow-hidden"
+                      >
+                        <CinemaPoster
+                          src={spotlightItem.poster_url}
+                          alt={spotlightItem.title}
+                          title={spotlightItem.title}
+                          year={spotlightItem.year}
+                          badge="TOP PICK"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <span className="bg-[#c5a059] text-black text-[10px] font-mono font-black px-2.5 py-1 rounded-md shadow-md inline-flex items-center space-x-1">
+                            <Sparkles className="w-3 h-3 fill-black" />
+                            <span>#1 CURATOR PICK</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Spotlight Details */}
+                      <div className="p-5 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between flex-wrap gap-2">
+                            <div className="flex items-center flex-wrap gap-2 text-xs font-mono">
+                              <span className="px-2.5 py-0.5 rounded-md bg-[#c5a059]/15 border border-[#c5a059]/30 text-[#c5a059] font-bold">
+                                {spotlightItem.badge || 'FEATURED MATCH'}
+                              </span>
+                              <span className="text-slate-300">{spotlightItem.year}</span>
+                              <span className="text-slate-600">•</span>
+                              <span className="text-[#c5a059] uppercase">{spotlightItem.original_language}</span>
+                              {spotlightItem.runtime_minutes && (
+                                <>
+                                  <span className="text-slate-600">•</span>
+                                  <span className="inline-flex items-center space-x-1 text-slate-300">
+                                    <Clock className="w-3.5 h-3.5 text-slate-400" />
+                                    <span>{spotlightItem.runtime_minutes} min</span>
+                                  </span>
+                                </>
+                              )}
+                            </div>
+
+                            <div className="bg-black/60 border border-white/[0.1] px-2.5 py-1 rounded-xl flex items-center space-x-1.5 text-xs">
+                              <Star className="w-4 h-4 fill-[#c5a059] text-[#c5a059]" />
+                              <span className="font-bold text-white">{spotlightItem.rating}</span>
+                              <span className="text-slate-400">({spotlightItem.votes})</span>
+                            </div>
+                          </div>
+
+                          <h3
+                            onClick={() => onOpenDetails?.(spotlightItem)}
+                            className="text-2xl sm:text-3xl font-black font-headline text-white hover:text-[#c5a059] transition-colors cursor-pointer leading-tight"
+                          >
+                            {spotlightItem.title}
+                          </h3>
+
+                          <div className="flex flex-wrap gap-1.5">
+                            {(Array.isArray(spotlightItem.genres) ? spotlightItem.genres : []).map((g) => (
+                              <span
+                                key={g}
+                                className="px-2.5 py-0.5 rounded-md bg-white/[0.05] border border-white/[0.08] text-[11px] font-mono text-slate-300"
+                              >
+                                {g}
+                              </span>
+                            ))}
+                          </div>
+
+                          <p className="text-sm text-slate-300 leading-relaxed line-clamp-4">
+                            {spotlightItem.overview}
+                          </p>
+
+                          {spotlightItem.director && (
+                            <p className="text-xs text-slate-400 font-mono">
+                              Directed by <span className="text-slate-200">{spotlightItem.director}</span>
+                            </p>
+                          )}
+                        </div>
+
+                        <div className="flex flex-wrap items-center gap-2.5 pt-3 border-t border-white/[0.06]">
+                          <button
+                            onClick={() => onWatchTrailer(spotlightItem)}
+                            className="px-5 py-2.5 rounded-xl btn-gold text-xs font-bold inline-flex items-center space-x-2 cursor-pointer shadow-lg"
+                          >
+                            <Play className="w-4 h-4 fill-current" />
+                            <span>Watch Trailer</span>
+                          </button>
+
+                          <button
+                            onClick={() => onOpenSimilar(spotlightItem)}
+                            className="px-4 py-2.5 rounded-xl bg-[#1c1d2b] hover:bg-[#26283c] border border-white/[0.1] hover:border-[#c5a059]/40 text-xs font-semibold text-white inline-flex items-center space-x-1.5 cursor-pointer transition-colors"
+                          >
+                            <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
+                            <span>Similar Titles</span>
+                          </button>
+
+                          {onToggleWatchlist && (
+                            <button
+                              onClick={() => onToggleWatchlist(spotlightItem)}
+                              className={`px-4 py-2.5 rounded-xl border text-xs font-semibold inline-flex items-center space-x-1.5 cursor-pointer transition-colors ${
+                                isInWatchlist?.(spotlightItem)
+                                  ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
+                                  : 'bg-white/[0.06] hover:bg-white/[0.12] border-white/[0.1] text-slate-200'
+                              }`}
+                            >
+                              {isInWatchlist?.(spotlightItem) ? (
+                                <Check className="w-3.5 h-3.5" />
+                              ) : (
+                                <Bookmark className="w-3.5 h-3.5" />
+                              )}
+                              <span>{isInWatchlist?.(spotlightItem) ? 'Saved' : 'Save'}</span>
+                            </button>
+                          )}
+
+                          <a
+                            href={spotlightItem.watch_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-auto px-3 py-2 text-xs text-slate-300 hover:text-[#c5a059] inline-flex items-center space-x-1 transition-colors"
+                          >
+                            <span>Where to Stream</span>
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Runners-up Grid (#2 - #18) */}
+                {gridItems.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {gridItems.map((item, idx) => (
+                      <MovieCard
+                        key={item.id}
+                        item={item}
+                        index={idx + 1}
+                        onWatchTrailer={(it) => onWatchTrailer(it)}
+                        onOpenSimilar={(it) => onOpenSimilar(it)}
+                        onOpenDetails={(it) => onOpenDetails?.(it)}
+                        isSaved={isInWatchlist?.(item)}
+                        onToggleSave={(it) => onToggleWatchlist?.(it)}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
@@ -264,7 +484,7 @@ export default function HomePage({
                     onClick={() => onFetchRecommendations(selectedGenres, true)}
                     className="px-5 py-2.5 rounded-xl btn-gold text-xs font-bold cursor-pointer"
                   >
-                    <span>Expand to All Eras (1975–2026)</span>
+                    <span>Expand to All Eras (1975–{MAX_YEAR})</span>
                   </button>
 
                   {historyExcludeIds.length > 0 && (

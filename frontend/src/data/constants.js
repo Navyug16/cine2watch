@@ -106,13 +106,15 @@ export const FORMATS = [
   }
 ];
 
+const CURRENT_YEAR = Math.max(2026, new Date().getFullYear());
+
 export const ERAS = [
   { 
     id: 'contemporary', 
     name: 'Contemporary Era', 
-    range: '2021–2026', 
+    range: `2021–${CURRENT_YEAR}`, 
     start: 2021, 
-    end: 2026,
+    end: CURRENT_YEAR,
     desc: 'Current releases, high dynamic range spectacle & bleeding-edge filmmaking.',
     icon: '✨'
   },
