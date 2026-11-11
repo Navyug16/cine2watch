@@ -8,6 +8,7 @@ export const EXPLORE_CATEGORIES = [
   { id: 'fantasy', label: 'Fantasy & Epic Sagas', icon: '🧙' },
   { id: 'action', label: 'Action & Espionage', icon: '💥' },
   { id: 'scifi', label: 'Sci-Fi & Cyberpunk', icon: '🚀' },
+  { id: 'mystery', label: 'Mystery & Whodunit', icon: '🔍' },
   { id: 'awards', label: 'Oscar Hall of Fame', icon: '🏆' },
   { id: 'anime', label: 'Anime & Ghibli', icon: '⛩️' }
 ];
@@ -168,6 +169,71 @@ export const EXPLORE_HUBS = [
     backdrop_url: '/posters/mission_impossible.webp',
     themeColor: '#EF4444',
     keyFilms: ['Fallout', 'Dead Reckoning', 'Rogue Nation', 'Ghost Protocol', 'M:I 1']
+  },
+  {
+    id: 'james-bond',
+    name: 'James Bond (007) Legacy',
+    shortName: 'James Bond 007',
+    category: 'action',
+    icon: '🍸',
+    badge: '25 EON 007 FILMS',
+    tagline: 'Six Decades of MI6 Espionage, Villains & Iconic Aston Martins',
+    description: 'The complete 25-film EON Productions canon spanning Sean Connery, George Lazenby, Roger Moore, Timothy Dalton, Pierce Brosnan, and Daniel Craig.',
+    backdrop_url: '/posters/james_bond.webp',
+    themeColor: '#D4AF37',
+    keyFilms: ['Casino Royale', 'Skyfall', 'Goldfinger', 'GoldenEye', 'No Time to Die']
+  },
+  {
+    id: 'bourne',
+    name: 'The Bourne Identity Saga',
+    shortName: 'Jason Bourne',
+    category: 'action',
+    icon: '🎯',
+    badge: '6 TREADSTONE FILES',
+    tagline: 'Operation Treadstone, Blackbriar & Gritty Covert Warfare',
+    description: 'Matt Damon and Paul Greengrass’s kinetic black-ops espionage thriller saga alongside Operation Outcome and Treadstone.',
+    backdrop_url: '/posters/bourne.webp',
+    themeColor: '#EAB308',
+    keyFilms: ['The Bourne Identity', 'The Bourne Supremacy', 'The Bourne Ultimatum', 'The Bourne Legacy', 'Jason Bourne']
+  },
+  {
+    id: 'indiana-jones',
+    name: 'Indiana Jones Saga',
+    shortName: 'Indiana Jones',
+    category: 'fantasy',
+    icon: '🤠',
+    badge: '6 ARCHEOLOGICAL SAGAS',
+    tagline: 'Bullwhips, Ancient Relics & Globe-Trotting Pulp Adventure',
+    description: 'Steven Spielberg and George Lucas’s timeless archaeological adventure saga starring Harrison Ford from Young Indy to Dial of Destiny.',
+    backdrop_url: '/posters/indiana_jones.webp',
+    themeColor: '#F59E0B',
+    keyFilms: ['Raiders of the Lost Ark', 'The Last Crusade', 'Temple of Doom', 'Dial of Destiny', 'Young Indiana Jones']
+  },
+  {
+    id: 'jurassic-park',
+    name: 'Jurassic Park & World',
+    shortName: 'Jurassic Park',
+    category: 'scifi',
+    icon: '🦕',
+    badge: '9 PREHISTORIC CHAPTERS',
+    tagline: 'Life Finds a Way: Isla Nublar & Prehistoric Survival',
+    description: 'Michael Crichton and Steven Spielberg’s blockbuster dinosaur continuum spanning seven feature films and two canon animated series.',
+    backdrop_url: '/posters/jurassic_park.webp',
+    themeColor: '#DC2626',
+    keyFilms: ['Jurassic Park', 'The Lost World', 'Jurassic World', 'Camp Cretaceous', 'Jurassic World Rebirth']
+  },
+  {
+    id: 'knives-out',
+    name: 'Knives Out Mysteries',
+    shortName: 'Knives Out',
+    category: 'mystery',
+    icon: '🔍',
+    badge: '3 BENOIT BLANC CASES',
+    tagline: 'Detective Benoit Blanc’s Razor-Sharp Whodunit Anthology',
+    description: 'Rian Johnson and Daniel Craig’s acclaimed modern murder mystery franchise from the Thrombey estate to Glass Onion and Wake Up Dead Man.',
+    backdrop_url: '/posters/knives_out.webp',
+    themeColor: '#FACC15',
+    keyFilms: ['Knives Out', 'Glass Onion', 'Wake Up Dead Man']
   },
   {
     id: 'the-matrix',

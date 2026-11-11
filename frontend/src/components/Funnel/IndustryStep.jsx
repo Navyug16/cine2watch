@@ -1,5 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Film } from 'lucide-react';
 import { INDUSTRIES } from '../../data/constants';
+
+function MiniFanPoster({ url, title }) {
+  const [failed, setFailed] = useState(false);
+
+  if (!url || failed) {
+    return (
+      <div className="w-full h-full flex flex-col items-center justify-center p-1 text-center bg-gradient-to-br from-[#161826] to-[#0a0b12]">
+        <Film className="w-3.5 h-3.5 text-[#c5a059]/70 mb-0.5" />
+        <span className="text-[7px] font-bold text-slate-300 leading-tight line-clamp-2">
+          {title}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={url}
+      alt={title}
+      className="w-full h-full object-cover"
+      loading="eager"
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 export default function IndustryStep({ selectedIndustry, onSelect }) {
   return (
@@ -64,13 +90,7 @@ export default function IndustryStep({ selectedIndustry, onSelect }) {
                       key={idx}
                       className={`absolute w-12 sm:w-14 aspect-[2/3] rounded-md overflow-hidden shadow-xl border border-white/[0.14] transition-all duration-300 group-hover:scale-110 bg-slate-900 ${rotation}`}
                     >
-                      <img
-                        src={p.url}
-                        alt={p.title}
-                        className="w-full h-full object-cover"
-                        loading="eager"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      />
+                      <MiniFanPoster url={p.url} title={p.title} />
                     </div>
                   );
                 })}

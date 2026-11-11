@@ -20,9 +20,9 @@ export const INDUSTRIES = [
     icon: '🏰',
     tag: 'Spanish, French, German, Italian & Nordic Noir',
     posters: [
-      { title: 'Money Heist', url: 'https://image.tmdb.org/t/p/w500/reEMJA1uzscCbk5rUhGnyBh0Ryl.jpg' },
-      { title: 'Anatomy of a Fall', url: 'https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzVHYQ97cuSil.jpg' },
-      { title: 'Dark', url: 'https://image.tmdb.org/t/p/w500/iHKAzTutbuXXniKinG1a2ZcKxgz.jpg' }
+      { title: 'Money Heist', url: 'https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg' },
+      { title: 'Anatomy of a Fall', url: 'https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFtHkB.jpg' },
+      { title: 'Dark', url: 'https://image.tmdb.org/t/p/w500/wiiyc3m6HKaQhFBYeuM7ySCNQsG.jpg' }
     ]
   },
   { 
@@ -45,7 +45,7 @@ export const INDUSTRIES = [
     tag: 'Mind-Bending Thrillers & Emotion',
     posters: [
       { title: 'Parasite', url: 'https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg' },
-      { title: 'Squid Game', url: 'https://image.tmdb.org/t/p/w500/dDlG1v7m7zM0eKj0V9c6vA1bZ5a.jpg' },
+      { title: 'Squid Game', url: 'https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg' },
       { title: 'Oldboy', url: 'https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg' }
     ]
   },
@@ -58,7 +58,7 @@ export const INDUSTRIES = [
     posters: [
       { title: 'RRR', url: 'https://image.tmdb.org/t/p/w500/wE0I6efAW4cDDmZQWtwZMOW44EJ.jpg' },
       { title: 'Bāhubali', url: 'https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg' },
-      { title: 'Kantara', url: 'https://image.tmdb.org/t/p/w500/6UeW5c5d3h7gO6kZp3M6c9G2DqB.jpg' }
+      { title: 'Kantara', url: 'https://image.tmdb.org/t/p/w500/jIsKmkxMzdCZ0Ux1GVSnu8m6Na6.jpg' }
     ]
   },
   { 
@@ -69,8 +69,8 @@ export const INDUSTRIES = [
     tag: 'Epic Dramas, Auteur Voices & Musical Scale',
     posters: [
       { title: '3 Idiots', url: 'https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg' },
-      { title: 'Dangal', url: 'https://image.tmdb.org/t/p/w500/iObeG0vBf9h8aL1m5j7X5lO7y7b.jpg' },
-      { title: 'Gangs of Wasseypur', url: 'https://image.tmdb.org/t/p/w500/3oW1h5d9n5r6u9b0L7v6a1m3Z5e.jpg' }
+      { title: 'Dangal', url: 'https://image.tmdb.org/t/p/w500/cJRPOLEexI7qp2DKtFfCh7YaaUG.jpg' },
+      { title: 'Gangs of Wasseypur', url: 'https://image.tmdb.org/t/p/w500/4nbvLoPDftqXV14w5Mv14iqgVrt.jpg' }
     ]
   },
   { 
@@ -80,9 +80,9 @@ export const INDUSTRIES = [
     icon: '🌎',
     tag: 'Raw Realism, Noir & Magic Realism',
     posters: [
-      { title: 'City of God', url: 'https://image.tmdb.org/t/p/w500/k7eYdWvhYQZRFsnWqp6sn979whn.jpg' },
-      { title: 'Roma', url: 'https://image.tmdb.org/t/p/w500/dt93B3e1pS5v9b1M7y7b0L1m5j7.jpg' },
-      { title: 'Wild Tales', url: 'https://image.tmdb.org/t/p/w500/o7n7eBvQ9h7bL1m5j7X5lO7y7b.jpg' }
+      { title: 'City of God', url: 'https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg' },
+      { title: 'Roma', url: 'https://image.tmdb.org/t/p/w500/dtIIyQyALk57ko5bjac7hi01YQ.jpg' },
+      { title: 'Wild Tales', url: 'https://image.tmdb.org/t/p/w500/vmeCDuWJ6B2cqi9f3QFyIwRKqFV.jpg' }
     ]
   }
 ];

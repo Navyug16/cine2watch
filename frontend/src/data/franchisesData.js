@@ -1,5 +1,6 @@
 // Master Cinematic Universes, Franchise Hubs & Canon Watch Orders
-// Generated for cine2watch v2 Production Platform with 34 Master Sagas & Anime Universe
+// Generated for cine2watch v2 Production Platform with 39 Master Sagas & Anime Universe
+// Verified & Audited with official Supabase TMDB posters
 
 export const FRANCHISE_HUBS = [
   {
@@ -166,6 +167,41 @@ export const FRANCHISE_HUBS = [
     "id": "independence-day",
     "name": "Independence Day",
     "icon": "🛸"
+  },
+  {
+    "id": "christopher-nolan",
+    "name": "Christopher Nolan Collection",
+    "icon": "⏳"
+  },
+  {
+    "id": "pirates-of-the-caribbean",
+    "name": "Pirates of the Caribbean",
+    "icon": "🏴‍☠️"
+  },
+  {
+    "id": "james-bond",
+    "name": "James Bond 007",
+    "icon": "🍸"
+  },
+  {
+    "id": "indiana-jones",
+    "name": "Indiana Jones",
+    "icon": "🤠"
+  },
+  {
+    "id": "jurassic-park",
+    "name": "Jurassic Park & World",
+    "icon": "🦕"
+  },
+  {
+    "id": "knives-out",
+    "name": "Knives Out",
+    "icon": "🔍"
+  },
+  {
+    "id": "bourne",
+    "name": "The Bourne Saga",
+    "icon": "🎯"
   }
 ];
 
@@ -20153,6 +20189,1026 @@ export const FRANCHISES = [
         "sub_universes": [
           "All Voyages",
           "02. Standalone Quests & Expanding Lore"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "james-bond",
+    "name": "James Bond (007) Legacy",
+    "badge": "25 EON 007 FILMS • SIX DECADES OF MI6 ESPIONAGE",
+    "icon": "🍸",
+    "theme_color": "#D4AF37",
+    "tagline": "Bond, James Bond: The complete 25-film EON Productions canon spanning Sean Connery, George Lazenby, Roger Moore, Timothy Dalton, Pierce Brosnan, and Daniel Craig.",
+    "banner_poster": "/posters/james_bond.webp",
+    "why_watch": "Cinema's longest-running action espionage dynasty, pioneering practical stunts, iconic villains, Aston Martins, and the cohesive five-chapter Daniel Craig arc.",
+    "sub_universes": [
+      "All 007 Films",
+      "01. Connery & Lazenby Classics (1962–1971)",
+      "02. Roger Moore Era (1973–1985)",
+      "03. Timothy Dalton Era (1987–1989)",
+      "04. Pierce Brosnan Era (1995–2002)",
+      "05. Daniel Craig Reboot Arc (2006–2021)"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🍸 Canon & Era Progression",
+        "desc": "From Dr. No (1962) through Sean Connery, Roger Moore, Timothy Dalton, Pierce Brosnan, and Daniel Craig’s 5-film arc"
+      },
+      {
+        "id": "craig",
+        "label": "🕶️ Daniel Craig Reboot Arc",
+        "desc": "Watch Casino Royale → Quantum of Solace → Skyfall → Spectre → No Time to Die as one continuous story"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "bond-01",
+        "title": "Dr. No",
+        "year": 1962,
+        "rating": 7.2,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1962.1,
+        "phase": "1962 Jamaica • Sean Connery & The Birth of 007",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9zCOLJmLNst0sCPZlkW1IRoH65E.jpg",
+        "runtime": "110 min",
+        "desc": "Agent 007 battles mysterious Dr. No, a scientific genius bent on destroying the U.S. space program. As the countdown to disaster begins, Bond must go to Jamaica, where he encounters beautiful Honey Ryder, to confront a megalomaniacal villain in his massive island headquarters.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-02",
+        "title": "From Russia with Love",
+        "year": 1963,
+        "rating": 7.3,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 1963.1,
+        "phase": "1963 Istanbul • SPECTRE & The Lektor Cipher",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zx4V17FP8oclNvOpTgs2iCCtiYk.jpg",
+        "runtime": "115 min",
+        "desc": "Agent 007 is back in the second installment of the James Bond series, this time battling a secret crime organization known as SPECTRE. Russians Rosa Klebb and Kronsteen are out to snatch a decoding device known as the Lektor, using the ravishing Tatiana to lure Bond into helping them. Bond willingly travels to meet Tatiana in Istanbul, where he must rely on his wits to escape with his life in a series of deadly encounters with the enemy.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-03",
+        "title": "Goldfinger",
+        "year": 1964,
+        "rating": 7.7,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 1964.09,
+        "phase": "1964 Fort Knox • Goldfinger & Oddjob",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aKNFzaqQgPzsGXnsMc4kJH5hFIV.jpg",
+        "runtime": "120 min",
+        "desc": "Special agent 007 comes face to face with one of the most notorious villains of all time, and now he must outwit and outgun the powerful tycoon to prevent him from cashing in on a devious scheme to raid Fort Knox -- and obliterate the world's economy.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-04",
+        "title": "Thunderball",
+        "year": 1965,
+        "rating": 6.9,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 1965.12,
+        "phase": "1965 Bahamas • Stolen NATO Nuclear Bombs",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wCc4qllaTDsQN8zgGkAgQrKO6N9.jpg",
+        "runtime": "120 min",
+        "desc": "A criminal organization has obtained two nuclear bombs and are asking for a 100 million pound ransom in the form of diamonds in seven days or they will use the weapons. The secret service sends James Bond to the Bahamas to once again save the world.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-05",
+        "title": "You Only Live Twice",
+        "year": 1967,
+        "rating": 6.8,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 1967.06,
+        "phase": "1967 Japan • Blofeld’s Volcano Lair",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gIhS0VC7YzI8pj6zfS3KxsxV0dS.jpg",
+        "runtime": "117 min",
+        "desc": "A mysterious spacecraft captures Russian and American space capsules and brings the two superpowers to the brink of war. James Bond investigates the case in Japan and comes face to face with his archenemy Blofeld.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-06",
+        "title": "On Her Majesty's Secret Service",
+        "year": 1969,
+        "rating": 6.7,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 1969.12,
+        "phase": "1969 Swiss Alps • George Lazenby & Tracy Bond",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/m3KfbxvqaiAvRJ6MpguA3GuLdDQ.jpg",
+        "runtime": "142 min",
+        "desc": "With the help of Marc-Ange Draco, head of the Unione Corse crime syndicate, and Draco's troubled daughter Tracy, James Bond tracks his archnemesis, Ernst Stravro Blofeld, to a mountaintop retreat in the Swiss Alps, where he is training an army of beautiful, lethal women.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-07",
+        "title": "Diamonds Are Forever",
+        "year": 1971,
+        "rating": 6.5,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 1971.12,
+        "phase": "1971 Las Vegas • Blofeld’s Orbital Laser",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ooDT0eKrWCxJCsn9JehPkD0QYNj.jpg",
+        "runtime": "120 min",
+        "desc": "Diamonds are stolen only to be sold again in the international market. James Bond infiltrates a smuggling mission to find out who's guilty. The mission takes him to Las Vegas where Bond meets his archenemy Blofeld.",
+        "sub_universe": "01. Connery & Lazenby Classics (1962–1971)",
+        "sub_universes": [
+          "01. Connery & Lazenby Classics (1962–1971)"
+        ]
+      },
+      {
+        "id": "bond-08",
+        "title": "Live and Let Die",
+        "year": 1973,
+        "rating": 6.7,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 1973.06,
+        "phase": "1973 New Orleans • Roger Moore Debuts as 007",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/39qkrjqMZs6utwNmihVImC3ghas.jpg",
+        "runtime": "121 min",
+        "desc": "James Bond must investigate a mysterious murder case of a British agent in New Orleans. Soon he finds himself up against a gangster boss named Mr. Big.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-09",
+        "title": "The Man with the Golden Gun",
+        "year": 1974,
+        "rating": 6.7,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 1974.12,
+        "phase": "1974 Bangkok • Francisco Scaramanga’s Island",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xVkbKwGnBVNQ122GN5bCTMyPbWz.jpg",
+        "runtime": "125 min",
+        "desc": "Cool government operative James Bond searches for a stolen invention that can turn the sun's heat into a destructive weapon. He soon crosses paths with the menacing Francisco Scaramanga, a hitman so skilled he has a seven-figure working fee. Bond then joins forces with the swimsuit-clad Mary Goodnight, and together they track Scaramanga to a Thai tropical isle hideout where the killer-for-hire lures the slick spy into a deadly maze for a final duel.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-10",
+        "title": "The Spy Who Loved Me",
+        "year": 1977,
+        "rating": 6.8,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 1977.07,
+        "phase": "1977 Egypt & Atlantic • Jaws & The Lotus Esprit",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3ZxHKFxMYvAko680DsRgAZKWcLi.jpg",
+        "runtime": "125 min",
+        "desc": "Russian and British submarines with nuclear missiles on board both vanish from sight without a trace. England and Russia both blame each other as James Bond tries to solve the riddle of the disappearing ships. But the KGB also has an agent on the case.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-11",
+        "title": "Moonraker",
+        "year": 1979,
+        "rating": 6.2,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 1979.06,
+        "phase": "1979 Rio & Outer Space • Hugo Drax’s Ark",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6LrJdXNmu5uHOVALZxVYd44Lva0.jpg",
+        "runtime": "126 min",
+        "desc": "After Drax Industries' Moonraker space shuttle is hijacked, secret agent James Bond is assigned to investigate, traveling to California to meet the company's owner, the mysterious Hugo Drax. With the help of scientist Dr. Holly Goodhead, Bond soon uncovers Drax's nefarious plans for humanity, all the while fending off an old nemesis, Jaws, and venturing to Venice, Rio, the Amazon...and even outer space.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-12",
+        "title": "For Your Eyes Only",
+        "year": 1981,
+        "rating": 6.6,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 1981.06,
+        "phase": "1981 Greece • The ATAC Encryption System",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xV4Nnr6DjjERlqNikqDQX8LUgua.jpg",
+        "runtime": "128 min",
+        "desc": "A British spy ship has sunk and on board was a hi-tech encryption device. James Bond is sent to find the device that holds British launching instructions before the enemy Soviets get to it first.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-13",
+        "title": "Octopussy",
+        "year": 1983,
+        "rating": 6.4,
+        "media_type": "movie",
+        "chrono_order": 13,
+        "release_order": 1983.06,
+        "phase": "1983 India & Berlin • Fabergé Egg Smuggling",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yoosZitM9igSk3Sd0sBXIhKlAh1.jpg",
+        "runtime": "131 min",
+        "desc": "James Bond is sent to investigate after a fellow “00” agent is found dead with a priceless Fabergé egg. Bond follows the mystery and uncovers a smuggling scandal and a Russian General who wants to provoke a new World War.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-14",
+        "title": "A View to a Kill",
+        "year": 1985,
+        "rating": 6.3,
+        "media_type": "movie",
+        "chrono_order": 14,
+        "release_order": 1985.05,
+        "phase": "1985 San Francisco • Max Zorin & Silicon Valley",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/arJF829RP9cYvh0NU70dC5TtXSa.jpg",
+        "runtime": "131 min",
+        "desc": "A newly-developed microchip designed by Zorin Industries for the British Government that can survive the electromagnetic radiation caused by a nuclear explosion has landed in the hands of the KGB. James Bond must find out how and why. His suspicions soon lead him to big industry leader Max Zorin who forms a plan to destroy his only competition in Silicon Valley by triggering a massive earthquake in the San Francisco Bay.",
+        "sub_universe": "02. Roger Moore Era (1973–1985)",
+        "sub_universes": [
+          "02. Roger Moore Era (1973–1985)"
+        ]
+      },
+      {
+        "id": "bond-15",
+        "title": "The Living Daylights",
+        "year": 1987,
+        "rating": 6.6,
+        "media_type": "movie",
+        "chrono_order": 15,
+        "release_order": 1987.06,
+        "phase": "1987 Vienna & Tangier • Timothy Dalton Era",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1oRlmWX9hewpn2B44wawBjHd7dx.jpg",
+        "runtime": "130 min",
+        "desc": "After a defecting Russian general reveals a plot to assassinate foreign spies, James Bond is assigned a secret mission to dispatch the new head of the KGB to prevent an escalation of tensions between the Soviet Union and the West.",
+        "sub_universe": "03. Timothy Dalton Era (1987–1989)",
+        "sub_universes": [
+          "03. Timothy Dalton Era (1987–1989)"
+        ]
+      },
+      {
+        "id": "bond-16",
+        "title": "Licence to Kill",
+        "year": 1989,
+        "rating": 6.4,
+        "media_type": "movie",
+        "chrono_order": 16,
+        "release_order": 1989.06,
+        "phase": "1989 Rogue Vendetta • Franz Sanchez Cartel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8nzJve63EXA79HGAyidZwivZrQ2.jpg",
+        "runtime": "133 min",
+        "desc": "After capturing the notorious drug lord Franz Sanchez, Bond's close friend and former CIA agent Felix Leiter is left for dead and his wife is murdered. Bond goes rogue and seeks vengeance on those responsible, as he infiltrates Sanchez's organization from the inside.",
+        "sub_universe": "03. Timothy Dalton Era (1987–1989)",
+        "sub_universes": [
+          "03. Timothy Dalton Era (1987–1989)"
+        ]
+      },
+      {
+        "id": "bond-17",
+        "title": "GoldenEye",
+        "year": 1995,
+        "rating": 6.9,
+        "media_type": "movie",
+        "chrono_order": 17,
+        "release_order": 1995.11,
+        "phase": "1995 St. Petersburg • Pierce Brosnan & 006",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/z0ljRnNxIO7CRBhLEO0DvLgAFPR.jpg",
+        "runtime": "130 min",
+        "desc": "When a powerful secret defense system is stolen, James Bond is assigned to stop a Russian crime syndicate from using it.",
+        "sub_universe": "04. Pierce Brosnan Era (1995–2002)",
+        "sub_universes": [
+          "04. Pierce Brosnan Era (1995–2002)"
+        ]
+      },
+      {
+        "id": "bond-18",
+        "title": "Tomorrow Never Dies",
+        "year": 1997,
+        "rating": 6.4,
+        "media_type": "movie",
+        "chrono_order": 18,
+        "release_order": 1997.12,
+        "phase": "1997 South China Sea • Carver Media Empire",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gZm002w7q9yLOkltxT76TWGfdZX.jpg",
+        "runtime": "119 min",
+        "desc": "A deranged media mogul is staging international incidents to pit the world's superpowers against each other. Now James Bond must take on this evil mastermind in an adrenaline-charged battle to end his reign of terror and prevent global pandemonium.",
+        "sub_universe": "04. Pierce Brosnan Era (1995–2002)",
+        "sub_universes": [
+          "04. Pierce Brosnan Era (1995–2002)"
+        ]
+      },
+      {
+        "id": "bond-19",
+        "title": "The World Is Not Enough",
+        "year": 1999,
+        "rating": 6.3,
+        "media_type": "movie",
+        "chrono_order": 19,
+        "release_order": 1999.11,
+        "phase": "1999 Azerbaijan • Elektra King & Renard",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wCb2msgoZPK01WIqry24M4xsM73.jpg",
+        "runtime": "128 min",
+        "desc": "Greed, revenge, world dominance and high-tech terrorism – it's all in a day's work for Bond, who's on a mission to protect a beautiful oil heiress from a notorious terrorist. In a race against time that culminates in a dramatic submarine showdown, Bond works to defuse the international power struggle that has the world's oil supply hanging in the balance.",
+        "sub_universe": "04. Pierce Brosnan Era (1995–2002)",
+        "sub_universes": [
+          "04. Pierce Brosnan Era (1995–2002)"
+        ]
+      },
+      {
+        "id": "bond-20",
+        "title": "Die Another Day",
+        "year": 2002,
+        "rating": 6,
+        "media_type": "movie",
+        "chrono_order": 20,
+        "release_order": 2002.11,
+        "phase": "2002 North Korea & Iceland • Icarus Satellite",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/bZmGqOhMhaLn8AoFMvFDct4tbrL.jpg",
+        "runtime": "133 min",
+        "desc": "James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul, who is funding the development of an international space weapon.",
+        "sub_universe": "04. Pierce Brosnan Era (1995–2002)",
+        "sub_universes": [
+          "04. Pierce Brosnan Era (1995–2002)"
+        ]
+      },
+      {
+        "id": "bond-21",
+        "title": "Casino Royale",
+        "year": 2006,
+        "rating": 7.6,
+        "media_type": "movie",
+        "chrono_order": 21,
+        "release_order": 2006.11,
+        "phase": "Daniel Craig Continuity • Earning 00 Status & Le Chiffre",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
+        "runtime": "144 min",
+        "desc": "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to establish his financial grip on the terrorist market. M sends Bond—on his maiden mission as a 00 Agent—to attend this game and prevent Le Chiffre from winning. With the help of Vesper Lynd and Felix Leiter, Bond enters the most important poker game in his already dangerous career.",
+        "sub_universe": "05. Daniel Craig Reboot Arc (2006–2021)",
+        "sub_universes": [
+          "05. Daniel Craig Reboot Arc (2006–2021)"
+        ]
+      },
+      {
+        "id": "bond-22",
+        "title": "Quantum of Solace",
+        "year": 2008,
+        "rating": 6.3,
+        "media_type": "movie",
+        "chrono_order": 22,
+        "release_order": 2008.1,
+        "phase": "Daniel Craig Continuity • Minutes After Vesper’s Betrayal",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg",
+        "runtime": "106 min",
+        "desc": "Betrayed by Vesper, the woman he loved, 007 fights the urge to make his latest mission personal. Pursuing his determination to uncover the truth, Bond and M interrogate Mr. White, who reveals that the organization that blackmailed Vesper is far more complex and dangerous than anyone had imagined.",
+        "sub_universe": "05. Daniel Craig Reboot Arc (2006–2021)",
+        "sub_universes": [
+          "05. Daniel Craig Reboot Arc (2006–2021)"
+        ]
+      },
+      {
+        "id": "bond-23",
+        "title": "Skyfall",
+        "year": 2012,
+        "rating": 7.3,
+        "media_type": "movie",
+        "chrono_order": 23,
+        "release_order": 2012.1,
+        "phase": "Daniel Craig Continuity • MI6 Attacked & Raoul Silva",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
+        "runtime": "143 min",
+        "desc": "When Bond's latest assignment goes gravely wrong, agents around the world are exposed and MI6 headquarters is attacked. While M faces challenges to her authority and position from Gareth Mallory, the new Chairman of the Intelligence and Security Committee, it's up to Bond, aided only by field agent Eve, to locate the mastermind behind the attack.",
+        "sub_universe": "05. Daniel Craig Reboot Arc (2006–2021)",
+        "sub_universes": [
+          "05. Daniel Craig Reboot Arc (2006–2021)"
+        ]
+      },
+      {
+        "id": "bond-24",
+        "title": "Spectre",
+        "year": 2015,
+        "rating": 6.6,
+        "media_type": "movie",
+        "chrono_order": 24,
+        "release_order": 2015.1,
+        "phase": "Daniel Craig Continuity • Blofeld & The Spectre Syndicate",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
+        "runtime": "148 min",
+        "desc": "A cryptic message from Bond’s past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
+        "sub_universe": "05. Daniel Craig Reboot Arc (2006–2021)",
+        "sub_universes": [
+          "05. Daniel Craig Reboot Arc (2006–2021)"
+        ]
+      },
+      {
+        "id": "bond-25",
+        "title": "No Time to Die",
+        "year": 2021,
+        "rating": 7.3,
+        "media_type": "movie",
+        "chrono_order": 25,
+        "release_order": 2021.09,
+        "phase": "Daniel Craig Continuity • Final Mission & Heracles Nanobots",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
+        "runtime": "163 min",
+        "desc": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+        "sub_universe": "05. Daniel Craig Reboot Arc (2006–2021)",
+        "sub_universes": [
+          "05. Daniel Craig Reboot Arc (2006–2021)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "indiana-jones",
+    "name": "Indiana Jones Saga",
+    "badge": "6 CHAPTERS • 5 FEATURE FILMS & PREQUEL CHRONICLES",
+    "icon": "🤠",
+    "theme_color": "#F59E0B",
+    "tagline": "It’s not the years, honey, it’s the mileage: Bullwhips, ancient relics, and breathless pulp adventure across the 20th century.",
+    "banner_poster": "/posters/indiana_jones.webp",
+    "why_watch": "Steven Spielberg, George Lucas, Harrison Ford, and John Williams defined the modern action-adventure blockbuster—with Temple of Doom serving chronologically before Raiders!",
+    "sub_universes": [
+      "All Indiana Jones",
+      "01. Original Spielberg Trilogy (1981–1989)",
+      "02. Modern Quests & Prequel Series"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Historical Chronological Order",
+        "desc": "Young Indy (1908) → Temple of Doom (1935 Prequel) → Raiders (1936) → Last Crusade (1938) → Crystal Skull (1957) → Dial of Destiny (1969)"
+      },
+      {
+        "id": "release",
+        "label": "🎬 Theatrical Release Order",
+        "desc": "Experience the films as debuted in theaters starting with Raiders of the Lost Ark (1981)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "indy-young",
+        "title": "The Young Indiana Jones Chronicles",
+        "year": 1992,
+        "rating": 7.3,
+        "media_type": "series",
+        "chrono_order": 1,
+        "release_order": 1992.03,
+        "phase": "1908–1920 Origins • Childhood Expeditions & WWI",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iS7NPwkKrfxcFGs0gtll8jXjRZh.jpg",
+        "runtime": "44 Episodes • 45 min",
+        "desc": "At the dawn of the 20th century, Indiana Jones discovered the world. From globetrotting family expeditions as a 9-year-old to the battlefields of World War I as a teenager, Indy’s experiences shaped the heroic, whip-cracking archaeologist he would become. At every turn, Indy encounters history in the making, meeting true-life activists, soldiers, writers, artists, and thinkers who helped influence the world we live in today.",
+        "sub_universe": "02. Modern Quests & Prequel Series",
+        "sub_universes": [
+          "02. Modern Quests & Prequel Series"
+        ]
+      },
+      {
+        "id": "indy-temple",
+        "title": "Indiana Jones and the Temple of Doom",
+        "year": 1984,
+        "rating": 7.3,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 1984.05,
+        "phase": "1935 Prequel • Shanghai & The Sankara Stones",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
+        "runtime": "118 min",
+        "desc": "After arriving in India, Indiana Jones is asked by a desperate village to find a mystical stone. He agrees – and stumbles upon a secret cult plotting a terrible plan in the catacombs of an ancient palace.",
+        "sub_universe": "01. Original Spielberg Trilogy (1981–1989)",
+        "sub_universes": [
+          "01. Original Spielberg Trilogy (1981–1989)"
+        ]
+      },
+      {
+        "id": "indy-raiders",
+        "title": "Raiders of the Lost Ark",
+        "year": 1981,
+        "rating": 7.9,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 1981.06,
+        "phase": "1936 Classic • The Ark of the Covenant",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+        "runtime": "115 min",
+        "desc": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
+        "sub_universe": "01. Original Spielberg Trilogy (1981–1989)",
+        "sub_universes": [
+          "01. Original Spielberg Trilogy (1981–1989)"
+        ]
+      },
+      {
+        "id": "indy-crusade",
+        "title": "Indiana Jones and the Last Crusade",
+        "year": 1989,
+        "rating": 7.9,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 1989.05,
+        "phase": "1938 Expedition • The Holy Grail & Henry Jones Sr.",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+        "runtime": "127 min",
+        "desc": "In 1938, an art collector appeals to eminent archaeologist Dr. Indiana Jones to embark on a search for the Holy Grail. Indy learns that a medieval historian has vanished while searching for it, and the missing man is his own father, Dr. Henry Jones Sr.. He sets out to rescue his father by following clues in the old man's notebook, which his father had mailed to him before he went missing. Indy arrives in Venice, where he enlists the help of a beautiful academic, Dr. Elsa Schneider, along with Marcus Brody and Sallah. Together they must stop the Nazis from recovering the power of eternal life and taking over the world!",
+        "sub_universe": "01. Original Spielberg Trilogy (1981–1989)",
+        "sub_universes": [
+          "01. Original Spielberg Trilogy (1981–1989)"
+        ]
+      },
+      {
+        "id": "indy-skull",
+        "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "year": 2008,
+        "rating": 6,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 2008.05,
+        "phase": "1957 Cold War • Peru & Akator’s Crystal Skull",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/56As6XEM1flWvprX4LgkPl8ii4K.jpg",
+        "runtime": "122 min",
+        "desc": "Set during the Cold War, the Soviets—led by sword-wielding Irina Spalko—are in search of a crystal skull which has supernatural powers related to a mystical Lost City of Gold. Indy is coerced to head to Peru at the behest of a young man whose friend—and Indy's colleague—Professor Oxley has been captured for his knowledge of the skull's whereabouts.",
+        "sub_universe": "02. Modern Quests & Prequel Series",
+        "sub_universes": [
+          "02. Modern Quests & Prequel Series"
+        ]
+      },
+      {
+        "id": "indy-dial",
+        "title": "Indiana Jones and the Dial of Destiny",
+        "year": 2023,
+        "rating": 6.5,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 2023.06,
+        "phase": "1969 Finale • Archimedes’ Antikythera Dial",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+        "runtime": "155 min",
+        "desc": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
+        "sub_universe": "02. Modern Quests & Prequel Series",
+        "sub_universes": [
+          "02. Modern Quests & Prequel Series"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jurassic-park",
+    "name": "Jurassic Park & World",
+    "badge": "9 CHAPTERS • 7 FEATURE FILMS & 2 CANON SERIES",
+    "icon": "🦕",
+    "theme_color": "#DC2626",
+    "tagline": "Welcome to Jurassic Park: Prehistoric cloning, Isla Nublar breakthroughs, and humanity coexisting with apex dinosaurs.",
+    "banner_poster": "/posters/jurassic_park.webp",
+    "why_watch": "Steven Spielberg's landmark blend of practical animatronics and CGI evolved into a sprawling 30-year franchise encompassing 7 blockbusters and 2 canonical animated series.",
+    "sub_universes": [
+      "All Jurassic",
+      "01. Original Jurassic Park Trilogy",
+      "02. Jurassic World Era",
+      "03. Canon Animated Series"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🦕 Story Continuity Order",
+        "desc": "Original Trilogy → Jurassic World → Camp Cretaceous (bridges Fallen Kingdom) → Chaos Theory → Dominion → Rebirth"
+      },
+      {
+        "id": "release",
+        "label": "🎬 Theatrical & Streaming Release",
+        "desc": "Follow the release order from 1993’s original through Jurassic World Rebirth (2025)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "jp-1993",
+        "title": "Jurassic Park",
+        "year": 1993,
+        "rating": 8,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1993.06,
+        "phase": "1993 Isla Nublar • Original Park Opening Disaster",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/d9mtMGQDLANKieb9PbD3yK7xxzo.jpg",
+        "runtime": "127 min",
+        "desc": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+        "sub_universe": "01. Original Jurassic Park Trilogy",
+        "sub_universes": [
+          "01. Original Jurassic Park Trilogy"
+        ]
+      },
+      {
+        "id": "jp-lost-world",
+        "title": "The Lost World: Jurassic Park",
+        "year": 1997,
+        "rating": 6.6,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 1997.05,
+        "phase": "1997 Site B (Isla Sorna) • San Diego Incident",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/s4RkAQWI9hgzctXgNFos8sJUnXJ.jpg",
+        "runtime": "129 min",
+        "desc": "Four years after Jurassic Park's genetically bred dinosaurs ran amok, multimillionaire John Hammond shocks chaos theorist Ian Malcolm by revealing that he has been breeding more beasties at a secret location. Malcolm, his paleontologist ladylove and a wildlife videographer join an expedition to document the lethal lizards' natural behavior in this action-packed thriller.",
+        "sub_universe": "01. Original Jurassic Park Trilogy",
+        "sub_universes": [
+          "01. Original Jurassic Park Trilogy"
+        ]
+      },
+      {
+        "id": "jp-3",
+        "title": "Jurassic Park III",
+        "year": 2001,
+        "rating": 6.2,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2001.07,
+        "phase": "2001 Isla Sorna • Dr. Alan Grant & Spinosaurus",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oQXj4NUfS3r3gHXtDOzcJgj1lLc.jpg",
+        "runtime": "92 min",
+        "desc": "In need of funds for research, Dr. Alan Grant accepts a large sum of money to accompany Paul and Amanda Kirby on an aerial tour of the infamous Isla Sorna. It isn't long before all hell breaks loose and the stranded wayfarers must fight for survival as a host of new -- and even more deadly -- dinosaurs try to make snacks of them.",
+        "sub_universe": "01. Original Jurassic Park Trilogy",
+        "sub_universes": [
+          "01. Original Jurassic Park Trilogy"
+        ]
+      },
+      {
+        "id": "jw-2015",
+        "title": "Jurassic World",
+        "year": 2015,
+        "rating": 6.7,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 2015.06,
+        "phase": "2015 New Park • Indominus Rex Breakout",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
+        "runtime": "124 min",
+        "desc": "Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.",
+        "sub_universe": "02. Jurassic World Era",
+        "sub_universes": [
+          "02. Jurassic World Era"
+        ]
+      },
+      {
+        "id": "jw-camp",
+        "title": "Jurassic World: Camp Cretaceous",
+        "year": 2020,
+        "rating": 7.5,
+        "media_type": "series",
+        "chrono_order": 5,
+        "release_order": 2020.09,
+        "phase": "Canon Animated Series • Teens Stranded on Isla Nublar",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pwte1p4ZySI1qAVSVdSTRKjuIAa.jpg",
+        "runtime": "5 Seasons • 49 Episodes",
+        "desc": "Six teens attending an adventure camp on the opposite side of Isla Nublar must band together to survive when dinosaurs wreak havoc on the island.",
+        "sub_universe": "03. Canon Animated Series",
+        "sub_universes": [
+          "03. Canon Animated Series"
+        ]
+      },
+      {
+        "id": "jw-fallen",
+        "title": "Jurassic World: Fallen Kingdom",
+        "year": 2018,
+        "rating": 6.5,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 2018.06,
+        "phase": "2018 Mt. Sibo Eruption • Dinosaurs Reach Mainland",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/x2Us3jR6ToMJjbcPbLimYoxf6xr.jpg",
+        "runtime": "129 min",
+        "desc": "Three years after Jurassic World was destroyed, Isla Nublar now sits abandoned. When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from this extinction-level event.",
+        "sub_universe": "02. Jurassic World Era",
+        "sub_universes": [
+          "02. Jurassic World Era"
+        ]
+      },
+      {
+        "id": "jw-chaos",
+        "title": "Jurassic World: Chaos Theory",
+        "year": 2024,
+        "rating": 7.6,
+        "media_type": "series",
+        "chrono_order": 7,
+        "release_order": 2024.05,
+        "phase": "Canon Animated Sequel • Nublar Six Global Conspiracy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/c2Od0cY2IeayDj5osUxZSAD1QK.jpg",
+        "runtime": "3+ Seasons • 24 min/ep",
+        "desc": "The Camp Cretaceous gang comes together to unravel a mystery when they discover a global conspiracy that brings danger to dinosaurs — and to themselves.",
+        "sub_universe": "03. Canon Animated Series",
+        "sub_universes": [
+          "03. Canon Animated Series"
+        ]
+      },
+      {
+        "id": "jw-dominion",
+        "title": "Jurassic World Dominion",
+        "year": 2022,
+        "rating": 6.6,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 2022.06,
+        "phase": "2022 Biosyn Sanctuary • Original & World Casts Unite",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jbAvCACjLf1ZG0unB2tdmx5HAf1.jpg",
+        "runtime": "147 min",
+        "desc": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
+        "sub_universe": "02. Jurassic World Era",
+        "sub_universes": [
+          "02. Jurassic World Era"
+        ]
+      },
+      {
+        "id": "jw-rebirth",
+        "title": "Jurassic World Rebirth",
+        "year": 2025,
+        "rating": 6.3,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 2025.07,
+        "phase": "2027 New Era • Gareth Edwards & Scarlett Johansson",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
+        "runtime": "134 min",
+        "desc": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
+        "sub_universe": "02. Jurassic World Era",
+        "sub_universes": [
+          "02. Jurassic World Era"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "knives-out",
+    "name": "Knives Out Mysteries",
+    "badge": "3 BENOIT BLANC CASES • WHODUNIT ANTHOLOGY",
+    "icon": "🔍",
+    "theme_color": "#FACC15",
+    "tagline": "It makes no damn sense. Compels me, though: Detective Benoit Blanc untangles labyrinthine modern murder mysteries.",
+    "banner_poster": "/posters/knives_out.webp",
+    "why_watch": "Rian Johnson revived the star-studded whodunit for modern audiences with Daniel Craig's iconic Southern sleuth cracking wildly inventive standalone mysteries.",
+    "sub_universes": [
+      "All Benoit Blanc Cases",
+      "01. Benoit Blanc Case Files"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🔍 Benoit Blanc Case Order",
+        "desc": "Knives Out (2019) → Glass Onion (2022) → Wake Up Dead Man (2025)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "knives-1",
+        "title": "Knives Out",
+        "year": 2019,
+        "rating": 7.8,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 2019.11,
+        "phase": "Case #1 • The Harlan Thrombey Estate Mystery",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+        "runtime": "131 min",
+        "desc": "When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.",
+        "sub_universe": "01. Benoit Blanc Case Files",
+        "sub_universes": [
+          "01. Benoit Blanc Case Files"
+        ]
+      },
+      {
+        "id": "knives-2",
+        "title": "Glass Onion: A Knives Out Mystery",
+        "year": 2022,
+        "rating": 7,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2022.11,
+        "phase": "Case #2 • Miles Bron’s Private Greek Island",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vDGr1YdrlfbU9wxTOdpf3zChmv9.jpg",
+        "runtime": "140 min",
+        "desc": "World-famous detective Benoit Blanc heads to Greece to peel back the layers of a mystery surrounding a tech billionaire and his eclectic crew of friends.",
+        "sub_universe": "01. Benoit Blanc Case Files",
+        "sub_universes": [
+          "01. Benoit Blanc Case Files"
+        ]
+      },
+      {
+        "id": "knives-3",
+        "title": "Wake Up Dead Man: A Knives Out Mystery",
+        "year": 2025,
+        "rating": 7.2,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2025.11,
+        "phase": "Case #3 • Benoit Blanc’s Darkest Parish Murder",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iV9LM8aUb83BjCCx2RUnKE5sSQg.jpg",
+        "runtime": "145 min",
+        "desc": "When young priest Jud Duplenticy is sent to assist charismatic firebrand Monsignor Jefferson Wicks, it’s clear that all is not well in the pews. After a sudden and seemingly impossible murder rocks the town, the lack of an obvious suspect prompts local police chief Geraldine Scott to join forces with renowned detective Benoit Blanc to unravel a mystery that defies all logic.",
+        "sub_universe": "01. Benoit Blanc Case Files",
+        "sub_universes": [
+          "01. Benoit Blanc Case Files"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bourne",
+    "name": "The Bourne Identity Saga",
+    "badge": "6 CHAPTERS • BLACK-OPS ESPIONAGE & TREADSTONE",
+    "icon": "🎯",
+    "theme_color": "#EAB308",
+    "tagline": "He was the perfect weapon until he became the target: Amnesia, hand-to-hand CQC, and CIA covert operations.",
+    "banner_poster": "/posters/bourne.webp",
+    "why_watch": "Doug Liman and Paul Greengrass revolutionized 21st-century espionage filmmaking—giving Daniel Craig's 007 and modern action thrillers their gritty realism.",
+    "sub_universes": [
+      "All Bourne",
+      "01. Jason Bourne Feature Films",
+      "02. Outcome & Treadstone Spin-Offs"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🎯 Treadstone Continuity Order",
+        "desc": "The Bourne Identity → Supremacy → Ultimatum → Legacy (parallel fallout) → Jason Bourne → Treadstone (Series)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "bourne-1",
+        "title": "The Bourne Identity",
+        "year": 2002,
+        "rating": 7.5,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 2002.06,
+        "phase": "Chapter 1 • Amnesia in the Mediterranean & Paris",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aP8swke3gmowbkfZ6lmNidu0y9p.jpg",
+        "runtime": "119 min",
+        "desc": "Wounded to the brink of death and suffering from amnesia, Jason Bourne is rescued at sea by a fisherman. With nothing to go on but a Swiss bank account number, he starts to reconstruct his life, but finds that many people he encounters want him dead. However, Bourne realizes that he has the combat and mental skills of a world-class spy—but who does he work for?",
+        "sub_universe": "01. Jason Bourne Feature Films",
+        "sub_universes": [
+          "01. Jason Bourne Feature Films"
+        ]
+      },
+      {
+        "id": "bourne-2",
+        "title": "The Bourne Supremacy",
+        "year": 2004,
+        "rating": 7.3,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2004.07,
+        "phase": "Chapter 2 • Goa, Berlin & Moscow Framing",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jupG9sFT64YwM8PSkwkUD2wHcYD.jpg",
+        "runtime": "108 min",
+        "desc": "A CIA operation to purchase classified Russian documents is blown by a rival agent, who then shows up in the sleepy seaside village where Bourne and Marie have been living. The pair run for their lives and Bourne, who promised retaliation should anyone from his former life attempt contact, is forced to once again take up his life as a trained assassin to survive.",
+        "sub_universe": "01. Jason Bourne Feature Films",
+        "sub_universes": [
+          "01. Jason Bourne Feature Films"
+        ]
+      },
+      {
+        "id": "bourne-3",
+        "title": "The Bourne Ultimatum",
+        "year": 2007,
+        "rating": 7.4,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2007.08,
+        "phase": "Chapter 3 • 3 Oscars • Operation Blackbriar Exposed",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/15rMz5MRXFp7CP4VxhjYw4y0FUn.jpg",
+        "runtime": "115 min",
+        "desc": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+        "sub_universe": "01. Jason Bourne Feature Films",
+        "sub_universes": [
+          "01. Jason Bourne Feature Films"
+        ]
+      },
+      {
+        "id": "bourne-4",
+        "title": "The Bourne Legacy",
+        "year": 2012,
+        "rating": 6.3,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 2012.08,
+        "phase": "Parallel Chapter • Operation Outcome & Aaron Cross",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg",
+        "runtime": "135 min",
+        "desc": "New CIA operative Aaron Cross experiences life-or-death stakes that have been triggered by the previous actions of Jason Bourne.",
+        "sub_universe": "02. Outcome & Treadstone Spin-Offs",
+        "sub_universes": [
+          "02. Outcome & Treadstone Spin-Offs"
+        ]
+      },
+      {
+        "id": "bourne-5",
+        "title": "Jason Bourne",
+        "year": 2016,
+        "rating": 6.4,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 2016.07,
+        "phase": "Chapter 5 • Athens, Las Vegas & Iron Hand",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xA7N41glw17MBQtcWSm2eBlBRuG.jpg",
+        "runtime": "123 min",
+        "desc": "The most dangerous former operative of the CIA is drawn out of hiding to uncover hidden truths about his past.",
+        "sub_universe": "01. Jason Bourne Feature Films",
+        "sub_universes": [
+          "01. Jason Bourne Feature Films"
+        ]
+      },
+      {
+        "id": "bourne-tv",
+        "title": "Treadstone",
+        "year": 2019,
+        "rating": 6.9,
+        "media_type": "series",
+        "chrono_order": 6,
+        "release_order": 2019.1,
+        "phase": "Origins & Sleeper Program • 1973 Cold War & Cicada",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tzoxJjPSgsPCepWgpl4LWjCKise.jpg",
+        "runtime": "10 Episodes • 44 min",
+        "desc": "The Treadstone project, having created super spy Jason Bourne, turns its attention on a new protocol to develop unstoppable superhuman assassins.",
+        "sub_universe": "02. Outcome & Treadstone Spin-Offs",
+        "sub_universes": [
+          "02. Outcome & Treadstone Spin-Offs"
         ]
       }
     ]
