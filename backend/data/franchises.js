@@ -1,207 +1,322 @@
 // Master Cinematic Universes, Franchise Hubs & Canon Watch Orders
-// Generated for cine2watch v2 Production Platform with 39 Master Sagas & Anime Universe
+// Generated for cine2watch v2 Production Platform with 62 Master Sagas, Animation Studios & Horror Universes
 // Verified & Audited with official Supabase TMDB posters
 
 export const FRANCHISE_HUBS = [
   {
     "id": "all",
     "name": "All Universes",
-    "icon": "\ud83c\udf10"
+    "icon": "🌐"
   },
   {
     "id": "oscar-winners",
     "name": "Oscar Winning",
-    "icon": "\ud83c\udfc6"
+    "icon": "🏆"
   },
   {
     "id": "marvel",
     "name": "Marvel",
-    "icon": "\ud83e\uddb8"
+    "icon": "🦸"
   },
   {
     "id": "dc-universe",
     "name": "DC Multiverse",
-    "icon": "\ud83e\udd87"
+    "icon": "🦇"
   },
   {
     "id": "star-wars",
     "name": "Star Wars",
-    "icon": "\u2b50"
+    "icon": "⭐"
   },
   {
     "id": "anime-universe",
-    "name": "Anime Universe",
-    "icon": "\ud83c\uddef\ud83c\uddf5"
+    "name": "Studio Ghibli",
+    "icon": "🍃"
   },
   {
     "id": "wizarding-world",
     "name": "Wizarding World",
-    "icon": "\ud83e\uddd9"
+    "icon": "🧙"
   },
   {
     "id": "middle-earth",
     "name": "Middle-Earth",
-    "icon": "\ud83e\udddd"
+    "icon": "🧝"
   },
   {
     "id": "fast-and-furious",
     "name": "Fast & Furious",
-    "icon": "\ud83c\udfce\ufe0f"
+    "icon": "🏎️"
   },
   {
     "id": "transformers",
     "name": "Transformers",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "id": "mission-impossible",
     "name": "Mission: Impossible",
-    "icon": "\ud83d\udca5"
+    "icon": "💥"
   },
   {
     "id": "john-wick",
     "name": "John Wick",
-    "icon": "\ud83c\udfaf"
+    "icon": "🎯"
   },
   {
     "id": "dune",
     "name": "Dune",
-    "icon": "\ud83e\ude90"
+    "icon": "🪐"
   },
   {
     "id": "avatar",
     "name": "Avatar",
-    "icon": "\ud83c\udf0a"
+    "icon": "🌊"
   },
   {
     "id": "the-matrix",
     "name": "The Matrix",
-    "icon": "\ud83d\udd76\ufe0f"
+    "icon": "🕶️"
   },
   {
     "id": "alien-predator",
     "name": "Alien & Predator",
-    "icon": "\ud83d\udc7d"
+    "icon": "👽"
   },
   {
     "id": "terminator",
     "name": "Terminator",
-    "icon": "\ud83e\udd16"
+    "icon": "🤖"
   },
   {
     "id": "godzilla-monsterverse",
     "name": "Godzilla & MonsterVerse",
-    "icon": "\ud83e\udd96"
+    "icon": "🦖"
   },
   {
     "id": "planet-of-the-apes",
     "name": "Planet of the Apes",
-    "icon": "\ud83e\udda7"
+    "icon": "🦧"
   },
   {
     "id": "mad-max",
     "name": "Mad Max",
-    "icon": "\ud83c\udfdc\ufe0f"
+    "icon": "🏜️"
   },
   {
     "id": "back-to-the-future",
     "name": "Back to the Future",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "id": "men-in-black",
     "name": "Men in Black",
-    "icon": "\ud83d\udd76\ufe0f"
+    "icon": "🕶️"
   },
   {
     "id": "blade-runner",
     "name": "Blade Runner",
-    "icon": "\ud83c\udf06"
+    "icon": "🌆"
   },
   {
     "id": "star-trek",
     "name": "Star Trek",
-    "icon": "\ud83d\udd96"
+    "icon": "🖖"
   },
   {
     "id": "robocop",
     "name": "RoboCop",
-    "icon": "\ud83e\udd16"
+    "icon": "🤖"
   },
   {
     "id": "tron",
     "name": "Tron",
-    "icon": "\u26a1"
+    "icon": "⚡"
   },
   {
     "id": "pacific-rim",
     "name": "Pacific Rim",
-    "icon": "\ud83e\uddbe"
+    "icon": "🦾"
   },
   {
     "id": "stargate",
     "name": "Stargate",
-    "icon": "\ud83c\udf00"
+    "icon": "🌀"
   },
   {
     "id": "battlestar-galactica",
     "name": "Battlestar Galactica",
-    "icon": "\ud83d\ude80"
+    "icon": "🚀"
   },
   {
     "id": "the-expanse",
     "name": "The Expanse",
-    "icon": "\ud83e\ude90"
+    "icon": "🪐"
   },
   {
     "id": "chronicles-of-riddick",
     "name": "The Chronicles of Riddick",
-    "icon": "\ud83d\udd76\ufe0f"
+    "icon": "🕶️"
   },
   {
     "id": "a-quiet-place",
     "name": "A Quiet Place",
-    "icon": "\ud83e\udd2b"
+    "icon": "🤫"
   },
   {
     "id": "independence-day",
     "name": "Independence Day",
-    "icon": "\ud83d\udef8"
+    "icon": "🛸"
   },
   {
     "id": "christopher-nolan",
     "name": "Christopher Nolan Collection",
-    "icon": "\u23f3"
+    "icon": "⏳"
   },
   {
     "id": "pirates-of-the-caribbean",
     "name": "Pirates of the Caribbean",
-    "icon": "\ud83c\udff4\u200d\u2620\ufe0f"
+    "icon": "🏴‍☠️"
   },
   {
     "id": "james-bond",
     "name": "James Bond 007",
-    "icon": "\ud83c\udf78"
+    "icon": "🍸"
   },
   {
     "id": "indiana-jones",
     "name": "Indiana Jones",
-    "icon": "\ud83e\udd20"
+    "icon": "🤠"
   },
   {
     "id": "jurassic-park",
     "name": "Jurassic Park & World",
-    "icon": "\ud83e\udd95"
+    "icon": "🦕"
   },
   {
     "id": "knives-out",
     "name": "Knives Out",
-    "icon": "\ud83d\udd0d"
+    "icon": "🔍"
   },
   {
     "id": "bourne",
     "name": "The Bourne Saga",
-    "icon": "\ud83c\udfaf"
+    "icon": "🎯"
+  },
+  {
+    "id": "dreamworks",
+    "name": "DreamWorks",
+    "icon": "🌙"
+  },
+  {
+    "id": "disney-pixar",
+    "name": "Disney & Pixar",
+    "icon": "💡"
+  },
+  {
+    "id": "x-men",
+    "name": "X-Men",
+    "icon": "🧬"
+  },
+  {
+    "id": "the-conjuring",
+    "name": "The Conjuring",
+    "icon": "✝️"
+  },
+  {
+    "id": "insidious",
+    "name": "Insidious",
+    "icon": "🚪"
+  },
+  {
+    "id": "saw",
+    "name": "Saw",
+    "icon": "🌀"
+  },
+  {
+    "id": "scream",
+    "name": "Scream",
+    "icon": "🔪"
+  },
+  {
+    "id": "halloween",
+    "name": "Halloween",
+    "icon": "🎃"
+  },
+  {
+    "id": "friday-the-13th",
+    "name": "Friday the 13th",
+    "icon": "🏒"
+  },
+  {
+    "id": "nightmare-on-elm-street",
+    "name": "Elm Street",
+    "icon": "🧤"
+  },
+  {
+    "id": "final-destination",
+    "name": "Final Destination",
+    "icon": "💀"
+  },
+  {
+    "id": "paranormal-activity",
+    "name": "Paranormal Activity",
+    "icon": "📹"
+  },
+  {
+    "id": "resident-evil",
+    "name": "Resident Evil",
+    "icon": "☣️"
+  },
+  {
+    "id": "the-godfather",
+    "name": "The Godfather",
+    "icon": "🌹"
+  },
+  {
+    "id": "oceans-eleven",
+    "name": "Ocean's Saga",
+    "icon": "🎰"
+  },
+  {
+    "id": "bad-boys",
+    "name": "Bad Boys",
+    "icon": "🚓"
+  },
+  {
+    "id": "lethal-weapon",
+    "name": "Lethal Weapon",
+    "icon": "🔫"
+  },
+  {
+    "id": "die-hard",
+    "name": "Die Hard",
+    "icon": "🏢"
+  },
+  {
+    "id": "the-hunger-games",
+    "name": "Hunger Games",
+    "icon": "🏹"
+  },
+  {
+    "id": "twilight",
+    "name": "Twilight",
+    "icon": "🌙"
+  },
+  {
+    "id": "despicable-me",
+    "name": "Despicable Me",
+    "icon": "🍌"
+  },
+  {
+    "id": "ice-age",
+    "name": "Ice Age",
+    "icon": "🦣"
+  },
+  {
+    "id": "tmnt",
+    "name": "TMNT",
+    "icon": "🐢"
   }
 ];
 
@@ -13780,1238 +13895,480 @@ export const FRANCHISES = [
   },
   {
     "id": "anime-universe",
-    "name": "Anime Master Universe",
-    "badge": "54 TITAN SAGAS • SHONEN, SEINEN, ISEKAI, MECHA & STUDIO GHIBLI",
-    "icon": "🇯🇵",
-    "theme_color": "#FF4655",
-    "tagline": "The definitive Japanese animation pantheon: The Big Three, dark fantasy titans, psychological masterpieces, and Hayao Miyazaki's legendary filmography.",
+    "name": "Studio Ghibli Masterworks",
+    "badge": "25 STUDIO GHIBLI FILMS • MIYAZAKI & TAKAHATA",
+    "icon": "🍃",
+    "theme_color": "#22C55E",
+    "tagline": "Hayao Miyazaki, Isao Takahata & Timeless Hand-Drawn Wonder",
     "banner_poster": "/posters/anime.webp",
-    "why_watch": "Spanning six decades of visionary Japanese artistry, groundbreaking animation, profound philosophical depths, and unforgettable emotional storytelling.",
+    "why_watch": "The complete theatrical canon of Studio Ghibli — from Nausicaä and My Neighbor Totoro to Spirited Away and The Boy and the Heron.",
     "sub_universes": [
-      "All Anime",
-      "01. The Big Three & Legacy Shonen",
-      "02. Modern Dark Shonen & Superpower Titans",
-      "03. Seinen, Cyberpunk & Psychological Masterpieces",
-      "04. Isekai, Fantasy & Prestige Adventure",
-      "05. Sports, High School & Modern Classics",
-      "06. Studio Ghibli Masterworks"
+      "All Studio Ghibli",
+      "01. Hayao Miyazaki Masterworks",
+      "02. Isao Takahata Classics",
+      "03. Next Generation & Co-Productions"
     ],
     "watch_modes": [
       {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Chronological theatrical evolution from 1984 to 2023"
+      },
+      {
         "id": "chrono",
-        "label": "⏳ Complete Timeline Progression",
-        "desc": "Classic 1980s/1990s foundational anime through modern seasonal blockbusters"
-      },
-      {
-        "id": "shonen",
-        "label": "⚡ Battle Shonen & Big Three",
-        "desc": "Dragon Ball, Naruto, One Piece, Bleach, Hunter x Hunter, AOT, JJK, Demon Slayer"
-      },
-      {
-        "id": "seinen",
-        "label": "🧠 Dark Fantasy & Cyberpunk",
-        "desc": "Death Note, Berserk, Vinland Saga, Monster, Evangelion, Ghost in the Shell, Steins;Gate"
-      },
-      {
-        "id": "isekai",
-        "label": "🌀 Isekai & Fantasy Adventures",
-        "desc": "Frieren, Mushoku Tensei, SAO, Re:Zero, Slime, Overlord, KonoSuba, Made in Abyss"
-      },
-      {
-        "id": "ghibli",
-        "label": "🍃 Studio Ghibli Legendary Classics",
-        "desc": "Spirited Away, Princess Mononoke, Howl's Moving Castle, Totoro, The Boy and the Heron"
+        "label": "🍃 Essential Ghibli Journey",
+        "desc": "From Nausicaä through Spirited Away to The Boy and the Heron"
       }
     ],
     "timeline": [
       {
-        "id": "db-original",
-        "title": "Dragon Ball",
-        "year": 1986,
-        "media_type": "series",
+        "id": "ghibli-nausicaa",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Nausicaä of the Valley of the Wind",
+        "year": 1984,
+        "media_type": "movie",
         "chrono_order": 1,
-        "release_order": 1986.02,
-        "phase": "Son Goku & Bulma • Search for the Seven Dragon Balls",
+        "release_order": 1,
+        "phase": "Founding Classic • Hayao Miyazaki",
         "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/onCLyCOgszTIyyVs2XKYSkKPOPG.jpg",
-        "runtime": "153 Episodes",
-        "desc": "Young monkey-tailed martial artist Son Goku embarks on an epic quest with tech prodigy Bulma to collect the seven mystical Dragon Balls.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
+        "poster_url": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg",
+        "runtime": "95 min",
+        "desc": "After a global war, the seaside kingdom known as the Valley of the Wind remains one of the last strongholds on Earth untouched by a poisonous jungle and the powerful insects that guard it. Led by the courageous...",
+        "rating": 7.9,
         "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
+          "01. Hayao Miyazaki Masterworks"
         ]
       },
       {
-        "id": "db-z",
-        "title": "Dragon Ball Z",
-        "year": 1989,
-        "media_type": "series",
+        "id": "ghibli-laputa",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Castle in the Sky",
+        "year": 1986,
+        "media_type": "movie",
         "chrono_order": 2,
-        "release_order": 1989.04,
-        "phase": "Saiyan, Namek, Android, Cell & Majin Buu Sagas",
+        "release_order": 2,
+        "phase": "First Official Ghibli Feature • Miyazaki",
         "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg",
-        "runtime": "291 Episodes",
-        "desc": "Goku discovers his heritage as a Saiyan warrior and defends Earth against intergalactic conquerors Vegeta, Frieza, Cell, and Majin Buu.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
+        "poster_url": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
+        "runtime": "125 min",
+        "desc": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
+        "rating": 8.0,
         "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
+          "01. Hayao Miyazaki Masterworks"
         ]
       },
       {
-        "id": "db-super",
-        "title": "Dragon Ball Super",
-        "year": 2015,
-        "media_type": "series",
+        "id": "ghibli-fireflies",
+        "sub_universe": "02. Isao Takahata Classics",
+        "title": "Grave of the Fireflies",
+        "year": 1988,
+        "media_type": "movie",
         "chrono_order": 3,
-        "release_order": 2015.07,
-        "phase": "Beerus, Golden Frieza, Goku Black & Tournament of Power",
+        "release_order": 3,
+        "phase": "Anti-War Masterpiece • Isao Takahata",
         "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
-        "runtime": "131 Episodes",
-        "desc": "Goku and Vegeta achieve divine Super Saiyan God forms and compete across the multiverse against warriors from twelve alternative universes.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
+        "poster_url": "https://image.tmdb.org/t/p/w500/k9tv1rXZbOhH7eiCk378x61kNQ1.jpg",
+        "runtime": "89 min",
+        "desc": "In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an...",
+        "rating": 8.4,
         "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "db-super-broly",
-        "title": "Dragon Ball Super: Broly",
-        "year": 2018,
-        "media_type": "movie",
-        "chrono_order": 4,
-        "release_order": 2018.12,
-        "phase": "The Legendary Super Saiyan Canon Rebirth",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/uMEgkyiPznZP5AiMSWAk2jsj5gC.jpg",
-        "runtime": "100 min",
-        "desc": "Goku and Vegeta encounter Broly, a Saiyan warrior possessing limitless untapped power, leading to an earth-shattering clash across the Arctic.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "db-super-superhero",
-        "title": "Dragon Ball Super: Super Hero",
-        "year": 2022,
-        "media_type": "movie",
-        "chrono_order": 5,
-        "release_order": 2022.06,
-        "phase": "Red Ribbon Army, Gohan Beast & Orange Piccolo",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/pi0iZOEHeA3ih4p1IwAG4x2DZNH.jpg",
-        "runtime": "100 min",
-        "desc": "The Red Ribbon Army returns with ultimate androids Gamma 1 and 2, prompting Gohan and Piccolo to awaken new evolutionary power limits.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "db-daima",
-        "title": "Dragon Ball DAIMA",
-        "year": 2024,
-        "media_type": "series",
-        "chrono_order": 6,
-        "release_order": 2024.1,
-        "phase": "Akira Toriyama's Final 40th Anniversary Adventure",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
-        "runtime": "20 Episodes",
-        "desc": "Due to a mysterious conspiracy, Goku and his friends are turned small and journey into the Demon Realm to right the world.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "naruto-original",
-        "title": "Naruto",
-        "year": 2002,
-        "media_type": "series",
-        "chrono_order": 7,
-        "release_order": 2002.1,
-        "phase": "Genin Days, Chunin Exams & Sasuke Retrieval",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
-        "runtime": "220 Episodes",
-        "desc": "Naruto Uzumaki, an ostracized ninja who harbors the Nine-Tailed Fox inside him, dreams of earning the respect of his village and becoming Hokage.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "naruto-shippuden",
-        "title": "Naruto Shippuden",
-        "year": 2007,
-        "media_type": "series",
-        "chrono_order": 8,
-        "release_order": 2007.02,
-        "phase": "Akatsuki, Pain's Assault & Fourth Great Ninja War",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/bBqEiQbbfyt4MWR3NhDZMbS4Wp8.jpg",
-        "runtime": "500 Episodes",
-        "desc": "After training with Jiraiya, a matured Naruto confronts the rogue organization Akatsuki and battles to save his best friend Sasuke from the dark.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "boruto",
-        "title": "Boruto: Naruto Next Generations",
-        "year": 2017,
-        "media_type": "series",
-        "chrono_order": 9,
-        "release_order": 2017.04,
-        "phase": "Otsutsuki Clan, Karma & Kara Syndicate",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/e0B6i48kxdRkMcK4tR4YNfXGWOc.jpg",
-        "runtime": "293 Episodes",
-        "desc": "The next generation of Hidden Leaf ninja led by Boruto Uzumaki and Sarada Uchiha navigate peace, alien celestial gods, and ancient karma seals.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "one-piece",
-        "title": "One Piece",
-        "year": 1999,
-        "media_type": "series",
-        "chrono_order": 10,
-        "release_order": 1999.1,
-        "phase": "East Blue through Wano Kuni & Egghead Island",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-        "runtime": "1100+ Episodes",
-        "desc": "Monkey D. Luffy and his Straw Hat pirate crew sail the treacherous Grand Line in search of the legendary ultimate treasure: the One Piece.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "one-piece-film-red",
-        "title": "One Piece Film: Red",
-        "year": 2022,
-        "media_type": "movie",
-        "chrono_order": 11,
-        "release_order": 2022.08,
-        "phase": "Uta, Elegia Island & Red-Haired Shanks",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
-        "runtime": "115 min",
-        "desc": "Uta, the world's most beloved singer and daughter of Red-Haired Shanks, performs her debut public concert on the island of Elegia, hiding a world-altering power.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "bleach",
-        "title": "Bleach",
-        "year": 2004,
-        "media_type": "series",
-        "chrono_order": 12,
-        "release_order": 2004.1,
-        "phase": "Soul Society Rescue, Arrancar & Fake Karakura Town",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/spZ1lZ6CzPsD1nOKNw64PTHtdgk.jpg",
-        "runtime": "366 Episodes",
-        "desc": "High school student Ichigo Kurosaki gains the powers of a Soul Reaper to defend humans against evil spirits called Hollows and guide souls to the afterlife.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "bleach-tybw",
-        "title": "Bleach: Thousand-Year Blood War",
-        "year": 2022,
-        "media_type": "series",
-        "chrono_order": 13,
-        "release_order": 2022.1,
-        "phase": "Yhwach, The Wandenreich & The Quincy Blood War",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/tEaeXZZO7SEcDr6yRP31UrrxcX0.jpg",
-        "runtime": "4 Cours • 52 Episodes",
-        "desc": "The thousand-year grudge between the Quincy and Soul Reapers explodes into all-out war when Yhwach and the Wandenreich invade the Soul Society.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "hunter-x-hunter",
-        "title": "Hunter × Hunter (2011)",
-        "year": 2011,
-        "media_type": "series",
-        "chrono_order": 14,
-        "release_order": 2011.1,
-        "phase": "Hunter Exam, Yorknew City & Chimera Ant Arc",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/eTd5AzvX8mxRFQ6Z3F7GQxYIRvG.jpg",
-        "runtime": "148 Episodes",
-        "desc": "Gon Freecss leaves home to take the grueling Hunter examination to locate his legendary father, befriending Killua, Kurapika, and Leorio.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "fma-brotherhood",
-        "title": "Fullmetal Alchemist: Brotherhood",
-        "year": 2009,
-        "media_type": "series",
-        "chrono_order": 15,
-        "release_order": 2009.04,
-        "phase": "The Amestris Conspiracy & The Philosopher's Stone",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
-        "runtime": "64 Episodes",
-        "desc": "Two alchemist brothers, Edward and Alphonse Elric, search for the Philosopher's Stone to restore their bodies after a disastrous human transmutation.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "fairy-tail",
-        "title": "Fairy Tail",
-        "year": 2009,
-        "media_type": "series",
-        "chrono_order": 16,
-        "release_order": 2009.1,
-        "phase": "Fiore Guild Wars, Tartaros, Alvarez & 100 Years Quest",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/AsfCVSHnFnUnbepLucvIB1N30Il.jpg",
-        "runtime": "328+ Episodes",
-        "desc": "Dragon Slayer Natsu Dragneel and celestial wizard Lucy Heartfilia take on high-stakes missions with the rambunctious Fairy Tail wizards guild.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "pokemon-series",
-        "title": "Pokémon: The Master Saga",
-        "year": 1997,
-        "media_type": "series",
-        "chrono_order": 17,
-        "release_order": 1997.04,
-        "phase": "Kanto to World Coronation Championship",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/thz83PS9twtVBEEAM59J1bh75nU.jpg",
-        "runtime": "25 Seasons • 1200+ Episodes",
-        "desc": "Ash Ketchum from Pallet Town and Pikachu embark on a 25-year odyssey across every league region to fulfill their dream of becoming a Pokémon Master.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "digimon-adventure",
-        "title": "Digimon Adventure",
-        "year": 1999,
-        "media_type": "series",
-        "chrono_order": 18,
-        "release_order": 1999.03,
-        "phase": "The Digital World & The Chosen Children",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/vFJAiBNUlzEVa54mXgHGumr1z1s.jpg",
-        "runtime": "54 Episodes",
-        "desc": "Seven children at summer camp are pulled into the Digital World where they partner with digital monsters to combat viral digital threats.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "yugioh-duel-monsters",
-        "title": "Yu-Gi-Oh! Duel Monsters",
-        "year": 2000,
-        "media_type": "series",
-        "chrono_order": 19,
-        "release_order": 2000.04,
-        "phase": "Duelist Kingdom, Battle City & The Pharaoh's Memories",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/3VD5QDTu0rQgRvERBMXtAvg0oIC.jpg",
-        "runtime": "224 Episodes",
-        "desc": "Yugi Muto solves the ancient Millennium Puzzle, unlocking the spirit of an ancient Egyptian Pharaoh who masters high-stakes shadow card duels.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "sailor-moon",
-        "title": "Sailor Moon",
-        "year": 1992,
-        "media_type": "series",
-        "chrono_order": 20,
-        "release_order": 1992.03,
-        "phase": "Moon Kingdom, Silver Crystal & Sailor Guardians",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/m0e8QxAM0n3XK9GPvkxzRB0YL4k.jpg",
-        "runtime": "200 Episodes",
-        "desc": "Schoolgirl Usagi Tsukino transforms into the champion of love and justice, Sailor Moon, defending Earth alongside the Sailor Guardians.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "detective-conan",
-        "title": "Detective Conan (Case Closed)",
-        "year": 1996,
-        "media_type": "series",
-        "chrono_order": 21,
-        "release_order": 1996.01,
-        "phase": "Black Organization & The Apotoxin 4869",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/iHfA63x7rFaWbP2C832uCe2r0zy.jpg",
-        "runtime": "1100+ Episodes",
-        "desc": "High school detective Shinichi Kudo is poisoned by criminal syndicate agents, turning him into a child who secretly solves mysteries as Conan Edogawa.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "gintama",
-        "title": "Gintama",
-        "year": 2006,
-        "media_type": "series",
-        "chrono_order": 22,
-        "release_order": 2006.04,
-        "phase": "Amanto Alien Edo & Odd Jobs Yorozuya",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/f7vK8pzZIqhyA8sYmBpWmp9Ae7.jpg",
-        "runtime": "367 Episodes",
-        "desc": "In an Edo-era Japan taken over by aliens, eccentric white-haired samurai Gintoki Sakata takes on odd jobs with his crew while mocking every anime trope.",
-        "sub_universe": "01. The Big Three & Legacy Shonen",
-        "sub_universes": [
-          "01. The Big Three & Legacy Shonen"
-        ]
-      },
-      {
-        "id": "demon-slayer",
-        "title": "Demon Slayer: Kimetsu no Yaiba",
-        "year": 2019,
-        "media_type": "series",
-        "chrono_order": 23,
-        "release_order": 2019.04,
-        "phase": "Tanjiro & Nezuko • Water Breathing to Sun Breathing",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
-        "runtime": "4 Seasons • 55 Episodes",
-        "desc": "After his family is slaughtered and his sister turned into a demon, Tanjiro Kamado trains to become a Demon Slayer to cure her and slay Muzan Kibutsuji.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "demon-slayer-mugen-train",
-        "title": "Demon Slayer: Mugen Train",
-        "year": 2020,
-        "media_type": "movie",
-        "chrono_order": 24,
-        "release_order": 2020.1,
-        "phase": "Flame Hashira Kyojuro Rengoku vs. Akaza",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
-        "runtime": "117 min",
-        "desc": "The highest-grossing anime film in history: Tanjiro joins Flame Hashira Kyojuro Rengoku aboard the Mugen Train to battle the Lower Moon demon Enmu and Upper Three Akaza.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "jujutsu-kaisen-0",
-        "title": "Jujutsu Kaisen 0",
-        "year": 2021,
-        "media_type": "movie",
-        "chrono_order": 25,
-        "release_order": 2021.12,
-        "phase": "Prequel • Yuta Okkotsu & Special Grade Curse Rika",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/23oJaeBh0FDk2mQ2P240PU9Xxfh.jpg",
-        "runtime": "105 min",
-        "desc": "Yuta Okkotsu enrolls at Tokyo Jujutsu High under Satoru Gojo to gain control over the monstrous curse spirit of his childhood friend Rika.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "jujutsu-kaisen",
-        "title": "Jujutsu Kaisen",
-        "year": 2020,
-        "media_type": "series",
-        "chrono_order": 26,
-        "release_order": 2020.1,
-        "phase": "Sukuna's Vessel, Hidden Inventory & Shibuya Incident",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/6qQzMJG27XOJsyAEEIisoJB45j2.jpg",
-        "runtime": "2+ Seasons • 47+ Episodes",
-        "desc": "Yuji Itadori swallows a rotten finger belonging to Ryomen Sukuna, the King of Curses, entering the supernatural world of Jujutsu sorcery.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "attack-on-titan",
-        "title": "Attack on Titan (Shingeki no Kyojin)",
-        "year": 2013,
-        "media_type": "series",
-        "chrono_order": 27,
-        "release_order": 2013.04,
-        "phase": "The Walls, The Basement, Marley & The Rumbling",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/kXUSsxQ2J3QVGkG1thmhI1FadKd.jpg",
-        "runtime": "4 Seasons • 89 Episodes",
-        "desc": "Eren Yeager vows to eradicate every Titan after their hometown wall is breached, uncovering horrifying geopolitical secrets behind the Eldian race.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "my-hero-academia",
-        "title": "My Hero Academia",
-        "year": 2016,
-        "media_type": "series",
-        "chrono_order": 28,
-        "release_order": 2016.04,
-        "phase": "UA High Class 1-A, All Might & Paranormal Liberation War",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
-        "runtime": "7 Seasons • 159 Episodes",
-        "desc": "In a world where 80% of humans possess superpowers known as Quirks, quirkless boy Izuku Midoriya inherits One For All from the legendary hero All Might.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "chainsaw-man",
-        "title": "Chainsaw Man",
-        "year": 2022,
-        "media_type": "series",
-        "chrono_order": 29,
-        "release_order": 2022.1,
-        "phase": "Public Safety Devil Hunters • Denji & Pochita",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
-        "runtime": "12 Episodes",
-        "desc": "Denji merges with his chainsaw pet demon Pochita, resurrecting as Chainsaw Man and working for mysterious Public Safety bureaucrat Makima.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "hells-paradise",
-        "title": "Hell's Paradise (Jigokuraku)",
-        "year": 2023,
-        "media_type": "series",
-        "chrono_order": 30,
-        "release_order": 2023.04,
-        "phase": "Shinsenkai Island of Immortality & Lord Tensen",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/1V9I7SvZbYoMbSvdtnlkkq9SB1k.jpg",
-        "runtime": "13 Episodes",
-        "desc": "Condemned ninja assassin Gabimaru the Hollow is tasked with exploring an uncharted paradise island infested with divine horrors to retrieve the Elixir of Life.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "dan-da-dan",
-        "title": "Dan Da Dan",
-        "year": 2024,
-        "media_type": "series",
-        "chrono_order": 31,
-        "release_order": 2024.1,
-        "phase": "Turbo Granny, Serpo Aliens & Spiritual Chaos",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
-        "runtime": "12 Episodes",
-        "desc": "Momo, who believes in ghosts, and Okarun, who believes in aliens, wager to prove who is real, triggering wild occult battles with turbo grannies and UFOs.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "kaiju-no-8",
-        "title": "Kaiju No. 8",
-        "year": 2024,
-        "media_type": "series",
-        "chrono_order": 32,
-        "release_order": 2024.04,
-        "phase": "Japan Defense Force & Kafka Hibino",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/kx9mF5Yma1da1ELjbyWSVWJednM.jpg",
-        "runtime": "12 Episodes",
-        "desc": "A 32-year-old monster-disposal worker gains the ability to transform into a humanoid kaiju, using his powers to join the elite Japan Defense Force.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "solo-leveling",
-        "title": "Solo Leveling (Ore dake Level Up na Ken)",
-        "year": 2024,
-        "media_type": "series",
-        "chrono_order": 33,
-        "release_order": 2024.01,
-        "phase": "Double Dungeon, Shadow Monarch & Sung Jinwoo",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/uzHMp5heVLR68kbbUEXFPsmxYsM.jpg",
-        "runtime": "2+ Seasons • 24+ Episodes",
-        "desc": "The world's weakest E-rank hunter Sung Jinwoo discovers a quest log that only he can see, enabling him to level up infinitely and summon an army of shadows.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "one-punch-man",
-        "title": "One-Punch Man",
-        "year": 2015,
-        "media_type": "series",
-        "chrono_order": 34,
-        "release_order": 2015.1,
-        "phase": "Hero Association, Lord Boros & Garou Monster Association",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
-        "runtime": "2+ Seasons • 24+ Episodes",
-        "desc": "Saitama has trained so hard he can defeat any adversary with a single punch, leaving him chronically bored as he searches for a worthy challenger.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "mob-psycho-100",
-        "title": "Mob Psycho 100",
-        "year": 2016,
-        "media_type": "series",
-        "chrono_order": 35,
-        "release_order": 2016.07,
-        "phase": "Reigen Arataka, Claw Syndicate & Divine Tree",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/vR7hwaGQ0ySRoq1WobiNRaPs4WO.jpg",
-        "runtime": "3 Seasons • 37 Episodes",
-        "desc": "Shigeo Kageyama (Mob) is a timid middle-schooler with godlike psychic abilities who works for con-artist exorcist Reigen while keeping his emotional gauge under 100%.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "black-clover",
-        "title": "Black Clover",
-        "year": 2017,
-        "media_type": "series",
-        "chrono_order": 36,
-        "release_order": 2017.1,
-        "phase": "Black Bulls, Eye of the Midnight Sun & Spade Kingdom",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/uZUtoVChBGhNj9OfrM2LYpwBm8E.jpg",
-        "runtime": "170 Episodes",
-        "desc": "In a kingdom where magic is everything, magicless orphan Asta receives a rare five-leaf clover grimoire wielding demon anti-magic swords.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "tokyo-ghoul",
-        "title": "Tokyo Ghoul",
-        "year": 2014,
-        "media_type": "series",
-        "chrono_order": 37,
-        "release_order": 2014.07,
-        "phase": "Anteiku, Aogiri Tree & CCG Investigation",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
-        "runtime": "48 Episodes",
-        "desc": "College student Ken Kaneki barely survives a deadly encounter with a flesh-eating ghoul, awakening as a half-ghoul caught between two worlds.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "jojo-bizarre-adventure",
-        "title": "JoJo's Bizarre Adventure",
-        "year": 2012,
-        "media_type": "series",
-        "chrono_order": 38,
-        "release_order": 2012.1,
-        "phase": "The Joestar Bloodline • Ripple, Hamon & Stands",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/ogAWwbh3frWtiTyyXrZaVFtqCgp.jpg",
-        "runtime": "6 Parts • 190 Episodes",
-        "desc": "Generations of the cursed Joestar family use Hamon energy and psychological Stands to fight vampire Dio Brando and supernatural threats across history.",
-        "sub_universe": "02. Modern Dark Shonen & Superpower Titans",
-        "sub_universes": [
-          "02. Modern Dark Shonen & Superpower Titans"
-        ]
-      },
-      {
-        "id": "death-note",
-        "title": "Death Note",
-        "year": 2006,
-        "media_type": "series",
-        "chrono_order": 39,
-        "release_order": 2006.1,
-        "phase": "Light Yagami (Kira) vs. Master Detective L",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
-        "runtime": "37 Episodes",
-        "desc": "Genius high schooler Light Yagami finds a Shinigami notebook that kills anyone whose name is written in it, igniting an intellectual battle with quirky detective L.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "vinland-saga",
-        "title": "Vinland Saga",
-        "year": 2019,
-        "media_type": "series",
-        "chrono_order": 40,
-        "release_order": 2019.07,
-        "phase": "Askeladd's Mercenaries to Ketil's Farm Slave Arc",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/vUHlpA5c1NXkds59reY3HMb4Abs.jpg",
-        "runtime": "2 Seasons • 48 Episodes",
-        "desc": "Thorfinn Karlsefni pursues vengeance against Viking warlord Askeladd for his father's death, evolving on a grueling philosophical journey toward peace.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "monster-anime",
-        "title": "Monster",
-        "year": 2004,
-        "media_type": "series",
-        "chrono_order": 41,
-        "release_order": 2004.04,
-        "phase": "Dr. Kenzo Tenma & The Psychopath Johan Liebert",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/n5XNKXnoXpoXyfiCtXHOf8q8PFM.jpg",
-        "runtime": "74 Episodes",
-        "desc": "Brilliant neurosurgeon Dr. Kenzo Tenma saves the life of a young boy with a gunshot wound to the head, only to learn years later the boy grew into a charismatic serial killer.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "berserk-anime",
-        "title": "Berserk",
-        "year": 1997,
-        "media_type": "series",
-        "chrono_order": 42,
-        "release_order": 1997.1,
-        "phase": "Band of the Falcon, Griffith & The Eclipse",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xctRBSZzvoHDHz38ZZUGxRYetvG.jpg",
-        "runtime": "25 Episodes",
-        "desc": "Guts, a solitary mercenary wielding a giant broadsword, joins the Band of the Falcon under ambitious leader Griffith until betrayal sparks the terrifying demonic Eclipse.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "cowboy-bebop",
-        "title": "Cowboy Bebop",
-        "year": 1998,
-        "media_type": "series",
-        "chrono_order": 43,
-        "release_order": 1998.04,
-        "phase": "The Bebop Bounty Hunter Crew & Red Dragon Syndicate",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
-        "runtime": "26 Episodes",
-        "desc": "Shinichiro Watanabe's space jazz noir masterpiece follows bounty hunters Spike Spiegel, Jet Black, Faye Valentine, and Radical Edward tracking bounties across the solar system.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "neon-genesis-evangelion",
-        "title": "Neon Genesis Evangelion",
-        "year": 1995,
-        "media_type": "series",
-        "chrono_order": 44,
-        "release_order": 1995.1,
-        "phase": "NERV, The Angels & Human Instrumentality Project",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/j6G24dqI4WgUtChhWjfnI4lnmiK.jpg",
-        "runtime": "26 Episodes + End of Evangelion",
-        "desc": "Hideaki Anno's groundbreaking psychological deconstruction of mecha: Shinji Ikari is drafted by his distant father to pilot EVA-01 against monstrous Angel entities.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "ghost-in-the-shell-sac",
-        "title": "Ghost in the Shell: Stand Alone Complex",
-        "year": 2002,
-        "media_type": "series",
-        "chrono_order": 45,
-        "release_order": 2002.1,
-        "phase": "Public Security Section 9 & The Laughing Man",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/nJlfPscbODh5gV1yTGSPqYOO7rl.jpg",
-        "runtime": "2 Seasons • 52 Episodes",
-        "desc": "Major Motoko Kusanagi and Section 9 investigate cybernetic corporate espionage, hacking conspiracies, and philosophical consciousness in near-future Japan.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "psycho-pass",
-        "title": "Psycho-Pass",
-        "year": 2012,
-        "media_type": "series",
-        "chrono_order": 46,
-        "release_order": 2012.1,
-        "phase": "The Sibyl System, Enforcers & Shinya Kogami",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/uWnP6qTcc4imPJ9ZHaXlPQlcYnB.jpg",
-        "runtime": "3 Seasons • 41 Episodes",
-        "desc": "In a dystopian Tokyo governed by the Sibyl System which constantly measures citizens' criminal intent (Crime Coefficient), inspectors and enforcers enforce psychological law.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "steins-gate",
-        "title": "Steins;Gate",
-        "year": 2011,
-        "media_type": "series",
-        "chrono_order": 47,
-        "release_order": 2011.04,
-        "phase": "Future Gadget Lab, D-Mails & World Line Divergence",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/bXhogkZCR0aOQ077rfMULYbDmtH.jpg",
-        "runtime": "24 Episodes",
-        "desc": "Eccentric scientist Rintaro Okabe invents a microwave that can send text messages into the past, accidentally triggering world war timelines and SERN conspiracies.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "code-geass",
-        "title": "Code Geass: Lelouch of the Rebellion",
-        "year": 2006,
-        "media_type": "series",
-        "chrono_order": 48,
-        "release_order": 2006.1,
-        "phase": "Zero, The Black Knights & The Holy Britannian Empire",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/lRfTNdwfcXnECZXeZswMOSV3q36.jpg",
-        "runtime": "50 Episodes",
-        "desc": "Exiled Britannian prince Lelouch vi Britannia obtains the power of Geass to command absolute obedience, leading the masked rebellion Zero against the empire.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "cyberpunk-edgerunners",
-        "title": "Cyberpunk: Edgerunners",
-        "year": 2022,
-        "media_type": "series",
-        "chrono_order": 49,
-        "release_order": 2022.09,
-        "phase": "Night City, Cyberware Sandevistan & David Martinez",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
-        "runtime": "10 Episodes",
-        "desc": "Studio Trigger's hyper-kinetic tragedy follows street kid David Martinez outfitting military-grade cyberware to survive as an edgerunner mercenary in Night City.",
-        "sub_universe": "03. Seinen, Cyberpunk & Psychological Masterpieces",
-        "sub_universes": [
-          "03. Seinen, Cyberpunk & Psychological Masterpieces"
-        ]
-      },
-      {
-        "id": "frieren-anime",
-        "title": "Frieren: Beyond Journey's End",
-        "year": 2023,
-        "media_type": "series",
-        "chrono_order": 50,
-        "release_order": 2023.09,
-        "phase": "After the Demon King • The Long Life of an Elven Mage",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-        "runtime": "28 Episodes",
-        "desc": "After defeating the Demon King with hero Himmel, thousand-year-old elf mage Frieren embarks on a nostalgic pilgrimage to comprehend human emotions and mortality.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "apothecary-diaries",
-        "title": "The Apothecary Diaries",
-        "year": 2023,
-        "media_type": "series",
-        "chrono_order": 51,
-        "release_order": 2023.1,
-        "phase": "The Imperial Rear Palace • Pharmacist Maomao & Jinshi",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/sJZcy8QsOPuRPiCfoCWVB3r9Ohg.jpg",
-        "runtime": "24 Episodes",
-        "desc": "Young pharmacist Maomao is kidnapped and sold into the imperial palace, where she uses her sharp toxicology skills to solve poisoning mysteries.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "mushoku-tensei",
-        "title": "Mushoku Tensei: Jobless Reincarnation",
-        "year": 2021,
-        "media_type": "series",
-        "chrono_order": 52,
-        "release_order": 2021.01,
-        "phase": "Rudeus Greyrat, Teleportation Incident & Begaritto Continent",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-        "runtime": "2+ Seasons • 48 Episodes",
-        "desc": "A 34-year-old shut-in dies and is reborn into a magical fantasy realm as child prodigy Rudeus Greyrat, determined to live life to the fullest without regrets.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "re-zero",
-        "title": "Re:Zero - Starting Life in Another World",
-        "year": 2016,
-        "media_type": "series",
-        "chrono_order": 53,
-        "release_order": 2016.04,
-        "phase": "Subaru Natsuki, Emilia & Return by Death",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/y7XwmyE5ue9hjk65fEWpO2hGU2B.jpg",
-        "runtime": "3 Seasons • 60+ Episodes",
-        "desc": "Subaru Natsuki is summoned to an alternate world where he discovers he cannot die permanently; instead, he rewinds time upon death with horrifying traumatic costs.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "slime-isekai",
-        "title": "That Time I Got Reincarnated as a Slime",
-        "year": 2018,
-        "media_type": "series",
-        "chrono_order": 54,
-        "release_order": 2018.1,
-        "phase": "Rimuru Tempest, Jura Forest & Octagram Demon Lords",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/pzujcdPAoH361NObVrtbA7zACE7.jpg",
-        "runtime": "3 Seasons • 72 Episodes",
-        "desc": "Satoru Mikami is reincarnated into a fantasy world as a sentient slime named Rimuru with Predator abilities, founding a nation where monsters live in harmony.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "overlord-anime",
-        "title": "Overlord",
-        "year": 2015,
-        "media_type": "series",
-        "chrono_order": 55,
-        "release_order": 2015.07,
-        "phase": "The Great Tomb of Nazarick • Ainz Ooal Gown",
-        "is_essential": false,
-        "poster_url": "https://image.tmdb.org/t/p/w500/l76Rgp32z2UxjULApxGXAPpYdAP.jpg",
-        "runtime": "4 Seasons • 52 Episodes",
-        "desc": "When virtual reality MMORPG Yggdrasil shuts down, veteran player Momonga stays logged in as skeletal wizard Ainz Ooal Gown, taking over a new fantasy world.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "konosuba",
-        "title": "KonoSuba: God's Blessing on this Wonderful World!",
-        "year": 2016,
-        "media_type": "series",
-        "chrono_order": 56,
-        "release_order": 2016.01,
-        "phase": "Kazuma Satou, Goddess Aqua & Explosion Magic Megumin",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/oRaOeQlwktbGSd2T31FYAcgHZlh.jpg",
-        "runtime": "3 Seasons • 31 Episodes",
-        "desc": "Hilarious comedy satire following NEET Kazuma who drags useless goddess Aqua to a fantasy world and forms an eccentric party with explosion mage Megumin and masochist Darkness.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "sao-series",
-        "title": "Sword Art Online",
-        "year": 2012,
-        "media_type": "series",
-        "chrono_order": 57,
-        "release_order": 2012.07,
-        "phase": "Aincrad Death Game, Gun Gale Online & Alicization",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
-        "runtime": "4 Seasons • 96 Episodes",
-        "desc": "Ten thousand players are trapped inside a full-dive VRMMORPG where dying in the game means real-world death, led by black swordsman Kirito.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "made-in-abyss",
-        "title": "Made in Abyss",
-        "year": 2017,
-        "media_type": "series",
-        "chrono_order": 58,
-        "release_order": 2017.07,
-        "phase": "The Netherworld Chasm, Bondrewd & The 6th Layer",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/n30CBH4BoN5Z34tCpOWIPGJYOaS.jpg",
-        "runtime": "2 Seasons • 25 Episodes",
-        "desc": "Orphan girl Riko and robot boy Reg descend into the colossal, supernatural Abyss seeking Riko's mother, encountering body-morphing curses and psychological trials.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "dr-stone",
-        "title": "Dr. Stone",
-        "year": 2019,
-        "media_type": "series",
-        "chrono_order": 59,
-        "release_order": 2019.07,
-        "phase": "The Kingdom of Science • Senku Ishigami",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xbZQ3fDl0y5mt0ARwfeyrgQ4JTw.jpg",
-        "runtime": "3+ Seasons • 58 Episodes",
-        "desc": "3,700 years after a blinding flash turned humanity into stone, scientific genius Senku Ishigami awakens to rebuild human civilization from zero using real chemistry.",
-        "sub_universe": "04. Isekai, Fantasy & Prestige Adventure",
-        "sub_universes": [
-          "04. Isekai, Fantasy & Prestige Adventure"
-        ]
-      },
-      {
-        "id": "haikyu-series",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "media_type": "series",
-        "chrono_order": 60,
-        "release_order": 2014.04,
-        "phase": "Karasuno High Volleyball Team & The Little Giant",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/ntRU0OA4etGGiMMmH1Yw0bnaMdW.jpg",
-        "runtime": "4 Seasons • 85 Episodes",
-        "desc": "Shoyo Hinata, determined to become a great volleyball player despite his short stature, joins Karasuno High and pairs with genius setter Tobio Kageyama.",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
-        ]
-      },
-      {
-        "id": "blue-lock",
-        "title": "Blue Lock",
-        "year": 2022,
-        "media_type": "series",
-        "chrono_order": 61,
-        "release_order": 2022.1,
-        "phase": "The Blue Lock Facility & Egoist Striker Project",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/yZYZqT1f6rddhiSdjl8NVVCoZKE.jpg",
-        "runtime": "2 Seasons • 38 Episodes",
-        "desc": "Following a World Cup elimination, Japan gathers 300 high school forwards inside the prison-like Blue Lock facility to cultivate the most selfish, unstoppable striker.",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
-        ]
-      },
-      {
-        "id": "spy-family",
-        "title": "SPY × FAMILY",
-        "year": 2022,
-        "media_type": "series",
-        "chrono_order": 62,
-        "release_order": 2022.04,
-        "phase": "Operation Strix • Loid, Yor, Anya & Bond Forger",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/xlIQf4y9eB14iYzNN142tROIWON.jpg",
-        "runtime": "2 Seasons • 37 Episodes",
-        "desc": "Master spy Twilight creates a counterfeit family with an assassin wife and a telepathic orphan daughter to maintain peace between rival cold-war nations.",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
-        ]
-      },
-      {
-        "id": "your-name",
-        "title": "Your Name. (Kimi no Na wa)",
-        "year": 2016,
-        "media_type": "movie",
-        "chrono_order": 63,
-        "release_order": 2016.08,
-        "phase": "Makoto Shinkai Masterpiece • Taki & Mitsuha",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/vfJFJPepRKapMd5G2ro7klIRysq.jpg",
-        "runtime": "106 min",
-        "desc": "Makoto Shinkai's global phenomenon: two teenagers, a boy in Tokyo and a girl in a rural town, inexplicably swap bodies while attempting to prevent an impending comet catastrophe.",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
-        ]
-      },
-      {
-        "id": "a-silent-voice",
-        "title": "A Silent Voice (Koe no Katachi)",
-        "year": 2016,
-        "media_type": "movie",
-        "chrono_order": 64,
-        "release_order": 2016.09,
-        "phase": "Kyoto Animation • Shoya Ishida & Shoko Nishimiya",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg",
-        "runtime": "130 min",
-        "desc": "A former elementary school bully seeks redemption and reconciliation with the deaf girl he tormented years earlier.",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
-        ]
-      },
-      {
-        "id": "violet-evergarden",
-        "title": "Violet Evergarden",
-        "year": 2018,
-        "media_type": "series",
-        "chrono_order": 65,
-        "release_order": 2018.01,
-        "phase": "CH Postal Company Auto Memory Doll",
-        "is_essential": true,
-        "poster_url": "https://image.tmdb.org/t/p/w500/61EwFPqc0r1uJo6la49J55F8bQ8.jpg",
-        "runtime": "13 Episodes + Movie",
-        "desc": "A former child soldier with prosthetic hands works as an Auto Memory Doll ghostwriter to understand the final words whispered to her: \"I love you.\"",
-        "sub_universe": "05. Sports, High School & Modern Classics",
-        "sub_universes": [
-          "05. Sports, High School & Modern Classics"
+          "02. Isao Takahata Classics"
         ]
       },
       {
         "id": "ghibli-totoro",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
         "title": "My Neighbor Totoro",
         "year": 1988,
         "media_type": "movie",
-        "chrono_order": 66,
-        "release_order": 1988.04,
-        "phase": "Hayao Miyazaki • Forest Spirits of 1950s Countryside",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Studio Icon • Hayao Miyazaki",
         "is_essential": true,
         "poster_url": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
         "runtime": "86 min",
-        "desc": "Two young sisters move to the countryside to be near their ailing mother and discover friendly woodland spirits, including the gentle giant Totoro.",
-        "sub_universe": "06. Studio Ghibli Masterworks",
+        "desc": "Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs...",
+        "rating": 8.1,
         "sub_universes": [
-          "06. Studio Ghibli Masterworks"
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-kiki",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Kiki's Delivery Service",
+        "year": 1989,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Coming-of-Age Fantasy • Miyazaki",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+        "runtime": "103 min",
+        "desc": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-only-yesterday",
+        "sub_universe": "02. Isao Takahata Classics",
+        "title": "Only Yesterday",
+        "year": 1991,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Nostalgic Drama • Isao Takahata",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tOSnFE9e82iH3ZAzSTtuOkBsabJ.jpg",
+        "runtime": "119 min",
+        "desc": "In lyrical switches between the present and the past, Taeko contemplates the arc of her life, and wonders if she has been true to the dreams of her childhood self.",
+        "rating": 7.4,
+        "sub_universes": [
+          "02. Isao Takahata Classics"
+        ]
+      },
+      {
+        "id": "ghibli-porco",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Porco Rosso",
+        "year": 1992,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Adriatic Aviation Fantasy • Miyazaki",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8mIvSvnVBApfORL9N6S38Q7wD6A.jpg",
+        "runtime": "93 min",
+        "desc": "In Italy in the 1930s, sky pirates in biplanes terrorize wealthy cruise ships as they sail the Adriatic Sea. The only pilot brave enough to stop the scourge is the mysterious Porco Rosso, a former World War I flying...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-ocean-waves",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "Ocean Waves",
+        "year": 1993,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "Youth Romance • Tomomi Mochizuki",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/fSR1LLMIJZ6WcQEkM82yKy4F9vQ.jpg",
+        "runtime": "72 min",
+        "desc": "At Kichijōji Station, Tokyo, Taku Morisaki glimpses a familiar woman on the platform opposite boarding a train. Later, her photo falls from a shelf as he exits his apartment before flying to Kōchi Prefecture. Picking...",
+        "rating": 6.4,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-pom-poko",
+        "sub_universe": "02. Isao Takahata Classics",
+        "title": "Pom Poko",
+        "year": 1994,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Folklore Fable • Isao Takahata",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gyoJmFf24MOUc4TTu97sd0cHIQF.jpg",
+        "runtime": "119 min",
+        "desc": "The Raccoons of the Tama Hills are being forced from their homes by the rapid development of houses and shopping malls. As it becomes harder to find food and shelter, they decide to band together and fight back. The...",
+        "rating": 7.2,
+        "sub_universes": [
+          "02. Isao Takahata Classics"
+        ]
+      },
+      {
+        "id": "ghibli-whisper",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "Whisper of the Heart",
+        "year": 1995,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 10,
+        "phase": "Romantic Coming-of-Age • Yoshifumi Kondō",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5FROLD8zpWFs9ja7aYho1uOMJHg.jpg",
+        "runtime": "111 min",
+        "desc": "Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: \"Seiji Amasawa.\"",
+        "rating": 7.9,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
         ]
       },
       {
         "id": "ghibli-mononoke",
-        "title": "Princess Mononoke (Mononoke Hime)",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Princess Mononoke",
         "year": 1997,
         "media_type": "movie",
-        "chrono_order": 67,
-        "release_order": 1997.07,
-        "phase": "Prince Ashitaka, San & The Great Forest Spirit",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "Ecological Epic • Hayao Miyazaki",
         "is_essential": true,
         "poster_url": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
         "runtime": "134 min",
-        "desc": "In Muromachi Japan, cursed prince Ashitaka searches for a cure while mediating a catastrophic conflict between ironworking humans and ancient forest gods.",
-        "sub_universe": "06. Studio Ghibli Masterworks",
+        "desc": "Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the...",
+        "rating": 8.3,
         "sub_universes": [
-          "06. Studio Ghibli Masterworks"
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-yamadas",
+        "sub_universe": "02. Isao Takahata Classics",
+        "title": "My Neighbors the Yamadas",
+        "year": 1999,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 12,
+        "phase": "Watercolor Comedy • Isao Takahata",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nj0ijnOozQtu52r0ncut769G1FX.jpg",
+        "runtime": "104 min",
+        "desc": "The Yamadas are a typical middle class Japanese family in urban Tokyo and this film shows us a variety of episodes of their lives. With tales that range from the humorous to the heartbreaking, we see this family cope...",
+        "rating": 7.0,
+        "sub_universes": [
+          "02. Isao Takahata Classics"
         ]
       },
       {
         "id": "ghibli-spirited-away",
-        "title": "Spirited Away (Sen to Chihiro no Kamikakushi)",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Spirited Away",
         "year": 2001,
         "media_type": "movie",
-        "chrono_order": 68,
-        "release_order": 2001.07,
-        "phase": "Academy Award Winner • The Spirit Bathhouse of Yubaba",
+        "chrono_order": 13,
+        "release_order": 13,
+        "phase": "Academy Award Winner • Hayao Miyazaki",
         "is_essential": true,
         "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
         "runtime": "125 min",
-        "desc": "Hayao Miyazaki's Oscar-winning masterpiece: Ten-year-old Chihiro wanders into an abandoned amusement park that transforms into a spirit bathhouse realm.",
-        "sub_universe": "06. Studio Ghibli Masterworks",
+        "desc": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+        "rating": 8.5,
         "sub_universes": [
-          "06. Studio Ghibli Masterworks"
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-cat-returns",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "The Cat Returns",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 14,
+        "release_order": 14,
+        "phase": "Spin-Off Fantasy • Hiroyuki Morita",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pqyY7IEWkCWNZ7EuRStQaJITEta.jpg",
+        "runtime": "75 min",
+        "desc": "Young Haru rescues a cat from being run over, but soon learns it's no ordinary feline; it happens to be the Prince of the Cats.",
+        "rating": 7.1,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
         ]
       },
       {
         "id": "ghibli-howls-castle",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
         "title": "Howl's Moving Castle",
         "year": 2004,
         "media_type": "movie",
-        "chrono_order": 69,
-        "release_order": 2004.11,
-        "phase": "Wizard Howl, Sophie & Calcifer",
+        "chrono_order": 15,
+        "release_order": 15,
+        "phase": "Steampunk Romance • Hayao Miyazaki",
         "is_essential": true,
         "poster_url": "https://image.tmdb.org/t/p/w500/13kOl2v0nD2OLbVSHnHk8GUFEhO.jpg",
         "runtime": "119 min",
-        "desc": "When an unconfident young milliner is turned into an old woman by a spiteful witch, her only chance of breaking the spell lies with wizard Howl aboard his magical walking castle.",
-        "sub_universe": "06. Studio Ghibli Masterworks",
+        "desc": "Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.",
+        "rating": 8.4,
         "sub_universes": [
-          "06. Studio Ghibli Masterworks"
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-earthsea",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "Tales from Earthsea",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 16,
+        "release_order": 16,
+        "phase": "High Fantasy • Gorō Miyazaki",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/y0VnJt4eRPMjA1hpJ8f1EFoVaSf.jpg",
+        "runtime": "116 min",
+        "desc": "As crops dwindle and dragons reappear, mankind stands on the verge of total chaos. Lord Archmage Sparrowhawk, a powerful wizard, and Arren, a troubled young prince, search for the force behind this mysterious...",
+        "rating": 6.5,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-ponyo",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "Ponyo",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 17,
+        "release_order": 17,
+        "phase": "Oceanic Fairytale • Hayao Miyazaki",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg",
+        "runtime": "100 min",
+        "desc": "When Sosuke, a young boy who lives on a clifftop overlooking the sea, rescues a stranded goldfish named Ponyo, he discovers more than he bargained for. Ponyo is a curious, energetic young creature who yearns to be...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-arrietty",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "The Secret World of Arrietty",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 18,
+        "release_order": 18,
+        "phase": "Miniature Adventure • Hiromasa Yonebayashi",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg",
+        "runtime": "95 min",
+        "desc": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items \"borrowed\" from the house's human inhabitants. However, life changes for the Clocks when a human...",
+        "rating": 7.7,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-poppy-hill",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "From Up on Poppy Hill",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 19,
+        "release_order": 19,
+        "phase": "1960s Yokohama Drama • Gorō Miyazaki",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rRLYX4RZIyloHSJwvZKAhphAjiB.jpg",
+        "runtime": "91 min",
+        "desc": "Yokohama, 1963. Japan is picking itself up from the devastation of World War II and preparing to host the 1964 Olympics—and the mood is one of both optimism and conflict as the young generation struggles to throw off...",
+        "rating": 7.5,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-wind-rises",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "The Wind Rises",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 20,
+        "release_order": 20,
+        "phase": "Biographical Aviation Epic • Miyazaki",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg",
+        "runtime": "126 min",
+        "desc": "A lifelong love of flight inspires Japanese aviation engineer Jiro Horikoshi, whose storied career includes the creation of the A-6M World War II fighter plane.",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Hayao Miyazaki Masterworks"
+        ]
+      },
+      {
+        "id": "ghibli-kaguya",
+        "sub_universe": "02. Isao Takahata Classics",
+        "title": "The Tale of the Princess Kaguya",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 21,
+        "release_order": 21,
+        "phase": "Oscar-Nominated Masterpiece • Takahata",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cQidJuA546OSSXKWXoiCeINDxuj.jpg",
+        "runtime": "137 min",
+        "desc": "Found inside a shining stalk of bamboo by an old bamboo cutter and his wife, a tiny girl grows rapidly into an exquisite young lady. The mysterious young princess enthrals all who encounter her. But, ultimately, she...",
+        "rating": 8.1,
+        "sub_universes": [
+          "02. Isao Takahata Classics"
+        ]
+      },
+      {
+        "id": "ghibli-marnie",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "When Marnie Was There",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 22,
+        "release_order": 22,
+        "phase": "Psychological Mystery • Hiromasa Yonebayashi",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vug1dvDI1tSa60Z8qjCuUE7ntkO.jpg",
+        "runtime": "103 min",
+        "desc": "Upon being sent to live with relatives in the countryside due to an illness, an emotionally distant adolescent girl becomes obsessed with an abandoned mansion and infatuated with a girl who lives there - a girl who...",
+        "rating": 7.9,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-red-turtle",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "The Red Turtle",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 23,
+        "release_order": 23,
+        "phase": "Silent Co-Production • Michaël Dudok de Wit",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wOBU3SLjQ9358Km9YWYasPZyebp.jpg",
+        "runtime": "81 min",
+        "desc": "The dialogue-less film follows the major life stages of a castaway on a deserted tropical island populated by turtles, crabs and birds.",
+        "rating": 7.4,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
+        ]
+      },
+      {
+        "id": "ghibli-earwig",
+        "sub_universe": "03. Next Generation & Co-Productions",
+        "title": "Earwig and the Witch",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 24,
+        "release_order": 24,
+        "phase": "First 3D CGI Feature • Gorō Miyazaki",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9oK820JieICOcfUhI6mkpFrcA9m.jpg",
+        "runtime": "83 min",
+        "desc": "A headstrong orphan discovers a world of spells and potions while living with a selfish witch.",
+        "rating": 5.9,
+        "sub_universes": [
+          "03. Next Generation & Co-Productions"
         ]
       },
       {
         "id": "ghibli-boy-heron",
-        "title": "The Boy and the Heron (Kimitachi wa Dō Ikiru ka)",
+        "sub_universe": "01. Hayao Miyazaki Masterworks",
+        "title": "The Boy and the Heron",
         "year": 2023,
         "media_type": "movie",
-        "chrono_order": 70,
-        "release_order": 2023.07,
-        "phase": "Oscar Winner • Hayao Miyazaki's Semi-Autobiographical Epic",
+        "chrono_order": 25,
+        "release_order": 25,
+        "phase": "Academy Award Winner • Hayao Miyazaki",
         "is_essential": true,
         "poster_url": "https://image.tmdb.org/t/p/w500/4GKye5dR4uJyYbcyTveSue1gATD.jpg",
         "runtime": "124 min",
-        "desc": "In WWII Japan, young Mahito follows a mysterious talking grey heron into a fantastical alternate reality where the living and dead coexist.",
-        "sub_universe": "06. Studio Ghibli Masterworks",
+        "desc": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to...",
+        "rating": 7.4,
         "sub_universes": [
-          "06. Studio Ghibli Masterworks"
+          "01. Hayao Miyazaki Masterworks"
         ]
       }
     ]
@@ -20776,6 +20133,5017 @@ export const FRANCHISES = [
         "sub_universe": "02. Outcome & Treadstone Spin-Offs",
         "sub_universes": [
           "02. Outcome & Treadstone Spin-Offs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dreamworks",
+    "name": "DreamWorks Animation Universe",
+    "badge": "51 ANIMATED FEATURES • SHREK, DRAGON & PANDA",
+    "icon": "🌙",
+    "theme_color": "#3B82F6",
+    "tagline": "Shrek, Kung Fu Panda, How to Train Your Dragon & The Wild Robot",
+    "banner_poster": "/posters/dreamworks.webp",
+    "why_watch": "The complete theatrical filmography of DreamWorks Animation from Antz and The Prince of Egypt to Puss in Boots: The Last Wish and The Wild Robot.",
+    "sub_universes": [
+      "All DreamWorks",
+      "01. Shrek & Puss in Boots",
+      "02. How to Train Your Dragon",
+      "03. Kung Fu Panda",
+      "04. Madagascar",
+      "05. Trolls, Croods & Boss Baby",
+      "06. Standalone Originals & Classics"
+    ],
+    "watch_modes": [
+      {
+        "id": "release",
+        "label": "🎞️ Theatrical Release Order",
+        "desc": "Complete studio chronology from 1998 to present"
+      },
+      {
+        "id": "chrono",
+        "label": "🌙 Studio Evolution Order",
+        "desc": "Organized across iconic franchises and original classics"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "dw-antz",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Antz",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Founding CGI Feature",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lWPjxbUMpAHFkJpZHHNWhQaRsax.jpg",
+        "runtime": "83 min",
+        "desc": "A neurotic worker ant in love with a rebellious princess rises to unlikely stardom when he switches places with a soldier. Signing up to march in a parade, he ends up under the command of a bloodthirsty general. But...",
+        "rating": 6.2,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-prince-egypt",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "The Prince of Egypt",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "2D Animated Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2xUjYwL6Ol7TLJPPKs7sYW5PWLX.jpg",
+        "runtime": "99 min",
+        "desc": "The strong bond between two Royal Egyptian brothers is challenged when their chosen responsibilities set them at odds, with extraordinary consequences.",
+        "rating": 7.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-el-dorado",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "The Road to El Dorado",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "2D Cult Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tQuqhUBACMcGqCvliHxpJreBfXC.jpg",
+        "runtime": "90 min",
+        "desc": "Stowing away after a failed con, a pair of swindlers end up on El Dorado, the fabled \"city of gold\", where they quickly get in over their heads when they are mistaken as gods by the inhabitants.",
+        "rating": 7.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-chicken-run",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Chicken Run",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Aardman Stop-Motion Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8XgmIsbpVamdhwcNVsYzohFZTtT.jpg",
+        "runtime": "84 min",
+        "desc": "The creators of Wallace & Gromit bring you an exciting and original story about a group of chickens determined to fly the coop–even if they can’t fly! It’s hardly poultry in motion when Rocky attempts to teach Ginger...",
+        "rating": 6.9,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-joseph",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Joseph: King of Dreams",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "2D Musical Epic",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sUKImRHScrjrvaG2FwxCRY5ldtx.jpg",
+        "runtime": "74 min",
+        "desc": "In this animated retelling of the story from the Bible's Book of Genesis, Joseph's gift of dream interpretation and his brilliantly colored coat inspires jealousy in his brothers.",
+        "rating": 6.9,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-shrek-1",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Shrek",
+        "year": 2001,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "First Animated Feature Oscar Winner",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zscUsmzDJFZjUY8f8BQqMSWlmNQ.jpg",
+        "runtime": "90 min",
+        "desc": "It ain't easy bein' green -- especially if you're a likable (albeit smelly) ogre named Shrek. On a mission to retrieve a gorgeous princess from the clutches of a fire-breathing dragon, Shrek teams up with an unlikely...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-spirit",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Spirit: Stallion of the Cimarron",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "2D Western Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/bBEkKDQFianNYwGWR7gJfPVakmG.jpg",
+        "runtime": "83 min",
+        "desc": "Against impossible odds, Spirit, a young mustang, sets out across the majestic wilderness to regain his freedom and save his homeland. Along the way, he forms a friendship with a young Lakota brave, outwits a...",
+        "rating": 7.7,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-sinbad",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Sinbad: Legend of the Seven Seas",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "2D High-Seas Adventure",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yiW2L1fDiBT7AeWXrykhTNtPrr8.jpg",
+        "runtime": "86 min",
+        "desc": "The sailor of legend is framed by the goddess Eris for the theft of the Book of Peace, and must travel to her realm at the end of the world to retrieve it and save the life of his childhood friend Prince Proteus.",
+        "rating": 7.1,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-shrek-2",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Shrek 2",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Box Office Phenomenon",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg",
+        "runtime": "92 min",
+        "desc": "Happily ever after never seemed so far far away when a trip to meet the in-laws turns into a hilariously twisted adventure for Shrek and Fiona. With the help of ever-faithful Donkey, Shrek takes on the potion-brewing...",
+        "rating": 7.3,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-shark-tale",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Shark Tale",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 10,
+        "phase": "Undersea Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg",
+        "runtime": "90 min",
+        "desc": "Oscar is a small fish whose big aspirations often get him into trouble. Meanwhile, Lenny is a great white shark with a surprising secret that no sea creature would guess: He's a vegetarian. When a lie turns Oscar...",
+        "rating": 6.0,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-madagascar-1",
+        "sub_universe": "04. Madagascar",
+        "title": "Madagascar",
+        "year": 2005,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "Zoosters Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
+        "runtime": "86 min",
+        "desc": "Four animal friends get a taste of the wild life when they break out of captivity at the Central Park Zoo and wash ashore on the island of Madagascar.",
+        "rating": 6.9,
+        "sub_universes": [
+          "04. Madagascar"
+        ]
+      },
+      {
+        "id": "dw-wallace-gromit",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Wallace & Gromit: The Curse of the Were-Rabbit",
+        "year": 2005,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 12,
+        "phase": "Oscar Winner • Aardman",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cMQ2lNd7sBe6PCf6zF5QxrKzbRG.jpg",
+        "runtime": "85 min",
+        "desc": "Cheese-loving eccentric Wallace and his cunning canine pal Gromit run a business ridding the town of garden pests. Using only humane methods, which turns their home into a halfway house for evicted vermin, the pair...",
+        "rating": 7.1,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-over-the-hedge",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Over the Hedge",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 13,
+        "release_order": 13,
+        "phase": "Suburban Heist Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg",
+        "runtime": "83 min",
+        "desc": "A scheming raccoon fools a mismatched family of forest creatures into helping him repay a debt of food, by invading the new suburban sprawl that popped up while they were hibernating – and learns a lesson about...",
+        "rating": 6.6,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-flushed-away",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Flushed Away",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 14,
+        "release_order": 14,
+        "phase": "Aardman CGI Adventure",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ahVxu86XwxMp8RkartqY4B3mK9l.jpg",
+        "runtime": "85 min",
+        "desc": "London high-society mouse, Roddy is flushed down the toilet by Sid, a common sewer rat. Hang on for a madcap adventure deep in the sewer bowels of Ratropolis, where Roddy meets the resourceful Rita, the rodent-hating...",
+        "rating": 6.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-shrek-3",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Shrek the Third",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 15,
+        "release_order": 15,
+        "phase": "Far Far Away Chapter 3",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/n4SexGGQzI26E269tfpa80MZaGV.jpg",
+        "runtime": "93 min",
+        "desc": "After the King of Far Far Away dies, Shrek and Fiona are to succede. However, Shrek wants to return to his cozy swamp and live in peace and quiet, so when he finds out there is another heir to the throne, he and...",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-bee-movie",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Bee Movie",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 16,
+        "release_order": 16,
+        "phase": "Satirical Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tX2mgKFUkzFMZingSVD4vioZNz2.jpg",
+        "runtime": "91 min",
+        "desc": "Barry B. Benson, a recent college graduate who wants more out of his life than making honey, decides to sue the human race after learning about the exploitation of bees at the hands of mankind. What will happen next?",
+        "rating": 6.1,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-kfp-1",
+        "sub_universe": "03. Kung Fu Panda",
+        "title": "Kung Fu Panda",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 17,
+        "release_order": 17,
+        "phase": "Dragon Warrior Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wWt4JYXTg5Wr3xBW2phBrMKgp3x.jpg",
+        "runtime": "90 min",
+        "desc": "Chosen by prophecy but doubted by all, Po is an unlikely choice for the mystical title of the Dragon Warrior—a clumsy panda thrust into the world of kung fu as a deadly enemy threatens the Valley of Peace. Under...",
+        "rating": 7.3,
+        "sub_universes": [
+          "03. Kung Fu Panda"
+        ]
+      },
+      {
+        "id": "dw-madagascar-2",
+        "sub_universe": "04. Madagascar",
+        "title": "Madagascar: Escape 2 Africa",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 18,
+        "release_order": 18,
+        "phase": "African Savanna Chapter",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/agRbLOHgN46TQO4YdKR462iR7To.jpg",
+        "runtime": "89 min",
+        "desc": "Alex, Marty, and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African...",
+        "rating": 6.5,
+        "sub_universes": [
+          "04. Madagascar"
+        ]
+      },
+      {
+        "id": "dw-monsters-aliens",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Monsters vs. Aliens",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 19,
+        "release_order": 19,
+        "phase": "Sci-Fi Monster Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hpHarddVj34j53T7NsoUGdKj4mP.jpg",
+        "runtime": "94 min",
+        "desc": "When Susan Murphy is unwittingly clobbered by a meteor full of outer space gunk on her wedding day, she mysteriously grows to 49-feet-11-inches. The military jumps into action and captures Susan, secreting her away...",
+        "rating": 6.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-httyd-1",
+        "sub_universe": "02. How to Train Your Dragon",
+        "title": "How to Train Your Dragon",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 20,
+        "release_order": 20,
+        "phase": "Berk & Toothless Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
+        "runtime": "98 min",
+        "desc": "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces a rite of passage: he must kill a dragon to prove his warrior mettle. But after downing a feared dragon, he realizes that...",
+        "rating": 7.9,
+        "sub_universes": [
+          "02. How to Train Your Dragon"
+        ]
+      },
+      {
+        "id": "dw-shrek-4",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Shrek Forever After",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 21,
+        "release_order": 21,
+        "phase": "Alternate Timeline Finale",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg",
+        "runtime": "93 min",
+        "desc": "A midlife-crisis burdened Shrek, longing for the days of when he felt like a real ogre, makes a pact with magic deal-maker Rumpelstiltskin. But when he's duped and sent to a twisted version of Far Far Away—where...",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-megamind",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Megamind",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 22,
+        "release_order": 22,
+        "phase": "Superhero Subversion Cult Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uZ9ytt3sPTx62XTfN56ILSuYWRe.jpg",
+        "runtime": "96 min",
+        "desc": "After Megamind, a highly intelligent alien supervillain, defeats his long-time nemesis Metro Man, Megamind creates a new hero to fight, but must act to save the city when his \"creation\" becomes an even worse villain...",
+        "rating": 7.0,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-kfp-2",
+        "sub_universe": "03. Kung Fu Panda",
+        "title": "Kung Fu Panda 2",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 23,
+        "release_order": 23,
+        "phase": "Lord Shen Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/mtqqD00vB4PGRt20gWtGqFhrkd0.jpg",
+        "runtime": "91 min",
+        "desc": "Po is finally living the dream as the Dragon Warrior—until a shadow from his past comes roaring back. When the ruthless peacock Lord Shen unleashes a devastating new weapon used to wipe out kung fu masters across the...",
+        "rating": 7.1,
+        "sub_universes": [
+          "03. Kung Fu Panda"
+        ]
+      },
+      {
+        "id": "dw-puss-1",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Puss in Boots",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 24,
+        "release_order": 24,
+        "phase": "Prequel Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7a5Jzjr9TmffGy76y1SZhn3sCiz.jpg",
+        "runtime": "90 min",
+        "desc": "Long before he even met Shrek, the notorious fighter, lover and outlaw Puss in Boots becomes a hero when he sets off on an adventure with the tough and street smart Kitty Softpaws and the mastermind Humpty Dumpty to...",
+        "rating": 6.6,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-madagascar-3",
+        "sub_universe": "04. Madagascar",
+        "title": "Madagascar 3: Europe's Most Wanted",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 25,
+        "release_order": 25,
+        "phase": "European Circus Finale",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
+        "runtime": "93 min",
+        "desc": "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They are forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte...",
+        "rating": 6.7,
+        "sub_universes": [
+          "04. Madagascar"
+        ]
+      },
+      {
+        "id": "dw-rise-guardians",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Rise of the Guardians",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 26,
+        "release_order": 26,
+        "phase": "Folklore Superhero Fantasy",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yfzmfWGjcmyugH6FZ13WcsUGiNj.jpg",
+        "runtime": "97 min",
+        "desc": "When an evil spirit known as Pitch Black lays down the gauntlet to take over the world, the immortal Guardians must join forces for the first time to protect the hopes, beliefs and imagination of children all over...",
+        "rating": 7.4,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-croods-1",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "The Croods",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 27,
+        "release_order": 27,
+        "phase": "Prehistoric Adventure",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg",
+        "runtime": "99 min",
+        "desc": "The prehistoric Croods family live in a particularly dangerous moment in time. Patriarch Grug, his mate Ugga, teenage daughter Eep, son Thunk, and feisty Gran gather food by day and huddle together in a cave at...",
+        "rating": 6.9,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-turbo",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Turbo",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 28,
+        "release_order": 28,
+        "phase": "Indy 500 Racing Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/inTKQni4YW8syrfgnXHwzmNeSo4.jpg",
+        "runtime": "96 min",
+        "desc": "The tale of an ordinary garden snail who dreams of winning the Indy 500.",
+        "rating": 6.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-peabody",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Mr. Peabody & Sherman",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 29,
+        "release_order": 29,
+        "phase": "Time-Travel Adventure",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hPcImYndWESKHzT2GHVCDsUxzYg.jpg",
+        "runtime": "92 min",
+        "desc": "A young boy and his dog, who happens to have a genius-level IQ, spring into action when their time-machine is stolen and moments in history begin to be changed.",
+        "rating": 6.7,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-httyd-2",
+        "sub_universe": "02. How to Train Your Dragon",
+        "title": "How to Train Your Dragon 2",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 30,
+        "release_order": 30,
+        "phase": "Golden Globe Winner",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg",
+        "runtime": "102 min",
+        "desc": "Five years after uniting the dragons and Vikings of Berk, Hiccup and Toothless soar beyond their homeland, charting the vast unknown. During one of their adventures, the pair discover a secret cave that houses...",
+        "rating": 7.7,
+        "sub_universes": [
+          "02. How to Train Your Dragon"
+        ]
+      },
+      {
+        "id": "dw-penguins",
+        "sub_universe": "04. Madagascar",
+        "title": "Penguins of Madagascar",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 31,
+        "release_order": 31,
+        "phase": "Espionage Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dXbpNrPDZDMEbujFoOxmMNQVMHa.jpg",
+        "runtime": "92 min",
+        "desc": "Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it.",
+        "rating": 6.6,
+        "sub_universes": [
+          "04. Madagascar"
+        ]
+      },
+      {
+        "id": "dw-home",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Home",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 32,
+        "release_order": 32,
+        "phase": "Alien Buddy Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/usFenYnk6mr8C62dB1MoAfSWMGR.jpg",
+        "runtime": "94 min",
+        "desc": "When Earth is taken over by the overly-confident Boov, an alien race in search of a new place to call home, all humans are promptly relocated, while all Boov get busy reorganizing the planet. But when one resourceful...",
+        "rating": 6.8,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-kfp-3",
+        "sub_universe": "03. Kung Fu Panda",
+        "title": "Kung Fu Panda 3",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 33,
+        "release_order": 33,
+        "phase": "Spirit Realm & Panda Village",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oajNi4Su39WAByHI6EONu8G8HYn.jpg",
+        "runtime": "95 min",
+        "desc": "While Po and his father are visiting a secret panda village, an evil spirit threatens all of China, forcing Po to form a ragtag army to fight back.",
+        "rating": 6.9,
+        "sub_universes": [
+          "03. Kung Fu Panda"
+        ]
+      },
+      {
+        "id": "dw-trolls-1",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "Trolls",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 34,
+        "release_order": 34,
+        "phase": "Jukebox Musical Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9VlK2j0THZWzhQPq0W3Oc0IIdBB.jpg",
+        "runtime": "92 min",
+        "desc": "After the monstrous Bergens invade Troll Village, Princess Poppy, the happiest Troll ever born, and overly-cautious, curmudgeonly outcast Branch set off on a journey to rescue her friends. Their mission is full of...",
+        "rating": 6.6,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-boss-baby-1",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "The Boss Baby",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 35,
+        "release_order": 35,
+        "phase": "Corporate Baby Comedy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9MsQJKe4cUAGxc7R2NGaFQLqOPc.jpg",
+        "runtime": "97 min",
+        "desc": "A story about how a new baby's arrival impacts a family, told from the point of view of a delightfully unreliable narrator, a wildly imaginative 7 year old named Tim.",
+        "rating": 6.4,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-captain-underpants",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Captain Underpants: The First Epic Movie",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 36,
+        "release_order": 36,
+        "phase": "Comic Book Adaptation",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vKSmaPct5OEeMoD8ue30RisHlKD.jpg",
+        "runtime": "89 min",
+        "desc": "Based on the bestselling book series, this outrageous comedy tells the story of George and Harold,  two overly imaginative pranksters who hypnotize their principal into thinking he’s an enthusiastic, yet dimwitted,...",
+        "rating": 6.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-httyd-3",
+        "sub_universe": "02. How to Train Your Dragon",
+        "title": "How to Train Your Dragon: The Hidden World",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 37,
+        "release_order": 37,
+        "phase": "Emotional Trilogy Finale",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+        "runtime": "104 min",
+        "desc": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested,...",
+        "rating": 7.7,
+        "sub_universes": [
+          "02. How to Train Your Dragon"
+        ]
+      },
+      {
+        "id": "dw-abominable",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Abominable",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 38,
+        "release_order": 38,
+        "phase": "Himalayan Yeti Journey",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/20djTLqppfBx5WYA67Y300S6aPD.jpg",
+        "runtime": "97 min",
+        "desc": "A group of misfits encounter a young Yeti named Everest, and they set off to reunite the magical creature with his family on the mountain of his namesake.",
+        "rating": 7.5,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-trolls-2",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "Trolls World Tour",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 39,
+        "release_order": 39,
+        "phase": "Musical Genres Quest",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7W0G3YECgDAfnuiHG91r8WqgIOe.jpg",
+        "runtime": "91 min",
+        "desc": "Queen Poppy and Branch make a surprising discovery — there are other Troll worlds beyond their own, and their distinct differences create big clashes between these various tribes. When a mysterious threat puts all of...",
+        "rating": 7.2,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-croods-2",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "The Croods: A New Age",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 40,
+        "release_order": 40,
+        "phase": "The Bettermans Sequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
+        "runtime": "95 min",
+        "desc": "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a...",
+        "rating": 7.4,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-spirit-untamed",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Spirit Untamed",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 41,
+        "release_order": 41,
+        "phase": "Western Frontier Sequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/fLE2mvuvhvzmSICOsqR9uE50Ave.jpg",
+        "runtime": "88 min",
+        "desc": "Lucky Prescott's life is changed forever when she moves from her home in the city to a small frontier town and befriends a wild mustang named Spirit.",
+        "rating": 7.2,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-boss-baby-2",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "The Boss Baby: Family Business",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 42,
+        "release_order": 42,
+        "phase": "BabyCorp Sequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aQ7huOn3F0iJCJrFezS8p9WEsri.jpg",
+        "runtime": "107 min",
+        "desc": "The Templeton brothers — Tim and his Boss Baby little bro Ted — have become adults and drifted away from each other. But a new boss baby with a cutting-edge approach and a can-do attitude is about to bring them...",
+        "rating": 7.3,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-bad-guys-1",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "The Bad Guys",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 43,
+        "release_order": 43,
+        "phase": "Stylized Heist Comedy",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
+        "runtime": "100 min",
+        "desc": "When the Bad Guys, a crew of criminal animals, are finally caught after years of heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
+        "rating": 7.5,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-puss-2",
+        "sub_universe": "01. Shrek & Puss in Boots",
+        "title": "Puss in Boots: The Last Wish",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 44,
+        "release_order": 44,
+        "phase": "Modern Animation Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+        "runtime": "103 min",
+        "desc": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical...",
+        "rating": 8.2,
+        "sub_universes": [
+          "01. Shrek & Puss in Boots"
+        ]
+      },
+      {
+        "id": "dw-ruby-gillman",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Ruby Gillman, Teenage Kraken",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 45,
+        "release_order": 45,
+        "phase": "High School Sea Monster",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8ChIb3WzYAcza1vrXR56v510MWk.jpg",
+        "runtime": "92 min",
+        "desc": "Ruby Gillman, a sweet and awkward high school student, discovers she's a direct descendant of the warrior kraken queens. The kraken are sworn to protect the oceans of the world against the vain, power-hungry...",
+        "rating": 7.1,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-trolls-3",
+        "sub_universe": "05. Trolls, Croods & Boss Baby",
+        "title": "Trolls Band Together",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 46,
+        "release_order": 46,
+        "phase": "BroZone Reunion",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3ySgD2xwasTHOK6R9bNZiEwKgYo.jpg",
+        "runtime": "91 min",
+        "desc": "When Branch's brother, Floyd, is kidnapped for his musical talents by a pair of nefarious pop-star villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd...",
+        "rating": 7.2,
+        "sub_universes": [
+          "05. Trolls, Croods & Boss Baby"
+        ]
+      },
+      {
+        "id": "dw-orion",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Orion and the Dark",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 47,
+        "release_order": 47,
+        "phase": "Charlie Kaufman Original",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/N2ddXhBX5kqwA9flbm2yqFtX6b.jpg",
+        "runtime": "90 min",
+        "desc": "A boy with an active imagination faces his fears on an unforgettable journey through the night with his new friend: a giant, smiling creature named Dark.",
+        "rating": 6.5,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-kfp-4",
+        "sub_universe": "03. Kung Fu Panda",
+        "title": "Kung Fu Panda 4",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 48,
+        "release_order": 48,
+        "phase": "Spiritual Leader Chapter",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
+        "runtime": "94 min",
+        "desc": "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a...",
+        "rating": 7.0,
+        "sub_universes": [
+          "03. Kung Fu Panda"
+        ]
+      },
+      {
+        "id": "dw-wild-robot",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "The Wild Robot",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 49,
+        "release_order": 49,
+        "phase": "Acclaimed Sci-Fi Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
+        "runtime": "102 min",
+        "desc": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
+        "rating": 8.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-dog-man",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "Dog Man",
+        "year": 2025,
+        "media_type": "movie",
+        "chrono_order": 50,
+        "release_order": 50,
+        "phase": "Dav Pilkey Adaptation",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/89wNiexZdvLQ41OQWIsQy4O6jAQ.jpg",
+        "runtime": "89 min",
+        "desc": "When a faithful police dog and his human police officer owner are injured together on the job, a harebrained but life-saving surgery fuses the two of them together and Dog Man is born. Dog Man is sworn to protect and...",
+        "rating": 7.3,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      },
+      {
+        "id": "dw-bad-guys-2",
+        "sub_universe": "06. Standalone Originals & Classics",
+        "title": "The Bad Guys 2",
+        "year": 2025,
+        "media_type": "movie",
+        "chrono_order": 51,
+        "release_order": 51,
+        "phase": "Heist Crew Returns",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/26oSPnq0ct59l07QOXZKyzsiRtN.jpg",
+        "runtime": "104 min",
+        "desc": "The now-reformed Bad Guys are trying (very, very hard) to be good, but instead find themselves hijacked into a high-stakes, globe-trotting heist, masterminded by a new team of criminals they never saw coming: The Bad...",
+        "rating": 7.6,
+        "sub_universes": [
+          "06. Standalone Originals & Classics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "disney-pixar",
+    "name": "Disney · Pixar Master Collection",
+    "badge": "31 PIXAR MASTERWORKS • TOY STORY TO INSIDE OUT",
+    "icon": "💡",
+    "theme_color": "#38BDF8",
+    "tagline": "Toy Story, Finding Nemo, WALL·E, Coco & Inside Out",
+    "banner_poster": "/posters/disney_pixar.webp",
+    "why_watch": "Every feature film from Pixar Animation Studios and Walt Disney Pictures — three decades of Academy Award-winning storytelling and innovation.",
+    "sub_universes": [
+      "All Disney · Pixar",
+      "01. Toy Story Saga",
+      "02. Finding Nemo & Cars",
+      "03. The Incredibles & Monsters",
+      "04. Inside Out & Modern Originals",
+      "05. Golden Era Standalone Classics"
+    ],
+    "watch_modes": [
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "From Toy Story (1995) through Inside Out 2 and Elio"
+      },
+      {
+        "id": "chrono",
+        "label": "💡 Pixar Evolution Order",
+        "desc": "Chronological journey across every Pixar masterpiece"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "px-toy-story-1",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Toy Story",
+        "year": 1995,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "First Feature-Length CGI Film",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+        "runtime": "81 min",
+        "desc": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate...",
+        "rating": 8.0,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      },
+      {
+        "id": "px-bugs-life",
+        "sub_universe": "05. Golden Era Standalone Classics",
+        "title": "A Bug's Life",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Seven Samurai Ant Fable",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg",
+        "runtime": "95 min",
+        "desc": "On behalf of \"oppressed bugs everywhere,\" an inventive ant named Flik hires a troupe of warrior bugs to defend his bustling colony from a horde of freeloading grasshoppers led by the evil-minded Hopper.",
+        "rating": 7.0,
+        "sub_universes": [
+          "05. Golden Era Standalone Classics"
+        ]
+      },
+      {
+        "id": "px-toy-story-2",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Toy Story 2",
+        "year": 1999,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Woody & Jessie Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4rbcp3ng8n1MKHjpeqW0L7Fnpzz.jpg",
+        "runtime": "92 min",
+        "desc": "Andy heads off to Cowboy Camp, leaving his toys to their own devices. Things shift into high gear when an obsessive toy collector named Al McWhiggen, owner of Al's Toy Barn kidnaps Woody. Andy's toys mount a daring...",
+        "rating": 7.6,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      },
+      {
+        "id": "px-monsters-inc",
+        "sub_universe": "03. The Incredibles & Monsters",
+        "title": "Monsters, Inc.",
+        "year": 2001,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Monstropolis Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
+        "runtime": "92 min",
+        "desc": "Lovable Sulley and his wisecracking sidekick Mike Wazowski are the top scare team at Monsters, Inc., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, it's the...",
+        "rating": 7.9,
+        "sub_universes": [
+          "03. The Incredibles & Monsters"
+        ]
+      },
+      {
+        "id": "px-finding-nemo",
+        "sub_universe": "02. Finding Nemo & Cars",
+        "title": "Finding Nemo",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Oscar Winner • Great Barrier Reef",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+        "runtime": "100 min",
+        "desc": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo...",
+        "rating": 7.8,
+        "sub_universes": [
+          "02. Finding Nemo & Cars"
+        ]
+      },
+      {
+        "id": "px-incredibles-1",
+        "sub_universe": "03. The Incredibles & Monsters",
+        "title": "The Incredibles",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Oscar Winner • Brad Bird",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+        "runtime": "115 min",
+        "desc": "Bob Parr has given up his superhero days to log in time as an insurance adjuster and raise his three children with his formerly heroic wife in suburbia. But when he receives a mysterious assignment, it's time to get...",
+        "rating": 7.7,
+        "sub_universes": [
+          "03. The Incredibles & Monsters"
+        ]
+      },
+      {
+        "id": "px-cars-1",
+        "sub_universe": "02. Finding Nemo & Cars",
+        "title": "Cars",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Route 66 & Radiator Springs",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2Touk3m5gzsqr1VsvxypdyHY5ci.jpg",
+        "runtime": "117 min",
+        "desc": "Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator...",
+        "rating": 7.1,
+        "sub_universes": [
+          "02. Finding Nemo & Cars"
+        ]
+      },
+      {
+        "id": "px-ratatouille",
+        "sub_universe": "05. Golden Era Standalone Classics",
+        "title": "Ratatouille",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "Oscar Winner • Paris Culinary Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+        "runtime": "111 min",
+        "desc": "In one of Paris's finest restaurants, Remy, a determined young rat, dreams of becoming a renowned French chef. Torn between his family's wishes and his true calling, Remy and his pal Linguini set in motion a...",
+        "rating": 7.9,
+        "sub_universes": [
+          "05. Golden Era Standalone Classics"
+        ]
+      },
+      {
+        "id": "px-walle",
+        "sub_universe": "05. Golden Era Standalone Classics",
+        "title": "WALL·E",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Oscar Winner • Sci-Fi Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+        "runtime": "98 min",
+        "desc": "After hundreds of years doing what he was built for, WALL•E—a robot designed to clean up the earth—discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has...",
+        "rating": 8.1,
+        "sub_universes": [
+          "05. Golden Era Standalone Classics"
+        ]
+      },
+      {
+        "id": "px-up",
+        "sub_universe": "05. Golden Era Standalone Classics",
+        "title": "Up",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 10,
+        "phase": "Oscar Winner • Best Picture Nominee",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+        "runtime": "96 min",
+        "desc": "Carl Fredricksen spent his entire life dreaming of exploring the globe and experiencing life to its fullest. But at age 78, life seems to have passed him by, until a twist of fate (and a persistent 8-year old...",
+        "rating": 8.0,
+        "sub_universes": [
+          "05. Golden Era Standalone Classics"
+        ]
+      },
+      {
+        "id": "px-toy-story-3",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Toy Story 3",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "Oscar Winner • Best Picture Nominee",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+        "runtime": "103 min",
+        "desc": "Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. The toys must band together to...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      },
+      {
+        "id": "px-cars-2",
+        "sub_universe": "02. Finding Nemo & Cars",
+        "title": "Cars 2",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 12,
+        "phase": "World Grand Prix Espionage",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/okIz1HyxeVOMzYwwHUjH2pHi74I.jpg",
+        "runtime": "106 min",
+        "desc": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own:...",
+        "rating": 6.2,
+        "sub_universes": [
+          "02. Finding Nemo & Cars"
+        ]
+      },
+      {
+        "id": "px-brave",
+        "sub_universe": "05. Golden Era Standalone Classics",
+        "title": "Brave",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 13,
+        "release_order": 13,
+        "phase": "Oscar Winner • Scottish Highlands",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg",
+        "runtime": "93 min",
+        "desc": "In the mystical Scottish Highlands, Merida is the princess of a kingdom ruled by King Fergus and Queen Elinor. An unruly daughter and an accomplished archer, Merida one day defies a sacred custom of the land and...",
+        "rating": 7.0,
+        "sub_universes": [
+          "05. Golden Era Standalone Classics"
+        ]
+      },
+      {
+        "id": "px-monsters-u",
+        "sub_universe": "03. The Incredibles & Monsters",
+        "title": "Monsters University",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 14,
+        "release_order": 14,
+        "phase": "Mike & Sulley Prequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
+        "runtime": "104 min",
+        "desc": "A look at the relationship between Mike and Sulley during their days at Monsters University — when they weren't necessarily the best of friends.",
+        "rating": 7.1,
+        "sub_universes": [
+          "03. The Incredibles & Monsters"
+        ]
+      },
+      {
+        "id": "px-inside-out-1",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Inside Out",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 15,
+        "release_order": 15,
+        "phase": "Oscar Winner • Pete Docter",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+        "runtime": "95 min",
+        "desc": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through...",
+        "rating": 7.9,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-good-dinosaur",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "The Good Dinosaur",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 16,
+        "release_order": 16,
+        "phase": "Alternate Prehistoric Frontier",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
+        "runtime": "93 min",
+        "desc": "An epic journey into the world of dinosaurs where an Apatosaurus named Arlo makes an unlikely human friend.",
+        "rating": 6.8,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-finding-dory",
+        "sub_universe": "02. Finding Nemo & Cars",
+        "title": "Finding Dory",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 17,
+        "release_order": 17,
+        "phase": "Marine Life Institute Sequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg",
+        "runtime": "97 min",
+        "desc": "Dory is reunited with her friends Nemo and Marlin in the search for answers about her past. What can she remember? Who are her parents? And where did she learn to speak Whale?",
+        "rating": 7.0,
+        "sub_universes": [
+          "02. Finding Nemo & Cars"
+        ]
+      },
+      {
+        "id": "px-cars-3",
+        "sub_universe": "02. Finding Nemo & Cars",
+        "title": "Cars 3",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 18,
+        "release_order": 18,
+        "phase": "Lightning McQueen Legacy",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zg5RDxvIIAKsucjuU2EZJIHEIvz.jpg",
+        "runtime": "102 min",
+        "desc": "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen finds himself pushed to the brink—and suddenly, the champion who once ruled the track is fighting just to stay in the race. With...",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Finding Nemo & Cars"
+        ]
+      },
+      {
+        "id": "px-coco",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Coco",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 19,
+        "release_order": 19,
+        "phase": "Oscar Winner • Día de los Muertos",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
+        "runtime": "105 min",
+        "desc": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning...",
+        "rating": 8.2,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-incredibles-2",
+        "sub_universe": "03. The Incredibles & Monsters",
+        "title": "Incredibles 2",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 20,
+        "release_order": 20,
+        "phase": "Elastigirl Takes the Lead",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg",
+        "runtime": "118 min",
+        "desc": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.",
+        "rating": 7.5,
+        "sub_universes": [
+          "03. The Incredibles & Monsters"
+        ]
+      },
+      {
+        "id": "px-toy-story-4",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Toy Story 4",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 21,
+        "release_order": 21,
+        "phase": "Oscar Winner • Woody New Chapter",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+        "runtime": "100 min",
+        "desc": "Woody has always been confident about his place in the world, devoted to taking care of his kid—whether that's Andy or Bonnie. But after Bonnie creates a reluctant new toy called \"Forky\", a road trip adventure...",
+        "rating": 7.5,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      },
+      {
+        "id": "px-onward",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Onward",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 22,
+        "release_order": 22,
+        "phase": "Suburban Fantasy Quest",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+        "runtime": "102 min",
+        "desc": "In a suburban fantasy world, two teenage elf brothers embark on an extraordinary quest to discover if there is still a little magic left out there.",
+        "rating": 7.6,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-soul",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Soul",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 23,
+        "release_order": 23,
+        "phase": "Oscar Winner • Jazz & The Great Before",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg",
+        "runtime": "101 min",
+        "desc": "Joe Gardner is a middle school teacher with a love for jazz music. After a successful audition at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the...",
+        "rating": 8.1,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-luca",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Luca",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 24,
+        "release_order": 24,
+        "phase": "Italian Riviera Summer",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9x4i9uKGXt8IiiIF5Ey0DIoY738.jpg",
+        "runtime": "95 min",
+        "desc": "Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface.",
+        "rating": 7.8,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-turning-red",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Turning Red",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 25,
+        "release_order": 25,
+        "phase": "2002 Toronto Coming-of-Age",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+        "runtime": "100 min",
+        "desc": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+        "rating": 7.3,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-lightyear",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Lightyear",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 26,
+        "release_order": 26,
+        "phase": "Buzz Lightyear Sci-Fi Origin",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ox4goZd956BxqJH6iLwhWPL9ct4.jpg",
+        "runtime": "105 min",
+        "desc": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+        "rating": 6.8,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      },
+      {
+        "id": "px-elemental",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Elemental",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 27,
+        "release_order": 27,
+        "phase": "Element City Romance",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
+        "runtime": "102 min",
+        "desc": "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
+        "rating": 7.6,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-inside-out-2",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Inside Out 2",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 28,
+        "release_order": 28,
+        "phase": "Record-Breaking Global Blockbuster",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+        "runtime": "97 min",
+        "desc": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful...",
+        "rating": 7.5,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-elio",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Elio",
+        "year": 2025,
+        "media_type": "movie",
+        "chrono_order": 29,
+        "release_order": 29,
+        "phase": "Intergalactic Ambassador",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7z8jDiTZZco9moIKpTUImFtTy7o.jpg",
+        "runtime": "98 min",
+        "desc": "Elio, a space fanatic with an active imagination, finds himself on a cosmic misadventure where he must form new bonds with eccentric alien lifeforms, navigate a crisis of intergalactic proportions and somehow...",
+        "rating": 6.9,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-hoppers",
+        "sub_universe": "04. Inside Out & Modern Originals",
+        "title": "Hoppers",
+        "year": 2026,
+        "media_type": "movie",
+        "chrono_order": 30,
+        "release_order": 30,
+        "phase": "2026 Pixar Feature",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+        "runtime": "104 min",
+        "desc": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology,...",
+        "rating": 8.1,
+        "sub_universes": [
+          "04. Inside Out & Modern Originals"
+        ]
+      },
+      {
+        "id": "px-toy-story-5",
+        "sub_universe": "01. Toy Story Saga",
+        "title": "Toy Story 5",
+        "year": 2026,
+        "media_type": "movie",
+        "chrono_order": 31,
+        "release_order": 31,
+        "phase": "2026 Toys vs Tech Chapter",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+        "runtime": "102 min",
+        "desc": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+        "rating": 8.2,
+        "sub_universes": [
+          "01. Toy Story Saga"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-men",
+    "name": "X-Men Mutant Universe",
+    "badge": "19 MUTANT CHAPTERS • X-MEN, WOLVERINE & DEADPOOL",
+    "icon": "🧬",
+    "theme_color": "#FACC15",
+    "tagline": "Mutants, Wolverine, Deadpool & The Days of Future Past Timeline",
+    "banner_poster": "/posters/x_men.webp",
+    "why_watch": "The complete Fox X-Men mutant continuum, Wolverine trilogy, Deadpool saga, animated classics, and X-Men '97.",
+    "sub_universes": [
+      "All X-Men",
+      "01. Original Trilogy & Wolverine",
+      "02. First Class & Revised Timeline",
+      "03. Deadpool Saga",
+      "04. X-Men Series & Animation"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Timeline Order",
+        "desc": "1962 First Class → Days of Future Past → Trilogy → Logan (2029)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Theatrical Release Order",
+        "desc": "Exact release order from X-Men (2000) to Deadpool & Wolverine"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "xmen-first-class",
+        "sub_universe": "02. First Class & Revised Timeline",
+        "title": "X-Men: First Class",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 5,
+        "phase": "1962 Cuban Missile Crisis Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg",
+        "runtime": "132 min",
+        "desc": "Before Charles Xavier and Erik Lensherr took the names Professor X and Magneto, they were two young men discovering their powers for the first time. Before they were arch-enemies, they were closest of friends,...",
+        "rating": 7.3,
+        "sub_universes": [
+          "02. First Class & Revised Timeline"
+        ]
+      },
+      {
+        "id": "xmen-dofp",
+        "sub_universe": "02. First Class & Revised Timeline",
+        "title": "X-Men: Days of Future Past",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 7,
+        "phase": "1973 / 2023 Timeline Nexus",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tYfijzolzgoMOtegh1Y7j2Enorg.jpg",
+        "runtime": "132 min",
+        "desc": "The ultimate X-Men ensemble fights a war for the survival of the species across two time periods as they join forces with their younger selves in an epic battle that must change the past – to save our future.",
+        "rating": 7.5,
+        "sub_universes": [
+          "02. First Class & Revised Timeline"
+        ]
+      },
+      {
+        "id": "xmen-origins",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "X-Men Origins: Wolverine",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 4,
+        "phase": "Weapon X Prequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yj8LbTju1p7CUJg7US2unSBk33s.jpg",
+        "runtime": "107 min",
+        "desc": "After seeking to live a normal life after 200 years, Logan sets out to avenge a death by undergoing the mutant Weapon X program and becoming Wolverine.",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-apocalypse",
+        "sub_universe": "02. First Class & Revised Timeline",
+        "title": "X-Men: Apocalypse",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 9,
+        "phase": "1983 En Sabah Nur",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ikA8UhYdTGpqbatFa93nIf6noSr.jpg",
+        "runtime": "144 min",
+        "desc": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
+        "rating": 6.5,
+        "sub_universes": [
+          "02. First Class & Revised Timeline"
+        ]
+      },
+      {
+        "id": "xmen-dark-phoenix",
+        "sub_universe": "02. First Class & Revised Timeline",
+        "title": "Dark Phoenix",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 12,
+        "phase": "1992 Phoenix Force",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cCTJPelKGLhALq3r51A9uMonxKj.jpg",
+        "runtime": "114 min",
+        "desc": "The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious...",
+        "rating": 6.0,
+        "sub_universes": [
+          "02. First Class & Revised Timeline"
+        ]
+      },
+      {
+        "id": "xmen-2000",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "X-Men",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 1,
+        "phase": "Dawn of Modern Superhero Cinema",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+        "runtime": "104 min",
+        "desc": "Two mutants, Rogue and Wolverine, come to a private academy for their kind whose resident superhero team, the X-Men, must oppose a terrorist organization with similar powers.",
+        "rating": 7.0,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-x2",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "X2",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 2,
+        "phase": "X-Men United • Stryker Assault",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/bst4alFUXCxISwdRUKSMhhkrX1M.jpg",
+        "runtime": "133 min",
+        "desc": "Professor Charles Xavier and his team of genetically gifted superheroes face a rising tide of anti-mutant sentiment led by Col. William Stryker. Storm, Wolverine and Jean Grey must join Magneto and Mystique to...",
+        "rating": 7.0,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-last-stand",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "X-Men: The Last Stand",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 3,
+        "phase": "The Mutant Cure",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/a2xicU8DpKtRizOHjQLC1JyCSRS.jpg",
+        "runtime": "104 min",
+        "desc": "When a cure is found to treat mutations, lines are drawn amongst the X-Men led by Professor Charles Xavier, and Magneto's Brotherhood of Mutants.",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-the-wolverine",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "The Wolverine",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 6,
+        "phase": "Japan Ronin Chapter",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/t2wVAcoRlKvEIVSbiYDb8d0QqqS.jpg",
+        "runtime": "126 min",
+        "desc": "Wolverine faces his ultimate nemesis - and tests of his physical, emotional, and mortal limits - in a life-changing voyage to modern-day Japan.",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-deadpool-1",
+        "sub_universe": "03. Deadpool Saga",
+        "title": "Deadpool",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 8,
+        "phase": "Merc with a Mouth Debut",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
+        "runtime": "108 min",
+        "desc": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed...",
+        "rating": 7.6,
+        "sub_universes": [
+          "03. Deadpool Saga"
+        ]
+      },
+      {
+        "id": "xmen-deadpool-2",
+        "sub_universe": "03. Deadpool Saga",
+        "title": "Deadpool 2",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "Cable & X-Force",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gyfPKfFYcVW54MoqhYlwwDDIfJR.jpg",
+        "runtime": "120 min",
+        "desc": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
+        "rating": 7.5,
+        "sub_universes": [
+          "03. Deadpool Saga"
+        ]
+      },
+      {
+        "id": "xmen-new-mutants",
+        "sub_universe": "02. First Class & Revised Timeline",
+        "title": "The New Mutants",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 13,
+        "phase": "Mutant Horror Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xiDGcXJTvu1lazFRYip6g1eLt9c.jpg",
+        "runtime": "94 min",
+        "desc": "Five young mutants, just discovering their abilities while held in a secret facility against their will, fight to escape their past sins and save themselves.",
+        "rating": 6.0,
+        "sub_universes": [
+          "02. First Class & Revised Timeline"
+        ]
+      },
+      {
+        "id": "xmen-logan",
+        "sub_universe": "01. Original Trilogy & Wolverine",
+        "title": "Logan",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 13,
+        "release_order": 10,
+        "phase": "2029 Neo-Western Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
+        "runtime": "137 min",
+        "desc": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Original Trilogy & Wolverine"
+        ]
+      },
+      {
+        "id": "xmen-dp-wolverine",
+        "sub_universe": "03. Deadpool Saga",
+        "title": "Deadpool & Wolverine",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 14,
+        "release_order": 18,
+        "phase": "Fox Universe Multiverse Tribute",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+        "runtime": "128 min",
+        "desc": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with...",
+        "rating": 7.6,
+        "sub_universes": [
+          "03. Deadpool Saga"
+        ]
+      },
+      {
+        "id": "xmen-tas-92",
+        "sub_universe": "04. X-Men Series & Animation",
+        "title": "X-Men: The Animated Series",
+        "year": 1992,
+        "media_type": "series",
+        "chrono_order": 15,
+        "release_order": 14,
+        "phase": "1992–1997 Iconic Series",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg",
+        "runtime": "5 Seasons (76 Ep)",
+        "desc": "The X-Men are an elite team of mutants, genetically gifted human beings with superpowers, sworn to fight for mutant rights against hostile Government agencies, whilst at the same time protecting mankind from mutant...",
+        "rating": 8.2,
+        "sub_universes": [
+          "04. X-Men Series & Animation"
+        ]
+      },
+      {
+        "id": "xmen-wolverine-ani",
+        "sub_universe": "04. X-Men Series & Animation",
+        "title": "Wolverine and the X-Men",
+        "year": 2009,
+        "media_type": "series",
+        "chrono_order": 16,
+        "release_order": 15,
+        "phase": "Animated Dystopian Future",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oSeJ2nESB77iC6SLo4qcqoadjdt.jpg",
+        "runtime": "1 Season (26 Ep)",
+        "desc": "Wolverine and the X-Men must join together again to not only battle the increasingly powerful Mutant Response Division, but also to prevent a catastrophic future that Xavier has warned Wolverine must never come to pass.",
+        "rating": 7.6,
+        "sub_universes": [
+          "04. X-Men Series & Animation"
+        ]
+      },
+      {
+        "id": "xmen-legion",
+        "sub_universe": "04. X-Men Series & Animation",
+        "title": "Legion",
+        "year": 2017,
+        "media_type": "series",
+        "chrono_order": 17,
+        "release_order": 16,
+        "phase": "FX Surrealist Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xhJtYVTsdXQCIlB5hAXkMCPUG9y.jpg",
+        "runtime": "3 Seasons (27 Ep)",
+        "desc": "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow...",
+        "rating": 7.5,
+        "sub_universes": [
+          "04. X-Men Series & Animation"
+        ]
+      },
+      {
+        "id": "xmen-gifted",
+        "sub_universe": "04. X-Men Series & Animation",
+        "title": "The Gifted",
+        "year": 2017,
+        "media_type": "series",
+        "chrono_order": 18,
+        "release_order": 17,
+        "phase": "Mutant Underground Series",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nshCqszjTNuqhrB53vrSqWO18sE.jpg",
+        "runtime": "2 Seasons (29 Ep)",
+        "desc": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of...",
+        "rating": 7.6,
+        "sub_universes": [
+          "04. X-Men Series & Animation"
+        ]
+      },
+      {
+        "id": "xmen-97",
+        "sub_universe": "04. X-Men Series & Animation",
+        "title": "X-Men '97",
+        "year": 2024,
+        "media_type": "series",
+        "chrono_order": 19,
+        "release_order": 19,
+        "phase": "Acclaimed Revival Series",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+        "runtime": "2 Seasons (19 Ep)",
+        "desc": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+        "rating": 8.7,
+        "sub_universes": [
+          "04. X-Men Series & Animation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-conjuring",
+    "name": "The Conjuring Universe",
+    "badge": "10 CANON CHAPTERS • THE CONJURING",
+    "icon": "✝️",
+    "theme_color": "#DC2626",
+    "tagline": "Ed & Lorraine Warren, Annabelle & The Nun",
+    "banner_poster": "/posters/the_conjuring.webp",
+    "why_watch": "The highest-grossing horror shared universe in history, following paranormal investigators Ed and Lorraine Warren across haunted cases from 1952 to 1986.",
+    "sub_universes": [
+      "All Conjuring",
+      "01. The Conjuring Mainline",
+      "02. Annabelle Trilogy",
+      "03. The Nun & Spin-Offs"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Case Order",
+        "desc": "1952 The Nun → 1955 Annabelle Creation → 1971 Conjuring → Last Rites"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from The Conjuring (2013) to Last Rites (2025)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "conj-nun-1",
+        "sub_universe": "03. The Nun & Spin-Offs",
+        "title": "The Nun",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 5,
+        "phase": "1952 Romania • Valak Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+        "runtime": "96 min",
+        "desc": "A priest with a dark past and a novice nearing her final vows are sent by the Vatican to Romania to investigate a nun's death and face a demonic force.",
+        "rating": 5.9,
+        "sub_universes": [
+          "03. The Nun & Spin-Offs"
+        ]
+      },
+      {
+        "id": "conj-annabelle-2",
+        "sub_universe": "02. Annabelle Trilogy",
+        "title": "Annabelle: Creation",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 4,
+        "phase": "1955 Mullins Farmhouse",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+        "runtime": "110 min",
+        "desc": "Several years after the tragic death of their little girl, a doll maker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the doll maker's possessed...",
+        "rating": 6.6,
+        "sub_universes": [
+          "02. Annabelle Trilogy"
+        ]
+      },
+      {
+        "id": "conj-nun-2",
+        "sub_universe": "03. The Nun & Spin-Offs",
+        "title": "The Nun II",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 9,
+        "phase": "1956 France • Sister Irene Returns",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg",
+        "runtime": "110 min",
+        "desc": "In 1956 France, a priest is violently murdered, and Sister Irene begins to investigate. She once again comes face-to-face with a powerful evil.",
+        "rating": 6.6,
+        "sub_universes": [
+          "03. The Nun & Spin-Offs"
+        ]
+      },
+      {
+        "id": "conj-annabelle-1",
+        "sub_universe": "02. Annabelle Trilogy",
+        "title": "Annabelle",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 2,
+        "phase": "1967 Santa Monica",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yLsuU2P2SpDYFwtZQ7dtfVAf6TE.jpg",
+        "runtime": "99 min",
+        "desc": "A couple begins to experience terrifying supernatural occurrences involving a vintage doll shortly after their home is invaded by satanic cultists.",
+        "rating": 5.8,
+        "sub_universes": [
+          "02. Annabelle Trilogy"
+        ]
+      },
+      {
+        "id": "conj-1",
+        "sub_universe": "01. The Conjuring Mainline",
+        "title": "The Conjuring",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 1,
+        "phase": "1971 Perron Farmhouse • James Wan",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+        "runtime": "112 min",
+        "desc": "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse. Forced to confront a powerful entity, the Warrens find themselves caught in the most terrifying...",
+        "rating": 7.5,
+        "sub_universes": [
+          "01. The Conjuring Mainline"
+        ]
+      },
+      {
+        "id": "conj-annabelle-3",
+        "sub_universe": "02. Annabelle Trilogy",
+        "title": "Annabelle Comes Home",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 7,
+        "phase": "1972 The Artifacts Room",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qWsHMrbg9DsBY3bCMk9jyYCRVRs.jpg",
+        "runtime": "106 min",
+        "desc": "Determined to keep Annabelle from wreaking more havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their home, placing her “safely” behind sacred glass and enlisting...",
+        "rating": 6.4,
+        "sub_universes": [
+          "02. Annabelle Trilogy"
+        ]
+      },
+      {
+        "id": "conj-lallorona",
+        "sub_universe": "03. The Nun & Spin-Offs",
+        "title": "The Curse of La Llorona",
+        "year": 2019,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 6,
+        "phase": "1973 Los Angeles Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hETrPpoKs6BwoilK64YJ7Z5GcRT.jpg",
+        "runtime": "93 min",
+        "desc": "In 1970s Los Angeles, the legendary ghost La Llorona is stalking the night -- and the children. Ignoring the eerie warning of a troubled mother, a social worker and her own kids are drawn into a frightening...",
+        "rating": 5.6,
+        "sub_universes": [
+          "03. The Nun & Spin-Offs"
+        ]
+      },
+      {
+        "id": "conj-2",
+        "sub_universe": "01. The Conjuring Mainline",
+        "title": "The Conjuring 2",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 3,
+        "phase": "1977 Enfield Poltergeist",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg",
+        "runtime": "134 min",
+        "desc": "Lorraine and Ed Warren travel to north London to help a single mother raising four children alone in a house plagued by malicious spirits.",
+        "rating": 7.3,
+        "sub_universes": [
+          "01. The Conjuring Mainline"
+        ]
+      },
+      {
+        "id": "conj-3",
+        "sub_universe": "01. The Conjuring Mainline",
+        "title": "The Conjuring: The Devil Made Me Do It",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 8,
+        "phase": "1981 Arne Cheyenne Johnson Trial",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
+        "runtime": "111 min",
+        "desc": "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen...",
+        "rating": 7.3,
+        "sub_universes": [
+          "01. The Conjuring Mainline"
+        ]
+      },
+      {
+        "id": "conj-4",
+        "sub_universe": "01. The Conjuring Mainline",
+        "title": "The Conjuring: Last Rites",
+        "year": 2025,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 10,
+        "phase": "Final Warren Case",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/umvkcIb0XAk486TEmx1V5aVzhbm.jpg",
+        "runtime": "136 min",
+        "desc": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+        "rating": 6.9,
+        "sub_universes": [
+          "01. The Conjuring Mainline"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "insidious",
+    "name": "Insidious Saga",
+    "badge": "5 CANON CHAPTERS • INSIDIOUS",
+    "icon": "🚪",
+    "theme_color": "#B91C1C",
+    "tagline": "The Further, Elise Rainier & The Red-Faced Demon",
+    "banner_poster": "/posters/insidious.webp",
+    "why_watch": "James Wan and Leigh Whannell's supernatural astral-projection horror franchise exploring the dark realm known as The Further.",
+    "sub_universes": [
+      "All Insidious",
+      "01. Elise Rainier Prequels",
+      "02. Lambert Family Saga"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Story Order",
+        "desc": "Chapter 3 → The Last Key → Insidious → Chapter 2 → The Red Door"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from 2010 to 2023"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "ins-3",
+        "sub_universe": "01. Elise Rainier Prequels",
+        "title": "Insidious: Chapter 3",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 3,
+        "phase": "Prequel • Quinn Brenner Case",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iDdGfdNvY1EX0uDdA4Ru77fwMfc.jpg",
+        "runtime": "97 min",
+        "desc": "A prequel set before the haunting of the Lambert family that reveals how gifted psychic Elise Rainier reluctantly agrees to use her ability to contact the dead in order to help a teenage girl who has been targeted by...",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Elise Rainier Prequels"
+        ]
+      },
+      {
+        "id": "ins-4",
+        "sub_universe": "01. Elise Rainier Prequels",
+        "title": "Insidious: The Last Key",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 4,
+        "phase": "Elise Childhood Origin",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6c9ti2JcR3dHyR3qFXoZqVMx0SH.jpg",
+        "runtime": "103 min",
+        "desc": "Parapsychologist Elise Rainier and her team travel to Five Keys, NM, to investigate a man’s claim of a haunting. Terror soon strikes when Rainier realizes that the house he lives in was her family’s old home.",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Elise Rainier Prequels"
+        ]
+      },
+      {
+        "id": "ins-1",
+        "sub_universe": "02. Lambert Family Saga",
+        "title": "Insidious",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 1,
+        "phase": "The Further Revealed • James Wan",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tmlDFIUpGRKiuWm9Ixc6CYDk4y0.jpg",
+        "runtime": "102 min",
+        "desc": "A family discovers that dark spirits have invaded their home after their son inexplicably falls into an endless sleep. When they reach out to a professional for help, they learn things are a lot more personal than...",
+        "rating": 7.0,
+        "sub_universes": [
+          "02. Lambert Family Saga"
+        ]
+      },
+      {
+        "id": "ins-2",
+        "sub_universe": "02. Lambert Family Saga",
+        "title": "Insidious: Chapter 2",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 2,
+        "phase": "Bride in Black Sequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/w5JjiB3O1CLDXbTJe1QpU5RHmlU.jpg",
+        "runtime": "106 min",
+        "desc": "The haunted Lambert family seeks to uncover the mysterious childhood secret that has left them dangerously connected to the spirit world.",
+        "rating": 6.7,
+        "sub_universes": [
+          "02. Lambert Family Saga"
+        ]
+      },
+      {
+        "id": "ins-5",
+        "sub_universe": "02. Lambert Family Saga",
+        "title": "Insidious: The Red Door",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Dalton Returns • Patrick Wilson",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/d07phJqCx6z5wILDYqkyraorDPi.jpg",
+        "runtime": "107 min",
+        "desc": "To put their demons to rest once and for all, Josh Lambert and a college-aged Dalton Lambert must go deeper into The Further than ever before, facing their family's dark past and a host of new and more horrifying...",
+        "rating": 6.6,
+        "sub_universes": [
+          "02. Lambert Family Saga"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "saw",
+    "name": "Saw Saga",
+    "badge": "10 CANON CHAPTERS • SAW",
+    "icon": "🌀",
+    "theme_color": "#991B1B",
+    "tagline": "John Kramer, Jigsaw's Traps & Twisted Moral Tests",
+    "banner_poster": "/posters/saw.webp",
+    "why_watch": "The intricate puzzle-box horror thriller franchise centered on John Kramer, his apprentices, and the iconic games of survival.",
+    "sub_universes": [
+      "All Saw",
+      "01. Original Jigsaw Heptalogy",
+      "02. Modern Revival & Saw X"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Story Order",
+        "desc": "Saw → Saw X → Saw II through Saw 3D → Jigsaw → Spiral"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Exact release order from Saw (2004) to Saw X (2023)"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "saw-1",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "The Bathroom Game • James Wan",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4da0TS3iQ1IzuyhDS8elgkmOfrN.jpg",
+        "runtime": "103 min",
+        "desc": "Two men wake up to find themselves shackled in a grimy, abandoned bathroom. As they struggle to comprehend their predicament, they discover a disturbing tape left behind by the sadistic mastermind known as Jigsaw....",
+        "rating": 7.4,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-10",
+        "sub_universe": "02. Modern Revival & Saw X",
+        "title": "Saw X",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 10,
+        "phase": "Set Between Saw I & II • Mexico",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/u7Lp1Hi8aBS73jv4KRMIv5aK4ax.jpg",
+        "runtime": "118 min",
+        "desc": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire...",
+        "rating": 7.1,
+        "sub_universes": [
+          "02. Modern Revival & Saw X"
+        ]
+      },
+      {
+        "id": "saw-2",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw II",
+        "year": 2005,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2,
+        "phase": "The Nerve Gas House",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gTnaTysN8HsvVQqTRUh8m35mmUA.jpg",
+        "runtime": "93 min",
+        "desc": "The chilling and relentless Jigsaw killer returns to terrorize the city once again. When a gruesome murder victim emerges with unmistakable traces of Jigsaw's sinister methods, Detective Eric Matthews is thrust into...",
+        "rating": 6.6,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-3",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw III",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 3,
+        "phase": "Jigsaw's Final Test",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4iO9n24Rb10peXV0JH2EldIOrAp.jpg",
+        "runtime": "108 min",
+        "desc": "Jigsaw has disappeared. Along with his new apprentice Amanda, the puppet-master behind the cruel, intricate games that have terrified a community and baffled police has once again eluded capture and vanished. While...",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-4",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw IV",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 4,
+        "phase": "Officer Rigg's Trial",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ku1QdCXOU4ckz3zxLLlis8MIJVm.jpg",
+        "runtime": "93 min",
+        "desc": "Despite Jigsaw's death, and in order to save the lives of two of his colleagues, Lieutenant Rigg is forced to take part in a new game, which promises to test him to the limit.",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-5",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw V",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 5,
+        "phase": "Detective Hoffman",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rKl79KqLXg60KFyKsLe4wSSjQ08.jpg",
+        "runtime": "95 min",
+        "desc": "Following Jigsaw's grisly demise, Detective Mark Hoffman is commended as a hero, but Agent Strahm is suspicious, and delves into Hoffman's past. Meanwhile, another group of people are put through a series of gruesome...",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-6",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw VI",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 6,
+        "phase": "Insurance Carousel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aitPLjQ47emKTsYZ6Jdar1yw6X1.jpg",
+        "runtime": "90 min",
+        "desc": "Special Agent Strahm is dead, and Detective Hoffman has emerged as the unchallenged successor to Jigsaw's legacy. However, when the FBI draws closer to Hoffman, he is forced to set a game into motion, and Jigsaw's...",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-7",
+        "sub_universe": "01. Original Jigsaw Heptalogy",
+        "title": "Saw 3D",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 7,
+        "phase": "The Final Chapter",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qHCZ6LjtmqWDfXXN28TlIC9OppK.jpg",
+        "runtime": "90 min",
+        "desc": "As a deadly battle rages over Jigsaw's brutal legacy, a group of Jigsaw survivors gathers to seek the support of self-help guru and fellow survivor Bobby Dagen, a man whose own dark secrets unleash a new wave of terror.",
+        "rating": 6.0,
+        "sub_universes": [
+          "01. Original Jigsaw Heptalogy"
+        ]
+      },
+      {
+        "id": "saw-8",
+        "sub_universe": "02. Modern Revival & Saw X",
+        "title": "Jigsaw",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 8,
+        "phase": "The Barn Game",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7RwHxhdUNS996JPFNB9a7CJtlwR.jpg",
+        "runtime": "91 min",
+        "desc": "Law enforcement finds itself chasing the ghost of a man dead for over a decade, embroiled in a diabolical new game that's only just begun.",
+        "rating": 6.2,
+        "sub_universes": [
+          "02. Modern Revival & Saw X"
+        ]
+      },
+      {
+        "id": "saw-9",
+        "sub_universe": "02. Modern Revival & Saw X",
+        "title": "Spiral: From the Book of Saw",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 9,
+        "phase": "Chris Rock Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cTvSDfBuXTZTdRCNduGMANd7VEP.jpg",
+        "runtime": "93 min",
+        "desc": "Working in the shadow of an esteemed police veteran, brash Detective Ezekiel “Zeke” Banks and his rookie partner take charge of a grisly investigation into murders that are eerily reminiscent of the city’s gruesome...",
+        "rating": 5.9,
+        "sub_universes": [
+          "02. Modern Revival & Saw X"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scream",
+    "name": "Scream Ghostface Saga",
+    "badge": "7 CANON CHAPTERS • SCREAM",
+    "icon": "🔪",
+    "theme_color": "#E11D48",
+    "tagline": "Woodsboro, Ghostface & Meta-Slasher Whodunit",
+    "banner_poster": "/posters/scream.webp",
+    "why_watch": "Wes Craven's genre-redefining self-aware slasher franchise following Sidney Prescott and the Carpenter sisters across decades of Ghostface murders.",
+    "sub_universes": [
+      "All Scream",
+      "01. Wes Craven Quadrilogy",
+      "02. Modern Revival"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "Woodsboro (1996) through New York City (Scream VI)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Order",
+        "desc": "Theatrical progression across all Scream chapters"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "scream-1",
+        "sub_universe": "01. Wes Craven Quadrilogy",
+        "title": "Scream",
+        "year": 1996,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Woodsboro Classic • Wes Craven",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
+        "runtime": "112 min",
+        "desc": "A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her and her friends by using scary movies as part of a deadly game.",
+        "rating": 7.4,
+        "sub_universes": [
+          "01. Wes Craven Quadrilogy"
+        ]
+      },
+      {
+        "id": "scream-2",
+        "sub_universe": "01. Wes Craven Quadrilogy",
+        "title": "Scream 2",
+        "year": 1997,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Windsor College Sequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dORlVasiaDkJXTqt9bdH7nFNs6C.jpg",
+        "runtime": "120 min",
+        "desc": "Two years after the Woodsboro murders, Sidney Prescott acclimates to college life while someone donning the Ghostface costume begins a new string of killings.",
+        "rating": 6.5,
+        "sub_universes": [
+          "01. Wes Craven Quadrilogy"
+        ]
+      },
+      {
+        "id": "scream-3",
+        "sub_universe": "01. Wes Craven Quadrilogy",
+        "title": "Scream 3",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Hollywood Stab Set",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iFrDIex06Jpgs3dTI8vXlVB1jd.jpg",
+        "runtime": "116 min",
+        "desc": "As bodies begin dropping around the Hollywood set of STAB 3, the third film based on the gruesome Woodsboro killings, Sidney and other survivors are once again terrorized by another Ghostface killer.",
+        "rating": 6.0,
+        "sub_universes": [
+          "01. Wes Craven Quadrilogy"
+        ]
+      },
+      {
+        "id": "scream-4",
+        "sub_universe": "01. Wes Craven Quadrilogy",
+        "title": "Scream 4",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Return to Woodsboro",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3cf8p2qw9qnsaaFWc64AG6U05eT.jpg",
+        "runtime": "111 min",
+        "desc": "Fifteen years after the original Woodsboro murders, Sidney Prescott returns home to promote her new book about surviving trauma, only for a new Ghostface killer to emerge, targeting a new group of teens.",
+        "rating": 6.5,
+        "sub_universes": [
+          "01. Wes Craven Quadrilogy"
+        ]
+      },
+      {
+        "id": "scream-5",
+        "sub_universe": "02. Modern Revival",
+        "title": "Scream",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Requels & New Generation",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nD4M4Bx457ryLuKYpxFwQ2IBJ5w.jpg",
+        "runtime": "114 min",
+        "desc": "Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, a new killer has donned the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town’s deadly...",
+        "rating": 6.7,
+        "sub_universes": [
+          "02. Modern Revival"
+        ]
+      },
+      {
+        "id": "scream-6",
+        "sub_universe": "02. Modern Revival",
+        "title": "Scream VI",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Ghostface in New York",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
+        "runtime": "123 min",
+        "desc": "Following the latest Ghostface killings, the four survivors leave Woodsboro behind and start a fresh chapter.",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Modern Revival"
+        ]
+      },
+      {
+        "id": "scream-7",
+        "sub_universe": "02. Modern Revival",
+        "title": "Scream 7",
+        "year": 2026,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Sidney Prescott Returns",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+        "runtime": "114 min",
+        "desc": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must...",
+        "rating": 6.2,
+        "sub_universes": [
+          "02. Modern Revival"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "halloween",
+    "name": "Halloween — Michael Myers Saga",
+    "badge": "13 CANON CHAPTERS • HALLOWEEN",
+    "icon": "🎃",
+    "theme_color": "#F97316",
+    "tagline": "Haddonfield, Laurie Strode & The Shape",
+    "banner_poster": "/posters/halloween.webp",
+    "why_watch": "John Carpenter's legendary slasher saga across all five timelines — from the 1978 masterpiece to the 2018–2022 Blumhouse trilogy.",
+    "sub_universes": [
+      "All Halloween",
+      "01. Original & Thorn Timeline",
+      "02. H20 Timeline",
+      "03. Rob Zombie Timeline",
+      "04. 2018 Blumhouse Trilogy"
+    ],
+    "watch_modes": [
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Complete 13-film slasher history from 1978 to 2022"
+      },
+      {
+        "id": "chrono",
+        "label": "🎃 Timeline Continuity Order",
+        "desc": "Original 1978 → Thorn → H20 → Blumhouse Trilogy"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "hal-1978",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween",
+        "year": 1978,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "John Carpenter Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+        "runtime": "91 min",
+        "desc": "Fifteen years after murdering his sister on Halloween Night 1963, Michael Myers escapes from a mental hospital and returns to the small town of Haddonfield, Illinois to kill again.",
+        "rating": 7.6,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1981",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween II",
+        "year": 1981,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Haddonfield Memorial Hospital",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3nX5HHGgOKaVMxXwMLT9DHO1Ne6.jpg",
+        "runtime": "92 min",
+        "desc": "After failing to kill stubborn survivor Laurie and taking a bullet or six from former psychiatrist Dr. Sam Loomis, Michael Myers has followed Laurie to the Haddonfield Memorial Hospital, where she's been admitted for...",
+        "rating": 6.6,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1982",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween III: Season of the Witch",
+        "year": 1982,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Standalone Cult Anthology",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/WABfdeaThFYXCySGIOvRNv2sSW.jpg",
+        "runtime": "98 min",
+        "desc": "After a terrified toy salesman is mysteriously attacked and brought to the hospital clutching the year's most popular Halloween mask, Dr. Daniel Challis sets out to investigate the strange events and finds himself...",
+        "rating": 5.3,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1988",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween 4: The Return of Michael Myers",
+        "year": 1988,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Jamie Lloyd Trilogy Begins",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/eFSOkXF9n9hsfGv45MDsPixiOyx.jpg",
+        "runtime": "88 min",
+        "desc": "Ten years after his original massacre, the invalid Michael Myers awakens on Halloween Eve and returns to Haddonfield to kill his seven-year-old niece.",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1989",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween 5: The Revenge of Michael Myers",
+        "year": 1989,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "The Man in Black",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rYvP6yMXCIVHnkVtwGaAXFmpzkB.jpg",
+        "runtime": "98 min",
+        "desc": "After lying in a coma for a year, Michael Myers awakens and stalks his way back to his small hometown in Illinois, intent on killing his niece, Jamie, who has been confined to a mental institution since his last...",
+        "rating": 5.3,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1995",
+        "sub_universe": "01. Original & Thorn Timeline",
+        "title": "Halloween: The Curse of Michael Myers",
+        "year": 1995,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Cult of Thorn Finale",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/noCnM8nEI2bEDSdKHh0RKbwBwbC.jpg",
+        "runtime": "88 min",
+        "desc": "Six years after being presumed dead in a fire, and just as the town prepares to finally celebrate Halloween again, Michael Myers returns to Haddonfield to continue his reign of terror.",
+        "rating": 5.2,
+        "sub_universes": [
+          "01. Original & Thorn Timeline"
+        ]
+      },
+      {
+        "id": "hal-1998",
+        "sub_universe": "02. H20 Timeline",
+        "title": "Halloween H20: 20 Years Later",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Laurie Strode Returns",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lqLXUm3oK59sGJKRH2Zjj2m3iMg.jpg",
+        "runtime": "86 min",
+        "desc": "Two decades after surviving a massacre on October 31, 1978, former baby sitter Laurie Strode finds herself hunted by persistent knife-wielder Michael Myers. Laurie now lives in Northern California under an assumed...",
+        "rating": 6.0,
+        "sub_universes": [
+          "02. H20 Timeline"
+        ]
+      },
+      {
+        "id": "hal-2002",
+        "sub_universe": "02. H20 Timeline",
+        "title": "Halloween: Resurrection",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "Dangertainment Broadcast",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1mlKwbNzJCGzqe4i0ZEJtUUL290.jpg",
+        "runtime": "89 min",
+        "desc": "Reality programmers at DangerTainment select a group of thrill-seeking teenagers to spend one night in the childhood home of serial killer Michael Myers. Their planned live broadcast turns deadly when Michael decides...",
+        "rating": 4.6,
+        "sub_universes": [
+          "02. H20 Timeline"
+        ]
+      },
+      {
+        "id": "hal-2007",
+        "sub_universe": "03. Rob Zombie Timeline",
+        "title": "Halloween",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Rob Zombie Remake",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cD8JrfSEI4j7WVnKM1GdiYzMoUh.jpg",
+        "runtime": "110 min",
+        "desc": "The early years of young Michael Myers and the events leading up to his fateful Halloween night murder rampage in the quiet town of Haddonfield, Illinois.",
+        "rating": 6.2,
+        "sub_universes": [
+          "03. Rob Zombie Timeline"
+        ]
+      },
+      {
+        "id": "hal-2009",
+        "sub_universe": "03. Rob Zombie Timeline",
+        "title": "Halloween II",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 10,
+        "phase": "Rob Zombie Sequel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vSHPM4LQDpWdQrD5KZWK6wNqSOD.jpg",
+        "runtime": "105 min",
+        "desc": "Laurie Strode struggles to come to terms with her brother Michael's deadly return to Haddonfield, Illinois. Meanwhile, Michael prepares for another reunion with his sister.",
+        "rating": 5.3,
+        "sub_universes": [
+          "03. Rob Zombie Timeline"
+        ]
+      },
+      {
+        "id": "hal-2018",
+        "sub_universe": "04. 2018 Blumhouse Trilogy",
+        "title": "Halloween",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "40 Years Later Direct Sequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/f7JAX5EGk4GgsEnus6OxyzwpFp7.jpg",
+        "runtime": "106 min",
+        "desc": "Laurie Strode comes to her final confrontation with Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.",
+        "rating": 6.6,
+        "sub_universes": [
+          "04. 2018 Blumhouse Trilogy"
+        ]
+      },
+      {
+        "id": "hal-2021",
+        "sub_universe": "04. 2018 Blumhouse Trilogy",
+        "title": "Halloween Kills",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 12,
+        "phase": "Evil Dies Tonight",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4CclCDyQXBBgz62Qtp3CoflQE5g.jpg",
+        "runtime": "105 min",
+        "desc": "Michael manages to free himself from Laurie Strode's trap to resume his ritual bloodbath. As she fights for her life from injuries from their last encounter, she inspires her daughter Karen, her granddaughter...",
+        "rating": 6.4,
+        "sub_universes": [
+          "04. 2018 Blumhouse Trilogy"
+        ]
+      },
+      {
+        "id": "hal-2022",
+        "sub_universe": "04. 2018 Blumhouse Trilogy",
+        "title": "Halloween Ends",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 13,
+        "release_order": 13,
+        "phase": "Final Showdown",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/q06saepaXeBdkMibuN4R2fXmgIw.jpg",
+        "runtime": "111 min",
+        "desc": "Four years after the events of Halloween in 2018, Laurie has decided to liberate herself from fear and rage and embrace life. But when a young man is accused of killing a boy he was babysitting, it ignites a cascade...",
+        "rating": 6.0,
+        "sub_universes": [
+          "04. 2018 Blumhouse Trilogy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "friday-the-13th",
+    "name": "Friday the 13th — Camp Crystal Lake",
+    "badge": "12 CANON CHAPTERS • FRIDAY THE 13TH",
+    "icon": "🏒",
+    "theme_color": "#16A34A",
+    "tagline": "Jason Voorhees, Camp Crystal Lake & Iconic 80s Slashers",
+    "banner_poster": "/posters/friday_the_13th.webp",
+    "why_watch": "All 12 chapters of Jason Voorhees' unstoppable reign of terror from Camp Crystal Lake to Manhattan, outer space, and Elm Street.",
+    "sub_universes": [
+      "All Friday the 13th",
+      "01. Paramount Classic Era",
+      "02. New Line Era & Remake"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "From Pamela Voorhees (1980) to Jason X and 2009 Reboot"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "All 12 films from 1980 to 2009"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "f13-1",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th",
+        "year": 1980,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Camp Crystal Lake Original",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "runtime": "95 min",
+        "desc": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-2",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th Part 2",
+        "year": 1981,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Jason Takes Over",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/92rGctBMTv4uaSlIBVnhz01kRWL.jpg",
+        "runtime": "86 min",
+        "desc": "Five years after the horrible bloodbath at Camp Crystal Lake, new counselors roam the area, not sensing the ominous lurking presence that proves that the grisly legend is real.",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-3",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th Part III",
+        "year": 1982,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "The Hockey Mask Debuts",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9kukTSlgFgXnQGdpcHvHcpTDiUc.jpg",
+        "runtime": "95 min",
+        "desc": "An idyllic summer turns into a nightmare of unspeakable terror for yet another group of naïve friends. Ignoring Camp Crystal Lake's bloody legacy, one by one they fall victim to the maniacal Jason, who stalks them at...",
+        "rating": 5.9,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-4",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th: The Final Chapter",
+        "year": 1984,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Tommy Jarvis vs Jason",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1J7zudfR3VLPwAf9lK5YPfSu0n6.jpg",
+        "runtime": "91 min",
+        "desc": "After his revival in a hospital morgue, Jason fixes his vengeful attention on the Jarvis family and a group of hitherto carefree teenagers.",
+        "rating": 6.1,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-5",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th: A New Beginning",
+        "year": 1985,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Pinehurst Halfway House",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ewnIs4aCuWnKQ13Eaj8f3ybrQc8.jpg",
+        "runtime": "92 min",
+        "desc": "Homicidal maniac Jason returns from the grave to cause more bloody mayhem. Young Tommy may have escaped from Crystal Lake, but he’s still haunted by the gruesome events that happened there. When gory murders start...",
+        "rating": 5.3,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-6",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th Part VI: Jason Lives",
+        "year": 1986,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Zombie Jason Resurrection",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6vdUpHvkspQonXBdWcLWW5ciEPJ.jpg",
+        "runtime": "86 min",
+        "desc": "Tommy Jarvis, tormented by the fear that maybe Jason isn't really dead, unwittingly resurrects the mass murderer for another bloody rampage.",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-7",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th Part VII: The New Blood",
+        "year": 1988,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Telekinesis vs Jason",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rUzk9Qnyz2FZGxHMBrq6DYIQZkO.jpg",
+        "runtime": "88 min",
+        "desc": "Tina Shepard, a telekinetic teenage girl, accidentally unchains Jason from his watery grave, allowing him to go on another killing spree in the area.",
+        "rating": 5.5,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-8",
+        "sub_universe": "01. Paramount Classic Era",
+        "title": "Friday the 13th Part VIII: Jason Takes Manhattan",
+        "year": 1989,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "SS Lazarus to NYC",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6ezOsZ9UzqGnbDokaatxdOWP6e9.jpg",
+        "runtime": "100 min",
+        "desc": "Jason ships out aboard a teen-filled \"love boat\" bound for New York, which he soon transforms into the ultimate voyage of the damned.",
+        "rating": 4.9,
+        "sub_universes": [
+          "01. Paramount Classic Era"
+        ]
+      },
+      {
+        "id": "f13-9",
+        "sub_universe": "02. New Line Era & Remake",
+        "title": "Jason Goes to Hell: The Final Friday",
+        "year": 1993,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Body-Hopping Curse",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Aacq05foqiWdXqetFv02HBvMoJy.jpg",
+        "runtime": "88 min",
+        "desc": "Jason Voorhees is tracked down and blown to bits by a special FBI task force, reborn with the bone-chilling ability to assume the identity of anyone he touches.",
+        "rating": 4.6,
+        "sub_universes": [
+          "02. New Line Era & Remake"
+        ]
+      },
+      {
+        "id": "f13-fvj",
+        "sub_universe": "02. New Line Era & Remake",
+        "title": "Freddy vs. Jason",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 11,
+        "phase": "Ultimate Slasher Crossover",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ffoBCQ7y63Tvo48HsJqr1XOiqiV.jpg",
+        "runtime": "97 min",
+        "desc": "Freddy Krueger and Jason Voorhees return to terrorize the teenagers of Elm Street. Only this time, they're out to get each other, too.",
+        "rating": 6.1,
+        "sub_universes": [
+          "02. New Line Era & Remake"
+        ]
+      },
+      {
+        "id": "f13-10",
+        "sub_universe": "02. New Line Era & Remake",
+        "title": "Jason X",
+        "year": 2001,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 10,
+        "phase": "Year 2455 • Uber Jason in Space",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ggOND0hfoE0f3K857joSzEeIchb.jpg",
+        "runtime": "91 min",
+        "desc": "In the year 2455, Old Earth is now a contaminated planet abandoned for centuries -- a brown world of violent storms, toxic landmasses and poisonous seas. Yet humans have returned to the deadly place that they once...",
+        "rating": 4.9,
+        "sub_universes": [
+          "02. New Line Era & Remake"
+        ]
+      },
+      {
+        "id": "f13-2009",
+        "sub_universe": "02. New Line Era & Remake",
+        "title": "Friday the 13th",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 12,
+        "release_order": 12,
+        "phase": "Modern Reimagining",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/88wlJ4teYlck4hJ2bnlxBrAVh0m.jpg",
+        "runtime": "97 min",
+        "desc": "A group of young adults visit a boarded up campsite named Crystal Lake where they soon encounter the mysterious Jason Voorhees and his deadly intentions.",
+        "rating": 5.8,
+        "sub_universes": [
+          "02. New Line Era & Remake"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nightmare-on-elm-street",
+    "name": "A Nightmare on Elm Street",
+    "badge": "9 CANON CHAPTERS • ELM STREET",
+    "icon": "🧤",
+    "theme_color": "#DC2626",
+    "tagline": "Freddy Krueger, Springwood & Surreal Dream Horror",
+    "banner_poster": "/posters/nightmare_on_elm_street.webp",
+    "why_watch": "Wes Craven's surrealist nightmare franchise featuring Robert Englund's iconic dream-stalker Freddy Krueger across nine terrifying entries.",
+    "sub_universes": [
+      "All Elm Street",
+      "01. Original Freddy Saga",
+      "02. Meta, Crossover & Remake"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "Springwood 1984 through Freddy vs. Jason & 2010 Reboot"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "All 9 films from 1984 to 2010"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "elm-1",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "A Nightmare on Elm Street",
+        "year": 1984,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Wes Craven Classic • Nancy Thompson",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/b9rMHAAKISRmIonaQd9Cccx0S4X.jpg",
+        "runtime": "91 min",
+        "desc": "Teenagers in a small town are dropping like flies, apparently in the grip of mass hysteria causing their suicides. A cop's daughter, Nancy Thompson, traces the cause to child molester Fred Krueger, who was burned...",
+        "rating": 7.4,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-2",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+        "year": 1985,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Jesse Walsh Possession",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/53kxYw0G3o55yJ23K7s7KMaOyAM.jpg",
+        "runtime": "87 min",
+        "desc": "A teenage boy is haunted in his dreams by deceased child murderer Freddy Krueger, who is out to possess him in order to continue his reign of terror in the real world.",
+        "rating": 5.8,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-3",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "A Nightmare on Elm Street 3: Dream Warriors",
+        "year": 1987,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Westin Hills Fan Favorite",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qbtZewU6EGvxi8yFVzwZ31NijLX.jpg",
+        "runtime": "96 min",
+        "desc": "A psychiatrist, familiar with the knife-wielding dream demon Freddy Krueger, helps teens at a mental hospital battle the killer who is invading their dreams.",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-4",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "A Nightmare on Elm Street 4: The Dream Master",
+        "year": 1988,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Alice Johnson",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/boStYG7jKdoIZTduiOOsUVknD13.jpg",
+        "runtime": "93 min",
+        "desc": "Freddy Krueger returns once again to terrorize the dreams of the remaining Dream Warriors, as well as those of a young woman who may be able to defeat him for good.",
+        "rating": 5.9,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-5",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "A Nightmare on Elm Street 5: The Dream Child",
+        "year": 1989,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Gothic Nightmare",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/kizvpgXQfrAgN8FhOd87LbKk6kO.jpg",
+        "runtime": "89 min",
+        "desc": "The pregnant Alice finds Freddy Krueger striking through the sleeping mind of her unborn child, hoping to be reborn into the real world.",
+        "rating": 5.4,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-6",
+        "sub_universe": "01. Original Freddy Saga",
+        "title": "Freddy's Dead: The Final Nightmare",
+        "year": 1991,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Springwood Finale",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e4qh58n2WaG4Gyh9VhjOUeN9Mhv.jpg",
+        "runtime": "89 min",
+        "desc": "Just when you thought it was safe to sleep, Freddy Krueger returns in this sixth installment of the Nightmare on Elm Street films, as psychologist Maggie Burroughs, tormented by recurring nightmares, meets a patient...",
+        "rating": 5.3,
+        "sub_universes": [
+          "01. Original Freddy Saga"
+        ]
+      },
+      {
+        "id": "elm-7",
+        "sub_universe": "02. Meta, Crossover & Remake",
+        "title": "Wes Craven's New Nightmare",
+        "year": 1994,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Meta-Horror Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/q5BWxfL1x34nyYSvA3Qo5odleGW.jpg",
+        "runtime": "112 min",
+        "desc": "A demonic force has chosen Freddy Krueger as its portal to the real world. Can Heather Langenkamp play the part of Nancy one last time and trap the evil trying to enter our world?",
+        "rating": 6.5,
+        "sub_universes": [
+          "02. Meta, Crossover & Remake"
+        ]
+      },
+      {
+        "id": "elm-fvj",
+        "sub_universe": "02. Meta, Crossover & Remake",
+        "title": "Freddy vs. Jason",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 8,
+        "phase": "Icons Collide",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ffoBCQ7y63Tvo48HsJqr1XOiqiV.jpg",
+        "runtime": "97 min",
+        "desc": "Freddy Krueger and Jason Voorhees return to terrorize the teenagers of Elm Street. Only this time, they're out to get each other, too.",
+        "rating": 6.1,
+        "sub_universes": [
+          "02. Meta, Crossover & Remake"
+        ]
+      },
+      {
+        "id": "elm-2010",
+        "sub_universe": "02. Meta, Crossover & Remake",
+        "title": "A Nightmare on Elm Street",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 9,
+        "phase": "Jackie Earle Haley Reboot",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nsmW28GcNabCUZfP5YtUEe8Li0f.jpg",
+        "runtime": "95 min",
+        "desc": "Teenagers Nancy, Quentin, Kris, Jesse and Dean are all neighbourhood friends who begin having the same dream of a horribly disfigured man who wears a tattered sweater and a glove made of knives. The man terrorises...",
+        "rating": 5.5,
+        "sub_universes": [
+          "02. Meta, Crossover & Remake"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "final-destination",
+    "name": "Final Destination Saga",
+    "badge": "6 CANON CHAPTERS • FINAL DESTINATION",
+    "icon": "💀",
+    "theme_color": "#64748B",
+    "tagline": "Premonitions, Rube Goldberg Fate & Death's Design",
+    "banner_poster": "/posters/final_destination.webp",
+    "why_watch": "You can't cheat Death: the ingenious suspense-horror saga of premonitions and inescapable chain reactions, including the famous Final Destination 5 prequel twist.",
+    "sub_universes": [
+      "All Final Destination",
+      "01. Flight 180 Continuity",
+      "02. New Bloodlines"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Twist Order",
+        "desc": "Final Destination 5 (Bridge Prequel) → FD 1 → 2 → 3 → 4 → Bloodlines"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from 2000 to 2025"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "fd-5",
+        "sub_universe": "01. Flight 180 Continuity",
+        "title": "Final Destination 5",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 5,
+        "phase": "North Bay Bridge • Secret Prequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5zH9Qe6zaWW4LgtEA8aiTJVUSt4.jpg",
+        "runtime": "91 min",
+        "desc": "Death is just as omnipresent as ever, and is unleashed after one man’s premonition saves a group of coworkers from a terrifying suspension bridge collapse. But this group of unsuspecting souls was never supposed to...",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Flight 180 Continuity"
+        ]
+      },
+      {
+        "id": "fd-1",
+        "sub_universe": "01. Flight 180 Continuity",
+        "title": "Final Destination",
+        "year": 2000,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 1,
+        "phase": "Flight 180 Original",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1mXhlQMnlfvJ2frxTjZSQNnA9Vp.jpg",
+        "runtime": "98 min",
+        "desc": "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. Flight 180 Continuity"
+        ]
+      },
+      {
+        "id": "fd-2",
+        "sub_universe": "01. Flight 180 Continuity",
+        "title": "Final Destination 2",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2,
+        "phase": "Route 23 Logging Truck Pileup",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dg6Tf98InieJSClSKQJTQevYWmB.jpg",
+        "runtime": "90 min",
+        "desc": "When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it's up to Kimberly to stop it...",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Flight 180 Continuity"
+        ]
+      },
+      {
+        "id": "fd-3",
+        "sub_universe": "01. Flight 180 Continuity",
+        "title": "Final Destination 3",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 3,
+        "phase": "Devil's Flight Roller Coaster",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/p7ARuNKUGPGvkBiDtIDvAzYzonX.jpg",
+        "runtime": "92 min",
+        "desc": "High school senior Wendy's premonition of a deadly rollercoaster ride saves her life and a lucky few, but not from death itself — which seeks out those who escaped their fate.",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. Flight 180 Continuity"
+        ]
+      },
+      {
+        "id": "fd-4",
+        "sub_universe": "01. Flight 180 Continuity",
+        "title": "The Final Destination",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 4,
+        "phase": "McKinley Speedway",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5vxXrr1MqGsT4NNeRITpfDnl4Rq.jpg",
+        "runtime": "82 min",
+        "desc": "A horrifying premonition saves a young man and his friends from death during a racetrack accident but terrible fates await them nonetheless.",
+        "rating": 5.6,
+        "sub_universes": [
+          "01. Flight 180 Continuity"
+        ]
+      },
+      {
+        "id": "fd-6",
+        "sub_universe": "02. New Bloodlines",
+        "title": "Final Destination Bloodlines",
+        "year": 2025,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "2025 Generational Curse",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+        "runtime": "110 min",
+        "desc": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+        "rating": 7.0,
+        "sub_universes": [
+          "02. New Bloodlines"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paranormal-activity",
+    "name": "Paranormal Activity Saga",
+    "badge": "7 CANON CHAPTERS • PARANORMAL ACTIVITY",
+    "icon": "📹",
+    "theme_color": "#22D3EE",
+    "tagline": "Found-Footage Terror, Toby & The Midwives Coven",
+    "banner_poster": "/posters/paranormal_activity.webp",
+    "why_watch": "The micro-budget found-footage phenomenon chronicling the decades-long demonic haunting of sisters Katie and Kristi.",
+    "sub_universes": [
+      "All Paranormal Activity",
+      "01. Katie & Kristi Canon",
+      "02. Spin-Offs"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Haunting Order",
+        "desc": "1988 PA3 → PA2 → PA1 → PA4 → Marked Ones → Ghost Dimension"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from 2007 to 2021"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "pa-3",
+        "sub_universe": "01. Katie & Kristi Canon",
+        "title": "Paranormal Activity 3",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 3,
+        "phase": "1988 Childhood Origin • Toby",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9nYranPiWdNmbD5PRPPSL7VUFTS.jpg",
+        "runtime": "83 min",
+        "desc": "In 1988, young sisters Katie and Kristi befriend an invisible entity who resides in their home.",
+        "rating": 5.9,
+        "sub_universes": [
+          "01. Katie & Kristi Canon"
+        ]
+      },
+      {
+        "id": "pa-2",
+        "sub_universe": "01. Katie & Kristi Canon",
+        "title": "Paranormal Activity 2",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "2006 Kristi & Hunter Prequel",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gfdrkBZAyUUXJJ2iLQe03SAYRD3.jpg",
+        "runtime": "91 min",
+        "desc": "Just as Daniel and Kristi welcome a newborn baby into their home, a demonic presence begins terrorizing them, tearing apart their perfect world and turning it into an inescapable nightmare.",
+        "rating": 5.8,
+        "sub_universes": [
+          "01. Katie & Kristi Canon"
+        ]
+      },
+      {
+        "id": "pa-1",
+        "sub_universe": "01. Katie & Kristi Canon",
+        "title": "Paranormal Activity",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 1,
+        "phase": "2006 Katie & Micah Original",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tmclkEpjeo4Zu564gf3KrwIOuKw.jpg",
+        "runtime": "86 min",
+        "desc": "After a young, middle-class couple moves into what seems like a typical suburban house, they become increasingly disturbed by a presence that may or may not be demonic, but is certainly the most active in the middle...",
+        "rating": 6.1,
+        "sub_universes": [
+          "01. Katie & Kristi Canon"
+        ]
+      },
+      {
+        "id": "pa-4",
+        "sub_universe": "01. Katie & Kristi Canon",
+        "title": "Paranormal Activity 4",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "2011 Henderson Nevada",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/na5tAslm1kGNcft083AIXMTOsYR.jpg",
+        "runtime": "87 min",
+        "desc": "It has been five years since the disappearance of Katie and Hunter, and a suburban family witness strange events in their neighborhood when a woman and a mysterious child move in.",
+        "rating": 5.4,
+        "sub_universes": [
+          "01. Katie & Kristi Canon"
+        ]
+      },
+      {
+        "id": "pa-5",
+        "sub_universe": "02. Spin-Offs",
+        "title": "Paranormal Activity: The Marked Ones",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "2012 Oxnard Coven Tie-In",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2o4vBAnORr9UnLMvWHhULGDHfzH.jpg",
+        "runtime": "84 min",
+        "desc": "Seventeen-year-old Jesse has been hearing terrifying sounds coming from his neighbor’s apartment, but when he turns on his camera and sets out to uncover their source, he encounters an ancient evil that won’t rest...",
+        "rating": 5.4,
+        "sub_universes": [
+          "02. Spin-Offs"
+        ]
+      },
+      {
+        "id": "pa-6",
+        "sub_universe": "01. Katie & Kristi Canon",
+        "title": "Paranormal Activity: The Ghost Dimension",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "2013 Spectral Camera Finale",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1YpFQ2MQKzlDoa8diLWkapdRI8t.jpg",
+        "runtime": "87 min",
+        "desc": "Using a special camera that can see spirits, a family must protect their daughter from an evil entity with a sinister plan.",
+        "rating": 5.3,
+        "sub_universes": [
+          "01. Katie & Kristi Canon"
+        ]
+      },
+      {
+        "id": "pa-7",
+        "sub_universe": "02. Spin-Offs",
+        "title": "Paranormal Activity: Next of Kin",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Amish Community Standalone",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wRy3SwJFE55iL2bfKqECzP2qyrd.jpg",
+        "runtime": "98 min",
+        "desc": "Margot is a documentary filmmaker looking to meet her long-lost mother and extended family in a secluded Amish community. She and her film crew soon realize the family that welcomes them into their home might be...",
+        "rating": 6.1,
+        "sub_universes": [
+          "02. Spin-Offs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resident-evil",
+    "name": "Resident Evil Film Universe",
+    "badge": "11 CANON CHAPTERS • RESIDENT EVIL",
+    "icon": "☣️",
+    "theme_color": "#EF4444",
+    "tagline": "Umbrella Corporation, Raccoon City & Biohazard Survival",
+    "banner_poster": "/posters/resident_evil.webp",
+    "why_watch": "The live-action Alice hexalogy, Welcome to Raccoon City reboot, and Capcom's canon CGI movies featuring Leon S. Kennedy and Claire Redfield.",
+    "sub_universes": [
+      "All Resident Evil",
+      "01. Alice Live-Action Hexalogy",
+      "02. Capcom Canon CGI Films",
+      "03. Live-Action Reboot"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Continuity Branches Order",
+        "desc": "Alice Saga → Reboot → Canon CGI Game Films"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Exact release order from 2002 to 2023"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "re-1",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "The Hive Outbreak",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1UKNef590A0ZaMnxsscIcWuK1Em.jpg",
+        "runtime": "100 min",
+        "desc": "When a virus leaks from a top-secret facility, turning all resident researchers into ravenous zombies and their lab animals into mutated hounds from hell, the government sends in an elite military task force to...",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-2",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil: Apocalypse",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Raccoon City & Nemesis",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/r9j1FEYGGMkZAM47jFeVf4yTlVV.jpg",
+        "runtime": "94 min",
+        "desc": "As the city is locked down under quarantine, Alice finds out that the people that died from the previous incident at the Umbrella Corporation have turned into zombies. She then joins a small band of elite soldiers,...",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-3",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil: Extinction",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Nevada Wasteland",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6yaLr7Ymg5cvbtSVi5hHwBKx35I.jpg",
+        "runtime": "94 min",
+        "desc": "Years after the Racoon City catastrophe, survivors travel across the Nevada desert, hoping to make it to Alaska. Alice joins the caravan and their fight against hordes of zombies and the evil Umbrella Corp.",
+        "rating": 6.3,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-4",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil: Afterlife",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 5,
+        "phase": "Arcadia & Wesker",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qZHDnt8bnsD2cSJfIbjWbCkIq3G.jpg",
+        "runtime": "97 min",
+        "desc": "In a world ravaged by a virus infection, turning its victims into the Undead, Alice continues on her journey to find survivors and lead them to safety. Her deadly battle with the Umbrella Corporation reaches new...",
+        "rating": 6.1,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-5",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil: Retribution",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 6,
+        "phase": "Umbrella Prime Facility",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cHFLp5jg2Q3pCDIqUQrsM8nr1Wi.jpg",
+        "runtime": "95 min",
+        "desc": "The Umbrella Corporation’s deadly T-virus continues to ravage the Earth, transforming the global population into legions of the flesh eating Undead. The human race’s last and only hope, Alice, awakens in the heart of...",
+        "rating": 5.8,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-6",
+        "sub_universe": "01. Alice Live-Action Hexalogy",
+        "title": "Resident Evil: The Final Chapter",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 8,
+        "phase": "Return to The Hive",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gytKL6fimeiTIjd9kl5bfjY2k4C.jpg",
+        "runtime": "107 min",
+        "desc": "Picking up immediately after the events in Resident Evil: Retribution, Alice is the only survivor of what was meant to be humanity's final stand against the undead. Now, she must return to where the nightmare began -...",
+        "rating": 6.1,
+        "sub_universes": [
+          "01. Alice Live-Action Hexalogy"
+        ]
+      },
+      {
+        "id": "re-reboot",
+        "sub_universe": "03. Live-Action Reboot",
+        "title": "Resident Evil: Welcome to Raccoon City",
+        "year": 2021,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 10,
+        "phase": "1998 Game-Faithful Reboot",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",
+        "runtime": "107 min",
+        "desc": "Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The company’s exodus left the city a wasteland…with great evil brewing below the surface. When that...",
+        "rating": 5.9,
+        "sub_universes": [
+          "03. Live-Action Reboot"
+        ]
+      },
+      {
+        "id": "re-cgi-1",
+        "sub_universe": "02. Capcom Canon CGI Films",
+        "title": "Resident Evil: Degeneration",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 8,
+        "release_order": 4,
+        "phase": "Canon CGI • Harvardville Airport",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1x5OaFOo38JAwR5yXxeuvQg3VWH.jpg",
+        "runtime": "97 min",
+        "desc": "Leon S. Kennedy and Claire Redfield must battle a rogue warrior seeking revenge after unleashing the deadly G-Virus, whilst a mutated monster goes on a rampage.",
+        "rating": 6.8,
+        "sub_universes": [
+          "02. Capcom Canon CGI Films"
+        ]
+      },
+      {
+        "id": "re-cgi-2",
+        "sub_universe": "02. Capcom Canon CGI Films",
+        "title": "Resident Evil: Damnation",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 9,
+        "release_order": 7,
+        "phase": "Canon CGI • Eastern Slav Republic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
+        "runtime": "100 min",
+        "desc": "U.S. federal agent Leon S. Kennedy sneaks into the \"East Slavic Republic\" to verify rumors that Bio-Organic Weapons (BOWs) are being used in the country's civil war, which the U.S. and Russia are making preparations...",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Capcom Canon CGI Films"
+        ]
+      },
+      {
+        "id": "re-cgi-3",
+        "sub_universe": "02. Capcom Canon CGI Films",
+        "title": "Resident Evil: Vendetta",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 10,
+        "release_order": 9,
+        "phase": "Canon CGI • Leon, Chris & Rebecca",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/kdiMtgjWXEH9QZ85hgmWaSwshjf.jpg",
+        "runtime": "97 min",
+        "desc": "When a fearless enemy out for revenge unleashes a brutal and deadly new virus, BSAA captain Chris Redfield enlists the help of Agent Leon S. Kennedy and Professor Rebecca Chambers to bring down the death merchant and...",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Capcom Canon CGI Films"
+        ]
+      },
+      {
+        "id": "re-cgi-4",
+        "sub_universe": "02. Capcom Canon CGI Films",
+        "title": "Resident Evil: Death Island",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 11,
+        "release_order": 11,
+        "phase": "Canon CGI • Alcatraz Ensemble",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
+        "runtime": "91 min",
+        "desc": "In San Francisco, Jill Valentine is dealing with a zombie outbreak and a new T-Virus, Leon Kennedy is on the trail of a kidnapped DARPA scientist, and Claire Redfield is investigating a monstrous fish that is killing...",
+        "rating": 7.3,
+        "sub_universes": [
+          "02. Capcom Canon CGI Films"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-godfather",
+    "name": "The Godfather Saga",
+    "badge": "3 CORLEONE MASTERPIECES • 9 ACADEMY AWARDS",
+    "icon": "🌹",
+    "theme_color": "#C5A059",
+    "tagline": "Francis Ford Coppola's Corleone Crime Dynasty",
+    "banner_poster": "/posters/the_godfather.webp",
+    "why_watch": "Widely hailed as the greatest crime saga in cinema history — the rise and tragedy of Vito and Michael Corleone across nine Academy Awards.",
+    "sub_universes": [
+      "All Godfather"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🌹 Corleone Dynasty Order",
+        "desc": "The Godfather → Part II → Part III / Coppola's Coda"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "1972 to 2020 Coda Recut"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "gf-1",
+        "sub_universe": "All Godfather",
+        "title": "The Godfather",
+        "year": 1972,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Best Picture Winner • Marlon Brando",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "runtime": "175 min",
+        "desc": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son,...",
+        "rating": 8.7,
+        "sub_universes": [
+          "All Godfather"
+        ]
+      },
+      {
+        "id": "gf-2",
+        "sub_universe": "All Godfather",
+        "title": "The Godfather Part II",
+        "year": 1974,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Best Picture Winner • Pacino & De Niro",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8a1lJs7mFyGhGhZZDT1azJUoQiZ.jpg",
+        "runtime": "202 min",
+        "desc": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and...",
+        "rating": 8.6,
+        "sub_universes": [
+          "All Godfather"
+        ]
+      },
+      {
+        "id": "gf-3",
+        "sub_universe": "All Godfather",
+        "title": "The Godfather Part III",
+        "year": 1990,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Vatican Conspiracy Finale",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+        "runtime": "162 min",
+        "desc": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+        "rating": 7.4,
+        "sub_universes": [
+          "All Godfather"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oceans-eleven",
+    "name": "Ocean's Heist Saga",
+    "badge": "5 CANON CHAPTERS • OCEAN'S ELEVEN",
+    "icon": "🎰",
+    "theme_color": "#F59E0B",
+    "tagline": "Danny Ocean, Debbie Ocean & High-Stakes Casino Heists",
+    "banner_poster": "/posters/oceans_eleven.webp",
+    "why_watch": "Steven Soderbergh's ultra-stylish heist trilogy, the 1960 Rat Pack original, and Debbie Ocean's Met Gala caper.",
+    "sub_universes": [
+      "All Ocean's",
+      "01. Soderbergh Trilogy",
+      "02. Spin-Off & 1960 Original"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "🎰 Heist Continuity Order",
+        "desc": "Ocean's Eleven → Twelve → Thirteen → Eight"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "From 1960 Rat Pack Original to 2018"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "oc-11",
+        "sub_universe": "01. Soderbergh Trilogy",
+        "title": "Ocean's Eleven",
+        "year": 2001,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 2,
+        "phase": "Bellagio Vault Heist • Clooney & Pitt",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hQQCdZrsHtZyR6NbKH2YyCqd2fR.jpg",
+        "runtime": "116 min",
+        "desc": "Less than 24 hours into his parole, charismatic thief Danny Ocean is already rolling out his next plan: In one night, Danny's hand-picked crew of specialists will attempt to steal more than $150 million from three...",
+        "rating": 7.5,
+        "sub_universes": [
+          "01. Soderbergh Trilogy"
+        ]
+      },
+      {
+        "id": "oc-12",
+        "sub_universe": "01. Soderbergh Trilogy",
+        "title": "Ocean's Twelve",
+        "year": 2004,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 3,
+        "phase": "European Master Thief Caper",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pE5anFf7nf6ah7V3VRezQ1KSovi.jpg",
+        "runtime": "125 min",
+        "desc": "Despite pulling off one of the biggest heists in Las Vegas history and splitting the $160 million take, each of the infamous Ocean's crew have tried to go straight, lay low and live a legit life... but that's proven...",
+        "rating": 6.6,
+        "sub_universes": [
+          "01. Soderbergh Trilogy"
+        ]
+      },
+      {
+        "id": "oc-13",
+        "sub_universe": "01. Soderbergh Trilogy",
+        "title": "Ocean's Thirteen",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 4,
+        "phase": "The Bank Casino Revenge",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pBsZs4zYUiUTemqbikTZ76iQRaU.jpg",
+        "runtime": "122 min",
+        "desc": "Danny Ocean's team of criminals are back and composing a plan more personal than ever. When ruthless casino owner Willy Bank doublecrosses Reuben Tishkoff, causing a heart attack, Danny Ocean vows that he and his...",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. Soderbergh Trilogy"
+        ]
+      },
+      {
+        "id": "oc-8",
+        "sub_universe": "02. Spin-Off & 1960 Original",
+        "title": "Ocean's Eight",
+        "year": 2018,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 5,
+        "phase": "Debbie Ocean • Met Gala Heist",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/MvYpKlpFukTivnlBhizGbkAe3v.jpg",
+        "runtime": "111 min",
+        "desc": "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century at New York's annual Met Gala.",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Spin-Off & 1960 Original"
+        ]
+      },
+      {
+        "id": "oc-1960",
+        "sub_universe": "02. Spin-Off & 1960 Original",
+        "title": "Ocean's 11",
+        "year": 1960,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 1,
+        "phase": "Rat Pack Original Classic",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/A4R6u7SidBPVXMVzGSysCiRGTRz.jpg",
+        "runtime": "127 min",
+        "desc": "Danny Ocean and his gang attempt to rob the five biggest casinos in Las Vegas in one night.",
+        "rating": 6.4,
+        "sub_universes": [
+          "02. Spin-Off & 1960 Original"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bad-boys",
+    "name": "Bad Boys Action Saga",
+    "badge": "4 CANON CHAPTERS • BAD BOYS",
+    "icon": "🚓",
+    "theme_color": "#0EA5E9",
+    "tagline": "Mike Lowrey & Marcus Burnett • Miami PD Ride or Die",
+    "banner_poster": "/posters/bad_boys.webp",
+    "why_watch": "Will Smith and Martin Lawrence's explosive Miami buddy-cop action franchise spanning three decades of high-octane mayhem.",
+    "sub_universes": [
+      "All Bad Boys",
+      "01. Michael Bay Originals",
+      "02. Modern Revival"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "Bad Boys (1995) through Ride or Die (2024)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "All 4 chapters in theatrical order"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "bb-1",
+        "sub_universe": "01. Michael Bay Originals",
+        "title": "Bad Boys",
+        "year": 1995,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Michael Bay Directorial Debut",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/x1ygBecKHfXX4M2kRhmFKWfWbJc.jpg",
+        "runtime": "119 min",
+        "desc": "Marcus Burnett is a henpecked family man. Mike Lowrey is a footloose and fancy free ladies' man. Both Miami policemen, they have 72 hours to reclaim a consignment of drugs stolen from under their station's nose. To...",
+        "rating": 6.8,
+        "sub_universes": [
+          "01. Michael Bay Originals"
+        ]
+      },
+      {
+        "id": "bb-2",
+        "sub_universe": "01. Michael Bay Originals",
+        "title": "Bad Boys II",
+        "year": 2003,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Maximum Miami Mayhem",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yCvB5fG5aEPqa1St7ihY6KEAsHD.jpg",
+        "runtime": "146 min",
+        "desc": "Detectives Marcus Burnett and Mike Lowrey of the Miami Narcotics Task Force are tasked with stopping the flow of the drug Ecstasy into Miami. They track the drugs to the whacked-out Cuban drug lord Johnny Tapia, who...",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. Michael Bay Originals"
+        ]
+      },
+      {
+        "id": "bb-3",
+        "sub_universe": "02. Modern Revival",
+        "title": "Bad Boys for Life",
+        "year": 2020,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "AMMO Team & Cartel Reckoning",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
+        "runtime": "124 min",
+        "desc": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the...",
+        "rating": 7.1,
+        "sub_universes": [
+          "02. Modern Revival"
+        ]
+      },
+      {
+        "id": "bb-4",
+        "sub_universe": "02. Modern Revival",
+        "title": "Bad Boys: Ride or Die",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "On the Run in Miami",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+        "runtime": "116 min",
+        "desc": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "rating": 7.3,
+        "sub_universes": [
+          "02. Modern Revival"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lethal-weapon",
+    "name": "Lethal Weapon Saga",
+    "badge": "4 CANON CHAPTERS • LETHAL WEAPON",
+    "icon": "🔫",
+    "theme_color": "#EAB308",
+    "tagline": "Riggs & Murtaugh • The Definitive Buddy-Cop Quadrilogy",
+    "banner_poster": "/posters/lethal_weapon.webp",
+    "why_watch": "Richard Donner's iconic LAPD buddy-cop franchise starring Mel Gibson and Danny Glover — setting the blueprint for modern action cinema.",
+    "sub_universes": [
+      "All Lethal Weapon"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "Lethal Weapon 1 through 4 (1987–1998)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Order",
+        "desc": "Exact theatrical progression"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "lw-1",
+        "sub_universe": "All Lethal Weapon",
+        "title": "Lethal Weapon",
+        "year": 1987,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Shane Black Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6gt44oqb4nE8vflPElffeGwsHVl.jpg",
+        "runtime": "110 min",
+        "desc": "A veteran cop and an unstable detective become partners who must put their differences aside in order to bring down a heroin-smuggling ring run by ex-Special Forces.",
+        "rating": 7.3,
+        "sub_universes": [
+          "All Lethal Weapon"
+        ]
+      },
+      {
+        "id": "lw-2",
+        "sub_universe": "All Lethal Weapon",
+        "title": "Lethal Weapon 2",
+        "year": 1989,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Diplomatic Immunity & Leo Getz",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/1EEIUw0tkX7AJZ1ikZrtKZZKlC6.jpg",
+        "runtime": "114 min",
+        "desc": "Riggs and Murtaugh are on the trail of South African diplomats using their immunity to engage in criminal activities.",
+        "rating": 7.1,
+        "sub_universes": [
+          "All Lethal Weapon"
+        ]
+      },
+      {
+        "id": "lw-3",
+        "sub_universe": "All Lethal Weapon",
+        "title": "Lethal Weapon 3",
+        "year": 1992,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Lorna Cole Joins the Force",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8FnOudDHPOY7MFJnvQMR1qpuyek.jpg",
+        "runtime": "118 min",
+        "desc": "Riggs and Murtaugh pursue a former officer who uses his knowledge of police procedure and policies to steal and sell confiscated guns and ammunition to local street gangs.",
+        "rating": 6.7,
+        "sub_universes": [
+          "All Lethal Weapon"
+        ]
+      },
+      {
+        "id": "lw-4",
+        "sub_universe": "All Lethal Weapon",
+        "title": "Lethal Weapon 4",
+        "year": 1998,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Jet Li Triad Showdown",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pTLliHRoG0Qwp6qycmrMB4bD3mr.jpg",
+        "runtime": "127 min",
+        "desc": "With personal crises and age weighing in on them, LAPD officers Riggs and Murtaugh must contend with a deadly Chinese crime lord trying to get his brother out of prison.",
+        "rating": 6.6,
+        "sub_universes": [
+          "All Lethal Weapon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "die-hard",
+    "name": "Die Hard Action Saga",
+    "badge": "5 CANON CHAPTERS • DIE HARD",
+    "icon": "🏢",
+    "theme_color": "#F87171",
+    "tagline": "John McClane, Nakatomi Plaza & Yippee-Ki-Yay",
+    "banner_poster": "/posters/die_hard.webp",
+    "why_watch": "Bruce Willis' legendary everyman action-hero franchise that revolutionized the modern thriller, from Nakatomi Plaza to New York City.",
+    "sub_universes": [
+      "All Die Hard",
+      "01. Original Trilogy",
+      "02. Modern Chapters"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Order",
+        "desc": "Nakatomi Plaza (1988) through Moscow (2013)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Order",
+        "desc": "All 5 John McClane adventures"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "dh-1",
+        "sub_universe": "01. Original Trilogy",
+        "title": "Die Hard",
+        "year": 1988,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Nakatomi Plaza • Hans Gruber",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg",
+        "runtime": "132 min",
+        "desc": "High above the city of L.A. a team of terrorists has seized a building, taken hostages, and declared war. One man has manages to escape... An off-duty cop hiding somewhere inside. He's alone, tired... and the only...",
+        "rating": 7.8,
+        "sub_universes": [
+          "01. Original Trilogy"
+        ]
+      },
+      {
+        "id": "dh-2",
+        "sub_universe": "01. Original Trilogy",
+        "title": "Die Hard 2",
+        "year": 1990,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Dulles Airport Siege",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ybki0UWO3OPhaM6MSniuKC7sy1R.jpg",
+        "runtime": "124 min",
+        "desc": "One year after his heroics in Los Angeles, John McClane is an off-duty cop who is the wrong guy in the wrong place at the wrong time. On a snowy Christmas Eve, as he waits for his wife's plane to land at Washington...",
+        "rating": 7.0,
+        "sub_universes": [
+          "01. Original Trilogy"
+        ]
+      },
+      {
+        "id": "dh-3",
+        "sub_universe": "01. Original Trilogy",
+        "title": "Die Hard with a Vengeance",
+        "year": 1995,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Simon Says in NYC • Samuel L. Jackson",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/buqmCdFQEWwEpL3agGgg2GVjN2d.jpg",
+        "runtime": "128 min",
+        "desc": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane...",
+        "rating": 7.3,
+        "sub_universes": [
+          "01. Original Trilogy"
+        ]
+      },
+      {
+        "id": "dh-4",
+        "sub_universe": "02. Modern Chapters",
+        "title": "Live Free or Die Hard",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Fire Sale Cyber-Terrorism",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/31TT47YjBl7a7uvJ3ff1nrirXhP.jpg",
+        "runtime": "128 min",
+        "desc": "John McClane is back and badder than ever, and this time he calls on the services of a young hacker in his bid to stop a ring of Internet terrorists intent on taking control of America's computer infrastructure.",
+        "rating": 6.6,
+        "sub_universes": [
+          "02. Modern Chapters"
+        ]
+      },
+      {
+        "id": "dh-5",
+        "sub_universe": "02. Modern Chapters",
+        "title": "A Good Day to Die Hard",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Moscow & Chernobyl",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qJ0csDXAVFMsNn0cRcjy6W6PxAK.jpg",
+        "runtime": "98 min",
+        "desc": "Iconoclastic, take-no-prisoners cop John McClane, finds himself for the first time on foreign soil after traveling to Moscow to help his wayward son Jack - unaware that Jack is really a highly-trained CIA operative...",
+        "rating": 5.3,
+        "sub_universes": [
+          "02. Modern Chapters"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-hunger-games",
+    "name": "The Hunger Games Saga",
+    "badge": "5 CANON CHAPTERS • HUNGER GAMES",
+    "icon": "🏹",
+    "theme_color": "#D97706",
+    "tagline": "Panem, Katniss Everdeen & The Mockingjay Rebellion",
+    "banner_poster": "/posters/the_hunger_games.webp",
+    "why_watch": "Suzanne Collins' dystopian phenomenon spanning the 10th Hunger Games rise of Coriolanus Snow through Katniss Everdeen's revolution against the Capitol.",
+    "sub_universes": [
+      "All Hunger Games",
+      "01. Panem Prequel",
+      "02. Katniss Everdeen Quadrilogy"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Panem Order",
+        "desc": "10th Games (Ballad) → 74th Games → Catching Fire → Mockingjay 1 & 2"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from 2012 to 2023"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "hg-ballad",
+        "sub_universe": "01. Panem Prequel",
+        "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 5,
+        "phase": "10th Hunger Games • Young Snow",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg",
+        "runtime": "157 min",
+        "desc": "64 years before he becomes the tyrannical president of Panem, Coriolanus Snow sees a chance for a change in fortunes when he mentors Lucy Gray Baird, the female tribute from District 12.",
+        "rating": 7.0,
+        "sub_universes": [
+          "01. Panem Prequel"
+        ]
+      },
+      {
+        "id": "hg-1",
+        "sub_universe": "02. Katniss Everdeen Quadrilogy",
+        "title": "The Hunger Games",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 1,
+        "phase": "74th Hunger Games • District 12",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/apa5G43Hha7kH7wJG0gkkHT7FA9.jpg",
+        "runtime": "142 min",
+        "desc": "In a dystopian society where the Capitol forces each district to send two young tributes to fight to the death in a televised spectacle, a girl volunteers to take her sister’s place, setting the stage for a struggle...",
+        "rating": 7.2,
+        "sub_universes": [
+          "02. Katniss Everdeen Quadrilogy"
+        ]
+      },
+      {
+        "id": "hg-2",
+        "sub_universe": "02. Katniss Everdeen Quadrilogy",
+        "title": "The Hunger Games: Catching Fire",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 2,
+        "phase": "75th Quarter Quell Masterpiece",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vrQHDXjVmbYzadOXQ0UaObunoy2.jpg",
+        "runtime": "146 min",
+        "desc": "After surviving the Hunger Games, Katniss and Peeta struggle with the consequences of their victory as unrest spreads across Panem. Forced back into the spotlight, they become symbols of hope and resistance while the...",
+        "rating": 7.4,
+        "sub_universes": [
+          "02. Katniss Everdeen Quadrilogy"
+        ]
+      },
+      {
+        "id": "hg-3",
+        "sub_universe": "02. Katniss Everdeen Quadrilogy",
+        "title": "The Hunger Games: Mockingjay - Part 1",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 3,
+        "phase": "District 13 Rebellion",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/meSGXQ8MXqiC8bXxkKu7lPqnu0L.jpg",
+        "runtime": "123 min",
+        "desc": "After surviving the Quarter Quell, Katniss finds herself in the hidden stronghold of District 13, where the rebellion against the Capitol is gaining momentum. Struggling with the weight of becoming the symbol of...",
+        "rating": 6.8,
+        "sub_universes": [
+          "02. Katniss Everdeen Quadrilogy"
+        ]
+      },
+      {
+        "id": "hg-4",
+        "sub_universe": "02. Katniss Everdeen Quadrilogy",
+        "title": "The Hunger Games: Mockingjay - Part 2",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 4,
+        "phase": "Siege of the Capitol",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lImKHDfExAulp16grYm8zD5eONE.jpg",
+        "runtime": "137 min",
+        "desc": "As the war between the Capitol and the districts reaches its peak, Katniss Everdeen embarks on a perilous mission to liberate Panem and confront President Snow. Joined by a team of trusted allies, she navigates...",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Katniss Everdeen Quadrilogy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "twilight",
+    "name": "The Twilight Saga",
+    "badge": "5 CANON CHAPTERS • TWILIGHT",
+    "icon": "🌙",
+    "theme_color": "#6366F1",
+    "tagline": "Forks, The Cullens & Immortal Supernatural Romance",
+    "banner_poster": "/posters/twilight.webp",
+    "why_watch": "The global supernatural romance phenomenon following Bella Swan, Edward Cullen, and Jacob Black across all five chapters.",
+    "sub_universes": [
+      "All Twilight"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Saga Order",
+        "desc": "Twilight → New Moon → Eclipse → Breaking Dawn Parts 1 & 2"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "All 5 films from 2008 to 2012"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tw-1",
+        "sub_universe": "All Twilight",
+        "title": "Twilight",
+        "year": 2008,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Forks, Washington • Catherine Hardwicke",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg",
+        "runtime": "122 min",
+        "desc": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire. Despite Edward's repeated cautions, Bella...",
+        "rating": 6.3,
+        "sub_universes": [
+          "All Twilight"
+        ]
+      },
+      {
+        "id": "tw-2",
+        "sub_universe": "All Twilight",
+        "title": "The Twilight Saga: New Moon",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "The Wolf Pack & Volturi",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/k2qTooPlHffgNABNWxeJdGMglPK.jpg",
+        "runtime": "131 min",
+        "desc": "Forks, Washington resident Bella Swan is reeling from the departure of her vampire love, Edward Cullen, and finds comfort in her friendship with Jacob Black, a werewolf. But before she knows it, she's thrust into a...",
+        "rating": 6.0,
+        "sub_universes": [
+          "All Twilight"
+        ]
+      },
+      {
+        "id": "tw-3",
+        "sub_universe": "All Twilight",
+        "title": "The Twilight Saga: Eclipse",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Newborn Vampire Army",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dK4Gi1UdMiHzHc7r7CZQG4IQ9Sr.jpg",
+        "runtime": "124 min",
+        "desc": "Bella once again finds herself surrounded by danger as Seattle is ravaged by a string of mysterious killings and a malicious vampire continues her quest for revenge. In the midst of it all, she is forced to choose...",
+        "rating": 6.2,
+        "sub_universes": [
+          "All Twilight"
+        ]
+      },
+      {
+        "id": "tw-4",
+        "sub_universe": "All Twilight",
+        "title": "The Twilight Saga: Breaking Dawn - Part 1",
+        "year": 2011,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "The Wedding & Isle Esme",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qs8LsHKYlVRmJbFUiSUhhRAygwj.jpg",
+        "runtime": "117 min",
+        "desc": "Bella Swan and Edward Cullen's honeymoon phase is abruptly disrupted by betrayals and unforeseen tragedies that endanger their world.",
+        "rating": 6.2,
+        "sub_universes": [
+          "All Twilight"
+        ]
+      },
+      {
+        "id": "tw-5",
+        "sub_universe": "All Twilight",
+        "title": "The Twilight Saga: Breaking Dawn - Part 2",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "The Final Volturi Confrontation",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7IGdPaKujv0BjI0Zd0m0a4CzEjJ.jpg",
+        "runtime": "115 min",
+        "desc": "After the birth of Renesmee, the Cullens gather other vampire clans in order to protect the child from a false allegation that puts the family in front of the Volturi.",
+        "rating": 6.4,
+        "sub_universes": [
+          "All Twilight"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "despicable-me",
+    "name": "Despicable Me & Minions Universe",
+    "badge": "6 CANON CHAPTERS • DESPICABLE ME",
+    "icon": "🍌",
+    "theme_color": "#FACC15",
+    "tagline": "Gru, The Minions & Illumination's Record-Breaking Comedy Saga",
+    "banner_poster": "/posters/despicable_me.webp",
+    "why_watch": "The highest-grossing animated film franchise in box office history — from the Minions' 1968 quest for a boss through Gru's supervillain-to-superdad journey.",
+    "sub_universes": [
+      "All Despicable Me",
+      "01. Minions Prequels",
+      "02. Despicable Me Mainline"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Story Order",
+        "desc": "1968 Minions → 1976 Rise of Gru → Despicable Me 1–4"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Theatrical order from 2010 to 2024"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "dm-minions-1",
+        "sub_universe": "01. Minions Prequels",
+        "title": "Minions",
+        "year": 2015,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 3,
+        "phase": "1968 Villain-Con • Kevin, Stuart & Bob",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dr02BdCNAUPVU07aOodwPYv6HCf.jpg",
+        "runtime": "91 min",
+        "desc": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+        "rating": 6.4,
+        "sub_universes": [
+          "01. Minions Prequels"
+        ]
+      },
+      {
+        "id": "dm-minions-2",
+        "sub_universe": "01. Minions Prequels",
+        "title": "Minions: The Rise of Gru",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 5,
+        "phase": "1976 Vicious 6 Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4dBDk1LPdvdhcZdjQBmdXwiVKUA.jpg",
+        "runtime": "87 min",
+        "desc": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+        "rating": 7.3,
+        "sub_universes": [
+          "01. Minions Prequels"
+        ]
+      },
+      {
+        "id": "dm-1",
+        "sub_universe": "02. Despicable Me Mainline",
+        "title": "Despicable Me",
+        "year": 2010,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 1,
+        "phase": "Stealing the Moon",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/b1BT309QWjtFUlJPLmXmrcHOWEL.jpg",
+        "runtime": "95 min",
+        "desc": "Determined to prove he's the world's greatest supervillain, Gru hatches an audacious plan to steal the Moon. To pull it off, he adopts three orphaned girls—Margo, Edith, and Agnes—intending to use them as pawns in...",
+        "rating": 7.3,
+        "sub_universes": [
+          "02. Despicable Me Mainline"
+        ]
+      },
+      {
+        "id": "dm-2",
+        "sub_universe": "02. Despicable Me Mainline",
+        "title": "Despicable Me 2",
+        "year": 2013,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 2,
+        "phase": "Anti-Villain League & Lucy",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg",
+        "runtime": "98 min",
+        "desc": "Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.",
+        "rating": 6.9,
+        "sub_universes": [
+          "02. Despicable Me Mainline"
+        ]
+      },
+      {
+        "id": "dm-3",
+        "sub_universe": "02. Despicable Me Mainline",
+        "title": "Despicable Me 3",
+        "year": 2017,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 4,
+        "phase": "Twin Brother Dru & Balthazar Bratt",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e72KCMHNkbZ6USRJmABeqwmaJ5n.jpg",
+        "runtime": "90 min",
+        "desc": "Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination.",
+        "rating": 6.5,
+        "sub_universes": [
+          "02. Despicable Me Mainline"
+        ]
+      },
+      {
+        "id": "dm-4",
+        "sub_universe": "02. Despicable Me Mainline",
+        "title": "Despicable Me 4",
+        "year": 2024,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Gru Jr. & Mega Minions",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+        "runtime": "94 min",
+        "desc": "Gru and Lucy and their girls—Margo, Edith and Agnes—welcome a new member to the Gru family, Gru Jr., who is intent on tormenting his dad. Gru also faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend...",
+        "rating": 7.0,
+        "sub_universes": [
+          "02. Despicable Me Mainline"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ice-age",
+    "name": "Ice Age Prehistoric Saga",
+    "badge": "6 CANON CHAPTERS • ICE AGE",
+    "icon": "🦣",
+    "theme_color": "#38BDF8",
+    "tagline": "Manny, Sid, Diego & Scrat's Acorn Across Prehistoric Eras",
+    "banner_poster": "/posters/ice_age.webp",
+    "why_watch": "Blue Sky Studios' beloved prehistoric adventure saga following the sub-zero herd across meltdowns, dinosaur worlds, and continental drift.",
+    "sub_universes": [
+      "All Ice Age"
+    ],
+    "watch_modes": [
+      {
+        "id": "chrono",
+        "label": "⏳ Chronological Herd Order",
+        "desc": "Ice Age (2002) through Adventures of Buck Wild (2022)"
+      },
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "All 6 prehistoric features"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "ia-1",
+        "sub_universe": "All Ice Age",
+        "title": "Ice Age",
+        "year": 2002,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "The Sub-Zero Herd Origin",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg",
+        "runtime": "81 min",
+        "desc": "Manny the mammoth, Sid the loquacious sloth, and Diego the sabre-toothed tiger go on a comical quest to return a human baby back to his father, across a world on the brink of an ice age.",
+        "rating": 7.4,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      },
+      {
+        "id": "ia-2",
+        "sub_universe": "All Ice Age",
+        "title": "Ice Age: The Meltdown",
+        "year": 2006,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Ellie & The Great Thaw",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zDduhCHasKQ9YOTvlOreHem7Wbi.jpg",
+        "runtime": "91 min",
+        "desc": "Diego, Manny and Sid return in this sequel to the hit animated movie Ice Age. This time around, the deep freeze is over, and the ice-covered earth is starting to melt, which will destroy the trio's cherished valley....",
+        "rating": 6.7,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      },
+      {
+        "id": "ia-3",
+        "sub_universe": "All Ice Age",
+        "title": "Ice Age: Dawn of the Dinosaurs",
+        "year": 2009,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Buck & The Lost World",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/cXOLaxcNjNAYmEx1trZxOTKhK3Q.jpg",
+        "runtime": "94 min",
+        "desc": "Times are changing for Manny the moody mammoth, Sid the motor mouthed sloth and Diego the crafty saber-toothed tiger. Life heats up for our heroes when they meet some new and none-too-friendly neighbors – the mighty...",
+        "rating": 6.8,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      },
+      {
+        "id": "ia-4",
+        "sub_universe": "All Ice Age",
+        "title": "Ice Age: Continental Drift",
+        "year": 2012,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "Captain Gutt High-Seas",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dfp1BZF7FxbBUyzHvMOI9t8NWDD.jpg",
+        "runtime": "88 min",
+        "desc": "Manny, Diego, and Sid embark upon another adventure after their continent is set adrift. Using an iceberg as a ship, they encounter sea creatures and battle pirates as they explore a new world.",
+        "rating": 6.4,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      },
+      {
+        "id": "ia-5",
+        "sub_universe": "All Ice Age",
+        "title": "Ice Age: Collision Course",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Scrat in Space",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tFzUkdhPOForVrEfvxydXfPLrZR.jpg",
+        "runtime": "95 min",
+        "desc": "Set after the events of Continental Drift, Scrat's epic pursuit of his elusive acorn catapults him outside of Earth, where he accidentally sets off a series of cosmic events that transform and threaten the planet. To...",
+        "rating": 6.1,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      },
+      {
+        "id": "ia-6",
+        "sub_universe": "All Ice Age",
+        "title": "The Ice Age Adventures of Buck Wild",
+        "year": 2022,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Crash, Eddie & Buck Spin-Off",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9ginbMWmt9y7PIHW1c9hnbIVWPm.jpg",
+        "runtime": "82 min",
+        "desc": "The fearless one-eyed weasel Buck teams up with mischievous possum brothers Crash & Eddie as they head off on a new adventure into Buck's home: The Dinosaur World.",
+        "rating": 6.5,
+        "sub_universes": [
+          "All Ice Age"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tmnt",
+    "name": "Teenage Mutant Ninja Turtles",
+    "badge": "7 CANON CHAPTERS • TMNT",
+    "icon": "🐢",
+    "theme_color": "#10B981",
+    "tagline": "Leonardo, Michelangelo, Donatello & Raphael • Cowabunga",
+    "banner_poster": "/posters/tmnt.webp",
+    "why_watch": "Heroes in a half shell across four decades of cinema — from Jim Henson's 1990 live-action classic to Seth Rogen's acclaimed Mutant Mayhem.",
+    "sub_universes": [
+      "All TMNT",
+      "01. 1990s Live-Action Trilogy",
+      "02. 2007–2016 Era",
+      "03. Mutant Mayhem Era"
+    ],
+    "watch_modes": [
+      {
+        "id": "release",
+        "label": "🎞️ Release Date Order",
+        "desc": "Every theatrical Turtles film from 1990 to 2023"
+      },
+      {
+        "id": "chrono",
+        "label": "🐢 Era Continuity Order",
+        "desc": "1990s Trilogy → TMNT 2007 → Bay Reboot → Mutant Mayhem"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tmnt-1990",
+        "sub_universe": "01. 1990s Live-Action Trilogy",
+        "title": "Teenage Mutant Ninja Turtles",
+        "year": 1990,
+        "media_type": "movie",
+        "chrono_order": 1,
+        "release_order": 1,
+        "phase": "Jim Henson Animatronics Classic",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg",
+        "runtime": "93 min",
+        "desc": "A quartet of humanoid turtles, trained by their mentor in Ninjutsu, must learn to work together to face the menace of Shredder and the Foot Clan.",
+        "rating": 6.7,
+        "sub_universes": [
+          "01. 1990s Live-Action Trilogy"
+        ]
+      },
+      {
+        "id": "tmnt-1991",
+        "sub_universe": "01. 1990s Live-Action Trilogy",
+        "title": "Teenage Mutant Ninja Turtles II: The Secret of the Ooze",
+        "year": 1991,
+        "media_type": "movie",
+        "chrono_order": 2,
+        "release_order": 2,
+        "phase": "Super Shredder & Vanilla Ice",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Hyvvz9Z3le1is8a0EeFJQm0aSC.jpg",
+        "runtime": "88 min",
+        "desc": "The Turtles and the Shredder battle once again, this time for the last cannister of the ooze that created the Turtles, which Shredder wants to create an army of new mutants. Meanwhile Splinter is coming... to a decision.",
+        "rating": 6.2,
+        "sub_universes": [
+          "01. 1990s Live-Action Trilogy"
+        ]
+      },
+      {
+        "id": "tmnt-1993",
+        "sub_universe": "01. 1990s Live-Action Trilogy",
+        "title": "Teenage Mutant Ninja Turtles III",
+        "year": 1993,
+        "media_type": "movie",
+        "chrono_order": 3,
+        "release_order": 3,
+        "phase": "Feudal Japan Time Travel",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/fwX5RdPDBFsbEAXc46DrvRz5Bca.jpg",
+        "runtime": "95 min",
+        "desc": "The four turtles travel back in time to the days of the legendary and deadly samurai in ancient Japan, where they train to perfect the art of becoming one. The turtles also assist a small village in an uprising.",
+        "rating": 5.5,
+        "sub_universes": [
+          "01. 1990s Live-Action Trilogy"
+        ]
+      },
+      {
+        "id": "tmnt-2007",
+        "sub_universe": "02. 2007–2016 Era",
+        "title": "TMNT",
+        "year": 2007,
+        "media_type": "movie",
+        "chrono_order": 4,
+        "release_order": 4,
+        "phase": "CGI Animated Continuation",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/poi1xctCgyzTRkNwiVYp6auQNhj.jpg",
+        "runtime": "87 min",
+        "desc": "After the defeat of their old arch nemesis, The Shredder, the Turtles have grown apart as a family. Struggling to keep them together, their rat sensei, Splinter, becomes worried when strange things begin to brew in...",
+        "rating": 6.2,
+        "sub_universes": [
+          "02. 2007–2016 Era"
+        ]
+      },
+      {
+        "id": "tmnt-2014",
+        "sub_universe": "02. 2007–2016 Era",
+        "title": "Teenage Mutant Ninja Turtles",
+        "year": 2014,
+        "media_type": "movie",
+        "chrono_order": 5,
+        "release_order": 5,
+        "phase": "Live-Action CGI Reboot",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg",
+        "runtime": "101 min",
+        "desc": "When a kingpin threatens New York City, a group of mutated turtle warriors must emerge from the shadows to protect their home.",
+        "rating": 5.9,
+        "sub_universes": [
+          "02. 2007–2016 Era"
+        ]
+      },
+      {
+        "id": "tmnt-2016",
+        "sub_universe": "02. 2007–2016 Era",
+        "title": "Teenage Mutant Ninja Turtles: Out of the Shadows",
+        "year": 2016,
+        "media_type": "movie",
+        "chrono_order": 6,
+        "release_order": 6,
+        "phase": "Bebop, Rocksteady & Krang",
+        "is_essential": false,
+        "poster_url": "https://image.tmdb.org/t/p/w500/euVaCiCWz3AALcQXHT6aUqdGUo6.jpg",
+        "runtime": "112 min",
+        "desc": "After supervillain Shredder escapes custody, he joins forces with mad scientist Baxter Stockman and two dimwitted henchmen, Bebop and Rocksteady, to unleash a diabolical plan to take over the world. As the Turtles...",
+        "rating": 6.1,
+        "sub_universes": [
+          "02. 2007–2016 Era"
+        ]
+      },
+      {
+        "id": "tmnt-2023",
+        "sub_universe": "03. Mutant Mayhem Era",
+        "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+        "year": 2023,
+        "media_type": "movie",
+        "chrono_order": 7,
+        "release_order": 7,
+        "phase": "Acclaimed Stylized Animated Reboot",
+        "is_essential": true,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gyh0eECE2IqrW8GWl3KoHBfc45j.jpg",
+        "runtime": "100 min",
+        "desc": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take...",
+        "rating": 7.2,
+        "sub_universes": [
+          "03. Mutant Mayhem Era"
         ]
       }
     ]

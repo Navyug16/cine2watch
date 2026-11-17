@@ -1,7 +1,7 @@
 {
   "name": "cine2watch",
   "short_name": "cine2watch",
-  "description": "Intelligent Cinema & Streaming Decision Engine across 330,000+ titles and 39 Cinematic Universes.",
+  "description": "Intelligent Cinema & Streaming Decision Engine across 330,000+ titles and 62 Cinematic Universes.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#090a0d",

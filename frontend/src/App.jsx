@@ -208,8 +208,9 @@ export default function App() {
   }, [historyExcludeIds]);
 
   // Fetch Recommendations from Supabase Backend API
-  const fetchRecommendations = async (genresToFetch = selectedGenres, ignoreYear = false) => {
-    if (genresToFetch.length !== 2) return;
+  const fetchRecommendations = async (genresToFetch = selectedGenres, ignoreYear = false, overrides = {}) => {
+    const finalGenres = overrides.genres || genresToFetch;
+    if (finalGenres.length !== 2) return;
 
     setLoading(true);
     setError(null);
@@ -217,11 +218,11 @@ export default function App() {
 
     try {
       const params = new URLSearchParams({
-        industry: industry || 'all',
-        media_type: mediaType || 'movie',
-        start_year: customStart.toString(),
-        end_year: customEnd.toString(),
-        genres: genresToFetch.join(','),
+        industry: overrides.industry || industry || 'all',
+        media_type: overrides.mediaType || mediaType || 'movie',
+        start_year: (overrides.startYear ?? customStart).toString(),
+        end_year: (overrides.endYear ?? customEnd).toString(),
+        genres: finalGenres.join(','),
         ignore_year: ignoreYear ? 'true' : 'false'
       });
 
@@ -277,7 +278,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col justify-between bg-[#08090d] text-slate-100 selection:bg-[#c5a059] selection:text-black relative pb-16 lg:pb-0">
-      
+
       {/* Mobile/Tablet Bottom Navigation Dock */}
       <Sidebar
         activePage={activePage}
@@ -298,7 +299,7 @@ export default function App() {
 
       {/* Main Page Content Body */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 flex flex-col">
-        
+
         {/* PAGE 1: HOME (Decision Funnel Questions & Results) */}
         {activePage === 'home' && (
           <HomePage
