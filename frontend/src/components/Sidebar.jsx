@@ -1,4 +1,3 @@
-import React from 'react';
 import { Home, Layers, Grid, Bookmark } from 'lucide-react';
 
 export default function Sidebar({

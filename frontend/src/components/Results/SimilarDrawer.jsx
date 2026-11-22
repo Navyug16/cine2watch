@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Sparkles, Play, Loader2, Bookmark, Check } from 'lucide-react';
 import CinemaPoster from '../Common/CinemaPoster';
 
@@ -14,7 +14,12 @@ export default function SimilarDrawer({
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (isOpen && referenceItem) {
+    if (!isOpen || !referenceItem) {
+      return;
+    }
+
+    let ignore = false;
+    const fetchSimilar = async () => {
       setLoading(true);
       const params = new URLSearchParams({
         id: referenceItem.id || '',
@@ -26,23 +31,31 @@ export default function SimilarDrawer({
         original_language: referenceItem.original_language || ''
       });
 
-      fetch(`/api/similar?${params.toString()}`)
-        .then((r) => r.json())
-        .then((res) => {
+      try {
+        const r = await fetch(`/api/similar?${params.toString()}`);
+        const res = await r.json();
+        if (!ignore) {
           if (res.success && res.data) {
             setSimilarItems(res.data);
           } else {
             setSimilarItems([]);
           }
-        })
-        .catch((err) => {
+        }
+      } catch (err) {
+        if (!ignore) {
           console.error('Similar fetch error:', err);
           setSimilarItems([]);
-        })
-        .finally(() => setLoading(false));
-    } else {
-      setSimilarItems([]);
-    }
+        }
+      } finally {
+        if (!ignore) setLoading(false);
+      }
+    };
+
+    fetchSimilar();
+
+    return () => {
+      ignore = true;
+    };
   }, [isOpen, referenceItem]);
 
   if (!isOpen || !referenceItem) return null;
@@ -56,7 +69,7 @@ export default function SimilarDrawer({
         onClick={(e) => e.stopPropagation()}
         className="card-luxury w-full max-w-xl h-full border-l border-white/[0.12] shadow-2xl flex flex-col animate-in slide-in-from-right duration-300 bg-[#0d0e15]"
       >
-        
+
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-white/[0.08] flex items-center justify-between gap-3 bg-[#11121b]">
           <div className="flex items-center space-x-2.5 min-w-0">
@@ -174,11 +187,10 @@ export default function SimilarDrawer({
                       {onToggleWatchlist && (
                         <button
                           onClick={() => onToggleWatchlist(item)}
-                          className={`p-2 rounded-xl border cursor-pointer transition-colors ${
-                            saved
+                          className={`p-2 rounded-xl border cursor-pointer transition-colors ${saved
                               ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
                               : 'bg-white/[0.05] hover:bg-white/[0.12] border-white/[0.08] text-slate-300'
-                          }`}
+                            }`}
                           title={saved ? 'Remove from Shortlist' : 'Save to Shortlist'}
                         >
                           {saved ? <Check className="w-3.5 h-3.5" /> : <Bookmark className="w-3.5 h-3.5" />}

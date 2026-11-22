@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   Search,
   X,
@@ -25,21 +25,29 @@ export default function SearchModal({
   const [resultsData, setResultsData] = useState(null);
   const inputRef = useRef(null);
 
+  const handleClose = () => {
+    setQuery('');
+    setResultsData(null);
+    onClose();
+  };
+
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
-    } else {
-      setQuery('');
-      setResultsData(null);
     }
   }, [isOpen]);
 
-  useEffect(() => {
-    if (!query.trim()) {
+  const handleQueryChange = (e) => {
+    const val = e.target.value;
+    setQuery(val);
+    if (!val.trim()) {
       setResultsData(null);
       setLoading(false);
-      return;
     }
+  };
+
+  useEffect(() => {
+    if (!query.trim()) return;
 
     const timer = setTimeout(async () => {
       setLoading(true);
@@ -72,14 +80,14 @@ export default function SearchModal({
 
   return (
     <div
-      onClick={onClose}
+      onClick={handleClose}
       className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 modal-backdrop-luxury animate-in fade-in duration-200"
     >
       <div
         onClick={(e) => e.stopPropagation()}
         className="card-luxury max-w-2xl w-full rounded-3xl overflow-hidden border border-white/[0.12] shadow-2xl flex flex-col max-h-[80vh]"
       >
-        
+
         {/* Search Input Bar */}
         <div className="p-4 sm:p-5 border-b border-white/[0.08] flex items-center space-x-3 bg-[#10111a]">
           <Search className="w-5 h-5 text-[#c5a059] shrink-0" />
@@ -87,14 +95,17 @@ export default function SearchModal({
             ref={inputRef}
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={handleQueryChange}
             placeholder='Search 330,000+ titles or "Movies like Interstellar"...'
             className="w-full bg-transparent text-white placeholder-slate-500 text-sm sm:text-base outline-none font-medium"
           />
           {loading && <Loader2 className="w-4 h-4 text-[#c5a059] animate-spin shrink-0" />}
           {query && (
             <button
-              onClick={() => setQuery('')}
+              onClick={() => {
+                setQuery('');
+                setResultsData(null);
+              }}
               aria-label="Clear query"
               className="p-1 rounded-full hover:bg-white/[0.08] text-slate-400 hover:text-white cursor-pointer"
             >
@@ -102,7 +113,7 @@ export default function SearchModal({
             </button>
           )}
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="px-2 py-1 rounded-lg bg-black/40 border border-white/[0.08] text-[10px] font-mono text-slate-400 hover:text-white cursor-pointer"
           >
             ESC
@@ -138,7 +149,7 @@ export default function SearchModal({
         {/* Results Container */}
         {resultsData && (
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
-            
+
             {resultsData.mode === 'similar_to' && resultsData.reference && (
               <div className="p-3 rounded-2xl bg-[#181a28] border border-[#c5a059]/30 flex items-center space-x-3 mb-3">
                 <div className="w-10 aspect-[2/3] rounded-lg overflow-hidden shrink-0 bg-black/40 border border-white/[0.08]">
@@ -242,11 +253,10 @@ export default function SearchModal({
                         {onToggleWatchlist && (
                           <button
                             onClick={() => onToggleWatchlist(item)}
-                            className={`p-2 rounded-xl transition-colors cursor-pointer ${
-                              saved
+                            className={`p-2 rounded-xl transition-colors cursor-pointer ${saved
                                 ? 'bg-[#c5a059]/20 text-[#c5a059]'
                                 : 'bg-white/[0.05] hover:bg-white/[0.12] text-slate-400 hover:text-white'
-                            }`}
+                              }`}
                             title={saved ? 'Remove from Shortlist' : 'Save to Shortlist'}
                           >
                             <Bookmark className={`w-3.5 h-3.5 ${saved ? 'fill-[#c5a059]' : ''}`} />

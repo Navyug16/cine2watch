@@ -1,5 +1,4 @@
-import React from 'react';
-import { Sparkles, ArrowLeft, Check, RefreshCw } from 'lucide-react';
+import { Sparkles, ArrowLeft, RefreshCw } from 'lucide-react';
 import { GENRES } from '../../data/constants';
 
 export default function DualGenreStep({ selectedGenres, onToggleGenre, onProceed, onBack, loading }) {
@@ -52,18 +51,17 @@ export default function DualGenreStep({ selectedGenres, onToggleGenre, onProceed
             <button
               key={g.name}
               onClick={() => onToggleGenre(g.name)}
-              className={`p-3.5 rounded-2xl border text-left transition-all duration-200 flex items-center justify-between group cursor-pointer ${
-                isSelected
-                  ? 'bg-[#1b1c2b] border-[#c5a059] text-white shadow-[0_0_15px_rgba(197,160,89,0.2)] ring-1 ring-[#c5a059]'
-                  : 'bg-[#12131c] hover:bg-[#161724] border-white/[0.06] text-slate-300 hover:border-white/[0.15]'
-              }`}
+              className={`p-3.5 rounded-2xl border text-left transition-all duration-200 flex items-center justify-between group cursor-pointer ${isSelected
+                ? 'bg-[#1b1c2b] border-[#c5a059] text-white shadow-[0_0_15px_rgba(197,160,89,0.2)] ring-1 ring-[#c5a059]'
+                : 'bg-[#12131c] hover:bg-[#161724] border-white/[0.06] text-slate-300 hover:border-white/[0.15]'
+                }`}
             >
               <div className="flex items-center space-x-2.5">
-                <span className="text-lg">{g.icon}</span>
-                <span className="text-xs font-semibold">{g.name}</span>
+                <span className="text-xl">{g.icon}</span>
+                <span className="text-xs sm:text-sm font-semibold">{g.name}</span>
               </div>
               {isSelected && (
-                <span className="w-4 h-4 rounded-full bg-[#c5a059] text-black text-[10px] font-black flex items-center justify-center">
+                <span className="w-5 h-5 rounded-full bg-[#e5b95f] text-black text-[11px] font-black flex items-center justify-center shadow-md">
                   ✓
                 </span>
               )}
@@ -76,7 +74,7 @@ export default function DualGenreStep({ selectedGenres, onToggleGenre, onProceed
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-3">
         <button
           onClick={onBack}
-          className="px-4 py-2 rounded-xl bg-[#14151f] hover:bg-[#1a1b2a] border border-white/[0.06] text-xs text-slate-400 hover:text-white flex items-center space-x-1.5 cursor-pointer transition-colors"
+          className="px-4 py-2.5 rounded-xl bg-[#0e1017] hover:bg-[#161824] border border-white/[0.08] text-xs text-slate-400 hover:text-white flex items-center space-x-2 cursor-pointer transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Era</span>
@@ -86,17 +84,18 @@ export default function DualGenreStep({ selectedGenres, onToggleGenre, onProceed
           <button
             onClick={() => onProceed(selectedGenres)}
             disabled={loading}
-            className="px-6 py-2.5 rounded-xl btn-gold text-xs font-bold flex items-center space-x-2 shadow-xl cursor-pointer hover:scale-105 transition-all"
+            className="px-8 py-3 rounded-2xl btn-gold text-xs sm:text-sm font-extrabold flex items-center space-x-2.5 shadow-2xl cursor-pointer hover:scale-105 transition-all"
           >
             {loading ? (
-              <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+              <RefreshCw className="w-4 h-4 animate-spin text-black" />
             ) : (
-              <Sparkles className="w-3.5 h-3.5 fill-current" />
+              <Sparkles className="w-4 h-4 fill-black text-black" />
             )}
-            <span>{loading ? 'Consulting 330,000 Titles...' : 'Reveal Curated Matches'}</span>
+            <span>{loading ? 'Consulting 330,000 Titles...' : 'Reveal Curated Masterpieces'}</span>
           </button>
         )}
       </div>
+
     </div>
   );
 }

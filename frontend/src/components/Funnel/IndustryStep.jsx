@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Film } from 'lucide-react';
 import { INDUSTRIES } from '../../data/constants';
 

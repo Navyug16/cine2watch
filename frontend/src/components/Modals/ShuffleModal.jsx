@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { X, Dices, Sparkles, Star, Play, Compass, Bookmark, Check } from 'lucide-react';
 import { INDUSTRIES } from '../../data/constants';
 import CinemaPoster from '../Common/CinemaPoster';
@@ -27,7 +27,7 @@ export default function ShuffleModal({
   const activeIndObj = INDUSTRIES.find((i) => i.id === currentIndustry);
   const industryLabel = activeIndObj ? activeIndObj.name : 'Worldwide Cinema';
 
-  const fetchShuffle = async () => {
+  const fetchShuffle = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
@@ -63,13 +63,22 @@ export default function ShuffleModal({
     } finally {
       setLoading(false);
     }
-  };
+  }, [currentIndustry, seenHistory]);
 
   useEffect(() => {
     if (isOpen) {
-      fetchShuffle();
+      let ignore = false;
+      const run = async () => {
+        if (!ignore) {
+          await fetchShuffle();
+        }
+      };
+      run();
+      return () => {
+        ignore = true;
+      };
     }
-  }, [isOpen, currentIndustry]);
+  }, [isOpen, fetchShuffle]);
 
   if (!isOpen) return null;
 
@@ -82,7 +91,7 @@ export default function ShuffleModal({
         onClick={(e) => e.stopPropagation()}
         className="card-luxury max-w-4xl w-full rounded-3xl overflow-hidden border border-white/[0.12] shadow-2xl flex flex-col max-h-[92vh]"
       >
-        
+
         {/* Header */}
         <div className="p-4 sm:p-6 border-b border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#10111a]">
           <div>
@@ -174,7 +183,7 @@ export default function ShuffleModal({
               )}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
-                
+
                 {/* 1. MOVIE CARD */}
                 {data.movie && (
                   <div className="bg-[#141520] rounded-2xl border border-white/[0.08] overflow-hidden p-4 sm:p-5 flex flex-col sm:flex-row gap-4 group hover:border-[#c5a059]/40 transition-all shadow-xl">
@@ -254,11 +263,10 @@ export default function ShuffleModal({
                         {onToggleWatchlist && (
                           <button
                             onClick={() => onToggleWatchlist(data.movie)}
-                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${
-                              isInWatchlist?.(data.movie)
+                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${isInWatchlist?.(data.movie)
                                 ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
                                 : 'bg-white/[0.06] hover:bg-white/[0.12] border-white/[0.08] text-slate-300'
-                            }`}
+                              }`}
                             title={isInWatchlist?.(data.movie) ? 'Saved in Shortlist' : 'Save to Shortlist'}
                           >
                             {isInWatchlist?.(data.movie) ? (
@@ -352,11 +360,10 @@ export default function ShuffleModal({
                         {onToggleWatchlist && (
                           <button
                             onClick={() => onToggleWatchlist(data.series)}
-                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${
-                              isInWatchlist?.(data.series)
+                            className={`p-2.5 rounded-xl border cursor-pointer transition-colors ${isInWatchlist?.(data.series)
                                 ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
                                 : 'bg-white/[0.06] hover:bg-white/[0.12] border-white/[0.08] text-slate-300'
-                            }`}
+                              }`}
                             title={isInWatchlist?.(data.series) ? 'Saved in Shortlist' : 'Save to Shortlist'}
                           >
                             {isInWatchlist?.(data.series) ? (

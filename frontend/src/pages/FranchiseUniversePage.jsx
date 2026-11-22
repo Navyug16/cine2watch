@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import {
   ArrowLeft,
   Play,
@@ -27,9 +27,11 @@ export default function FranchiseUniversePage({
     return FRANCHISES?.find((f) => f.id === sagaId) || null;
   }, [sagaId]);
 
-  const [franchise, setFranchise] = useState(() => staticMatch);
+  const [fetchedFranchise, setFetchedFranchise] = useState(null);
   const [loading, setLoading] = useState(() => !staticMatch);
   const [error, setError] = useState(null);
+
+  const franchise = staticMatch || fetchedFranchise;
 
   // Filter States
   const [activeSubUniverse, setActiveSubUniverse] = useState('all');
@@ -39,36 +41,37 @@ export default function FranchiseUniversePage({
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
-    if (staticMatch) {
-      setFranchise(staticMatch);
-      setLoading(false);
-      setError(null);
-      return;
-    }
+    if (staticMatch) return;
 
-    setLoading(true);
-    setError(null);
-
+    let ignore = false;
     fetch('/api/franchises')
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load franchise data');
         return res.json();
       })
       .then((data) => {
-        if (data.success && data.data) {
+        if (!ignore && data.success && data.data) {
           const match = data.data.find((f) => f.id === sagaId);
           if (match) {
-            setFranchise(match);
+            setFetchedFranchise(match);
           } else {
             setError(`Franchise "${sagaId}" not found.`);
           }
         }
       })
       .catch((err) => {
-        console.error('Error fetching franchise:', err);
-        setError(err.message);
+        if (!ignore) {
+          console.error('Error fetching franchise:', err);
+          setError(err.message);
+        }
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (!ignore) setLoading(false);
+      });
+
+    return () => {
+      ignore = true;
+    };
   }, [sagaId, staticMatch]);
 
   useEffect(() => {
@@ -158,7 +161,7 @@ export default function FranchiseUniversePage({
 
   return (
     <div className="w-full space-y-8 animate-in fade-in duration-300 pb-16">
-      
+
       {/* 1. Universe Header & Breadcrumb */}
       <section className="relative rounded-3xl overflow-hidden bg-[#0c0d15] border border-white/[0.08] p-6 sm:p-8 shadow-2xl">
         {(() => {
@@ -219,31 +222,28 @@ export default function FranchiseUniversePage({
             <div className="flex items-center p-1 rounded-xl bg-black/60 border border-white/[0.08] backdrop-blur-md">
               <button
                 onClick={() => setOrderMode('chrono')}
-                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                  orderMode === 'chrono'
-                    ? 'bg-[#c5a059] text-black shadow-sm font-bold'
-                    : 'text-slate-400 hover:text-white'
-                }`}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${orderMode === 'chrono'
+                  ? 'bg-[#c5a059] text-black shadow-sm font-bold'
+                  : 'text-slate-400 hover:text-white'
+                  }`}
               >
                 ⏳ Story Order
               </button>
               <button
                 onClick={() => setOrderMode('release')}
-                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                  orderMode === 'release'
-                    ? 'bg-[#c5a059] text-black shadow-sm font-bold'
-                    : 'text-slate-400 hover:text-white'
-                }`}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${orderMode === 'release'
+                  ? 'bg-[#c5a059] text-black shadow-sm font-bold'
+                  : 'text-slate-400 hover:text-white'
+                  }`}
               >
                 🎬 Release Order
               </button>
               <button
                 onClick={() => setOrderMode('rating')}
-                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                  orderMode === 'rating'
-                    ? 'bg-[#c5a059] text-black shadow-sm font-bold'
-                    : 'text-slate-400 hover:text-white'
-                }`}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${orderMode === 'rating'
+                  ? 'bg-[#c5a059] text-black shadow-sm font-bold'
+                  : 'text-slate-400 hover:text-white'
+                  }`}
               >
                 ⭐ Top Rated
               </button>
@@ -254,7 +254,7 @@ export default function FranchiseUniversePage({
 
       {/* 2. Sub-Universe / Phase Pills Rail & Live Search */}
       <div className="sticky top-16 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2.5 bg-[#08090d]/92 backdrop-blur-xl border-y border-white/[0.06] flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-        
+
         <div className="flex items-center space-x-2 overflow-x-auto scrollbar-none py-1">
           {subUniverses.map((sub) => {
             const isActive =
@@ -264,11 +264,10 @@ export default function FranchiseUniversePage({
               <button
                 key={sub}
                 onClick={() => setActiveSubUniverse(sub.toLowerCase().startsWith('all') ? 'all' : sub)}
-                className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-all cursor-pointer whitespace-nowrap ${
-                  isActive
-                    ? 'bg-gradient-to-r from-[#c5a059] to-[#8d6c2a] text-black font-bold shadow-md shadow-[#c5a059]/20'
-                    : 'bg-[#12131c] hover:bg-[#1a1b26] text-slate-300 border border-white/[0.06]'
-                }`}
+                className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-all cursor-pointer whitespace-nowrap ${isActive
+                  ? 'bg-gradient-to-r from-[#c5a059] to-[#8d6c2a] text-black font-bold shadow-md shadow-[#c5a059]/20'
+                  : 'bg-[#12131c] hover:bg-[#1a1b26] text-slate-300 border border-white/[0.06]'
+                  }`}
               >
                 {sub}
               </button>
@@ -287,9 +286,8 @@ export default function FranchiseUniversePage({
               <button
                 key={tab.id}
                 onClick={() => setMediaFilter(tab.id)}
-                className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer ${
-                  mediaFilter === tab.id ? 'bg-[#c5a059] text-black' : 'text-slate-400 hover:text-white'
-                }`}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer ${mediaFilter === tab.id ? 'bg-[#c5a059] text-black' : 'text-slate-400 hover:text-white'
+                  }`}
               >
                 {tab.label}
               </button>
@@ -328,8 +326,8 @@ export default function FranchiseUniversePage({
             {orderMode === 'chrono'
               ? 'Timeline Continuity Order'
               : orderMode === 'release'
-              ? 'Theatrical Release Order'
-              : 'Highest Rated'}
+                ? 'Theatrical Release Order'
+                : 'Highest Rated'}
           </span>
         </div>
 
@@ -373,9 +371,8 @@ export default function FranchiseUniversePage({
                     {/* Top Badges */}
                     <div className="absolute top-2 left-2 right-2 flex items-center justify-between gap-1 pointer-events-none">
                       <span
-                        className={`px-1.5 py-0.5 rounded text-[9px] font-mono font-black uppercase tracking-wider backdrop-blur-md shadow-sm ${
-                          isSeries ? 'bg-purple-600/90 text-white' : 'bg-black/75 text-slate-200'
-                        }`}
+                        className={`px-1.5 py-0.5 rounded text-[9px] font-mono font-black uppercase tracking-wider backdrop-blur-md shadow-sm ${isSeries ? 'bg-purple-600/90 text-white' : 'bg-black/75 text-slate-200'
+                          }`}
                       >
                         {isSeries ? 'SERIES' : 'FILM'}
                       </span>
@@ -430,11 +427,10 @@ export default function FranchiseUniversePage({
                               e.stopPropagation();
                               onToggleWatchlist(item);
                             }}
-                            className={`py-1 rounded-xl font-medium text-[11px] flex items-center justify-center space-x-1 cursor-pointer ${
-                              saved
-                                ? 'bg-[#c5a059]/30 text-[#c5a059] border border-[#c5a059]/50'
-                                : 'bg-white/[0.12] hover:bg-white/[0.2] text-white'
-                            }`}
+                            className={`py-1 rounded-xl font-medium text-[11px] flex items-center justify-center space-x-1 cursor-pointer ${saved
+                              ? 'bg-[#c5a059]/30 text-[#c5a059] border border-[#c5a059]/50'
+                              : 'bg-white/[0.12] hover:bg-white/[0.2] text-white'
+                              }`}
                           >
                             <Bookmark className={`w-3 h-3 ${saved ? 'fill-[#c5a059]' : ''}`} />
                             <span>{saved ? 'Saved' : 'Save'}</span>
@@ -562,11 +558,10 @@ export default function FranchiseUniversePage({
                   {onToggleWatchlist && (
                     <button
                       onClick={() => onToggleWatchlist(selectedMovie)}
-                      className={`py-2.5 px-3.5 rounded-xl border text-xs font-semibold flex items-center space-x-1.5 cursor-pointer transition-colors ${
-                        isInWatchlist?.(selectedMovie)
-                          ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
-                          : 'bg-white/[0.08] hover:bg-white/[0.15] border-white/[0.08] text-white'
-                      }`}
+                      className={`py-2.5 px-3.5 rounded-xl border text-xs font-semibold flex items-center space-x-1.5 cursor-pointer transition-colors ${isInWatchlist?.(selectedMovie)
+                        ? 'bg-[#c5a059]/20 border-[#c5a059]/60 text-[#c5a059]'
+                        : 'bg-white/[0.08] hover:bg-white/[0.15] border-white/[0.08] text-white'
+                        }`}
                     >
                       {isInWatchlist?.(selectedMovie) ? (
                         <Check className="w-3.5 h-3.5" />

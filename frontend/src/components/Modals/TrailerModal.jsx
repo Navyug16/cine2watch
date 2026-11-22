@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { X, Play, ExternalLink, Bookmark, Check } from 'lucide-react';
 
 export default function TrailerModal({

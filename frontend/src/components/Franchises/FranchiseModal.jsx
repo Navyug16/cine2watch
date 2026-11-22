@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { X, Layers, Play, ExternalLink, Sparkles, Clock, Calendar, ArrowRight, Compass, Search, Filter } from 'lucide-react';
+import { useState, useEffect, useMemo } from 'react';
+import { X, Layers, Play, ExternalLink, Clock, Search } from 'lucide-react';
 
 export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
   const [franchises, setFranchises] = useState([]);
@@ -10,17 +10,20 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
   const [searchFilter, setSearchFilter] = useState('');
 
   useEffect(() => {
-    if (isOpen && franchises.length === 0) {
-      fetch('/api/franchises')
-        .then(r => r.json())
-        .then(res => {
-          if (res.success && res.data) {
-            setFranchises(res.data);
-            if (res.data[0]) setActiveFranchiseId(res.data[0].id);
-          }
-        })
-        .catch(err => console.error('Franchises fetch error:', err));
-    }
+    if (!isOpen) return;
+    let ignore = false;
+    fetch('/api/franchises')
+      .then(r => r.json())
+      .then(res => {
+        if (!ignore && res.success && res.data) {
+          setFranchises(res.data);
+          if (res.data[0]) setActiveFranchiseId((prev) => prev || res.data[0].id);
+        }
+      })
+      .catch(err => console.error('Franchises fetch error:', err));
+    return () => {
+      ignore = true;
+    };
   }, [isOpen]);
 
   // Reset sub-universe filter when switching franchise
@@ -44,8 +47,8 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
 
     // Filter by sub-universe if selected
     if (activeSubUniverse !== 'all' && !activeSubUniverse.toLowerCase().startsWith('all')) {
-      list = list.filter(item => 
-        item.sub_universe === activeSubUniverse || 
+      list = list.filter(item =>
+        item.sub_universe === activeSubUniverse ||
         (Array.isArray(item.sub_universes) && item.sub_universes.includes(activeSubUniverse))
       );
     }
@@ -56,9 +59,9 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
     } else if (mediaFilter === 'series') {
       list = list.filter(item => item.media_type === 'series');
     } else if (mediaFilter === 'animation') {
-      list = list.filter(item => 
-        item.media_type === 'animation' || 
-        item.is_animation === true || 
+      list = list.filter(item =>
+        item.media_type === 'animation' ||
+        item.is_animation === true ||
         (Array.isArray(item.sub_universes) && item.sub_universes.some(s => s.toLowerCase().includes('animat'))) ||
         (item.sub_universe && item.sub_universe.toLowerCase().includes('animat'))
       );
@@ -69,7 +72,7 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
     // Filter by live search text
     if (searchFilter.trim()) {
       const q = searchFilter.toLowerCase();
-      list = list.filter(item => 
+      list = list.filter(item =>
         item.title?.toLowerCase().includes(q) ||
         item.phase?.toLowerCase().includes(q) ||
         item.desc?.toLowerCase().includes(q) ||
@@ -91,7 +94,7 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 modal-backdrop-luxury animate-in fade-in duration-200">
       <div className="card-luxury max-w-6xl w-full rounded-3xl overflow-hidden border border-white/[0.1] shadow-2xl flex flex-col max-h-[94vh] bg-[#090a0f]">
-        
+
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-white/[0.08] flex items-center justify-between gap-4 bg-[#0e1017]">
           <div className="flex items-center space-x-3">
@@ -130,11 +133,10 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
               <button
                 key={f.id}
                 onClick={() => handleSelectFranchise(f.id)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 flex items-center space-x-2 cursor-pointer shrink-0 ${
-                  isSelected
-                    ? 'bg-[#c5a059] text-black font-bold shadow-lg shadow-[#c5a059]/20 scale-102'
-                    : 'bg-[#141520] hover:bg-[#1a1b2a] text-slate-300 border border-white/[0.04]'
-                }`}
+                className={`px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 flex items-center space-x-2 cursor-pointer shrink-0 ${isSelected
+                  ? 'bg-[#c5a059] text-black font-bold shadow-lg shadow-[#c5a059]/20 scale-102'
+                  : 'bg-[#141520] hover:bg-[#1a1b2a] text-slate-300 border border-white/[0.04]'
+                  }`}
               >
                 <span className="text-sm">{f.icon}</span>
                 <span>{f.name.split(' (')[0].split(' & ')[0]}</span>
@@ -146,15 +148,15 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
         {/* Active Franchise Body */}
         {activeFranchise && (
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
-            
+
             {/* Cinematic Hero Spotlight Banner */}
             <div className="relative rounded-3xl overflow-hidden border border-white/[0.08] bg-[#12141f] p-5 sm:p-7 shadow-xl">
               <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="space-y-2 max-w-2xl">
                   <div className="flex items-center space-x-2 flex-wrap gap-y-1">
-                    <span 
+                    <span
                       className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border"
-                      style={{ 
+                      style={{
                         color: activeFranchise.theme_color || '#c5a059',
                         borderColor: `${activeFranchise.theme_color || '#c5a059'}40`,
                         backgroundColor: `${activeFranchise.theme_color || '#c5a059'}15`
@@ -188,22 +190,20 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
                   <div className="bg-black/50 p-1.5 rounded-2xl border border-white/[0.08] flex items-center space-x-1 shrink-0 w-full sm:w-auto">
                     <button
                       onClick={() => setOrderMode('chrono')}
-                      className={`flex-1 sm:flex-none px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center justify-center space-x-1.5 ${
-                        orderMode === 'chrono'
-                          ? 'bg-[#c5a059] text-black font-bold shadow-md'
-                          : 'text-slate-400 hover:text-white'
-                      }`}
+                      className={`flex-1 sm:flex-none px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center justify-center space-x-1.5 ${orderMode === 'chrono'
+                        ? 'bg-[#c5a059] text-black font-bold shadow-md'
+                        : 'text-slate-400 hover:text-white'
+                        }`}
                     >
                       <span>⏳ Chronological Story</span>
                     </button>
 
                     <button
                       onClick={() => setOrderMode('release')}
-                      className={`flex-1 sm:flex-none px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center justify-center space-x-1.5 ${
-                        orderMode === 'release'
-                          ? 'bg-[#c5a059] text-black font-bold shadow-md'
-                          : 'text-slate-400 hover:text-white'
-                      }`}
+                      className={`flex-1 sm:flex-none px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center justify-center space-x-1.5 ${orderMode === 'release'
+                        ? 'bg-[#c5a059] text-black font-bold shadow-md'
+                        : 'text-slate-400 hover:text-white'
+                        }`}
                     >
                       <span>🎞️ Release Date Order</span>
                     </button>
@@ -213,55 +213,50 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
                   <div className="bg-black/30 p-1 rounded-xl border border-white/[0.04] flex items-center space-x-1 overflow-x-auto no-scrollbar">
                     <button
                       onClick={() => setMediaFilter('all')}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${
-                        mediaFilter === 'all'
-                          ? 'bg-white/15 text-[#c5a059] font-bold'
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${mediaFilter === 'all'
+                        ? 'bg-white/15 text-[#c5a059] font-bold'
+                        : 'text-slate-400 hover:text-slate-200'
+                        }`}
                     >
                       All Media
                     </button>
 
                     <button
                       onClick={() => setMediaFilter('movie')}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${
-                        mediaFilter === 'movie'
-                          ? 'bg-white/15 text-[#c5a059] font-bold'
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${mediaFilter === 'movie'
+                        ? 'bg-white/15 text-[#c5a059] font-bold'
+                        : 'text-slate-400 hover:text-slate-200'
+                        }`}
                     >
                       🎬 Movies Only
                     </button>
 
                     <button
                       onClick={() => setMediaFilter('series')}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${
-                        mediaFilter === 'series'
-                          ? 'bg-white/15 text-[#c5a059] font-bold'
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${mediaFilter === 'series'
+                        ? 'bg-white/15 text-[#c5a059] font-bold'
+                        : 'text-slate-400 hover:text-slate-200'
+                        }`}
                     >
                       📺 Series Only
                     </button>
 
                     <button
                       onClick={() => setMediaFilter('animation')}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${
-                        mediaFilter === 'animation'
-                          ? 'bg-white/15 text-[#c5a059] font-bold'
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${mediaFilter === 'animation'
+                        ? 'bg-white/15 text-[#c5a059] font-bold'
+                        : 'text-slate-400 hover:text-slate-200'
+                        }`}
                     >
                       🎨 Animation
                     </button>
 
                     <button
                       onClick={() => setMediaFilter('essential')}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${
-                        mediaFilter === 'essential'
-                          ? 'bg-white/15 text-[#c5a059] font-bold'
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all cursor-pointer shrink-0 ${mediaFilter === 'essential'
+                        ? 'bg-white/15 text-[#c5a059] font-bold'
+                        : 'text-slate-400 hover:text-slate-200'
+                        }`}
                     >
                       ⭐ Essential Only
                     </button>
@@ -281,11 +276,10 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
                     <button
                       key={sub}
                       onClick={() => setActiveSubUniverse(isAll ? 'all' : sub)}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                        isSelected
-                          ? 'bg-[#c5a059] text-black font-bold shadow-md'
-                          : 'bg-[#161724] hover:bg-[#202130] text-slate-300 border border-white/[0.04]'
-                      }`}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${isSelected
+                        ? 'bg-[#c5a059] text-black font-bold shadow-md'
+                        : 'bg-[#161724] hover:bg-[#202130] text-slate-300 border border-white/[0.04]'
+                        }`}
                     >
                       {sub}
                     </button>
@@ -360,13 +354,12 @@ export default function FranchiseModal({ isOpen, onClose, onWatchTrailer }) {
                               {item.phase}
                             </span>
                             {item.media_type && (
-                              <span className={`text-[9px] font-mono uppercase font-bold px-1.5 py-0.5 rounded border ${
-                                item.media_type === 'movie' 
-                                  ? 'text-cyan-400 bg-cyan-400/10 border-cyan-400/20' 
-                                  : item.media_type === 'series'
+                              <span className={`text-[9px] font-mono uppercase font-bold px-1.5 py-0.5 rounded border ${item.media_type === 'movie'
+                                ? 'text-cyan-400 bg-cyan-400/10 border-cyan-400/20'
+                                : item.media_type === 'series'
                                   ? 'text-purple-400 bg-purple-400/10 border-purple-400/20'
                                   : 'text-amber-400 bg-amber-400/10 border-amber-400/20'
-                              }`}>
+                                }`}>
                                 {item.media_type === 'movie' ? '🎬 Film' : item.media_type === 'series' ? '📺 Series' : '✨ Special'}
                               </span>
                             )}

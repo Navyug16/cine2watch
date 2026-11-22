@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Star, Play, Sparkles, Share2, ExternalLink, Clock, Bookmark } from 'lucide-react';
 import CinemaPoster from '../Common/CinemaPoster';
 

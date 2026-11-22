@@ -1,5 +1,4 @@
-import React from 'react';
-import { Film, Tv, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { FORMATS } from '../../data/constants';
 
 export default function FormatStep({ selectedFormat, onSelect, onBack }) {
@@ -24,11 +23,10 @@ export default function FormatStep({ selectedFormat, onSelect, onBack }) {
             <button
               key={f.id}
               onClick={() => onSelect(f.id)}
-              className={`p-6 rounded-3xl border text-left transition-all duration-300 flex flex-col justify-between group cursor-pointer relative overflow-hidden ${
-                isSelected
+              className={`p-6 rounded-3xl border text-left transition-all duration-300 flex flex-col justify-between group cursor-pointer relative overflow-hidden ${isSelected
                   ? 'bg-[#171824] border-[#c5a059] shadow-[0_0_30px_rgba(197,160,89,0.25)] ring-1 ring-[#c5a059]'
                   : 'card-luxury hover:border-[#c5a059]/40 hover:-translate-y-1'
-              }`}
+                }`}
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

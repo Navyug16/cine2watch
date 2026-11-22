@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search, Bookmark, Compass, Layers, Grid } from 'lucide-react';
 
 export default function Navbar({
